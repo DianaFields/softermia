@@ -44,6 +44,50 @@ app.controller("mainCtrl", function($scope) {
 		$scope.selected = [];
 	};
 });
+// MICROKLIMA	
+app.controller("mainCtrl", function($scope) {
+	$scope.microklima = [
+		{
+			name: "Microklima Climatización",
+			image: "../images/microklima/microklima-01.jpg"
+		},
+		{
+			name: "Microklima",
+			image: "../images/microklima/microklima-02.jpg"
+		},
+		{
+			name: "Microklima",
+			image: "../images/microklima/microklima-03.jpg"
+		},
+		{
+			name: "Microklima",
+			image: "../images/microklima/microklima-04.jpg"
+		},
+		{
+			name: "Microklima",
+			image: "../images/microklima/microklima-05.jpg"
+		},
+		{
+			name: "Microklima",
+			image: "../images/microklima/microklima-06.jpg"
+		},
+		
+	];
+
+	$scope.selected = [];
+	$scope.selectBox = function(item, position) {
+		$scope.selected = [
+			{
+				item: item,
+				position: position
+			}
+		];
+		$scope.$apply();
+	};
+	$scope.clearSelection = function() {
+		$scope.selected = [];
+	};
+});
 
 app.directive("box", function() {
 	return {
@@ -94,14 +138,15 @@ app.directive("bigBox", function($timeout) {
 			$timeout(function() {
 				element.css({
 					top: "50%",
-					left: "10%"
+					left: "0",
+					right: "0"
 				});
 				element.addClass("image-out");
 			}, 200);
 
 			$timeout(function() {
 				element.css({
-					width: "80%",
+					width: "100%",
 					height: "100%"
 				});
 			}, 500);

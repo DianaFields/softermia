@@ -27,9 +27,9 @@ body{
 
 	@mixin animation{
 		-webkit-transition: all 500ms ease-in-out;
-		  -moz-transition: all 500ms ease-in-out;
-		  -o-transition: all 500ms ease-in-out;
-		  transition: all 500ms ease-in-out;
+		-moz-transition: all 500ms ease-in-out;
+		-o-transition: all 500ms ease-in-out;
+		transition: all 500ms ease-in-out;
 	}
 	nav{
 		@media screen and (min-width: 1024px){
@@ -217,7 +217,7 @@ body{
 			.galeria{
 				background:#05076B;
 				i{
-					 font-family: 'Glyphicons Halflings';
+					font-family: 'Glyphicons Halflings';
 				}
 				span{
 					opacity: 0;
@@ -246,7 +246,7 @@ body{
 					background:url('../images/icons/logo-gallery.png')no-repeat;
 					background-size: 55%;
 					top: 3.1em;
-    				left: 1.5em;
+					left: 1.5em;
 				}
 			}
 			
@@ -255,7 +255,7 @@ body{
 		
 	}
 	#servicios{
-	height: 600px;
+		height: 600px;
 		padding-top: 3em;
 		.item{
 			li{
@@ -264,8 +264,8 @@ body{
 				height: 110px;
 				padding-top: 2em;
 				font-size: 1.1em;
-    			padding-right: 3em;
-    			line-height: 1.8em;
+				padding-right: 3em;
+				line-height: 1.8em;
 				span{
 					width: 3em;
 					height: 3em;
@@ -373,7 +373,7 @@ body{
 			font-size: 1.1em;
 			font-family: 'Open Sans', sans-serif;
 			text-align: justify;
-    		line-height:1.8em;
+			line-height:1.8em;
 		}
 	}
 	#valores{
@@ -465,13 +465,13 @@ body{
 		}
 		textarea{
 			width: 100%;
-		    border: 0;
-		    outline: 0;
-		    height: 178px;
-		    background: #f2f2f2;
-		    padding: 2em;
-		    border-radius: 3px;
-		    margin: .5em 0;
+			border: 0;
+			outline: 0;
+			height: 178px;
+			background: #f2f2f2;
+			padding: 2em;
+			border-radius: 3px;
+			margin: .5em 0;
 		}
 	}
 	/*FOOTER*/
@@ -645,7 +645,7 @@ body{
 		bottom: 10px;
 		left: 10px;
 		right: 10px;
-		background-color: white;
+		background-color: rgba(5,8,106,.7);
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center top;
@@ -674,7 +674,11 @@ body{
 	}
 	.content {
 		position: absolute;
-		padding: 20px 40px;
+		padding:10em 20em;
+		color: #fff;
+		font-size: 1.3em;
+		line-height: 1.3em;
+		text-align: center;
 		top: 0;
 		right: 0;
 		bottom: 0;
@@ -762,169 +766,251 @@ body{
 	.close-button:hover {
 		color: #ddd;
 	}
-#clientes{
-	clear: both;
-	top: 6em;
-	bottom: 6em;
-	position: relative;
-	height: 650px;
-	.logo{
-		div{
-			height:150px;
-			width: 90%;
-			margin: 0 auto;
-			cursor: pointer;
-		}
-		
+	#clientes{
+		clear: both;
+		top: 6em;
+		bottom: 6em;
+		position: relative;
+		height: 650px;
+		.logo{
+			div{
+				height:150px;
+				width: 90%;
+				margin: 0 auto;
+				cursor: pointer;
+			}
 
-	}
-	.avante{
-		div{
-			background:url('../images/clientes/avante-0.jpg')no-repeat;
-			background-size: 100%;
-			&:hover{
-				background:url('../images/clientes/avante-1.jpg');
+
+		}
+		.avante{
+			div{
+				background:url('../images/clientes/avante-0.jpg')no-repeat;
 				background-size: 100%;
+				&:hover{
+					background:url('../images/clientes/avante-1.jpg');
+					background-size: 100%;
 
+				}
 			}
-		}
-		
-	}
-	.comex{
-		div{
-			background:url('../images/clientes/comex-0.jpg')no-repeat;
-			background-size:100%;
-			&:hover{
-				background:url('../images/clientes/comex-1.jpg');
-				background-size:100%;
-			}
-		}
-		
-	}
-	.danone{
-		div{
-			width: 70%;
-			background:url('../images/clientes/danone-0.jpg')no-repeat;
-			background-size:100%;
-			&:hover{
-				background:url('../images/clientes/danone-1.jpg')no-repeat;
-				background-size:100%;
 
+		}
+		.comex{
+			div{
+				background:url('../images/clientes/comex-0.jpg')no-repeat;
+				background-size:100%;
+				&:hover{
+					background:url('../images/clientes/comex-1.jpg');
+					background-size:100%;
+				}
 			}
+
+		}
+		.danone{
+			div{
+				width: 70%;
+				background:url('../images/clientes/danone-0.jpg')no-repeat;
+				background-size:100%;
+				&:hover{
+					background:url('../images/clientes/danone-1.jpg')no-repeat;
+					background-size:100%;
+
+				}
+			}
+
+		}
+		.fonoteca{
+			div{
+				background:url('../images/clientes/fonoteca-0.jpg')no-repeat;
+				background-size:100%;
+				&:hover{
+					background:url('../images/clientes/fonoteca-1.jpg')no-repeat;
+					background-size:100%;
+				}
+			}	
+		}
+		.hussman{
+			div{
+				background:url('../images/clientes/hussman-0.jpg')no-repeat;
+				background-size:100%;
+				&:hover{
+					background:url('../images/clientes/hussman-1.jpg')no-repeat;
+					background-size:100%;
+				}
+			}	
+		}
+		.inah{
+			div{
+				background:url('../images/clientes/inah-0.jpg')no-repeat;
+				background-size:100%;
+				&:hover{
+					background:url('../images/clientes/inah-1.jpg')no-repeat;
+					background-size:100%;
+				}
+			}	
+		}
+		.inba{
+			div{
+				background:url('../images/clientes/inba-0.jpg')no-repeat;
+				background-size:100%;
+				&:hover{
+					background:url('../images/clientes/inba-1.jpg')no-repeat;
+					background-size:100%;
+				}
+			}	
+		}
+		.issste{
+			div{
+				background:url('../images/clientes/issste-0.jpg')no-repeat;
+				background-size:100%;
+				&:hover{
+					background:url('../images/clientes/issste-1.jpg')no-repeat;
+					background-size:100%;
+				}
+			}	
+		}
+		.jc{
+			div{
+				background:url('../images/clientes/jc-0.jpg')no-repeat;
+				background-size:100%;
+				&:hover{
+					background:url('../images/clientes/jc-1.jpg')no-repeat;
+					background-size:100%;
+				}
+			}	
+		}
+		.labotec{
+			div{
+				background:url('../images/clientes/labotec-0.jpg')no-repeat;
+				background-size:100%;
+				&:hover{
+					background:url('../images/clientes/labotec-1.jpg')no-repeat;
+					background-size:100%;
+				}
+			}	
+		}
+		.pemex{
+			div{
+				background:url('../images/clientes/pemex-0.jpg')no-repeat;
+				background-size:100%;
+				&:hover{
+					background:url('../images/clientes/pemex-1.jpg')no-repeat;
+					background-size:100%;
+				}
+			}	
+		}
+		.pfizer{
+			div{
+				width: 65%;
+				background:url('../images/clientes/pfizer-0.jpg')no-repeat;
+				background-size:100%;
+				&:hover{
+					background:url('../images/clientes/pfizer-1.jpg')no-repeat;
+					background-size:100%;
+				}
+			}	
+		}
+		.profeco{
+			div{
+				background:url('../images/clientes/profeco-0.jpg')no-repeat;
+				background-size:100%;
+				&:hover{
+					background:url('../images/clientes/profeco-1.jpg')no-repeat;
+					background-size:100%;
+				}
+			}	
+		}
+		.sony{
+			div{
+				background:url('../images/clientes/sony-0.jpg')no-repeat;
+				background-size:100%;
+				&:hover{
+					background:url('../images/clientes/sony-1.jpg')no-repeat;
+					background-size:100%;
+				}
+			}	
+		}
+	}
+	/*MICROKLIMA*/
+	#microklima{
+		.densidad{
+			height: 350px;
+			h3{
+				font-size: 1.5em;
+				width: 70%;
+				text-align: left;
+				padding-left: 4em;
+			}
+			ul{
+				padding-left: 6em;
+				li{
+					list-style: none;
+					line-height: 35px;
+				}
+			}
+			.icon{
+				width: 50px;
+				height: 70px;
+				float: left;
+				margin: 2.5em 0 0 1em;
+			}
+		}
+		.alta{
+			background: #f2f2f2;
+			.icon{
+				background: url('../images/microklima/icon-alta-densidad.png')no-repeat;
+				background-size: 80%;
+			}
+		}
+		.baja{
+			background: #f7f7f7;
+			.icon{
+				background: url('../images/microklima/icon-baja-densidad.png')no-repeat;
+				background-size: 80%;
+			}
+		}
+		.logo{
+			width: 300px;
+			margin: 0 auto;
+			margin-top: 3em;
+			margin-bottom: 3em;
+			img{
+				width: 70%;
+			}
+		}
+		.text{
+			margin-bottom: 15em;
 		}
 		
 	}
-	.fonoteca{
-		div{
-			background:url('../images/clientes/fonoteca-0.jpg')no-repeat;
-			background-size:100%;
-			&:hover{
-				background:url('../images/clientes/fonoteca-1.jpg')no-repeat;
-				background-size:100%;
-			}
-		}	
-	}
-	.hussman{
-		div{
-			background:url('../images/clientes/hussman-0.jpg')no-repeat;
-			background-size:100%;
-			&:hover{
-				background:url('../images/clientes/hussman-1.jpg')no-repeat;
-				background-size:100%;
-			}
-		}	
-	}
-	.inah{
-		div{
-			background:url('../images/clientes/inah-0.jpg')no-repeat;
-			background-size:100%;
-			&:hover{
-				background:url('../images/clientes/inah-1.jpg')no-repeat;
-				background-size:100%;
-			}
-		}	
-	}
-	.inba{
-		div{
-			background:url('../images/clientes/inba-0.jpg')no-repeat;
-			background-size:100%;
-			&:hover{
-				background:url('../images/clientes/inba-1.jpg')no-repeat;
-				background-size:100%;
-			}
-		}	
-	}
-	.issste{
-		div{
-			background:url('../images/clientes/issste-0.jpg')no-repeat;
-			background-size:100%;
-			&:hover{
-				background:url('../images/clientes/issste-1.jpg')no-repeat;
-				background-size:100%;
-			}
-		}	
-	}
-	.jc{
-		div{
-			background:url('../images/clientes/jc-0.jpg')no-repeat;
-			background-size:100%;
-			&:hover{
-				background:url('../images/clientes/jc-1.jpg')no-repeat;
-				background-size:100%;
-			}
-		}	
-	}
-	.labotec{
-		div{
-			background:url('../images/clientes/labotec-0.jpg')no-repeat;
-			background-size:100%;
-			&:hover{
-				background:url('../images/clientes/labotec-1.jpg')no-repeat;
-				background-size:100%;
-			}
-		}	
-	}
-	.pemex{
-		div{
-			background:url('../images/clientes/pemex-0.jpg')no-repeat;
-			background-size:100%;
-			&:hover{
-				background:url('../images/clientes/pemex-1.jpg')no-repeat;
-				background-size:100%;
-			}
-		}	
-	}
-	.pfizer{
-		div{
-			width: 65%;
-			background:url('../images/clientes/pfizer-0.jpg')no-repeat;
-			background-size:100%;
-			&:hover{
-				background:url('../images/clientes/pfizer-1.jpg')no-repeat;
-				background-size:100%;
-			}
-		}	
-	}
-	.profeco{
-		div{
-			background:url('../images/clientes/profeco-0.jpg')no-repeat;
-			background-size:100%;
-			&:hover{
-				background:url('../images/clientes/profeco-1.jpg')no-repeat;
-				background-size:100%;
-			}
-		}	
-	}
-	.sony{
-		div{
-			background:url('../images/clientes/sony-0.jpg')no-repeat;
-			background-size:100%;
-			&:hover{
-				background:url('../images/clientes/sony-1.jpg')no-repeat;
-				background-size:100%;
-			}
-		}	
+	.slider{
+		background: url('../images/microklima/slider-back.jpg');
+		background-size: cover;
+		width: 100%;
+		height: 500px;
+		.maquina{
+			width: 500px;
+			height: 100%;
+			background: url('../images/microklima/microklima-back.png')no-repeat;
+			float: right;
+    		background-size: 110%;
+		}
+		.drop{
+			background: url('../images/microklima/drop-02.png')no-repeat;
+			width: 300px;
+			height: 300px;
+			background-size: 60%;
+			opacity: .3;
+			float: right;
+		}
+		.drop-02{
+			background: url('../images/microklima/drop-01.png')no-repeat;
+			width: 300px;
+			height: 300px;
+			background-size: 70%;
+			opacity: .3;
+		}
 	}
 }
 
-}
+
+
