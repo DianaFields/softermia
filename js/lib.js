@@ -4,72 +4,28 @@ var app = angular.module("app", ["ngAnimate"]);
 app.controller("mainCtrl", function($scope) {
 	$scope.boxes = [
 		{
-			name: "Friends",
-			image: "images/galeria/gall-1.jpg"
+			name: "Softermia S.A. de C.V.",
+			image: "images/galeria/instalacion-01.jpg"
 		},
 		{
-			name: "Free",
-			image: "images/galeria/gall-7.jpg"
+			name: "Softermia S.A. de C.V.",
+			image: "images/galeria/instalacion-02.jpg"
 		},
 		{
-			name: "Explore",
-			image: "images/galeria/gall-6.jpg"
+			name: "Softermia S.A. de C.V.",
+			image: "images/galeria/instalacion-03.jpg"
 		},
 		{
-			name: "Vast",
-			image: "https://source.unsplash.com/WLUHO9A_xik/900x900"
+			name: "Softermia S.A. de C.V.",
+			image: "images/galeria/instalacion-04.jpg"
 		},
 		{
-			name: "Playful",
-			image: "https://source.unsplash.com/b2-fBVrfx0o/900x900"
+			name: "Softermia S.A. de C.V.",
+			image: "images/galeria/instalacion-05.jpg"
 		},
 		{
-			name: "Grand",
+			name: "Softermia S.A. de C.V.",
 			image: "https://source.unsplash.com/Ixp4YhCKZkI/900x900"
-		},
-		
-	];
-
-	$scope.selected = [];
-	$scope.selectBox = function(item, position) {
-		$scope.selected = [
-			{
-				item: item,
-				position: position
-			}
-		];
-		$scope.$apply();
-	};
-	$scope.clearSelection = function() {
-		$scope.selected = [];
-	};
-});
-// MICROKLIMA	
-app.controller("mainCtrl", function($scope) {
-	$scope.microklima = [
-		{
-			name: "Microklima Climatización",
-			image: "../images/microklima/microklima-01.jpg"
-		},
-		{
-			name: "Microklima",
-			image: "../images/microklima/microklima-02.jpg"
-		},
-		{
-			name: "Microklima",
-			image: "../images/microklima/microklima-03.jpg"
-		},
-		{
-			name: "Microklima",
-			image: "../images/microklima/microklima-04.jpg"
-		},
-		{
-			name: "Microklima",
-			image: "../images/microklima/microklima-05.jpg"
-		},
-		{
-			name: "Microklima",
-			image: "../images/microklima/microklima-06.jpg"
 		},
 		
 	];
@@ -137,7 +93,7 @@ app.directive("bigBox", function($timeout) {
 
 			$timeout(function() {
 				element.css({
-					top: "50%",
+					top: "0",
 					left: "0",
 					right: "0"
 				});

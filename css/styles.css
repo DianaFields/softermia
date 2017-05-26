@@ -7,6 +7,8 @@ body {
   /*FOOTER*/
   /*GALERIA*/
   /*MICROKLIMA*/ }
+  body h2 {
+    font-family: 'Open Sans', sans-serif; }
   body h3 {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
@@ -18,52 +20,91 @@ body {
     height: 150px;
     display: block;
     clear: both; }
+    @media screen and (min-width: 1300px) {
+      body .space {
+        height: 300px; } }
+  body .space-min {
+    width: 100%;
+    height: 50px;
+    display: block;
+    clear: both; }
+    @media screen and (min-width: 1300px) {
+      body .space-min {
+        height: 100px; } }
   body .subtit {
     font-size: 1.2em;
     font-weight: 300;
     margin-bottom: 2em; }
   body .title {
     font-weight: 700; }
-  @media screen and (min-width: 1024px) {
-    body nav {
-      width: 95%;
-      margin: 0 auto; }
-      body nav a {
-        display: inline-block;
-        text-decoration: none;
-        color: #41439C;
-        line-height: 100px;
-        position: relative; }
-        body nav a:hover > span {
-          width: 50%; }
-        body nav a span {
-          width: 0;
-          height: 2px;
-          background: #4EB0E5;
-          position: absolute;
-          bottom: 2.2em;
-          left: 0;
-          transition: all 1s ease-in-out;
-          -webkit-transition-timing-function: all 1s ease-in-out;
-          -moz-transition: all 1s ease-in-out;
-          -ms-transition: all 1s ease-in-out;
-          -o-transition: all 1s ease-in-out; }
+  body .carousel {
+    margin-top: 7em; }
+    @media screen and (min-width: 1500px) {
+      body .carousel {
+        height: 500px; }
+        body .carousel .carousel-inner {
+          height: 100%; } }
+  body nav {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 0;
+    padding: 0;
+    margin-bottom: 0;
+    height: 80px;
+    width: 100%; }
+    @media screen and (min-width: 1024px) {
+      body nav {
+        margin: 0 auto; }
+        body nav a {
+          display: inline-block;
+          text-decoration: none;
+          color: #41439C;
+          line-height: 100px;
+          position: relative; }
+          body nav a:hover > span {
+            width: 50%; }
+          body nav a span {
+            width: 0;
+            height: 2px;
+            background: #4EB0E5;
+            position: absolute;
+            bottom: 2.2em;
+            left: 0;
+            transition: all 1s ease-in-out;
+            -webkit-transition-timing-function: all 1s ease-in-out;
+            -moz-transition: all 1s ease-in-out;
+            -ms-transition: all 1s ease-in-out;
+            -o-transition: all 1s ease-in-out; }
+        body nav .logo {
+          width: 20%;
+          background: url(../images/logo-softermia.png) no-repeat;
+          background-size: 100%;
+          height: 70px;
+          margin: 1em 0 0 4em; } }
+    @media screen and (min-width: 1024px) and (min-width: 1300px) {
       body nav .logo {
-        width: 20%;
-        background: url(../images/logo-softermia.jpg) no-repeat;
-        background-size: 100%;
-        height: 80px;
-        margin: 1em 0 0 4em; }
-      body nav .item {
-        width: 15%;
-        float: right;
-        text-decoration: none;
-        font-size: 1.2em; } }
+        background-size: 70%; } }
+    @media screen and (min-width: 1024px) {
+        body nav .item {
+          width: 15%;
+          float: right;
+          text-decoration: none;
+          font-size: 1.2em; } }
   @media screen and (min-width: 1024px) {
     body .carousel-inner .item {
       height: 350px; }
       body .carousel-inner .item img {
         width: 100%; } }
+  body .carousel-inner .inner-slider {
+    position: absolute;
+    width: 30%;
+    margin: 10em 0 0 20em; }
+    body .carousel-inner .inner-slider h2 {
+      color: #fff;
+      font-weight: 700 !important; }
+    body .carousel-inner .inner-slider p {
+      font-size: 1.5em;
+      color: #fff;
+      padding: 1em 0; }
   body .submenu {
     height: 300px; }
     body .submenu li {
@@ -92,7 +133,8 @@ body {
           position: absolute;
           top: -2.4em;
           font-family: 'Open Sans', sans-serif;
-          font-size: 1.5em;
+          font-weight: 700;
+          font-size: 1.4em;
           line-height: 31px; }
       body .submenu li .microklima {
         background: #4FB0E5; }
@@ -101,7 +143,8 @@ body {
           body .submenu li .microklima span:before {
             content: "Microklima";
             width: 100%;
-            border-bottom: 2px solid #4FB0E5; }
+            border-bottom: 2px solid #4FB0E5;
+            color: #4FB0E5; }
           body .submenu li .microklima span:after {
             content: '\00a0';
             width: 0;
@@ -110,7 +153,7 @@ body {
             border-right: 6px solid transparent;
             border-top: 12px solid #4FB0E5;
             position: absolute;
-            top: -1.3em;
+            top: -1.1em;
             margin-left: calc(100em - 96em); }
         body .submenu li .microklima:hover > span {
           opacity: 1;
@@ -126,7 +169,8 @@ body {
           body .submenu li .humiklima span:before {
             content: "Humiklima";
             width: 100%;
-            border-bottom: 2px solid #4F7EC6; }
+            border-bottom: 2px solid #4F7EC6;
+            color: #4F7EC6; }
           body .submenu li .humiklima span:after {
             content: '\00a0';
             width: 0;
@@ -135,7 +179,7 @@ body {
             border-right: 6px solid transparent;
             border-top: 12px solid #4F7EC6;
             position: absolute;
-            top: -1.3em;
+            top: -1.1em;
             margin-left: calc(100em - 96em); }
         body .submenu li .humiklima:hover > span {
           opacity: 1;
@@ -146,13 +190,14 @@ body {
           top: 2.3em;
           left: .8em; }
       body .submenu li .servicios {
-        background: #1B5CC4; }
+        background: #1B5BC2; }
         body .submenu li .servicios span {
           opacity: 0; }
           body .submenu li .servicios span:before {
             content: "Servicios";
             width: 100%;
-            border-bottom: 2px solid #4F7EC6; }
+            border-bottom: 2px solid #4F7EC6;
+            color: #4F7EC6; }
           body .submenu li .servicios span:after {
             content: '\00a0';
             width: 0;
@@ -161,7 +206,7 @@ body {
             border-right: 6px solid transparent;
             border-top: 12px solid #4F7EC6;
             position: absolute;
-            top: -1.3em;
+            top: -1.1em;
             margin-left: calc(100em - 96em); }
         body .submenu li .servicios:hover > span {
           opacity: 1;
@@ -180,7 +225,8 @@ body {
           body .submenu li .galeria span:before {
             content: "Galería";
             width: 100%;
-            border-bottom: 2px solid #05076B; }
+            border-bottom: 2px solid #05076B;
+            color: #05076B; }
           body .submenu li .galeria span:after {
             content: '\00a0';
             width: 0;
@@ -189,7 +235,7 @@ body {
             border-right: 6px solid transparent;
             border-top: 12px solid #05076B;
             position: absolute;
-            top: -1.3em;
+            top: -1.1em;
             margin-left: calc(100em - 96em); }
         body .submenu li .galeria:hover > span {
           opacity: 1;
@@ -201,7 +247,8 @@ body {
           left: 1.5em; }
   body #servicios {
     height: 600px;
-    padding-top: 3em; }
+    padding-top: 3em;
+    background: #f2f2f2; }
     body #servicios .item li {
       list-style: none;
       padding-left: 2em;
@@ -241,7 +288,7 @@ body {
       background-size: 100%;
       float: left;
       position: absolute;
-      opacity: .4; }
+      opacity: 0; }
     body #servicios .cloud-twin {
       width: 800px;
       height: 500px;
@@ -249,7 +296,7 @@ body {
       background-size: 100%;
       right: 4em;
       position: absolute;
-      opacity: .4; }
+      opacity: 0; }
   body #nosotros {
     height: 350px;
     background: url("../images/back-6.jpg");
@@ -271,6 +318,9 @@ body {
     body #nosotros h3 {
       color: #fff;
       text-align: center; }
+    @media screen and (min-width: 1300px) {
+      body #nosotros {
+        height: 400px; } }
   body #historia {
     padding-top: 4em; }
     body #historia h3 {
@@ -286,7 +336,8 @@ body {
     body #historia .item {
       display: inline-block; }
     body #historia .imagen {
-      height: 400px; }
+      height: 400px;
+      padding: 0; }
       body #historia .imagen img {
         width: 100%; }
     body #historia .descript {
@@ -331,6 +382,11 @@ body {
           padding-top: 1em;
           font-size: 1.1em;
           line-height: 1.8em; }
+      @media screen and (min-width: 1300px) {
+        body #valores .confianza, body #valores .servicio, body #valores .calidad {
+          height: 400px; }
+          body #valores .confianza .col-lg-7, body #valores .servicio .col-lg-7, body #valores .calidad .col-lg-7 {
+            padding-top: 3em; } }
     body #valores .servicio .title:before {
       background: url(../images/icons/servicio.png) no-repeat; }
     body #valores .servicio .col-lg-7 {
@@ -460,7 +516,8 @@ body {
     background-color: white;
     position: relative; }
   body .container.no-scroll {
-    overflow: hidden; }
+    overflow: hidden;
+    z-index: 7777; }
   body .page {
     width: 80%;
     padding: 10px;
@@ -590,7 +647,8 @@ body {
     top: 20px;
     right: 20px;
     color: white;
-    cursor: pointer; }
+    cursor: pointer;
+    z-index: 1; }
   body .close-button i {
     font-size: 35px; }
   body .close-button:hover {
@@ -606,6 +664,9 @@ body {
       width: 90%;
       margin: 0 auto;
       cursor: pointer; }
+    @media screen and (min-width: 1300px) {
+      body #clientes .logo div {
+        width: 70%; } }
     body #clientes .avante div {
       background: url("../images/clientes/avante-0.jpg") no-repeat;
       background-size: 100%; }
@@ -625,6 +686,9 @@ body {
       body #clientes .danone div:hover {
         background: url("../images/clientes/danone-1.jpg") no-repeat;
         background-size: 100%; }
+      @media screen and (min-width: 1300px) {
+        body #clientes .danone div {
+          width: 55%; } }
     body #clientes .fonoteca div {
       background: url("../images/clientes/fonoteca-0.jpg") no-repeat;
       background-size: 100%; }
@@ -673,6 +737,9 @@ body {
       body #clientes .pemex div:hover {
         background: url("../images/clientes/pemex-1.jpg") no-repeat;
         background-size: 100%; }
+      @media screen and (min-width: 1300px) {
+        body #clientes .pemex div {
+          width: 60%; } }
     body #clientes .pfizer div {
       width: 65%;
       background: url("../images/clientes/pfizer-0.jpg") no-repeat;
@@ -680,6 +747,9 @@ body {
       body #clientes .pfizer div:hover {
         background: url("../images/clientes/pfizer-1.jpg") no-repeat;
         background-size: 100%; }
+      @media screen and (min-width: 1300px) {
+        body #clientes .pfizer div {
+          width: 50%; } }
     body #clientes .profeco div {
       background: url("../images/clientes/profeco-0.jpg") no-repeat;
       background-size: 100%; }

@@ -14,9 +14,10 @@
 </head>
 <body>
 <!-- prueba -->
-	<nav>
+
+	<nav class="navbar navbar-fixed-top">
 		<a class="logo" href="#"></a>
-		<a class="item change" href="#nosotros">Nosotros.<span></span></a>
+		<a class="item change" href="#nosotros">Nosotros<span></span></a>
 		<a class="item change" href="#servicios">Servicios<span></span></a>
 		<a class="item change" href="#formulario">Contacto<span></span></a>
 	</nav>
@@ -30,10 +31,19 @@
 		<!-- Wrapper for slides -->
 		<div class="carousel-inner">
 			<div class="item active">
+			<div class="inner-slider">
+				<h2>Soluciones integrales</h2>
+				<p>En humidificación, climatización y aire acondicionado</p>
+			</div>
 				<img src="images/slider-0.jpg" alt="Soluciones integrales humidificación climatización">
+
 			</div>
 
 			<div class="item">
+			<div class="inner-slider">
+				<h2>Más de 20 años en el mercado</h2>
+				<p>Instrumentos de Control Digital, Tableros y Humidificadores CAREL</p>
+			</div>
 				<img src="images/slider-1.jpg" alt="Soluciones integrales humidificación climatización">
 
 			</div>
@@ -152,6 +162,7 @@
 				<div class="col-lg-1"></div>
 			</div>
 		</div>
+		<div class="space-min"></div>
 		<!-- CLIENTES -->
 		<div id="clientes">
 		<h3>Algunos de nuestros clientes son</h3>
@@ -186,7 +197,7 @@
 
 				
 		</div>
-	
+		<div class="space-min"></div>
 		<!-- GALERIA -->
 		<div id="galeria" class="container" ng-class="{'no-scroll': selected.length}" ng-app="app" ng-controller="mainCtrl">
 
@@ -217,7 +228,8 @@
 			</div>
 		</div>
 		<!-- FORMULARIO -->
-		<div id="formulario" class="col-lg-12">
+		<div class="col-lg-1"></div>
+		<div id="formulario" class="col-lg-10">
 			<h3>Déjanos un mensaje</h3>
 			<div class="col-lg-1"></div>
 			<div class="col-lg-5">
@@ -236,6 +248,7 @@
 			</div>
 			
 		</div>
+		<div class="col-lg-1"></div>
 		<!-- FOOTER -->
 		<footer>
 			<div class="col-lg-3">
@@ -302,13 +315,13 @@
             //Plugin activation
             $(window).enllax();
             
-//            $('#some-id').enllax();
+           // $('#some-id').enllax();
             
-//            $('selector').enllax({
-//                type: 'background', // 'foreground'
-//                ratio: 0.5,
-//                direction: 'vertical' // 'horizontal'
-//            });
+           // $('selector').enllax({
+           //     type: 'background', // 'foreground'
+           //     ratio: 0.5,
+           //     direction: 'vertical' // 'horizontal'
+           // });
             
         })(jQuery);
 		</script>
