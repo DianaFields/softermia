@@ -118,8 +118,8 @@ body{
 		}
 		.inner-slider{
 				position: absolute;
-				width: 30%;
-				margin: 10em 0 0 20em;
+				width: 40%;
+				margin: 5em 0 0 10em;
 				h2{
 					color: #fff;
 					font-weight: 700!important;
@@ -128,6 +128,10 @@ body{
 					font-size: 1.5em;
 					color: #fff;
 					padding: 1em 0;
+				}
+				@media screen and (min-width: 1300px){
+					width: 30%;
+					margin: 10em 0 0 20em;
 				}
 		}
 	}
@@ -546,8 +550,10 @@ body{
 			li{
 				list-style: none;
 				line-height: 2.5em;
+				cursor: pointer;
 				a{
 					color: #fff;
+					cursor: pointer;
 					&:hover{
 						color:#4FB0E5;
 						text-decoration: none;
