@@ -1,81 +1,123 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Softermia S.A de C.V.</title>
-	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+	<title>Softermia S.A. de C.V.</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel='shortcut icon' type='image/x-icon' href='../images/favicon.ico' />
 	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../css/animate.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
 </head>
 <body>
-<div class="slider">
-	<div class="maquina"></div>
-	<div class="drop"></div>
-	<div class="drop-02"></div>
-</div>
-<div id="microklima">
-<div  class="logo">
-	<img src="../images/microklima/logotipo_microklima.jpg">
-</div>
-<div  class="col-lg-12 text">
-	<div class="col-lg-1"></div>
-	<div class="col-lg-5 densidad alta">
-	<div class="icon"></div>
-		<h3>Recintos de Alta Densidad de Generación de calor</h3>
-		<ul>
-			<li>Acondicionadores en el rango MM (35 – 50 - 65 % h)</li>
-			<li>Su designación se da referida a la capacidad en enfriamiento</li>
-			<li>Tres modelos DX simples (5 - 7.5 – 10)</li>
-			<li>Tres modelos DX dial (10 – 15 – 20)</li>
-		</ul>
-	</div>
-	<div class="col-lg-5 densidad baja">
-	<div class="icon"></div>
-		<h3>Recintos con Baja Densidad de Generación de calor</h3>
-		<ul>
-			<li>Acondicionadores en el rango HH (65 – 80 - 95 % h)</li>
-			<li>Acondicionadores en el rango HM (50 – 65 - 80 % h)</li>
-			<li>Su designación se da referida al volumen del cuarto de acondicionar</li>
-			<li>Un modelo HH (25)</li>
-			<li>Tres modelos HM (50 – 100 – 200)</li>
-		</ul>
-	</div>
-	<div class="col-lg-1"></div>
-</div>
+	<div id="header"></div>
+	<div class="slider">
+		<div class="descripcion">
+			<p>Sistemas diseñados para proveer condiciones climáticas de temperatura que requieren los procesos de calidad y/o pruebas</p>
+			<ul>
+				<li class="humedad"><span>
+					<svg class="center">
+					<g id="shap">
+						<circle class="path-1" cx="50" cy="50" r=40 fill="none" stroke-width="2" stroke="#fff" />
+					</g>
+					</svg>
+			</span>Humedad relativa </li>
+				<li class="presion">
+					<span class="pulsating-circle">
+						<!-- <svg class="center">
+					<g id="shap">
+						<circle class="path-1" cx="50" cy="50" r=40 fill="none" stroke-width="2" stroke="#fff" />
+					</g>
+					</svg> -->
+				</span>Presión diferencial</li>
+				<li class="aire"><span><svg class="center">
+					<g id="shap">
+						<circle class="path-1" cx="50" cy="50" r=40 fill="none" stroke-width="2" stroke="#fff" />
+					</g>
+					</svg></span>Cantidad y calidad de aire</li>
+			</ul>
+		</div>
 
-</div>
-<!-- gallery -->
-<div id="galeria-mk" class="container" ng-class="{'no-scroll': selected.length}" ng-app="app" ng-controller="mainCtrl">
-	<div class="page col-lg-12">
-	<div class="col-lg-1"></div>
-		<div class="grid col-lg-10">
-			<div class="grid-item" ng-repeat="item in microklima">
-				<box class="box" item="item" on-select="selectBox" ng-class="{'selected': selected[0].item.name == item.name}"></box>
+		<div class="maquina"></div>
+		<div class="drop"></div>
+		<div class="drop-02"></div>
+	</div>
+	<div id="microklima">
+		<div  class="logo">
+			<img src="../images/microklima/logotipo_microklima.jpg">
+		</div>
+		<div  class="col-lg-12 text">
+			<div class="col-lg-1"></div>
+			<div class="col-lg-5 densidad alta wow bounceInLeft">
+				<div class="icon"></div>
+				<h3>Recintos de Alta Densidad de Generación de calor</h3>
+				<ul>
+					<li>Acondicionadores en el rango MM (35 – 50 - 65 % h)</li>
+					<li>Su designación se da referida a la capacidad en enfriamiento</li>
+					<li>Tres modelos DX simples (5 - 7.5 – 10)</li>
+					<li>Tres modelos DX dial (10 – 15 – 20)</li>
+				</ul>
+			</div>
+			<div class="col-lg-5 densidad baja wow bounceInRight">
+				<div class="icon"></div>
+				<h3>Recintos con Baja Densidad de Generación de calor</h3>
+				<ul>
+					<li>Acondicionadores en el rango HH (65 – 80 - 95 % h)</li>
+					<li>Acondicionadores en el rango HM (50 – 65 - 80 % h)</li>
+					<li>Su designación se da referida al volumen del cuarto de acondicionar</li>
+					<li>Un modelo HH (25)</li>
+					<li>Tres modelos HM (50 – 100 – 200)</li>
+				</ul>
+			</div>
+			<div class="col-lg-1"></div>
+		</div>
+		<div class="maquina">
+			<!-- <img src="../images/microklima/microklima_full.jpg"> -->
+		</div>
+
+	</div>
+	<!-- gallery -->
+	<div id="galeria" class="container" ng-class="{'no-scroll': selected.length}" ng-app="app" ng-controller="mainCtrl">
+		<div class="page">
+			<h3>Galería</h3>
+			<div class="grid">
+				<div class="grid-item" ng-repeat="item in boxes">
+					<box class="box" item="item" on-select="selectBox" ng-class="{'selected': selected[0].item.name == item.name}"></box>
+				</div>
 			</div>
 		</div>
-	<div class="col-lg-1"></div>
-	</div>
-	<div class="fullscreen-background top-up" ng-show="selected.length" ng-style="{'background-image': 'url(' + selected[0].item.image + ')'}"></div>
-	<div class="scroller" ng-show="selected.length">
-		<a class="close-button" ng-click="clearSelection()">
-			<i class="material-icons">close</i>
-		</a>
-		<h1>{{selected[0].item.name}}</h1>
-		<div big-box ng-repeat="item in selected" class="box on-top" position="item.position" selected="item.item">
-			<img ng-src="{{item.item.image}}" alt="" />
-			<div class="content">
-				<h2>Lorem ipsum dolor</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime laborum perferendis, ullam minus. Illo ad aliquid ab magni, enim nesciunt at consequuntur dolores explicabo nisi. Dolor, reiciendis suscipit alias nemo.</p>
-			</div>
-		</div>
-		
-	</div>
-</div>
+		<div class="fullscreen-background top-up" ng-show="selected.length" ng-style="{'background-image': 'url(' + selected[0].item.image + ')'}"></div>
+		<div class="scroller" ng-show="selected.length">
+			<a class="close-button" ng-click="clearSelection()">
+				<i class="material-icons glyphicon glyphicon-remove"></i>
+			</a>
+			<h1>{{selected[0].item.name}}</h1>
+			<div big-box ng-repeat="item in selected" class="box on-top" position="item.position" selected="item.item">
+				<img ng-src="{{item.item.image}}" alt="" />
+				<div class="content">
+					<h2>Lorem ipsum dolor</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime laborum perferendis, ullam minus. Illo ad aliquid ab magni, enim nesciunt at consequuntur dolores explicabo nisi. Dolor, reiciendis suscipit alias nemo.</p>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-animate.min.js"></script>
-<script src="../js/lib.js"></script>
-<script src="../js/jquery.js"></script>
-<script type="text/javascript">
-	init();
-</script>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- FOOTER -->
+	<div id="footer"></div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-animate.min.js"></script>
+	<script src="../js/lib.js"></script>
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/wow.min.js"></script>
+	<script type="text/javascript">
+	new WOW().init();
+	loadInter();
+	animateScroll();
+	galleryExt();
+	</script>
 </body>
 </html>
