@@ -50,45 +50,85 @@ body {
     padding: 0;
     margin-bottom: 0;
     height: 80px;
-    width: 100%; }
-    @media screen and (min-width: 1024px) {
-      body nav {
-        margin: 0 auto; }
-        body nav a {
-          display: inline-block;
-          text-decoration: none;
-          color: #41439C;
-          line-height: 100px;
-          position: relative; }
-          body nav a:hover > span {
-            width: 50%; }
-          body nav a span {
-            width: 0;
-            height: 2px;
-            background: #4EB0E5;
-            position: absolute;
-            bottom: 2.2em;
-            left: 0;
-            transition: all 1s ease-in-out;
-            -webkit-transition-timing-function: all 1s ease-in-out;
-            -moz-transition: all 1s ease-in-out;
-            -ms-transition: all 1s ease-in-out;
-            -o-transition: all 1s ease-in-out; }
+    width: 100%;
+    margin: 0 auto; }
+    body nav .menu {
+      max-width: 1550px;
+      margin: 0 auto; }
+      body nav .menu .options {
+        width: 70%;
+        text-align: right;
+        float: right; }
+    body nav a {
+      display: inline-block;
+      text-decoration: none;
+      color: #41439C;
+      line-height: 100px;
+      position: relative; }
+      body nav a:hover > span {
+        width: 60%; }
+      body nav a span {
+        width: 0;
+        height: 2px;
+        background: #4EB0E5;
+        position: absolute;
+        bottom: 2.2em;
+        left: 0;
+        transition: all 1s ease-in-out;
+        -webkit-transition-timing-function: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
+        left: 2em;
+        transition: all 1s ease-in-out;
+        -webkit-transition-timing-function: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out; }
+    body nav .logo {
+      width: 20%;
+      background: url(../images/logo-softermia.png) no-repeat;
+      background-size: 100%;
+      height: 70px;
+      margin: .5em 0 0 4em; }
+      @media screen and (min-width: 1300px) {
         body nav .logo {
-          width: 20%;
-          background: url(../images/logo-softermia.png) no-repeat;
-          background-size: 100%;
-          height: 70px;
-          margin: .5em 0 0 4em; } }
-    @media screen and (min-width: 1024px) and (min-width: 1300px) {
-      body nav .logo {
-        background-size: 70%; } }
+          background-size: 70%; } }
+    body nav .item {
+      width: 15%;
+      vertical-align: top;
+      text-decoration: none;
+      font-size: 1.2em;
+      text-align: center; }
     @media screen and (min-width: 1024px) {
-        body nav .item {
-          width: 15%;
-          float: right;
-          text-decoration: none;
-          font-size: 1.2em; } }
+      body nav .dropdown {
+        display: none; } }
+  @media screen and (max-width: 1023px) {
+    body nav .menu .logo {
+      width: 30%;
+      display: inline-block;
+      margin: 0 auto; }
+    body nav .menu .options {
+      display: none; }
+    body nav .dropdown {
+      display: block;
+      float: right;
+      width: 60%;
+      list-style: none;
+      position: absolute;
+      right: 0;
+      top: 2em; }
+      body nav .dropdown .dropdown-toggle {
+        float: right;
+        right: 5em;
+        top: 2em; }
+      body nav .dropdown a .shape {
+        width: 60px;
+        height: 2px;
+        background: red;
+        display: block;
+        margin: .5em 0;
+        position: relative; } }
   @media screen and (min-width: 1024px) {
     body .carousel-inner .item {
       height: 350px; }
@@ -110,7 +150,10 @@ body {
         width: 30%;
         margin: 10em 0 0 20em; } }
   body .submenu {
-    height: 300px; }
+    height: 300px;
+    max-width: 1550px;
+    float: inherit;
+    margin: 0 auto; }
     body .submenu li {
       height: 200px;
       list-style: none;
@@ -341,7 +384,7 @@ body {
     @media screen and (min-width: 1300px) {
       body #nosotros {
         height: 400px; } }
-    @media screen and (min-width: 768px) {
+    @media only screen and (min-width: 768px) and (max-width: 1299px) {
       body #nosotros {
         height: auto;
         padding: 2em 0; }
@@ -501,17 +544,16 @@ body {
         padding: 0; } }
     body footer .redes ul li {
       display: inline-block;
-      margin: 0 1em; }
+      margin: 0 1em;
+      cursor: pointer;
+      width: 40px;
+      height: 40px; }
     body footer .redes ul .fb {
       background: url("../images/icons/facebook.png");
-      background-size: 100%;
-      width: 40px;
-      height: 40px; }
+      background-size: 100%; }
     body footer .redes ul .tw {
       background: url("../images/icons/twitter.png");
-      background-size: 100%;
-      width: 40px;
-      height: 40px; }
+      background-size: 100%; }
     body footer address {
       margin-bottom: .3em; }
     body footer .bottom {
@@ -763,6 +805,9 @@ body {
     @media screen and (min-width: 1300px) {
       body #clientes .logo div {
         width: 70%; } }
+    @media screen and (max-width: 1299px) {
+      body #clientes .logo .text {
+        width: 50%; } }
     body #clientes .logo:hover > .text {
       opacity: 1; }
     body #clientes .avante div {

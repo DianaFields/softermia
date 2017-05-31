@@ -13,13 +13,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
 </head>
 <body>
+
+
 	<div id="header"></div>
-	<!-- <nav class="navbar navbar-fixed-top">
-		<a class="logo" href="#"></a>
-		<a class="item change" href="#nosotros">Nosotros<span></span></a>
-		<a class="item change" href="#servicios">Servicios<span></span></a>
-		<a class="item change" href="#formulario">Contacto<span></span></a>
-	</nav>  -->
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		<!-- Indicators -->
 		<ol class="carousel-indicators">
@@ -77,8 +73,8 @@
 	</div>
 	<!-- SERVICIOS -->
 	<div id="servicios" class="col-lg-12 col-sm-12 col-xs-12">
-		<div class="cloud" data-enllax-ratio="-.3" data-enllax-type="foreground" ></div>
-		<div class="cloud-twin" data-enllax-ratio=".5" data-enllax-type="foreground" ></div>
+		<!-- <div class="cloud" data-enllax-ratio="-.3" data-enllax-type="foreground" ></div>
+		<div class="cloud-twin" data-enllax-ratio=".5" data-enllax-type="foreground" ></div> -->
 		<h3>Servicios</h3>
 		<div class="col-lg-1 col-md-1 col-sm-2"></div>
 		<div class="item col-lg-5 col-md-5 col-sm-10 col-xs-12">
@@ -119,8 +115,29 @@
 			</div>
 		</div>
 		<div class="space"></div>
+		<!-- HISTORIA -->
+		<div id="historia">
+			<h3>Valores</h3>
+			<div class="col-lg-5 col-md-5 col-sm-5"></div>
+			<p class="col-lg-6 subtit col-xs-12">Ejes que sirven de guía para todos nuestros empleados que construyen día con día una relación de confianza con nuestros clientes, proveedores y amigos.</p>
+			<div class="col-lg-1 col-md-1"></div>
+			<div class="item descript col-lg-6 col-md-6 col-sm-7 col-xs-12">
+			<div class="title">Confianza</div>
+				<p>Contamos con un equipo de profesionales y técnicos especializados, honestos y confiables, atentos a resolver los problemas de nuestros clientes a la mayor brevedad posible.
+				</p>
+			<div class="title">Servicio al cliente</div>
+				<p>Los empleados de Softermia están siempre preparados y dispuestos a atender las necesidades de nuestros clientes poniendo en práctica sus habilidades, conocimientos y acciones a fin de dar soluciones precisas.</p>
+				<div class="title">Calidad</div>
+				<p>La calidad es el objetivo primordial de nuestro trabajo. Importantes empresas públicas y privadas de diferentes sectores, así como, laboratorios de pruebas, depositan desde hace más de 25 años su confianza en los altos índices de calidad y precisión que Softermia les ofrece.</p>
+			</div>
+			<div class="item imagen col-lg-6 col-md-5 col-sm-5 col-xs-12 wow fadeInLeftBig">
+				<img src="images/back-calidad.jpg">
+			</div>
+			
+		</div>
+		<div class="space"></div>
 		<!-- VALORES -->
-		<div id="valores">
+		<!-- <div id="valores">
 			<h3>Valores</h3>
 			<div class="col-lg-5 col-md-5 col-sm-3"></div>
 			<p class="col-lg-6 col-md-5 col-sm-7 subtit">Ejes que sirven de guía para todos nuestros empleados que construyen día con día una relación de confianza con nuestros clientes, proveedores y amigos.</p>
@@ -160,7 +177,7 @@
 				</div>
 				<div class="col-lg-1 col-md-1"></div>
 			</div>
-		</div>
+		</div> -->
 		<div class="space-min"></div>
 		<!-- CLIENTES -->
 		<div id="clientes">
@@ -292,8 +309,8 @@
 				<div big-box ng-repeat="item in selected" class="box on-top" position="item.position" selected="item.item">
 					<img ng-src="{{item.item.image}}" alt="" />
 					<div class="content">
-						<h2>Lorem ipsum dolor</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime laborum perferendis, ullam minus. Illo ad aliquid ab magni, enim nesciunt at consequuntur dolores explicabo nisi. Dolor, reiciendis suscipit alias nemo.</p>
+					<!-- 	<h2>Instalación, diseño y desarrollo</h2>
+						<p>Plafones con perforaciones para el movimiento de clima controlado</p> -->
 
 					</div>
 				</div>
@@ -323,9 +340,7 @@
 		</div>
 		<div class="col-lg-1 col-md-1 col-sm-1"></div>
 		<!-- FOOTER -->
-		
-		<div id="footer"></div>
-
+	<div id="footer"></div>
 
 
 			<script src="js/jquery.min.js"></script>

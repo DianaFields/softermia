@@ -58,13 +58,22 @@ body{
 
 	}
 	nav{
-		background-color: rgba(256,256,256,.8);
-		border: 0;
-		padding: 0;
-		margin-bottom: 0;
-		height:80px;
-		width: 100%;
-		@media screen and (min-width: 1024px){
+		    background-color: rgba(256,256,256,.8);
+		    border: 0;
+		    padding: 0;
+		    margin-bottom: 0;
+		    height:80px;
+		    width: 100%;
+		    .menu{
+		    	max-width: 1550px;
+		    	margin:0 auto;
+		    		.options{
+				    	width: 70%;
+				    	text-align: right;
+				    	float: right;
+		    		}
+		    }
+		  
 			margin: 0 auto;
 			a{
 				display: inline-block;
@@ -73,7 +82,7 @@ body{
 				line-height: 100px;
 				position: relative;
 				&:hover>span{
-					width:50%;
+					width:60%;
 				}
 				span{
 					width: 0;
@@ -83,6 +92,12 @@ body{
 					bottom: 2.2em;
 					left: 0;
 					@include animation;
+					left: 2em;
+					transition:all 1s ease-in-out;
+					-webkit-transition-timing-function: all 1s ease-in-out;
+					-moz-transition:all 1s ease-in-out;
+					-ms-transition:all 1s ease-in-out;;
+					-o-transition:all 1s ease-in-out;
 				}
 			}
 			.logo{
@@ -97,12 +112,61 @@ body{
 			}
 			.item{
 				width: 15%;
-				float: right;
+				vertical-align:top;
 				text-decoration: none;
 				font-size: 1.2em;
+				text-align: center;
 			}
-		}
+			@media screen and (min-width: 1024px){
+			  .dropdown{
+						display: none;
+					}
+			}
+		
+		
+		
+		
 	}
+	@media screen and (max-width: 1023px){
+			nav{
+				.menu{
+					.logo{
+						width: 30%;
+						display: inline-block;
+						margin: 0 auto;
+
+					}
+					.options{
+						display: none;
+					}
+				}
+					.dropdown{
+						display:block;
+						float: right;
+					    width: 60%;
+					    list-style: none;
+					        position: absolute;
+						    right: 0;
+						    top: 2em;
+						    .dropdown-toggle{
+						    	float: right;
+							    right: 5em;
+							    top: 2em;
+						    }
+					    a{
+					    	.shape{
+					    		width: 60px;
+					    		height: 2px;
+					    		background:red;
+					    		display: block;
+					    		margin: .5em 0;
+					    		position: relative;
+					    	}
+					    }
+					}
+			}
+			
+		}
 	.carousel-inner{
 		.item{
 			@media screen and (min-width: 1024px){
@@ -134,7 +198,9 @@ body{
 	}
 	.submenu{
 		height: 300px;
-
+		max-width: 1550px;
+		float: inherit;
+		margin: 0 auto;
 		li{
 			height: 200px;
 			list-style: none;
@@ -418,7 +484,7 @@ body{
 		@media screen and (min-width: 1300px){
 			height:400px;
 		}
-		@media screen and (min-width: 768px){
+		@media only screen and (min-width: 768px) and (max-width: 1299px){
 			height:auto;
 			padding: 2em 0;
 			h3{
@@ -631,18 +697,18 @@ body{
 				li{
 					display: inline-block;
 					margin:0 1em;
+					cursor: pointer;
+					width: 40px;
+					height: 40px;
 				}
 				.fb{
 					background:url('../images/icons/facebook.png');
 					background-size: 100%;
-					width: 40px;
-					height: 40px;
+					
 				}
 				.tw{
 					background:url('../images/icons/twitter.png');
 					background-size: 100%;
-					width: 40px;
-					height: 40px;
 				}
 			}
 		}
@@ -951,6 +1017,11 @@ body{
 			@media screen and (min-width: 1300px){
 				div{
 					width:70%;
+				}
+			}
+			@media screen and (max-width: 1299px){
+				.text{
+					width: 50%;
 				}
 			}
 			&:hover>.text{
