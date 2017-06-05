@@ -372,7 +372,39 @@ body{
 					left: 1.4em;
 				}
 			}
-			
+			.galeria{
+				background: #05076B;
+				.logo{
+					background: url(../images/icons/logo-gallery.png) no-repeat;
+					background-size: 55%;
+					top: 3.1em;
+					left: 1.5em;
+				}
+				span{
+					opacity: 0;
+					&:before{
+						content: "Galería";
+						width: 100%;
+						border-bottom: 2px solid #05076B;
+						color: #05076B;
+					}
+					&:after{
+						content: '\00a0';
+						width: 0;
+						height: 0;
+						border-left: 6px solid transparent;
+						border-right: 6px solid transparent;
+						border-top: 12px solid #05076B;
+						position: absolute;
+						top: -1.1em;
+						margin-left: calc(100em - 96em);
+					}
+				}
+				&:hover > span{
+					opacity: 1;
+					margin-top: 10em;
+				}
+			}
 			
 		}
 
@@ -595,6 +627,9 @@ body{
 
 				}
 
+			}
+			img{
+				width: 100%;
 			}
 		}
 	}
@@ -1007,26 +1042,26 @@ body{
 			}
 			.screen-01{
 				opacity: 0;
-				background: url(../images/microklima/screen-01.jpg) no-repeat;
+				background: url(../images/microklima/screen-01.png) no-repeat;
 				background-size: 100%;
-				width: 23%;
-				height: 300px;
+				width: 40%;
+				height: 400px;
 				margin: 0 auto;
-				left: calc(78% - 39.7%);
+				left: calc(60% - 30%);
 				position: fixed;
-				top: 17.8em;
+				top: 8.8em;
 				@include animation;
 			}
 			.screen-02{
 				opacity: 0;
-				background: url(../images/microklima/screen-02.jpg) no-repeat;
+				background: url(../images/microklima/screen-02.png) no-repeat;
 				background-size: 100%;
-				width: 23%;
-				height: 300px;
+				width: 40%;
+				height: 400px;
 				margin: 0 auto;
-				left: calc(78% - 39.7%);
+				left: calc(60% - 30%);
 				position: fixed;
-				top: 17.8em;
+				top: 8.8em;
 				@include animation;
 			}
 			.tittle{
