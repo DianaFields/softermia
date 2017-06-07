@@ -195,22 +195,32 @@ body {
         height: 60px;
         padding: .5em 1em; }
         body nav .menu .logo {
-          width: 50%;
+          width: 53%;
           height: 50px; }
       body nav .dropdown {
         height: 50px;
-        width: 50%; }
+        width: 100%;
+        float: right;
+        position: absolute;
+        top: 0;
+        left: 0; }
+        body nav .dropdown .dropdown-toggle {
+          height: auto;
+          padding-top: 1em;
+          padding-right: 2em; }
         body nav .dropdown div {
           padding: 0; }
           body nav .dropdown div .shape {
-            width: 50px; }
+            width: 32px;
+            margin-left: 56%;
+            margin-top: 5px; }
         body nav .dropdown .dropdown-menu {
           padding: 0 1em;
           width: 100%; }
           body nav .dropdown .dropdown-menu li a {
             height: 60px;
             line-height: 60px;
-            font-size: 1em; } }
+            font-size: 1.3em; } }
   body .carousel-inner {
     /*SLIDER MAIN*/ }
     body .carousel-inner .item {
@@ -438,6 +448,32 @@ body {
     @media screen and (max-width: 767px) {
       body .submenu {
         height: 470px; } }
+    @media screen and (max-width: 414px) {
+      body .submenu .item {
+        height: auto; }
+        body .submenu .item .microklima, body .submenu .item .humiklima, body .submenu .item .servicios, body .submenu .item .galeria {
+          width: 100%;
+          border-radius: 0;
+          height: 80px;
+          background: none;
+          margin-top: 1em; }
+          body .submenu .item .microklima .logo, body .submenu .item .humiklima .logo, body .submenu .item .servicios .logo, body .submenu .item .galeria .logo {
+            display: none; }
+          body .submenu .item .microklima span, body .submenu .item .humiklima span, body .submenu .item .servicios span, body .submenu .item .galeria span {
+            opacity: 1; }
+            body .submenu .item .microklima span:before, body .submenu .item .humiklima span:before, body .submenu .item .servicios span:before, body .submenu .item .galeria span:before {
+              top: 1em;
+              border-bottom: 0; }
+            body .submenu .item .microklima span:after, body .submenu .item .humiklima span:after, body .submenu .item .servicios span:after, body .submenu .item .galeria span:after {
+              display: none; }
+        body .submenu .item .microklima {
+          border: 2px solid #4FB0E5; }
+        body .submenu .item .humiklima {
+          border: 2px solid #4FB0E5; }
+        body .submenu .item .servicios {
+          border: 2px solid #1B5BC2; }
+        body .submenu .item .galeria {
+          border: 2px solid #05076B; } }
   body #servicios {
     padding: 0;
     clear: both; }
@@ -551,7 +587,8 @@ body {
           padding: 2em; } }
       @media screen and (max-width: 767px) {
         body #historia .descript {
-          margin: 0; } }
+          margin: 0;
+          padding: 1em; } }
   body #valores {
     padding-top: 4em; }
     body #valores h3 {

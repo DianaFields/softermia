@@ -258,19 +258,28 @@ body{
 				height: 60px;
 				padding: .5em 1em;
 				.logo{
-					width: 50%;
+					width: 53%;
 					height: 50px;
 				}
 			}
 			.dropdown{
 				height: 50px;
-				width: 50%;
+				width: 100%;
+				float: right;
+				position: absolute;
+				top: 0;
+				left:0;
 				.dropdown-toggle{
+					height: auto;
+				    padding-top: 1em;
+				    padding-right: 2em;
 				}
 				div{
 					padding:0;
 					.shape{
-						width: 50px;
+						width: 32px;
+						margin-left: 56%;
+						margin-top: 5px;
 					}
 				}
 				.dropdown-menu{
@@ -280,7 +289,7 @@ body{
 						a{
 							height: 60px;
 							line-height: 60px;
-							font-size: 1em;
+							font-size: 1.3em;
 						}
 					}
 
@@ -575,6 +584,43 @@ body{
 		@media screen and (max-width: 767px){
 			height:470px;
 		}
+		@media screen and (max-width: 414px){
+			.item{
+				height: auto;
+				.microklima, .humiklima, .servicios, .galeria {
+					width: 100%;
+				    border-radius: 0;
+				    height: 80px;
+				    background: none;
+				    margin-top: 1em;
+				    .logo{
+				    	display: none;
+				    }
+				    span{
+				    	opacity: 1;
+				    	&:before{
+				    		top:1em;
+				    		border-bottom: 0,
+				    	}
+				    	&:after{
+				    		display:none;
+				    	}
+				    }
+				}
+				.microklima{
+					border:2px solid #4FB0E5;
+				}
+				.humiklima{
+					border:2px solid #4FB0E5;
+				}
+				.servicios{
+					border:2px solid #1B5BC2;
+				}
+				.galeria{
+					border:2px solid #05076B;
+				}
+			}
+		}
 	}
 	#servicios{
 		padding:0;
@@ -729,6 +775,7 @@ body{
 			}
 			@media screen and (max-width: 767px){
 				margin:0;
+				padding:1em;
 			}
 		}
 	}
