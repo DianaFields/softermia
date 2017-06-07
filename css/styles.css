@@ -100,81 +100,198 @@ body {
     @media screen and (min-width: 1024px) {
       body nav .dropdown {
         display: none; } }
-  @media screen and (max-width: 1023px) {
-    body nav .menu .logo {
-      width: 30%;
-      display: inline-block;
-      margin: 0 auto; }
-    body nav .menu .options {
-      display: none; }
+  @media only screen and (min-width: 769px) and (max-width: 1023px) {
+    body .carousel {
+      margin-top: 8em; }
+    body nav .menu {
+      padding: 1em 3em;
+      box-shadow: 0 -1px 24px #c2c2c2;
+      background: white; }
+      body nav .menu .logo {
+        width: 25%;
+        display: inline-block;
+        margin: 0 auto; }
+      body nav .menu .options {
+        display: none; }
     body nav .dropdown {
-      display: block;
+      width: 40%;
+      text-align: right;
       float: right;
-      width: 60%;
-      list-style: none;
-      position: absolute;
-      right: 0;
-      top: 2em; }
-      body nav .dropdown .dropdown-toggle {
+      height: 80px;
+      line-height: 80px; }
+      body nav .dropdown div {
+        height: 80px;
+        line-height: 80px;
+        width: 100px;
         float: right;
-        right: 5em;
-        top: 2em; }
-      body nav .dropdown a .shape {
-        width: 60px;
-        height: 2px;
-        background: red;
-        display: block;
-        margin: .5em 0;
-        position: relative; } }
-  @media screen and (min-width: 1024px) {
+        padding: 10px 0;
+        text-align: center; }
+        body nav .dropdown div .shape {
+          width: 60px;
+          height: 6px;
+          background: #4FB0E5;
+          display: block;
+          margin: 0 auto;
+          margin-top: 7px;
+          position: relative;
+          border-radius: 3px; }
+      body nav .dropdown .dropdown-menu {
+        padding: 0 2em;
+        box-sizing: border-box;
+        width: 100%; }
+        body nav .dropdown .dropdown-menu li {
+          text-align: center;
+          border-bottom: 1px solid #c2c2c2; }
+          body nav .dropdown .dropdown-menu li a {
+            height: 80px;
+            line-height: 80px;
+            font-size: 1.5em; } }
+  @media screen and (max-width: 768px) {
+    body .carousel {
+      margin-top: 8em; }
+    body nav .menu {
+      padding: 1em 3em;
+      box-shadow: 0 -1px 24px #c2c2c2;
+      background: white; }
+      body nav .menu .logo {
+        width: 35%;
+        display: inline-block;
+        margin: 0 auto; }
+      body nav .menu .options {
+        display: none; }
+    body nav .dropdown {
+      width: 40%;
+      text-align: right;
+      float: right;
+      height: 80px;
+      line-height: 80px; }
+      body nav .dropdown div {
+        height: 80px;
+        line-height: 80px;
+        width: 100px;
+        float: right;
+        padding: 10px 0;
+        text-align: center; }
+        body nav .dropdown div .shape {
+          width: 60px;
+          height: 6px;
+          background: #4FB0E5;
+          display: block;
+          margin: 0 auto;
+          margin-top: 7px;
+          position: relative;
+          border-radius: 3px; }
+      body nav .dropdown .dropdown-menu {
+        padding: 0 2em; }
+        body nav .dropdown .dropdown-menu li {
+          text-align: center;
+          border-bottom: 1px solid #c2c2c2; } }
+  @media screen and (max-width: 414px) {
+    body .carousel {
+      margin-top: 3em; }
+    body nav {
+      height: auto; }
+      body nav .menu {
+        height: 60px;
+        padding: .5em 1em; }
+        body nav .menu .logo {
+          width: 50%;
+          height: 50px; }
+      body nav .dropdown {
+        height: 50px;
+        width: 50%; }
+        body nav .dropdown div {
+          padding: 0; }
+          body nav .dropdown div .shape {
+            width: 50px; }
+        body nav .dropdown .dropdown-menu {
+          padding: 0 1em;
+          width: 100%; }
+          body nav .dropdown .dropdown-menu li a {
+            height: 60px;
+            line-height: 60px;
+            font-size: 1em; } }
+  body .carousel-inner {
+    /*SLIDER MAIN*/ }
     body .carousel-inner .item {
-      height: 350px; }
-      body .carousel-inner .item img {
-        width: 100%; } }
-  body .carousel-inner .inner-slider {
-    position: absolute;
-    width: 40%;
-    margin: 5em 0 0 10em; }
-    body .carousel-inner .inner-slider h2 {
-      color: #fff;
-      font-weight: 700 !important; }
-    body .carousel-inner .inner-slider p {
-      font-size: 1.5em;
-      color: #fff;
-      padding: 1em 0; }
-    @media screen and (min-width: 1300px) {
-      body .carousel-inner .inner-slider {
-        width: 30%;
-        margin: 10em 0 0 20em; } }
-    body .carousel-inner .inner-slider .video {
-      position: fixed;
-      width: 100%;
-      top: -9em;
-      right: 0;
-      left: 0;
-      background: #000;
-      text-align: right; }
-      body .carousel-inner .inner-slider .video .overlay {
-        background: rgba(5, 8, 106, 0.7);
+      height: 500px; }
+      @media screen and (min-width: 1024px) {
+        body .carousel-inner .item {
+          height: 500px; }
+          body .carousel-inner .item img {
+            width: 100%; } }
+    body .carousel-inner .inner-slider {
+      position: absolute;
+      width: 40%;
+      margin: 5em 0 0 10em; }
+      body .carousel-inner .inner-slider h2 {
+        color: #fff;
+        font-weight: 700 !important; }
+      body .carousel-inner .inner-slider p {
+        font-size: 1.5em;
+        color: #fff;
+        padding: 1em 0; }
+      @media screen and (min-width: 1300px) {
+        body .carousel-inner .inner-slider {
+          width: 30%;
+          margin: 10em 0 0 20em; } }
+      body .carousel-inner .inner-slider .video {
+        position: fixed;
         width: 100%;
-        height: 100%;
-        bottom: 0;
-        top: 0;
-        position: absolute; }
-      body .carousel-inner .inner-slider .video video {
-        width: 70%; }
-  body .carousel-inner .image {
-    position: absolute;
-    top: 0;
-    right: 0; }
-    body .carousel-inner .image #machine {
-      width: 700px;
-      height: 700px;
-      background: url("../images/microklima-h.png") no-repeat;
-      background-size: 100%;
+        top: -9em;
+        right: 0;
+        left: 0;
+        background: #000;
+        text-align: right;
+        opacity: 1;
+        z-index: -1; }
+        body .carousel-inner .inner-slider .video .overlay {
+          background: rgba(5, 8, 106, 0.7);
+          width: 100%;
+          height: 100%;
+          bottom: 0;
+          top: 0;
+          position: absolute; }
+        body .carousel-inner .inner-slider .video video {
+          width: 100%; }
+    body .carousel-inner .image {
       position: absolute;
       top: 0;
       right: 0; }
+      body .carousel-inner .image #machine {
+        width: 700px;
+        height: 700px;
+        background: url("../images/microklima-h.png") no-repeat;
+        background-size: 100%;
+        position: absolute;
+        top: 0;
+        right: 0; }
+    body .carousel-inner .slide-ref {
+      background: url("../images/slider-2.jpg") no-repeat;
+      background-size: cover;
+      width: 100%; }
+      body .carousel-inner .slide-ref .maquina {
+        width: 600px;
+        height: 600px;
+        background: url("../images/microklima/microklima-back.png") no-repeat;
+        background-size: 70%;
+        position: absolute;
+        right: -10em; }
+    body .carousel-inner .slide-humiklima .hk-01 {
+      width: 500px;
+      height: 500px;
+      background: url("../images/back-hk-01.png") no-repeat;
+      background-size: 70%;
+      position: absolute;
+      right: 5em; }
+    body .carousel-inner .slide-humiklima .hk-02 {
+      width: 500px;
+      height: 500px;
+      background: url("../images/back-hk-02.png") no-repeat;
+      background-size: 70%;
+      position: absolute;
+      right: 20em;
+      top: 4em; }
   body .submenu {
     height: 300px;
     max-width: 1550px;
@@ -340,6 +457,13 @@ body {
         margin-bottom: 2em;
         border-bottom: 2px solid #4FB0E5;
         cursor: pointer; }
+    @media screen and (max-width: 414px) {
+      body #servicios {
+        padding-bottom: 3em; }
+        body #servicios .servicio {
+          padding: 0;
+          height: auto;
+          margin-top: 2em; } }
     body #servicios .disenio div {
       background: url("../images/icons/disenio.png") no-repeat 19px 18px;
       background-size: 40%; }
@@ -467,7 +591,7 @@ body {
     body .galeria .project .portfolio-hover .portfolio-hover-content p {
       color: #fff;
       text-align: center;
-      margin-top: 7em;
+      margin-top: 2em;
       font-family: 'Open Sans', sans-serif;
       font-weight: 700;
       font-size: 4em; }
@@ -577,6 +701,8 @@ body {
             color: #333; }
       body footer .bottom p {
         margin: 0; }
+    body footer .modal-footer {
+      text-align: justify; }
   body #galeria {
     width: 100%;
     display: block; }
@@ -806,6 +932,115 @@ body {
       body #microklima .pgd .description {
         font-size: 1.2em;
         line-height: 1.5em; }
+  body #esquema {
+    position: relative; }
+    body #esquema .full-machine {
+      position: relative;
+      width: 40%;
+      height: 1000px;
+      margin: 0 auto; }
+      body #esquema .full-machine img {
+        width: 100%; }
+      body #esquema .full-machine .pulsating {
+        position: absolute;
+        transform: translateX(-50%) translateY(-50%);
+        width: 20px;
+        height: 20px; }
+        body #esquema .full-machine .pulsating:before {
+          content: '';
+          position: relative;
+          display: block;
+          width: 300%;
+          height: 300%;
+          box-sizing: border-box;
+          margin-left: -100%;
+          margin-top: -100%;
+          border-radius: 45px;
+          background-color: rgba(80, 126, 230, 0.8);
+          animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite; }
+        body #esquema .full-machine .pulsating:after {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          display: block;
+          width: 100%;
+          height: 100%;
+          background-color: #4fb0e5;
+          border-radius: 15px;
+          border: 1px solid #fff;
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+          animation: pulse-dot 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite; }
+        body #esquema .full-machine .pulsating:hover .tooltip-mk {
+          opacity: 1; }
+      body #esquema .full-machine .mk-01 {
+        left: 40%;
+        top: 38%; }
+        body #esquema .full-machine .mk-01 .tooltip-mk {
+          opacity: 0;
+          position: absolute;
+          top: -40%;
+          left: -1500%;
+          transition: all 1s ease-in-out;
+          -webkit-transition-timing-function: all 1s ease-in-out;
+          -moz-transition: all 500ms ease-in-out;
+          -ms-transition: all 500ms ease-in-out;
+          -o-transition: all 500ms ease-in-out; }
+          body #esquema .full-machine .mk-01 .tooltip-mk p {
+            color: #05076B;
+            font-weight: 700;
+            font-size: 1.5em; }
+      body #esquema .full-machine .mk-02 {
+        left: 50%;
+        top: 52%; }
+        body #esquema .full-machine .mk-02 .tooltip-mk {
+          opacity: 0;
+          position: absolute;
+          top: -40%;
+          left: -1500%;
+          transition: all 1s ease-in-out;
+          -webkit-transition-timing-function: all 1s ease-in-out;
+          -moz-transition: all 500ms ease-in-out;
+          -ms-transition: all 500ms ease-in-out;
+          -o-transition: all 500ms ease-in-out; }
+          body #esquema .full-machine .mk-02 .tooltip-mk p {
+            color: #05076B;
+            font-weight: 700;
+            font-size: 1.5em; }
+      body #esquema .full-machine .mk-03 {
+        left: 35%;
+        top: 80%; }
+      body #esquema .full-machine .mk-04 {
+        left: 67%;
+        top: 50%; }
+  body .galeria {
+    margin: 2em 0;
+    /*MODAL GALERÍA*/ }
+    body .galeria .project {
+      padding: 0 .3em; }
+    body .galeria .modal-content {
+      width: 60%;
+      left: calc(40% - 20% );
+      height: auto;
+      top: 5%; }
+    body .galeria .container {
+      width: 100%;
+      padding: 0;
+      box-sizing: border-box; }
+      body .galeria .container .modal-body {
+        font-size: 1.2em;
+        text-align: center; }
+        body .galeria .container .modal-body img {
+          width: 70%; }
+        body .galeria .container .modal-body .text {
+          width: 70%;
+          margin: 0 auto;
+          padding: 1em 0; }
+      body .galeria .container ul li {
+        list-style: none;
+        line-height: 1.5em; }
+        body .galeria .container ul li span {
+          color: #23527c; }
   body .slider {
     background: url("../images/microklima/slider-back.jpg");
     background-size: cover;
@@ -818,7 +1053,7 @@ body {
       background: url("../images/microklima/microklima-back.png") no-repeat;
       background-size: 110%;
       position: absolute;
-      right: -7em; }
+      right: -15em; }
     body .slider .descripcion {
       width: 50%;
       margin: 0 auto;

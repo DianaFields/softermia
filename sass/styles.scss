@@ -125,11 +125,17 @@ body{
 		
 		
 	}
-	@media screen and (max-width: 1023px){
+	@media only screen and (min-width: 769px) and (max-width: 1023px){
+		.carousel{
+			margin-top: 8em;
+		}
 		nav{
 			.menu{
+				padding: 1em 3em;
+				box-shadow: 0 -1px 24px #c2c2c2;
+				background: white;
 				.logo{
-					width: 30%;
+					width: 25%;
 					display: inline-block;
 					margin: 0 auto;
 
@@ -139,27 +145,145 @@ body{
 				}
 			}
 			.dropdown{
-				display:block;
+				width: 40%;
+				text-align: right;
 				float: right;
-				width: 60%;
-				list-style: none;
-				position: absolute;
-				right: 0;
-				top: 2em;
+				height: 80px;
+				line-height: 80px;
 				.dropdown-toggle{
-					float: right;
-					right: 5em;
-					top: 2em;
 				}
-				a{
+				div{
+					height: 80px;
+					line-height: 80px;
+					width: 100px;
+					float: right;
+					padding: 10px 0;
+					text-align: center;
 					.shape{
 						width: 60px;
-						height: 2px;
-						background:red;
+						height: 6px;
+						background: #4FB0E5;
 						display: block;
-						margin: .5em 0;
+						margin: 0 auto;
+						margin-top: 7px;
 						position: relative;
+						border-radius: 3px;
 					}
+				}
+				.dropdown-menu{
+					padding:0 2em;
+					box-sizing: border-box;
+					width: 100%;
+					li{
+						text-align: center;
+						border-bottom: 1px solid #c2c2c2;
+						a{
+							height: 80px;
+							line-height: 80px;
+							font-size: 1.5em;
+						}
+					}
+
+				}
+			}
+		}
+
+	}
+	@media screen and (max-width: 768px){
+		.carousel{
+			margin-top: 8em;
+		}
+		nav{
+			.menu{
+				padding: 1em 3em;
+				box-shadow: 0 -1px 24px #c2c2c2;
+				background: white;
+				.logo{
+					width: 35%;
+					display: inline-block;
+					margin: 0 auto;
+
+				}
+				.options{
+					display: none;
+				}
+			}
+			.dropdown{
+				width: 40%;
+				text-align: right;
+				float: right;
+				height: 80px;
+				line-height: 80px;
+				.dropdown-toggle{
+				}
+				div{
+					height: 80px;
+					line-height: 80px;
+					width: 100px;
+					float: right;
+					padding: 10px 0;
+					text-align: center;
+					.shape{
+						width: 60px;
+						height: 6px;
+						background: #4FB0E5;
+						display: block;
+						margin: 0 auto;
+						margin-top: 7px;
+						position: relative;
+						border-radius: 3px;
+					}
+				}
+				.dropdown-menu{
+					padding:0 2em;
+					li{
+						text-align: center;
+						border-bottom: 1px solid #c2c2c2;
+						a{
+						}
+					}
+
+				}
+			}
+		}
+
+	}
+	@media screen and (max-width: 414px){
+		.carousel{
+			margin-top: 3em;
+		}
+		nav{
+			height: auto;
+			.menu{
+				height: 60px;
+				padding: .5em 1em;
+				.logo{
+					width: 50%;
+					height: 50px;
+				}
+			}
+			.dropdown{
+				height: 50px;
+				width: 50%;
+				.dropdown-toggle{
+				}
+				div{
+					padding:0;
+					.shape{
+						width: 50px;
+					}
+				}
+				.dropdown-menu{
+					padding:0 1em;
+					width: 100%;
+					li{
+						a{
+							height: 60px;
+							line-height: 60px;
+							font-size: 1em;
+						}
+					}
+
 				}
 			}
 		}
@@ -167,13 +291,13 @@ body{
 	}
 	.carousel-inner{
 		.item{
+			height: 500px;
 			@media screen and (min-width: 1024px){
-				height: 350px;
+				height: 500px;
 				img{
 					width: 100%;
 				}
 			}
-			
 		}
 		.inner-slider{
 			position: absolute;
@@ -201,8 +325,10 @@ body{
 				left: 0;
 				background:#000;
 				text-align: right;
+				opacity: 1;
+				z-index: -1;
 				.overlay{
-					background:rgba(5, 8, 106, 0.7);
+					background:rgba(5, 8, 106, .7);
 					width: 100%;
 					height: 100%;
 					bottom: 0;
@@ -210,7 +336,7 @@ body{
 					position: absolute;
 				}
 				video{
-					width: 70%;
+					width: 100%;
 				}
 			}
 
@@ -230,8 +356,46 @@ body{
 			}
 
 		}
+		/*SLIDER MAIN*/
+
 		
+		
+		.slide-ref{
+			background:url('../images/slider-2.jpg')no-repeat;
+			background-size: cover;
+			width: 100%;
+			
+			.maquina{
+				width: 600px;
+				height: 600px;
+				background: url('../images/microklima/microklima-back.png')no-repeat;
+				background-size: 70%;
+				position: absolute;
+				right:-10em;
+			}
+		}
+		.slide-humiklima{
+			.hk-01{
+				width: 500px;
+				height: 500px;
+				background: url('../images/back-hk-01.png')no-repeat;
+				background-size: 70%;
+				position: absolute;
+				right: 5em;
+			}
+			.hk-02{
+				width: 500px;
+				height: 500px;
+				background: url('../images/back-hk-02.png')no-repeat;
+				background-size: 70%;
+				position: absolute;
+				right: 20em;
+				top:4em;
+			}
+		}
+
 	}
+
 	.submenu{
 		height: 300px;
 		max-width: 1550px;
@@ -434,6 +598,19 @@ body{
 				cursor: pointer;
 			}
 		}
+		@media screen and (max-width: 414px){
+			padding-bottom:3em;
+			.servicio{
+				padding:0;
+				height:auto;
+				margin-top: 2em;
+			}
+		}
+		
+
+
+
+
 		.disenio{
 
 			div{
@@ -605,7 +782,7 @@ body{
 
 						color: #fff;
 						text-align: center;
-						margin-top: 7em;
+						margin-top: 2em;
 						font-family: 'Open Sans', sans-serif;
 						font-weight: 700;
 						font-size: 4em;
@@ -756,11 +933,16 @@ body{
 				margin: 0;
 			}
 		}
+		.modal-footer{
+			text-align: justify;
+		}
+
 	}
 	/*GALERÍ*/
 	#galeria{
 		width: 100%;
 		display: block;
+
 	}
 	/*GALERÍA*/
 	#clientes{
@@ -980,10 +1162,13 @@ body{
 			}	
 		}
 	}
+
+	
 	/*MICROKLIMA*/
 	
 	#microklima{
 		height: 3000px;
+		
 		.densidad{
 			height: 350px;
 			h3{
@@ -1074,162 +1259,304 @@ body{
 			}
 		}
 
+
+	}
+	#esquema{
+		position: relative;
+		.full-machine{
+			position: relative;
+			width: 40%;
+			height: 1000px;
+			margin:0 auto;
+
+			img{
+				width: 100%;
+			}
+
+			.pulsating{
+				position: absolute;
+				transform: translateX(-50%) translateY(-50%);
+				width: 20px;
+				height: 20px;
+
+				&:before {
+					content: '';
+					position: relative;
+					display: block;
+					width: 300%;
+					height: 300%;
+					box-sizing: border-box;
+					margin-left: -100%;
+					margin-top: -100%;
+					border-radius: 45px;
+					background-color: rgba(80,126,230,.8);
+					animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+				}
+
+				&:after {
+					content: '';
+					position: absolute;
+					left: 0; 
+					top: 0;
+					display: block;
+					width: 100%;
+					height: 100%;
+					background-color:#4fb0e5;
+					border-radius: 15px;
+					border:1px solid #fff;
+					box-shadow: 0 0 8px rgba(0,0,0,.3);
+					animation: pulse-dot 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -.4s infinite;
+				}
+				&:hover{
+					.tooltip-mk{
+						opacity:1;
+					}
+				}
+			}
+			
+
+			.mk-01{
+				left: 40%;
+				top: 38%;
+				
+				.tooltip-mk{
+					opacity: 0;
+					position: absolute;
+					top: -40%;
+					left: -1500%;
+					@include animation;
+					p{
+						color: #05076B;
+						font-weight: 700;
+						font-size: 1.5em;
+					}
+				}
+			}
+			.mk-02{
+				left: 50%;
+				top: 52%;
+				.tooltip-mk{
+					opacity: 0;
+					position: absolute;
+					top: -40%;
+					left: -1500%;
+					@include animation;
+					p{
+						color: #05076B;
+						font-weight: 700;
+						font-size: 1.5em;
+					}
+				}
+			}
+			.mk-03{
+				left: 35%;
+				top: 80%;
+			}
+			.mk-04{
+				left: 67%;
+				top: 50%;
+			}
+
+		}
+
 		
 	}
-	.slider{
-		background: url('../images/microklima/slider-back.jpg');
-		background-size: cover;
-		width: 100%;
-		height: 500px;
-		margin-top: 6em;
-		.maquina{
-			width: 500px;
-			height: 500px;
-			background: url('../images/microklima/microklima-back.png')no-repeat;
-			background-size: 110%;
-			position: absolute;
-			right: -7em;
+	.galeria{
+		margin:2em 0;
+		.project{
+			padding:0 .3em;
 		}
-		.descripcion{
-			width: 50%;
-			margin: 0 auto;
-			text-align: center;
-			margin-top: 12em;
-			float: left;
-			margin-left: calc(50% - 25%);
-			position: absolute;
-			z-index: 99;
-			p{
-				font-size: 1.5em;
-				color: #fff;
-				margin-bottom: 2em;
+		/*MODAL GALERÍA*/
+		.modal-content{
+			width: 60%;
+			left: calc(40% - 20% );
+			height: auto;
+			top: 5%;
+		}
+		.container{
+			width: 100%;
+			padding:0;
+			box-sizing: border-box;
+			.modal-body{
+				font-size: 1.2em;
+				text-align: center;
+				img{
+					width: 70%;
+				}
+				.text{
+					width: 70%;
+					margin: 0 auto;
+					padding: 1em 0;
+					p{
+						
+						
+					}
+				}
 			}
-			ul{
-				li{
-					width: 30%;
-					height: 120px;
-					display: inline-block;
-					position: relative;
-					color: #fff;
-					span{
-						width: 80px;
-						height: 80px;
-						position: absolute;
-						margin-left: .3em;
-						margin-top: 2em;
-					}
-					.path-1 {
-						width: 100px;
-						stroke-dashoffset: 410;
-						stroke-dasharray:  410;
-						animation: rem-1 1s linear forwards;
-					}
-					@keyframes rem-1 {
-						to {
-							stroke-dashoffset: 0;
-						}
-					}
-					#3d{
-						color:#4FB0E5;
-						animation: rem-2 1s linear forwards;
-
-
-
-					}
-					@keyframes rem-2 {
-						from {   transform : translate(200px);}
-						to{    transform : translate(20px);}
-
-
-					}
-				}
-				.humedad{
-					span{
-						background: url('../images/icons/humedad.png')no-repeat;
-						background-size: 36%;
-						background-position: 2.5em 2em;
-					}
-					
-				}
-				.presion{
-					span{
-						background: url('../images/icons/presion.png')no-repeat;
-						background-size: 36%;
-						background-position: 2.5em 2.5em;
-					}
-
-					.pulsating-circle {
-						position: absolute;
-						left: 50%;
-						top: 50%;
-						transform: translateX(-50%) translateY(-50%);
-						width: 30px;
-						height: 30px;
-
-						&:before {
-							content: '';
-							position: relative;
-							display: block;
-							width: 300%;
-							height: 300%;
-							box-sizing: border-box;
-							margin-left: -100%;
-							margin-top: -100%;
-							border-radius: 45px;
-							background-color: rgba(21,173,200,.4);
-							animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
-						}
-
-						&:after {
-							content: '';
-							position: absolute;
-							left: 0; 
-							top: 0;
-							display: block;
-							width: 100%;
-							height: 100%;
-							background-color: white;
-							border-radius: 15px;
-							box-shadow: 0 0 8px rgba(0,0,0,.3);
-							animation: pulse-dot 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -.4s infinite;
-						}
-					}
-
-					@keyframes pulse-ring {
-						0% {
-							transform: scale(.33);
-						}
-						80%, 100% {
-							opacity: 0;
-						}
-					}
-
-					@keyframes pulse-dot {
-						0% {
-							transform: scale(.8);
-						}
-						50% {
-							transform: scale(1);
-						}
-						100% {
-							transform: scale(.8);
-						}
-					}
-					
-				}
-				.aire{
-					span{
-						background: url('../images/icons/aire.png')no-repeat;
-						background-size: 70%;
-						background-size: 56%;
-						background-position: 2em 2.5em;
-					}
-					
+			ul{				li{
+				list-style: none;
+				line-height: 1.5em;
+				span{
+					color: #23527c;
 				}
 			}
 		}
-
 	}
+}
+.slider{
+	background: url('../images/microklima/slider-back.jpg');
+	background-size: cover;
+	width: 100%;
+	height: 500px;
+	margin-top: 6em;
+	.maquina{
+		width: 500px;
+		height: 500px;
+		background: url('../images/microklima/microklima-back.png')no-repeat;
+		background-size: 110%;
+		position: absolute;
+		right: -15em;
+	}
+	.descripcion{
+		width: 50%;
+		margin: 0 auto;
+		text-align: center;
+		margin-top: 12em;
+		float: left;
+		margin-left: calc(50% - 25%);
+		position: absolute;
+		z-index: 99;
+		p{
+			font-size: 1.5em;
+			color: #fff;
+			margin-bottom: 2em;
+		}
+		ul{
+			li{
+				width: 30%;
+				height: 120px;
+				display: inline-block;
+				position: relative;
+				color: #fff;
+				span{
+					width: 80px;
+					height: 80px;
+					position: absolute;
+					margin-left: .3em;
+					margin-top: 2em;
+				}
+				.path-1 {
+					width: 100px;
+					stroke-dashoffset: 410;
+					stroke-dasharray:  410;
+					animation: rem-1 1s linear forwards;
+				}
+				@keyframes rem-1 {
+					to {
+						stroke-dashoffset: 0;
+					}
+				}
+				#3d{
+					color:#4FB0E5;
+					animation: rem-2 1s linear forwards;
+
+
+
+				}
+				@keyframes rem-2 {
+					from {   transform : translate(200px);}
+					to{    transform : translate(20px);}
+
+
+				}
+			}
+			.humedad{
+				span{
+					background: url('../images/icons/humedad.png')no-repeat;
+					background-size: 36%;
+					background-position: 2.5em 2em;
+				}
+
+			}
+			.presion{
+				span{
+					background: url('../images/icons/presion.png')no-repeat;
+					background-size: 36%;
+					background-position: 2.5em 2.5em;
+				}
+
+				.pulsating-circle {
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					transform: translateX(-50%) translateY(-50%);
+					width: 30px;
+					height: 30px;
+
+					&:before {
+						content: '';
+						position: relative;
+						display: block;
+						width: 300%;
+						height: 300%;
+						box-sizing: border-box;
+						margin-left: -100%;
+						margin-top: -100%;
+						border-radius: 45px;
+						background-color: rgba(21,173,200,.4);
+						animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+					}
+
+					&:after {
+						content: '';
+						position: absolute;
+						left: 0; 
+						top: 0;
+						display: block;
+						width: 100%;
+						height: 100%;
+						background-color: white;
+						border-radius: 15px;
+						box-shadow: 0 0 8px rgba(0,0,0,.3);
+						animation: pulse-dot 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -.4s infinite;
+					}
+				}
+
+				@keyframes pulse-ring {
+					0% {
+						transform: scale(.33);
+					}
+					80%, 100% {
+						opacity: 0;
+					}
+				}
+
+				@keyframes pulse-dot {
+					0% {
+						transform: scale(.8);
+					}
+					50% {
+						transform: scale(1);
+					}
+					100% {
+						transform: scale(.8);
+					}
+				}
+
+			}
+			.aire{
+				span{
+					background: url('../images/icons/aire.png')no-repeat;
+					background-size: 70%;
+					background-size: 56%;
+					background-position: 2em 2.5em;
+				}
+
+			}
+		}
+	}
+
+}
 }
 
 
