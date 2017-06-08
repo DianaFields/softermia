@@ -251,6 +251,7 @@ body{
 	@media screen and (max-width: 414px){
 		.carousel{
 			margin-top: 3em;
+			max-height: 300px;
 		}
 		nav{
 			height: auto;
@@ -271,8 +272,8 @@ body{
 				left:0;
 				.dropdown-toggle{
 					height: auto;
-				    padding-top: 1em;
-				    padding-right: 2em;
+					padding-top: 1em;
+					padding-right: 2em;
 				}
 				div{
 					padding:0;
@@ -402,7 +403,56 @@ body{
 				top:4em;
 			}
 		}
+		@media screen and (max-width: 768px){
+			height:300px;
 
+			.item{
+				height: 100%;
+				.inner-slider{
+					position: absolute;
+					background: rgba(100,160,200,.4);
+					height: 100%;
+					width: 100%;
+					padding: 5em 3em;
+					text-align: center;
+					margin: 0 auto;
+					z-index: 99;
+					h2{
+						font-size: 1.5em;
+					}
+					p{
+						font-size: 1.3em;
+					}
+				}
+
+			}
+			.slide-ref{
+				.maquina{
+					width: 300px;
+					height: 300px;
+				}
+
+			}
+			.slide-humiklima{
+				background:#05076B;
+				video{
+					display: none;
+				}
+				.hk-01{
+					width: 250px;
+					height: 250px;
+					top: 3em;
+					left: 13em;
+				}
+				.hk-02{
+					right: 6em;
+					top: 8em;
+					width: 250px;
+					height: 250px;
+				}
+			}
+
+		}
 	}
 
 	.submenu{
@@ -589,23 +639,23 @@ body{
 				height: auto;
 				.microklima, .humiklima, .servicios, .galeria {
 					width: 100%;
-				    border-radius: 0;
-				    height: 80px;
-				    background: none;
-				    margin-top: 1em;
-				    .logo{
-				    	display: none;
-				    }
-				    span{
-				    	opacity: 1;
-				    	&:before{
-				    		top:1em;
-				    		border-bottom: 0,
-				    	}
-				    	&:after{
-				    		display:none;
-				    	}
-				    }
+					border-radius: 0;
+					height: 80px;
+					background: none;
+					margin-top: 1em;
+					.logo{
+						display: none;
+					}
+					span{
+						opacity: 1;
+						&:before{
+							top:1em;
+							border-bottom: 0,
+						}
+						&:after{
+							display:none;
+						}
+					}
 				}
 				.microklima{
 					border:2px solid #4FB0E5;
@@ -892,7 +942,7 @@ body{
 		background:#333;
 		height: 320px;
 		clear: both;
-		padding-top: 4em;
+		
 		ul{
 			li{
 				list-style: none;
@@ -926,15 +976,17 @@ body{
 			}
 		}
 		@media screen and (max-width: 767px){
+
 			div{
 				ul{
 					padding: 0;
-
+					text-align: center;
 				}	
 			}
 			
 		}
 		.redes{
+			padding:2em 0;
 			ul{
 				li{
 					display: inline-block;
@@ -983,7 +1035,10 @@ body{
 		.modal-footer{
 			text-align: justify;
 		}
-
+		@media screen and (max-width: 768px){
+			height:auto;
+			padding-top:3em;
+		}
 	}
 	/*GALERÍ*/
 	#galeria{
@@ -1282,7 +1337,7 @@ body{
 				left: calc(60% - 30%);
 				position: fixed;
 				top: 8.8em;
-				@include animation;
+				/*@include animation;*/
 			}
 			.screen-02{
 				opacity: 0;
@@ -1294,7 +1349,7 @@ body{
 				left: calc(60% - 30%);
 				position: fixed;
 				top: 8.8em;
-				@include animation;
+				/*@include animation;*/
 			}
 			.tittle{
 				font-weight: 700;
@@ -1310,12 +1365,20 @@ body{
 	}
 	#esquema{
 		position: relative;
+		text-align: center;
 		.full-machine{
 			position: relative;
-			width: 40%;
+			width:100%;
 			height: 1000px;
 			margin:0 auto;
-
+			background: url('../images/microklima/microklima_full.jpg')no-repeat;
+			background-size: 40%;
+			background-position: 40% 55%;
+			.overlay{
+				background: rgba(27, 91, 190,.7);
+				width: 100%;
+				height: 100%;
+			}
 			img{
 				width: 100%;
 			}
@@ -1348,7 +1411,7 @@ body{
 					display: block;
 					width: 100%;
 					height: 100%;
-					background-color:#4fb0e5;
+					background-color:#fff;
 					border-radius: 15px;
 					border:1px solid #fff;
 					box-shadow: 0 0 8px rgba(0,0,0,.3);
@@ -1364,7 +1427,7 @@ body{
 
 			.mk-01{
 				left: 40%;
-				top: 38%;
+				top: 25%;
 				
 				.tooltip-mk{
 					opacity: 0;
@@ -1380,8 +1443,8 @@ body{
 				}
 			}
 			.mk-02{
-				left: 50%;
-				top: 52%;
+				left: 35%;
+				top: 40%;
 				.tooltip-mk{
 					opacity: 0;
 					position: absolute;
@@ -1397,15 +1460,17 @@ body{
 			}
 			.mk-03{
 				left: 35%;
-				top: 80%;
+				top: 60%;
 			}
 			.mk-04{
-				left: 67%;
-				top: 50%;
+				left: 52%;
+				top: 42%;
 			}
 
 		}
-
+		@media screen and (max-width: 768px){
+			display:none;
+		}
 		
 	}
 	.galeria{
