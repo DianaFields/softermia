@@ -5,6 +5,7 @@ body {
   padding: 0;
   font-family: 'Open Sans', sans-serif;
   /*FOOTER*/
+  /*MAP*/
   /*GALERÍ*/
   /*GALERÍA*/
   /*MICROKLIMA*/ }
@@ -39,7 +40,8 @@ body {
   body .title {
     font-weight: 700; }
   body .carousel {
-    margin-top: 6em; }
+    margin-top: 6em;
+    height: 500px; }
     @media screen and (min-width: 1500px) {
       body .carousel {
         height: 500px; }
@@ -234,7 +236,7 @@ body {
     body .carousel-inner .inner-slider {
       position: absolute;
       width: 40%;
-      margin: 5em 0 0 10em; }
+      margin: 10em 0 0 13em; }
       body .carousel-inner .inner-slider h2 {
         color: #fff;
         font-weight: 700 !important; }
@@ -676,9 +678,22 @@ body {
   body .galeria .project .portfolio-caption {
     text-align: center;
     padding: 1em 0;
-    clear: both; }
+    clear: both;
+    background: #f2f2f2; }
     body .galeria .project .portfolio-caption h4 {
-      font-weight: 700; }
+      font-weight: 700;
+      font-size: 16px;
+      position: relative; }
+      body .galeria .project .portfolio-caption h4:after {
+        content: "\00a0";
+        width: 10%;
+        background: #4FB0E6;
+        height: 2px;
+        position: absolute;
+        bottom: -10px;
+        left: 45%; }
+    body .galeria .project .portfolio-caption .text-muted {
+      margin-top: 2em; }
   body .galeria .project img {
     width: 100%; }
   body #formulario {
@@ -708,9 +723,11 @@ body {
       border-radius: 3px;
       margin: .5em 0; }
   body footer {
-    background: #333;
+    background: #41439C;
     height: 320px;
-    clear: both; }
+    clear: both;
+    position: relative;
+    padding-top: 2em; }
     body footer ul li {
       list-style: none;
       line-height: 2.5em;
@@ -759,13 +776,16 @@ body {
     body footer address {
       margin-bottom: .3em; }
     body footer .bottom {
-      clear: both;
       padding: 2em 0 1.2em 0;
       text-align: center;
       color: #333;
       border-top: .5px solid #f2f2f2;
       font-size: 13px;
-      background: #f2f2f2; }
+      background: #f2f2f2;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 120px; }
       body footer .bottom ul {
         margin: 0;
         padding: 0; }
@@ -782,6 +802,13 @@ body {
       body footer {
         height: auto;
         padding-top: 3em; } }
+  body .map-content {
+    width: 100%;
+    padding: 2em 0 0 0;
+    background: #41439C;
+    position: relative; }
+    body .map-content #map {
+      height: 300px; }
   body #galeria {
     width: 100%;
     display: block; }
@@ -1104,7 +1131,8 @@ body {
       width: 60%;
       left: calc(40% - 20% );
       height: auto;
-      top: 5%; }
+      top: 5%;
+      border-radius: 2px; }
     body .galeria .container {
       width: 100%;
       padding: 0;
@@ -1118,6 +1146,42 @@ body {
           width: 70%;
           margin: 0 auto;
           padding: 1em 0; }
+        body .galeria .container .modal-body .icons {
+          width: 100%;
+          height: 50px;
+          margin: 2em 0; }
+          body .galeria .container .modal-body .icons li {
+            width: 45px;
+            height: 45px;
+            background: url("../images/icons/sprite-01.png");
+            background-size: 300px auto;
+            display: inline-block;
+            margin: 0 1em; }
+          body .galeria .container .modal-body .icons .humi-icon {
+            background-position: -165px -242px;
+            background-size: 300px; }
+          body .galeria .container .modal-body .icons .ref-icon {
+            background-size: 250px auto;
+            background-position: -132px -5px; }
+          body .galeria .container .modal-body .icons .pres-icon {
+            background-position: -160px -300px; }
+          body .galeria .container .modal-body .icons .fan-icon {
+            background-position: -164px -191px; }
+        body .galeria .container .modal-body button {
+          border: 1px solid #4FB0E6;
+          color: #05076B;
+          border-radius: 2px;
+          margin: 2em 0;
+          width: 130px;
+          background: white;
+          transition: all 1s ease-in-out;
+          -webkit-transition-timing-function: all 1s ease-in-out;
+          -moz-transition: all 500ms ease-in-out;
+          -ms-transition: all 500ms ease-in-out;
+          -o-transition: all 500ms ease-in-out; }
+          body .galeria .container .modal-body button:hover {
+            background: #4FB0E6;
+            color: #fff; }
       body .galeria .container ul li {
         list-style: none;
         line-height: 1.5em; }

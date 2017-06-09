@@ -50,6 +50,7 @@ body{
 	}
 	.carousel{
 		margin-top: 6em;
+		height: 500px;
 		@media screen and (min-width: 1500px){
 			height: 500px;
 			.carousel-inner{
@@ -312,7 +313,7 @@ body{
 		.inner-slider{
 			position: absolute;
 			width: 40%;
-			margin: 5em 0 0 10em;
+			margin: 10em 0 0 13em;
 			h2{
 				color: #fff;
 				font-weight: 700!important;
@@ -896,9 +897,23 @@ body{
 				text-align: center;
 				padding: 1em 0;
 				clear:both;
+				background: #f2f2f2;
 				h4{
 					font-weight: 700;
-
+					font-size: 16px;
+					position: relative;
+					&:after{
+						    content: "\00a0";
+						    width: 10%;
+						    background: #4FB0E6;
+						    height: 2px;
+						    position: absolute;
+						    bottom: -10px;
+						    left: 45%;
+					}
+				}
+				.text-muted{
+					margin-top: 2em;
 				}
 
 			}
@@ -939,10 +954,10 @@ body{
 	}
 	/*FOOTER*/
 	footer{
-		background:#333;
+		background:#41439C;
 		height: 320px;
-		clear: both;
-		
+		clear: both;position: relative;
+		padding-top: 2em;
 		ul{
 			li{
 				list-style: none;
@@ -1010,13 +1025,16 @@ body{
 			margin-bottom: .3em;
 		}
 		.bottom{
-			clear: both;
-			padding:2em 0 1.2em 0;
+					padding:2em 0 1.2em 0;
 			text-align: center;
 			color: #333;
 			border-top: .5px solid #f2f2f2;
 			font-size: 13px;
 			background:#f2f2f2;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			height: 120px;
 			ul{
 				margin: 0;
 				padding:0;
@@ -1040,6 +1058,19 @@ body{
 			padding-top:3em;
 		}
 	}
+	/*MAP*/
+	.map-content{
+		width: 100%;
+		padding: 2em 0 0 0;
+		background: #41439C;
+		position: relative;
+		#map{
+			height: 300px;
+		}
+		.contact-info{
+		}
+	}
+	
 	/*GALERÍ*/
 	#galeria{
 		width: 100%;
@@ -1484,6 +1515,7 @@ body{
 			left: calc(40% - 20% );
 			height: auto;
 			top: 5%;
+			border-radius: 2px;
 		}
 		.container{
 			width: 100%;
@@ -1503,6 +1535,47 @@ body{
 						
 						
 					}
+				}
+				.icons{
+					width: 100%;
+					height: 50px;
+					    margin: 2em 0;
+					li{
+						width: 45px;
+						height: 45px;
+						background: url('../images/icons/sprite-01.png');
+						background-size: 300px auto;
+						display: inline-block;
+						margin: 0 1em;
+					}
+					.humi-icon{    
+						background-position: -165px -242px;
+    					background-size: 300px;
+					}
+					.ref-icon{
+						background-size: 250px auto;
+    					background-position: -132px -5px;
+					}
+					.pres-icon{
+						background-position: -160px -300px;
+					}
+					.fan-icon{
+						background-position:-164px -191px;
+					}
+				}
+				button{
+					border: 1px solid #4FB0E6;
+				    color: #05076B;
+				    border-radius: 2px;
+				    margin: 2em 0;
+				    width: 130px;
+				    background: white;
+				    @include animation;
+				    &:hover{
+				    	background:#4FB0E6;
+				    	color: #fff;
+
+				    }
 				}
 			}
 			ul{				li{

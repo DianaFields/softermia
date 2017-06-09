@@ -73,7 +73,7 @@
 				<li class="item col-lg-3 col-md-3 col-sm-3 col-xs-12">
 					<div class="servicios" onclick="window.location='#servicios'"><div class="logo"></div><span></span></div>
 				</li> 
-				<li class="item col-lg-3 col-md-3 col-sm-3 col-xs-12">
+				<li class="item col-lg-3 col-md-3 col-sm-3 col-xs-12 change">
 					<div class="galeria change" onclick="window.location='#galeria'"><div class="logo"></div><span></span></div>
 				</li>
 
@@ -166,7 +166,7 @@
 
 				<div class="space-min"></div>
 				<!-- GALERIA -->
-				<div class="galeria col-md-12 col-sm-12">
+				<div id="galeria" class="galeria col-md-12 col-sm-12">
 					<h3>Algunos de nuestros proyectos</h3>
 					<!-- Proyecto 1 -->
 					<div class="col-lg-4 col-md-4 col-sm-6 project">
@@ -179,8 +179,9 @@
 							<img src="images/galeria/gellery-01.jpg"  alt="">
 						</a>
 						<div class="portfolio-caption">
-							<h4>Proyecto 1</h4>
+							<h4>Microklima instalación</h4>
 							<div class="text-muted">
+							<p>Estabilidad en la temperatura y humedad</p>
 							</div>
 						</div>
 					</div>
@@ -229,13 +230,19 @@
 											<!-- Project Details Go Here -->
 											<img src="images/galeria/gellery-01.jpg"  alt="">
 											<div class="text">
-												<p>Plafond reticulado, para una mayor estabilidad en la temperatura y humedad, con una velocidad de aire, que no afecta a los protocolos de medición.</p>
+												<p>En las cámaras de enfriamiento donde se instala Microklima, se coloca un falso plafón de Tovicel con perforaciones para una mayor estabilidad en la temperatura y humedad, se considera la velocidad de aire dentro del protocolo de medición.</p>
 											</div>
 											<ul>
 												<li><span><strong>Cliente.</strong></span> Ejemplo de cliente</li>
 												<li><span><strong>Tecnología aplicada. </strong></span>Ejemplo de tecnología</li>
 											</ul>
-											<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Cerrar</button>
+											<ul class="icons">
+												<li class="humi-icon"></li>
+												<li class="ref-icon"></li>
+												<li class="fan-icon"></li>
+												<li class="pres-icon"></li>
+											</ul>
+											<button type="button" class="btn" data-dismiss="modal"> Cerrar</button>
 										</div>
 								</div>
 							</div>
@@ -379,19 +386,31 @@
 				</div>
 				<div class="col-lg-2 col-md-1 col-sm-1"></div>
 				<!-- FOOTER -->
-
+				<div class="map-content col-lg-12">
+					<div class="col-lg-2"></div>
+					<div id="map" class="col-lg-8"></div>
+					<div class="col-lg-2"></div>
+				</div>
+				
 				<div id="footer"></div>
-
-				<script src="js/jquery.min.js"></script>
+					<script src="js/jquery.min.js"></script>
+				<script src="js/easing.js"></script>
+			
+				
 				<script src="bootstrap/js/bootstrap.min.js"></script>
-				<script src="js/lib.js"></script>
 				<script src="js/wow.min.js"></script>
 				<script src="js/jquery.enllax.min.js"></script>
+				<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCGwNgYNPm44eWMr11vJsq4UduogvxfvI&callback=initMap">
+    </script>
 				<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/lib.js"></script>
 				<script type="text/javascript">
-
+				
 					loadEx();
+					animateScroll();
 					new WOW().init();
+
 					(function($){
 
             //Plugin activation
@@ -404,10 +423,21 @@
            //     ratio: 0.5,
            //     direction: 'vertical' // 'horizontal'
            // });
-
        })(jQuery);
+       function initMap() {
+	 var uluru = {lat: 19.2971529, lng: -99.1568242};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 12,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
 
+}
    </script>
+
 
    <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
    <!-- <script src="js/wow.min.js"></script> -->
