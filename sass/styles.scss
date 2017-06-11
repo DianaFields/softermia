@@ -36,6 +36,10 @@ body{
 		font-size: 1.2em;
 		font-weight: 300;
 		margin-bottom: 2em;
+		@media screen and (max-width: 768px){
+			padding:0;
+			text-align: center;
+		}
 	}
 	.title{
 		font-weight: 700;
@@ -100,11 +104,11 @@ body{
 			}
 		}
 		.logo{
-			width: 20%;
+			width: 17%;
 			background:url(../images/logo-softermia.png)no-repeat;
 			background-size: 100%;
 			height: 70px;
-			margin: .5em 0 0 4em;
+			margin: 1em 0 0 4em;
 			@media screen and (min-width: 1300px){
 				background-size: 70%;
 			}
@@ -190,32 +194,36 @@ body{
 		}
 
 	}
-	@media screen and (max-width: 768px){
+	@media screen and (max-width: 400px){
 		.carousel{
-			margin-top: 8em;
+			margin-top: 4em;
 		}
 		nav{
+			height: 60px;
 			.menu{
-				padding: 1em 3em;
-				box-shadow: 0 -1px 24px #c2c2c2;
+				height: 60px;
+				padding: .5em 1em;
 				background: white;
 				.logo{
-					width: 35%;
-					display: inline-block;
-					margin: 0 auto;
-
+					width: 53%;
+					height: 50px;
+					margin:0;
 				}
 				.options{
 					display: none;
 				}
 			}
 			.dropdown{
-				width: 40%;
-				text-align: right;
+				height: 50px;
+				width: 100%;
 				float: right;
-				height: 80px;
-				line-height: 80px;
+				position: absolute;
+				top: 0;
+				left: 0;
 				.dropdown-toggle{
+					height: auto;
+					padding-top: 1em;
+					padding-right: 2em;
 				}
 				div{
 					height: 80px;
@@ -225,22 +233,28 @@ body{
 					padding: 10px 0;
 					text-align: center;
 					.shape{
-						width: 60px;
 						height: 6px;
 						background: #4FB0E5;
 						display: block;
 						margin: 0 auto;
-						margin-top: 7px;
 						position: relative;
 						border-radius: 3px;
+						width: 32px;
+						margin-left: 56%;
+						margin-top: 5px;
 					}
 				}
 				.dropdown-menu{
-					padding:0 2em;
+					padding: 0 1em;
+					width: 100%;
 					li{
 						text-align: center;
 						border-bottom: 1px solid #c2c2c2;
+
 						a{
+							height: 60px;
+							line-height: 60px;
+							font-size: 1.3em;
 						}
 					}
 
@@ -249,7 +263,7 @@ body{
 		}
 
 	}
-	@media screen and (max-width: 414px){
+	@media only screen and (min-width:401px) and (max-width: 600px){
 		.carousel{
 			margin-top: 3em;
 			max-height: 300px;
@@ -260,8 +274,12 @@ body{
 				height: 60px;
 				padding: .5em 1em;
 				.logo{
-					width: 53%;
+					width: 45%;
 					height: 50px;
+					margin:0 0 0 1em;
+				}
+				.options{
+					display: none;
 				}
 			}
 			.dropdown{
@@ -270,24 +288,38 @@ body{
 				float: right;
 				position: absolute;
 				top: 0;
-				left:0;
+				left: 0;
 				.dropdown-toggle{
 					height: auto;
 					padding-top: 1em;
 					padding-right: 2em;
 				}
 				div{
-					padding:0;
+					height: 80px;
+					line-height: 80px;
+					width: 100px;
+					float: right;
+					padding: 10px 0;
+					text-align: center;
 					.shape{
+						height: 6px;
+						background: #4FB0E5;
+						display: block;
+						margin: 0 auto;
+						position: relative;
+						border-radius: 3px;
 						width: 32px;
 						margin-left: 56%;
 						margin-top: 5px;
 					}
 				}
 				.dropdown-menu{
-					padding:0 1em;
+					padding: 0 1em;
 					width: 100%;
 					li{
+						text-align: center;
+						border-bottom: 1px solid #c2c2c2;
+
 						a{
 							height: 60px;
 							line-height: 60px;
@@ -382,7 +414,7 @@ body{
 				background: url('../images/microklima/microklima-back.png')no-repeat;
 				background-size: 70%;
 				position: absolute;
-				right:-10em;
+				right:-14em;
 			}
 		}
 		.slide-humiklima{
@@ -400,7 +432,7 @@ body{
 				background: url('../images/back-hk-02.png')no-repeat;
 				background-size: 70%;
 				position: absolute;
-				right: 20em;
+				right: 6em;
 				top:4em;
 			}
 		}
@@ -635,7 +667,7 @@ body{
 		@media screen and (max-width: 767px){
 			height:470px;
 		}
-		@media screen and (max-width: 414px){
+		@media screen and (max-width: 600px){
 			.item{
 				height: auto;
 				.microklima, .humiklima, .servicios, .galeria {
@@ -677,7 +709,7 @@ body{
 		padding:0;
 		clear: both;
 		.servicio{
-			height: 320px;
+			height: 300px;
 			text-align: center;
 			padding: 2em;
 			box-sizing: border-box;
@@ -782,7 +814,7 @@ body{
 			}
 		}
 		@media screen and (max-width: 767px){
-			height:650px;
+			height:auto;
 		}
 	}
 	#historia{
@@ -797,6 +829,18 @@ body{
 				position: absolute;
 				left: 37%;
 				bottom: 1.2em;
+			}
+			@media screen and (max-width: 600px){
+				&:before{
+					width: 20%;
+					left: calc( 80% - 40%);
+					bottom: 0.2em;
+				}
+			}
+			@media only screen and (min-width: 601px) and (max-width: 1024px){
+				&:before{
+					left: 34%;
+				}
 			}
 		}
 		.item{
@@ -842,6 +886,18 @@ body{
 				position: absolute;
 				left: 37%;
 				bottom: 1.2em;
+			}
+			@media screen and (max-width: 600px){
+				&:before{
+					width: 20%;
+					left: calc( 80% - 40%);
+					bottom: 0.2em;
+				}
+			}
+			@media only screen and (min-width: 601px) and (max-width: 1024px){
+				&:before{
+					left: 34%;
+				}
 			}
 		}
 		.item{
@@ -903,13 +959,13 @@ body{
 					font-size: 16px;
 					position: relative;
 					&:after{
-						    content: "\00a0";
-						    width: 10%;
-						    background: #4FB0E6;
-						    height: 2px;
-						    position: absolute;
-						    bottom: -10px;
-						    left: 45%;
+						content: "\00a0";
+						width: 10%;
+						background: #4FB0E6;
+						height: 2px;
+						position: absolute;
+						bottom: -10px;
+						left: 45%;
 					}
 				}
 				.text-muted{
@@ -1025,7 +1081,7 @@ body{
 			margin-bottom: .3em;
 		}
 		.bottom{
-					padding:2em 0 1.2em 0;
+			padding:2em 0 1.2em 0;
 			text-align: center;
 			color: #333;
 			border-top: .5px solid #f2f2f2;
@@ -1054,8 +1110,12 @@ body{
 			text-align: justify;
 		}
 		@media screen and (max-width: 768px){
-			height:auto;
-			padding-top:3em;
+			height:770px;
+			padding-top:0;
+			.bottom{
+				padding: 2em;
+				height: auto;
+			}
 		}
 	}
 	/*MAP*/
@@ -1068,6 +1128,9 @@ body{
 			height: 300px;
 		}
 		.contact-info{
+		}
+		@media screen and (max-width: 768px){
+			padding:3em;
 		}
 	}
 	
@@ -1539,7 +1602,7 @@ body{
 				.icons{
 					width: 100%;
 					height: 50px;
-					    margin: 2em 0;
+					margin: 2em 0;
 					li{
 						width: 45px;
 						height: 45px;
@@ -1547,14 +1610,41 @@ body{
 						background-size: 300px auto;
 						display: inline-block;
 						margin: 0 1em;
+						position: relative;
+						cursor: pointer;
+						.tooltip-soft{
+							opacity: 0;
+							width: 100px;
+							background: #f2f2f2;
+							color:#4FB0E6;
+							position: absolute;
+							top: 4em;
+							left: -2em;
+							font-size: 13px;
+							@include animation;
+							box-shadow: 1px 1px 3px #c2c2c2;
+						}
+						&:hover {
+							.tooltip-soft{
+								opacity: 1;
+							} 
+						}
 					}
 					.humi-icon{    
 						background-position: -165px -242px;
-    					background-size: 300px;
+						background-size: 300px;
+
+						&:hover{
+							background-position:-242px -242px;
+						}
+
 					}
 					.ref-icon{
 						background-size: 250px auto;
-    					background-position: -132px -5px;
+						background-position: -132px -5px;
+						&:hover{
+							background-position: -196px -5px;
+						}
 					}
 					.pres-icon{
 						background-position: -160px -300px;
@@ -1565,17 +1655,17 @@ body{
 				}
 				button{
 					border: 1px solid #4FB0E6;
-				    color: #05076B;
-				    border-radius: 2px;
-				    margin: 2em 0;
-				    width: 130px;
-				    background: white;
-				    @include animation;
-				    &:hover{
-				    	background:#4FB0E6;
-				    	color: #fff;
+					color: #05076B;
+					border-radius: 2px;
+					margin: 2em 0;
+					width: 130px;
+					background: white;
+					@include animation;
+					&:hover{
+						background:#4FB0E6;
+						color: #fff;
 
-				    }
+					}
 				}
 			}
 			ul{				li{

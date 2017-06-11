@@ -10,26 +10,19 @@ function loadInter(){
 
 function animateScroll(){
 
-// jQuery for page scrolling feature - requires jQuery Easing plugin
-
-	$(function() {
-    $('.change').bind('click', function(event) {
-    	alert();
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        // event.preventDefault();
-    });
-});
-
-
-// velocity
-$("div.imagen")
- 	// .velocity("scroll", { duration: 750, offset: 250 })
-  // .velocity({ left: 150 }, 800, "easeOutQuad")
-  // .velocity({ left: 0 }, 800, "easeInSine"); 
+		(function($) {
+	    "use strict";
+	    $('a.page-scroll').bind('click', function(event) {
+		alert();
+	        var $ele = $(this);
+	        $('html, body').stop().animate({
+	            scrollTop: ($($ele.attr('href')).offset().top - 60)
+	        }, 1450, 'easeInOutExpo');
+	        event.preventDefault();
+	    });
+	})(jQuery);
 }
+
 
 var change = true;
 function pgdAnimation(){

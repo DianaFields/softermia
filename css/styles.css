@@ -37,6 +37,10 @@ body {
     font-size: 1.2em;
     font-weight: 300;
     margin-bottom: 2em; }
+    @media screen and (max-width: 768px) {
+      body .subtit {
+        padding: 0;
+        text-align: center; } }
   body .title {
     font-weight: 700; }
   body .carousel {
@@ -85,11 +89,11 @@ body {
         -ms-transition: all 500ms ease-in-out;
         -o-transition: all 500ms ease-in-out; }
     body nav .logo {
-      width: 20%;
+      width: 17%;
       background: url(../images/logo-softermia.png) no-repeat;
       background-size: 100%;
       height: 70px;
-      margin: .5em 0 0 4em; }
+      margin: 1em 0 0 4em; }
       @media screen and (min-width: 1300px) {
         body nav .logo {
           background-size: 70%; } }
@@ -148,58 +152,21 @@ body {
             height: 80px;
             line-height: 80px;
             font-size: 1.5em; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 400px) {
     body .carousel {
-      margin-top: 8em; }
-    body nav .menu {
-      padding: 1em 3em;
-      box-shadow: 0 -1px 24px #c2c2c2;
-      background: white; }
-      body nav .menu .logo {
-        width: 35%;
-        display: inline-block;
-        margin: 0 auto; }
-      body nav .menu .options {
-        display: none; }
-    body nav .dropdown {
-      width: 40%;
-      text-align: right;
-      float: right;
-      height: 80px;
-      line-height: 80px; }
-      body nav .dropdown div {
-        height: 80px;
-        line-height: 80px;
-        width: 100px;
-        float: right;
-        padding: 10px 0;
-        text-align: center; }
-        body nav .dropdown div .shape {
-          width: 60px;
-          height: 6px;
-          background: #4FB0E5;
-          display: block;
-          margin: 0 auto;
-          margin-top: 7px;
-          position: relative;
-          border-radius: 3px; }
-      body nav .dropdown .dropdown-menu {
-        padding: 0 2em; }
-        body nav .dropdown .dropdown-menu li {
-          text-align: center;
-          border-bottom: 1px solid #c2c2c2; } }
-  @media screen and (max-width: 414px) {
-    body .carousel {
-      margin-top: 3em;
-      max-height: 300px; }
+      margin-top: 4em; }
     body nav {
-      height: auto; }
+      height: 60px; }
       body nav .menu {
         height: 60px;
-        padding: .5em 1em; }
+        padding: .5em 1em;
+        background: white; }
         body nav .menu .logo {
           width: 53%;
-          height: 50px; }
+          height: 50px;
+          margin: 0; }
+        body nav .menu .options {
+          display: none; }
       body nav .dropdown {
         height: 50px;
         width: 100%;
@@ -212,18 +179,85 @@ body {
           padding-top: 1em;
           padding-right: 2em; }
         body nav .dropdown div {
-          padding: 0; }
+          height: 80px;
+          line-height: 80px;
+          width: 100px;
+          float: right;
+          padding: 10px 0;
+          text-align: center; }
           body nav .dropdown div .shape {
+            height: 6px;
+            background: #4FB0E5;
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            border-radius: 3px;
             width: 32px;
             margin-left: 56%;
             margin-top: 5px; }
         body nav .dropdown .dropdown-menu {
           padding: 0 1em;
           width: 100%; }
-          body nav .dropdown .dropdown-menu li a {
-            height: 60px;
-            line-height: 60px;
-            font-size: 1.3em; } }
+          body nav .dropdown .dropdown-menu li {
+            text-align: center;
+            border-bottom: 1px solid #c2c2c2; }
+            body nav .dropdown .dropdown-menu li a {
+              height: 60px;
+              line-height: 60px;
+              font-size: 1.3em; } }
+  @media only screen and (min-width: 401px) and (max-width: 600px) {
+    body .carousel {
+      margin-top: 3em;
+      max-height: 300px; }
+    body nav {
+      height: auto; }
+      body nav .menu {
+        height: 60px;
+        padding: .5em 1em; }
+        body nav .menu .logo {
+          width: 45%;
+          height: 50px;
+          margin: 0 0 0 1em; }
+        body nav .menu .options {
+          display: none; }
+      body nav .dropdown {
+        height: 50px;
+        width: 100%;
+        float: right;
+        position: absolute;
+        top: 0;
+        left: 0; }
+        body nav .dropdown .dropdown-toggle {
+          height: auto;
+          padding-top: 1em;
+          padding-right: 2em; }
+        body nav .dropdown div {
+          height: 80px;
+          line-height: 80px;
+          width: 100px;
+          float: right;
+          padding: 10px 0;
+          text-align: center; }
+          body nav .dropdown div .shape {
+            height: 6px;
+            background: #4FB0E5;
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            border-radius: 3px;
+            width: 32px;
+            margin-left: 56%;
+            margin-top: 5px; }
+        body nav .dropdown .dropdown-menu {
+          padding: 0 1em;
+          width: 100%; }
+          body nav .dropdown .dropdown-menu li {
+            text-align: center;
+            border-bottom: 1px solid #c2c2c2; }
+            body nav .dropdown .dropdown-menu li a {
+              height: 60px;
+              line-height: 60px;
+              font-size: 1.3em; } }
   body .carousel-inner {
     /*SLIDER MAIN*/ }
     body .carousel-inner .item {
@@ -289,7 +323,7 @@ body {
         background: url("../images/microklima/microklima-back.png") no-repeat;
         background-size: 70%;
         position: absolute;
-        right: -10em; }
+        right: -14em; }
     body .carousel-inner .slide-humiklima .hk-01 {
       width: 500px;
       height: 500px;
@@ -303,7 +337,7 @@ body {
       background: url("../images/back-hk-02.png") no-repeat;
       background-size: 70%;
       position: absolute;
-      right: 20em;
+      right: 6em;
       top: 4em; }
     @media screen and (max-width: 768px) {
       body .carousel-inner {
@@ -486,7 +520,7 @@ body {
     @media screen and (max-width: 767px) {
       body .submenu {
         height: 470px; } }
-    @media screen and (max-width: 414px) {
+    @media screen and (max-width: 600px) {
       body .submenu .item {
         height: auto; }
         body .submenu .item .microklima, body .submenu .item .humiklima, body .submenu .item .servicios, body .submenu .item .galeria {
@@ -516,7 +550,7 @@ body {
     padding: 0;
     clear: both; }
     body #servicios .servicio {
-      height: 320px;
+      height: 300px;
       text-align: center;
       padding: 2em;
       box-sizing: border-box; }
@@ -588,7 +622,7 @@ body {
           padding: 0; } }
     @media screen and (max-width: 767px) {
       body #nosotros {
-        height: 650px; } }
+        height: auto; } }
   body #historia {
     padding-top: 4em; }
     body #historia h3 {
@@ -601,6 +635,14 @@ body {
         position: absolute;
         left: 37%;
         bottom: 1.2em; }
+      @media screen and (max-width: 600px) {
+        body #historia h3:before {
+          width: 20%;
+          left: calc( 80% - 40%);
+          bottom: 0.2em; } }
+      @media only screen and (min-width: 601px) and (max-width: 1024px) {
+        body #historia h3:before {
+          left: 34%; } }
     body #historia .item {
       display: inline-block; }
     body #historia .imagen {
@@ -639,6 +681,14 @@ body {
         position: absolute;
         left: 37%;
         bottom: 1.2em; }
+      @media screen and (max-width: 600px) {
+        body #valores h3:before {
+          width: 20%;
+          left: calc( 80% - 40%);
+          bottom: 0.2em; } }
+      @media only screen and (min-width: 601px) and (max-width: 1024px) {
+        body #valores h3:before {
+          left: 34%; } }
     body #valores .item {
       display: inline-block; }
       body #valores .item img {
@@ -800,8 +850,11 @@ body {
       text-align: justify; }
     @media screen and (max-width: 768px) {
       body footer {
-        height: auto;
-        padding-top: 3em; } }
+        height: 770px;
+        padding-top: 0; }
+        body footer .bottom {
+          padding: 2em;
+          height: auto; } }
   body .map-content {
     width: 100%;
     padding: 2em 0 0 0;
@@ -809,6 +862,9 @@ body {
     position: relative; }
     body .map-content #map {
       height: 300px; }
+    @media screen and (max-width: 768px) {
+      body .map-content {
+        padding: 3em; } }
   body #galeria {
     width: 100%;
     display: block; }
@@ -1156,13 +1212,36 @@ body {
             background: url("../images/icons/sprite-01.png");
             background-size: 300px auto;
             display: inline-block;
-            margin: 0 1em; }
+            margin: 0 1em;
+            position: relative;
+            cursor: pointer; }
+            body .galeria .container .modal-body .icons li .tooltip-soft {
+              opacity: 0;
+              width: 100px;
+              background: #f2f2f2;
+              color: #4FB0E6;
+              position: absolute;
+              top: 4em;
+              left: -2em;
+              font-size: 13px;
+              transition: all 1s ease-in-out;
+              -webkit-transition-timing-function: all 1s ease-in-out;
+              -moz-transition: all 500ms ease-in-out;
+              -ms-transition: all 500ms ease-in-out;
+              -o-transition: all 500ms ease-in-out;
+              box-shadow: 1px 1px 3px #c2c2c2; }
+            body .galeria .container .modal-body .icons li:hover .tooltip-soft {
+              opacity: 1; }
           body .galeria .container .modal-body .icons .humi-icon {
             background-position: -165px -242px;
             background-size: 300px; }
+            body .galeria .container .modal-body .icons .humi-icon:hover {
+              background-position: -242px -242px; }
           body .galeria .container .modal-body .icons .ref-icon {
             background-size: 250px auto;
             background-position: -132px -5px; }
+            body .galeria .container .modal-body .icons .ref-icon:hover {
+              background-position: -196px -5px; }
           body .galeria .container .modal-body .icons .pres-icon {
             background-position: -160px -300px; }
           body .galeria .container .modal-body .icons .fan-icon {
