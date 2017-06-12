@@ -180,7 +180,7 @@ body {
         body nav .menu .options {
           display: none; }
       body nav .dropdown {
-        height: 50px;
+        height: 100%;
         width: 100%;
         float: right;
         position: absolute;
@@ -188,8 +188,19 @@ body {
         left: 0; }
         body nav .dropdown .dropdown-toggle {
           height: auto;
-          padding-top: 1em;
-          padding-right: 2em; }
+          line-height: 59px;
+          height: 59px;
+          padding: 0;
+          color: #4FB0E5; }
+          body nav .dropdown .dropdown-toggle:before {
+            content: "\e055";
+            font-family: 'Glyphicons Halflings';
+            font-size: 28px;
+            transition: all 1s ease-in-out;
+            -webkit-transition-timing-function: all 1s ease-in-out;
+            -moz-transition: all 500ms ease-in-out;
+            -ms-transition: all 500ms ease-in-out;
+            -o-transition: all 500ms ease-in-out; }
         body nav .dropdown div {
           height: 80px;
           line-height: 80px;
@@ -216,7 +227,11 @@ body {
             body nav .dropdown .dropdown-menu li a {
               height: 60px;
               line-height: 60px;
-              font-size: 1.3em; } }
+              font-size: 1.3em; }
+      body nav .open .dropdown-toggle:before {
+        content: "\e014";
+        font-family: 'Glyphicons Halflings';
+        font-size: 28px; } }
   @media only screen and (min-width: 401px) and (max-width: 600px) {
     body .carousel {
       margin-top: 3em;

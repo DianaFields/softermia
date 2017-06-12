@@ -216,8 +216,9 @@ body{
 					display: none;
 				}
 			}
+
 			.dropdown{
-				height: 50px;
+				height: 100%;
 				width: 100%;
 				float: right;
 				position: absolute;
@@ -225,8 +226,16 @@ body{
 				left: 0;
 				.dropdown-toggle{
 					height: auto;
-					padding-top: 1em;
-					padding-right: 2em;
+					line-height: 59px;
+					    height: 59px;
+					    padding: 0;
+					    color: #4FB0E5;
+					&:before{
+						content:"\e055";
+						font-family: 'Glyphicons Halflings';
+					    font-size: 28px;
+					    @include animation;
+					}
 				}
 				div{
 					height: 80px;
@@ -261,6 +270,15 @@ body{
 						}
 					}
 
+				}
+			}
+			.open{
+				.dropdown-toggle{
+					&:before{
+						content:"\e014";
+						font-family: 'Glyphicons Halflings';
+					    font-size: 28px;
+					}
 				}
 			}
 		}
@@ -299,6 +317,7 @@ body{
 					height: auto;
 					padding-top: 1em;
 					padding-right: 2em;
+
 				}
 				div{
 					height: 80px;
