@@ -34,7 +34,7 @@ function pgdAnimation(){
 		var scrollTop = $(window).scrollTop();
 		if(scrollTop > firstScreen){
 			$('.pgd').css('position','fixed');
-			$('.pgd').css('top','6em');
+			// $('.pgd').css('top','6em');
 		}
 		if(scrollTop < firstScreen){
 			$('.pgd').css('top','0');
