@@ -1246,15 +1246,18 @@ body {
       width: 100%;
       height: 1000px;
       margin: 0 auto;
-      background: url("../images/microklima/microklima_full.jpg") no-repeat;
-      background-size: 40%;
+      background: url("../images/back-texture.jpg") no-repeat;
+      background-size: cover;
       background-position: 40% 55%; }
       body #esquema .full-machine .overlay {
-        background: rgba(27, 91, 190, 0.5);
+        /*background: url('../images/microklima/microklima_full.jpg')no-repeat;
+        background-size: 40%;
+        background: rgba(27, 91, 190,.5);
         width: 100%;
-        height: 100%; }
+        height: 100%;*/ }
       body #esquema .full-machine img {
-        width: 100%; }
+        width: 50%;
+        margin-left: 25%; }
       body #esquema .full-machine .pulsating {
         position: absolute;
         transform: translateX(-50%) translateY(-50%);
@@ -1331,15 +1334,18 @@ body {
       body #esquema .full-machine .txt-full-izq {
         line-height: 1.7;
         margin: 0 0 10px;
-        width: 20%;
+        width: 30%;
         position: absolute;
         top: 30%;
-        font-size: 18px;
-        text-align: right;
+        font-size: 16px;
+        text-align: left;
         padding-right: 21px;
-        color: #fff;
-        background: rgba(255, 255, 255, 0.2);
-        padding: 2em; }
+        color: #05076B;
+        background: rgba(255, 255, 255, 0.7);
+        padding: 2em;
+        /*box-shadow: 2px 2px 7px #eaeaea;*/
+        bottom: 30%;
+        left: 3%; }
       body #esquema .full-machine .txt-full-der {
         right: 0;
         line-height: 1.7;
@@ -1445,13 +1451,16 @@ body {
         body .galeria .container ul li span {
           color: #23527c; }
   body .slider {
-    /*background: url('../images/microklima/snowy-soft.mp4');*/
+    background: url("../images/microklima/slider-microklima.jpg");
     background-size: cover;
     width: 100%;
     height: 500px;
     margin-top: 6em;
     position: relative;
     overflow: hidden; }
+    body .slider h3 {
+      text-align: left;
+      color: #333; }
     body .slider .maquina {
       width: 500px;
       height: 500px;
@@ -1462,15 +1471,15 @@ body {
     body .slider .descripcion {
       width: 50%;
       margin: 0 auto;
-      text-align: center;
-      margin-top: 12em;
+      text-align: left;
+      margin-top: 9em;
       float: left;
-      margin-left: calc(50% - 25%);
+      margin-left: 5%;
       position: absolute;
       z-index: 99; }
       body .slider .descripcion p {
         font-size: 1.5em;
-        color: #fff;
+        color: #333;
         margin-bottom: 2em; }
       body .slider .descripcion ul li {
         width: 30%;

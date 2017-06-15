@@ -1473,149 +1473,149 @@ body{
 				padding-top: 5em;
 				clear: both;
 			}
-		
-				.pgd{
-					width: 40%;
-					text-align: center;
-					margin:0 auto;
-					left: calc(60% - 30%);
-					margin-top: 0;
-					.title{
-						
+
+			.pgd{
+				width: 40%;
+				text-align: center;
+				margin:0 auto;
+				left: calc(60% - 30%);
+				margin-top: 0;
+				.title{
+
 					padding-top: 5em;
-					}
-					img{
-						width: 100%;
-					}
-					.screen-01{
-						opacity: 0;
-						background: url(../images/microklima/screen-01.png) no-repeat;
-						background-size: 100%;
-						width: 40%;
-						height: 400px;
-						margin: 0 auto;
-						left: calc(60% - 30%);
-						position: inherit;
-						top:14.8em;
-						@include animation;
-						.text{
-							width: 60%;
-							right: -100%;
+				}
+				img{
+					width: 100%;
+				}
+				.screen-01{
+					opacity: 0;
+					background: url(../images/microklima/screen-01.png) no-repeat;
+					background-size: 100%;
+					width: 40%;
+					height: 400px;
+					margin: 0 auto;
+					left: calc(60% - 30%);
+					position: inherit;
+					top:14.8em;
+					@include animation;
+					.text{
+						width: 60%;
+						right: -100%;
+						position: absolute;
+						top: 20%;
+						height: auto;
+						background: #dadada;
+						position: relative;
+						-moz-border-radius:    5px;
+						-webkit-border-radius: 5px;
+						border-radius:         5px;
+						padding: 1.5em;
+						&:before {
+							content:"";
 							position: absolute;
-							top: 20%;
-							height: auto;
-							background: #dadada;
-							position: relative;
-							-moz-border-radius:    5px;
-							-webkit-border-radius: 5px;
-							border-radius:         5px;
-							padding: 1.5em;
-							&:before {
-								content:"";
-								position: absolute;
-								right: 100%;
-								top: 45%;
-								width: 0;
-								height: 0;
-								border-top: 10px solid transparent;
-								border-right: 20px solid #dadada;
-								border-bottom: 10px solid transparent;
-							}
-							p{
-
-								font-size: 1.3em;
-							}
+							right: 100%;
+							top: 45%;
+							width: 0;
+							height: 0;
+							border-top: 10px solid transparent;
+							border-right: 20px solid #dadada;
+							border-bottom: 10px solid transparent;
 						}
-					}
-					.screen-02{
-						opacity: 0;
-						background: url(../images/microklima/screen-02.png) no-repeat;
-						background-size: 100%;
-						width: 40%;
-						height: 400px;
-						margin: 0 auto;
-						left: calc(60% - 30%);
-						position: inherit;
-						top: 14.8em;
-						@include animation;
-						.text{
-							width: 60%;
-							left: -60%;
-							position: absolute;
-							top: 40%;
-							height: auto;
-							background: #dadada;
-							position: relative;
-							-moz-border-radius:    5px;
-							-webkit-border-radius: 5px;
-							border-radius:         5px;
-							padding: 1.5em;
-							&:before {
-								content:"";
-								position: absolute;
-								left: 100%;
-								top: 45%;
-								width: 0;
-								height: 0;
-								border-top: 10px solid transparent;
-								border-left: 20px solid #dadada;
-								border-bottom: 10px solid transparent;
-							}
-							p{
+						p{
 
-								font-size: 1.3em;
-							}
+							font-size: 1.3em;
 						}
-					}
-					.screen-03{
-						opacity: 0;
-						background: url(../images/microklima/screen-03.png) no-repeat;
-						background-size: 100%;
-						width: 40%;
-						height: 400px;
-						margin: 0 auto;
-						left: calc(60% - 30%);
-						position: fixed;
-						top: 14.8em;
-						@include animation;
-						.text{
-							width: 60%;
-							left: -60%;
-							position: absolute;
-							top: 40%;
-							height: auto;
-							background: #b3dce2;
-							position: relative;
-							-moz-border-radius:    5px;
-							-webkit-border-radius: 5px;
-							border-radius:         5px;
-							padding: 1.5em;
-							&:before {
-								content:"";
-								position: absolute;
-								left: 100%;
-								top: 45%;
-								width: 0;
-								height: 0;
-								border-top: 10px solid transparent;
-								border-left: 20px solid #b3dce2;
-								border-bottom: 10px solid transparent;
-							}
-							p{
-
-								font-size: 1.3em;
-							}
-						}
-					}
-					.tittle{
-						font-weight: 700;
-						font-size: 1.5em;
-					}
-					.description{
-						font-size: 1.2em;
-						line-height: 1.5em;
 					}
 				}
+				.screen-02{
+					opacity: 0;
+					background: url(../images/microklima/screen-02.png) no-repeat;
+					background-size: 100%;
+					width: 40%;
+					height: 400px;
+					margin: 0 auto;
+					left: calc(60% - 30%);
+					position: inherit;
+					top: 14.8em;
+					@include animation;
+					.text{
+						width: 60%;
+						left: -60%;
+						position: absolute;
+						top: 40%;
+						height: auto;
+						background: #dadada;
+						position: relative;
+						-moz-border-radius:    5px;
+						-webkit-border-radius: 5px;
+						border-radius:         5px;
+						padding: 1.5em;
+						&:before {
+							content:"";
+							position: absolute;
+							left: 100%;
+							top: 45%;
+							width: 0;
+							height: 0;
+							border-top: 10px solid transparent;
+							border-left: 20px solid #dadada;
+							border-bottom: 10px solid transparent;
+						}
+						p{
+
+							font-size: 1.3em;
+						}
+					}
+				}
+				.screen-03{
+					opacity: 0;
+					background: url(../images/microklima/screen-03.png) no-repeat;
+					background-size: 100%;
+					width: 40%;
+					height: 400px;
+					margin: 0 auto;
+					left: calc(60% - 30%);
+					position: fixed;
+					top: 14.8em;
+					@include animation;
+					.text{
+						width: 60%;
+						left: -60%;
+						position: absolute;
+						top: 40%;
+						height: auto;
+						background: #b3dce2;
+						position: relative;
+						-moz-border-radius:    5px;
+						-webkit-border-radius: 5px;
+						border-radius:         5px;
+						padding: 1.5em;
+						&:before {
+							content:"";
+							position: absolute;
+							left: 100%;
+							top: 45%;
+							width: 0;
+							height: 0;
+							border-top: 10px solid transparent;
+							border-left: 20px solid #b3dce2;
+							border-bottom: 10px solid transparent;
+						}
+						p{
+
+							font-size: 1.3em;
+						}
+					}
+				}
+				.tittle{
+					font-weight: 700;
+					font-size: 1.5em;
+				}
+				.description{
+					font-size: 1.2em;
+					line-height: 1.5em;
+				}
+			}
 			
 			
 
@@ -1629,16 +1629,20 @@ body{
 				width:100%;
 				height: 1000px;
 				margin:0 auto;
-				background: url('../images/microklima/microklima_full.jpg')no-repeat;
-				background-size: 40%;
+				background: url('../images/back-texture.jpg')no-repeat;
+				background-size: cover;
+				
 				background-position: 40% 55%;
 				.overlay{
+					/*background: url('../images/microklima/microklima_full.jpg')no-repeat;
+					background-size: 40%;
 					background: rgba(27, 91, 190,.5);
 					width: 100%;
-					height: 100%;
+					height: 100%;*/
 				}
 				img{
-					width: 100%;
+					width: 50%;
+					margin-left: 25%;
 				}
 
 				.pulsating{
@@ -1727,33 +1731,35 @@ body{
 				}
 				.txt-full-izq{
 					line-height: 1.7;
-				    margin: 0 0 10px;
-				    width: 20%;
-				    position: absolute;
-				    top: 30%;
-				    font-size: 18px;
-				    text-align: right;
-				    padding-right: 21px;
-				    color: #fff;
-				    background: rgba(256,256,256,.2);
-    				padding: 2em;	
-
+					margin: 0 0 10px;
+					width: 30%;
+					position: absolute;
+					top: 30%;
+					font-size: 16px;
+					text-align: left;
+					padding-right: 21px;
+					color: #05076B;
+					background: rgba(256,256,256,.7);
+					padding: 2em;	
+					  /*box-shadow: 2px 2px 7px #eaeaea;*/
+					  bottom: 30%;
+					  left: 3%;
 
 				}
 				.txt-full-der{
 					right: 0;
 					line-height: 1.7;
-				    margin: 0 0 10px;
-				    width: 20%;
-				    position: absolute;
-				    top: 40%;
-				    font-size: 18px;
-				    text-align: left;
+					margin: 0 0 10px;
+					width: 20%;
+					position: absolute;
+					top: 40%;
+					font-size: 18px;
+					text-align: left;
 
-				    padding-left: 21px;
-				    color: #fff;
-				    background: rgba(256,256,256,.2);
-    				padding: 2em;
+					padding-left: 21px;
+					color: #fff;
+					background: rgba(256,256,256,.2);
+					padding: 2em;
 				}
 			}
 			@media screen and (max-width: 768px){
@@ -1873,13 +1879,17 @@ body{
 		}
 	}
 	.slider{
-		/*background: url('../images/microklima/snowy-soft.mp4');*/
+		background: url('../images/microklima/slider-microklima.jpg');
 		background-size: cover;
 		width: 100%;
 		height: 500px;
 		margin-top: 6em;
 		position: relative;
 		overflow: hidden;
+		h3{
+			text-align: left;
+			color: #333;
+		}
 		.maquina{
 			width: 500px;
 			height: 500px;
@@ -1891,15 +1901,15 @@ body{
 		.descripcion{
 			width: 50%;
 			margin: 0 auto;
-			text-align: center;
-			margin-top: 12em;
+			text-align: left;
+			margin-top: 9em;
 			float: left;
-			margin-left: calc(50% - 25%);
+			margin-left: 5%;
 			position: absolute;
 			z-index: 99;
 			p{
 				font-size: 1.5em;
-				color: #fff;
+				color: #333;
 				margin-bottom: 2em;
 			}
 			ul{
@@ -2034,13 +2044,13 @@ body{
 
 			}
 			.overlay{
-				    z-index: 99;
-			    background: rgba(5, 8, 106, 0.7);
-			    width: 100%;
-			    height: 100%;
-			    bottom: 0;
-			    top: 0;
-			    position: absolute;
+				z-index: 99;
+				background: rgba(5, 8, 106, 0.7);
+				width: 100%;
+				height: 100%;
+				bottom: 0;
+				top: 0;
+				position: absolute;
 			}
 		}
 	}
