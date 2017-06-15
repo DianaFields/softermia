@@ -1419,10 +1419,13 @@ body{
 			}
 		}
 		#microklima{
-			height: 3000px;
-
-			.densidad{
+			height:3480px;
+			.text{
 				height: 500px;
+				padding:0;
+			}
+			.densidad{
+				height: 100%;
 				h3{
 					font-size: 1.5em;
 					width: 70%;
@@ -1468,20 +1471,15 @@ body{
 			}
 			#pgd-main{
 				padding-top: 5em;
-			}
-			#pgd-section{
-				background: url(../images/back-texture.jpg);
-				background-size: cover;
-				display: block;
 				clear: both;
-				height: auto;
-				min-height: 1680px;
-				background-attachment: fixed;
+			}
+		
 				.pgd{
 					width: 40%;
 					text-align: center;
 					margin:0 auto;
 					left: calc(60% - 30%);
+					margin-top: 0;
 					.title{
 						
 					padding-top: 5em;
@@ -1497,8 +1495,8 @@ body{
 						height: 400px;
 						margin: 0 auto;
 						left: calc(60% - 30%);
-						position: fixed;
-						top: 8.8em;
+						position: inherit;
+						top:14.8em;
 						@include animation;
 						.text{
 							width: 60%;
@@ -1537,8 +1535,48 @@ body{
 						height: 400px;
 						margin: 0 auto;
 						left: calc(60% - 30%);
+						position: inherit;
+						top: 14.8em;
+						@include animation;
+						.text{
+							width: 60%;
+							left: -60%;
+							position: absolute;
+							top: 40%;
+							height: auto;
+							background: #b3dce2;
+							position: relative;
+							-moz-border-radius:    5px;
+							-webkit-border-radius: 5px;
+							border-radius:         5px;
+							padding: 1.5em;
+							&:before {
+								content:"";
+								position: absolute;
+								left: 100%;
+								top: 45%;
+								width: 0;
+								height: 0;
+								border-top: 10px solid transparent;
+								border-left: 20px solid #b3dce2;
+								border-bottom: 10px solid transparent;
+							}
+							p{
+
+								font-size: 1.3em;
+							}
+						}
+					}
+					.screen-03{
+						opacity: 0;
+						background: url(../images/microklima/screen-03.png) no-repeat;
+						background-size: 100%;
+						width: 40%;
+						height: 400px;
+						margin: 0 auto;
+						left: calc(60% - 30%);
 						position: fixed;
-						top: 8.8em;
+						top: 14.8em;
 						@include animation;
 						.text{
 							width: 60%;
@@ -1578,7 +1616,7 @@ body{
 						line-height: 1.5em;
 					}
 				}
-			}
+			
 			
 
 

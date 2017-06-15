@@ -30,35 +30,56 @@ function pgdAnimation(){
 		var firstScreen = $("#firstScreen").offset().top;
 		var secondScreen = $("#secondScreen").offset().top;
 		var thirdScreen = $("#thirdScreen").offset().top;
+		var fourScreen = $("#fourScreen").offset().top;
 		var lastScreen = $("#lastScreen").offset().top;
 		var scrollTop = $(window).scrollTop();
 		if(scrollTop > firstScreen){
 			$('.pgd').css('position','fixed');
-			// $('.pgd').css('top','6em');
+			$('.screen-01').css('position','fixed');
+			$('.pgd').css('top','12em');
 		}
 		if(scrollTop < firstScreen){
 			$('.pgd').css('top','0');
 			$('.pgd').css('position','inherit');
+			$('.screen-01').css('position','inherit');
+
 			
 		}
 		if(scrollTop > secondScreen){
 			$('.screen-01').css('opacity','1');
 			$('.screen-02').css('opacity','0');
+			$('.screen-03').css('opacity','0');
+
 		}
-		if(scrollTop < secondScreen){
-			$('.screen-01').css('opacity','0');
-		}
+		// if(scrollTop < secondScreen){
+		// 	$('.screen-01').css('opacity','0');
+		// }
 		if(scrollTop > thirdScreen){
-			$('.screen-02').css('opacity','1');
-			$('.screen-01').css('opacity','0');
+			 $('.screen-02').css('opacity','1');
+			// $('.screen-01').css('opacity','0');
 		}
+		// if(scrollTop < thirdScreen){
+		// 	// $('.screen-02').css('opacity','0');
+		// 	$('.screen-01').css('opacity','1');
+		// }
+		if(scrollTop > fourScreen){
+			$('.screen-02').css('opacity','0');
+			$('.screen-01').css('opacity','0');
+			$('.screen-03').css('opacity','1');
+		}
+		// if(scrollTop < fourScreen){
+		// 	$('.screen-02').css('opacity','1');
+		// 	$('.screen-03').css('opacity','0');
+		// }
 		if(scrollTop > lastScreen){
 			$('.pgd').css('position','inherit');
-			$('.pgd').css('margin-top','155em');
-			$('.screen-02').css('opacity','0');
+			$('.screen-03').css('position','inherit');
+			$('.pgd').css('margin-top','140em');
+			$('.screen-03').css('opacity','0');
 		}
 		if(scrollTop < lastScreen & scrollTop > firstScreen){
 			$('.pgd').css('position','fixed');
+			$('.screen-01').css('position','fixed');
 			$('.pgd').css('margin-top','0');
 		}
 	});
