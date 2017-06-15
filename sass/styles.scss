@@ -1904,11 +1904,12 @@ body{
 			text-align: left;
 			margin-top: 9em;
 			float: left;
-			margin-left: 5%;
+			padding-left: 5%;
 			position: absolute;
 			z-index: 99;
+			background:rgba(90,160, 220, .2);
 			p{
-				font-size: 1.5em;
+				font-size: 1.3em;
 				color: #333;
 				margin-bottom: 2em;
 			}
