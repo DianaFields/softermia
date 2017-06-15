@@ -1136,7 +1136,7 @@ body {
           position: absolute;
           top: 20%;
           height: auto;
-          background: #b3dce2;
+          background: #dadada;
           position: relative;
           -moz-border-radius: 5px;
           -webkit-border-radius: 5px;
@@ -1150,7 +1150,7 @@ body {
             width: 0;
             height: 0;
             border-top: 10px solid transparent;
-            border-right: 20px solid #b3dce2;
+            border-right: 20px solid #dadada;
             border-bottom: 10px solid transparent; }
           body #microklima .pgd .screen-01 .text p {
             font-size: 1.3em; }
@@ -1175,7 +1175,7 @@ body {
           position: absolute;
           top: 40%;
           height: auto;
-          background: #b3dce2;
+          background: #dadada;
           position: relative;
           -moz-border-radius: 5px;
           -webkit-border-radius: 5px;
@@ -1189,7 +1189,7 @@ body {
             width: 0;
             height: 0;
             border-top: 10px solid transparent;
-            border-left: 20px solid #b3dce2;
+            border-left: 20px solid #dadada;
             border-bottom: 10px solid transparent; }
           body #microklima .pgd .screen-02 .text p {
             font-size: 1.3em; }
@@ -1328,6 +1328,31 @@ body {
       body #esquema .full-machine .mk-04 {
         left: 52%;
         top: 42%; }
+      body #esquema .full-machine .txt-full-izq {
+        line-height: 1.7;
+        margin: 0 0 10px;
+        width: 20%;
+        position: absolute;
+        top: 30%;
+        font-size: 18px;
+        text-align: right;
+        padding-right: 21px;
+        color: #fff;
+        background: rgba(255, 255, 255, 0.2);
+        padding: 2em; }
+      body #esquema .full-machine .txt-full-der {
+        right: 0;
+        line-height: 1.7;
+        margin: 0 0 10px;
+        width: 20%;
+        position: absolute;
+        top: 40%;
+        font-size: 18px;
+        text-align: left;
+        padding-left: 21px;
+        color: #fff;
+        background: rgba(255, 255, 255, 0.2);
+        padding: 2em; }
     @media screen and (max-width: 768px) {
       body #esquema {
         display: none; } }
@@ -1420,11 +1445,13 @@ body {
         body .galeria .container ul li span {
           color: #23527c; }
   body .slider {
-    background: url("../images/microklima/slider-back.jpg");
+    /*background: url('../images/microklima/snowy-soft.mp4');*/
     background-size: cover;
     width: 100%;
     height: 500px;
-    margin-top: 6em; }
+    margin-top: 6em;
+    position: relative;
+    overflow: hidden; }
     body .slider .maquina {
       width: 500px;
       height: 500px;
@@ -1529,5 +1556,17 @@ body {
         background-size: 70%;
         background-size: 56%;
         background-position: 2em 2.5em; }
+    body .slider .video video {
+      position: absolute;
+      width: 100%;
+      top: -5em; }
+    body .slider .video .overlay {
+      z-index: 99;
+      background: rgba(5, 8, 106, 0.7);
+      width: 100%;
+      height: 100%;
+      bottom: 0;
+      top: 0;
+      position: absolute; }
 
 /*# sourceMappingURL=styles.css.map */
