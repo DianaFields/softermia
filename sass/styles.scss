@@ -1907,7 +1907,7 @@ body{
 			padding-left: 5%;
 			position: absolute;
 			z-index: 99;
-			background:rgba(90,160, 220, .2);
+			background:rgba(256, 256, 256, 0.2);
 			p{
 				font-size: 1.3em;
 				color: #333;
@@ -2053,6 +2053,18 @@ body{
 				top: 0;
 				position: absolute;
 			}
+		}
+		@media screen and (max-width: 768px){
+			background-position: -81% 0;
+			.descripcion{
+				width:80%;
+				padding:2em;
+				float:none;
+				position: relative;
+				margin-top: 3em;
+				background: rgba(255, 255, 255, 0.5);
+			}
+			
 		}
 	}
 }
