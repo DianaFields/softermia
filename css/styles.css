@@ -1238,6 +1238,16 @@ body {
       body #microklima .pgd .description {
         font-size: 1.2em;
         line-height: 1.5em; }
+      @media screen and (max-width: 768px) {
+        body #microklima .pgd {
+          width: 80%;
+          left: calc(20% - 10%); }
+          body #microklima .pgd .screen-01 {
+            width: 80%;
+            left: calc(20% - 10%); }
+            body #microklima .pgd .screen-01 .text {
+              right: inherit;
+              top: 40%; } }
   body #esquema {
     position: relative;
     text-align: center; }
@@ -1588,5 +1598,46 @@ body {
           position: relative;
           margin-top: 3em;
           background: rgba(255, 255, 255, 0.5); } }
+
+/*Break points screen*/
+#firstScreen {
+  width: 100%;
+  height: 2px;
+  top: 80em;
+  position: absolute; }
+
+#secondScreen {
+  width: 100%;
+  height: 2px;
+  top: 100em;
+  position: absolute; }
+
+#thirdScreen {
+  width: 100%;
+  height: 2px;
+  top: 150em;
+  position: absolute; }
+
+#fourScreen {
+  width: 100%;
+  height: 2px;
+  top: 200em;
+  position: absolute; }
+
+#lastScreen {
+  width: 100%;
+  height: 2px;
+  top: 230em;
+  position: absolute; }
+
+@media screen and (max-width: 768px) {
+  #firstScreen {
+    top: 120em; }
+
+  #secondScreen {
+    top: 170em; }
+
+  #thirdScreen {
+    top: 190em; } }
 
 /*# sourceMappingURL=styles.css.map */
