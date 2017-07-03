@@ -54,9 +54,9 @@ function pgdAnimation(){
 		// if(scrollTop < secondScreen){
 		// 	$('.screen-01').css('opacity','0');
 		// }
-		if(scrollTop > thirdScreen){
+		if(scrollTop > thirdScreen) {
 			 $('.screen-02').css('opacity','1');
-			// $('.screen-01').css('opacity','0');
+			$('.screen-01').css('opacity','0');
 		}
 		// if(scrollTop < thirdScreen){
 		// 	// $('.screen-02').css('opacity','0');

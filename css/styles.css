@@ -1248,6 +1248,15 @@ body {
             body #microklima .pgd .screen-01 .text {
               right: inherit;
               top: 40%; } }
+    @media screen and (max-width: 768px) {
+      body #microklima .text {
+        height: auto; }
+      body #microklima .densidad {
+        padding-bottom: 2em; }
+        body #microklima .densidad ul {
+          padding-left: 0; }
+        body #microklima .densidad h3 {
+          width: 90%; } }
   body #esquema {
     position: relative;
     text-align: center; }
@@ -1632,7 +1641,7 @@ body {
 
 @media screen and (max-width: 768px) {
   #firstScreen {
-    top: 120em; }
+    top: 100em; }
 
   #secondScreen {
     top: 170em; }
