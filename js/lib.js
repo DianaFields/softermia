@@ -36,7 +36,7 @@ function pgdAnimation(){
 		if(scrollTop > firstScreen){
 			$('.pgd').css('position','fixed');
 			$('.screen-01').css('position','fixed');
-			$('.pgd').css('top','12em');
+			$('.pgd').css('top','10em');
 		}
 		if(scrollTop < firstScreen){
 			$('.pgd').css('top','0');
@@ -84,6 +84,37 @@ function pgdAnimation(){
 		}
 	});
 	 
+}
+function backToTop(){
+var pxScrolled = 1000;
+  var duration = 500;
+  $(window).scroll(function() {
+  	
+    if ($(this).scrollTop() > pxScrolled) {
+      $('.backtop').css({'opacity': '1', 'transition': '.6s'});
+    } else {
+      $('.backtop').css({'opacity': '0'});
+    } 
+  });
+
+  $('.backtop').click(function() {
+    $('body').animate({scrollTop: 0}, duration);
+  })
+}
+
+function menuAnimated(){
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 200) {
+    	 $('nav').addClass("nav-collapse");
+     
+    } else {
+      $('nav').removeClass("nav-collapse");
+    } 
+  });
+
+  $('.backtop').click(function() {
+    $('body').animate({scrollTop: 0}, duration);
+  })
 }
 
 

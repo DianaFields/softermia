@@ -17,6 +17,7 @@
 
 
 	<div id="header"></div>
+	<div class="backtop" tooltip="Back To Top"></div>
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		<!-- Indicators -->
 		<ol class="carousel-indicators">
@@ -67,7 +68,7 @@
 					<div class="microklima" onclick="location.href='microklima/index.html'"><div class="logo"></div><span></span></div>
 				</li>
 				<li class="item col-lg-3 col-md-3 col-sm-3 col-xs-12">
-					<div class="humiklima"><div class="logo"></div><span></span></div>
+					<div class="humiklima" onclick="location.href='humiklima/index.html'"><div class="logo"></div><span></span></div>
 				</li>
 				<li class="item col-lg-3 col-md-3 col-sm-3 col-xs-12">
 					<div class="servicios" onclick="window.location='#servicios'"><div class="logo"></div><span></span></div>
@@ -343,7 +344,7 @@
 
 				<div class="space-min"></div>
 				<!-- CLIENTES -->
-				<div id="clientes">
+				<!-- <div id="clientes">
 					<h3>Algunos de nuestros clientes son</h3>
 					<div class="col-lg-12 col-md-12 col-sm-12">
 						<div class="col-lg-1 col-md-1 col-sm-1"></div>
@@ -449,7 +450,7 @@
 
 
 
-				</div>
+				</div> -->
 				<div class="space-min"></div>
 
 
@@ -507,6 +508,8 @@
 				<script type="text/javascript">
 				loadEx();
 				animateScroll();
+				backToTop();
+				
 				new WOW().init();
 
 				(function($){

@@ -48,12 +48,19 @@ body{
 	@mixin animation{
 		transition:all 1s ease-in-out;
 		-webkit-transition-timing-function: all 1s ease-in-out;
-		-moz-transition:all 500ms ease-in-out;
-		-ms-transition:all 500ms ease-in-out;;
-		-o-transition:all 500ms ease-in-out;
+		-moz-transition:all 1s ease-in-out;
+		-ms-transition:all 1s ease-in-out;;
+		-o-transition:all 1s ease-in-out;
+	}
+	@mixin animation-fast{
+		transition:all 200ms ease-in-out;
+		-webkit-transition-timing-function: all 1s ease-in-out;
+		-moz-transition:all 200ms ease-in-out;
+		-ms-transition:all 200ms ease-in-out;;
+		-o-transition:all 200ms ease-in-out;
 	}
 	.carousel{
-		margin-top: 6em;
+		margin-top: 7.1em;
 		height: 500px;
 		@media screen and (min-width: 1500px){
 			height: 500px;
@@ -63,23 +70,65 @@ body{
 		}
 
 	}
+	.backtop{		    
+			width: 60px;
+		    height: 60px;
+		    line-height: 55px;
+		    position: fixed;
+		    bottom: 1em;
+		    right: 1em;
+		    z-index: 99;
+		    background: #fff;
+		    border-radius: 50%;
+		    border:2px solid #4FB0E5;
+		    opacity: 0;
+		    text-align: center;
+		    cursor: pointer;
+		    &:after{
+		    	content: "\e113";
+		    	font-family: 'Glyphicons Halflings'; 
+		    	color: #999;
+		    	    font-size: 1.5em;
+		    }
+	}
 	nav{
 		background-color: rgba(256,256,256,.8);
 		border: 0;
 		padding: 0;
 		margin-bottom: 0;
-		height:80px;
 		width: 100%;
 		.menu{
+			height: 100%;
 			max-width: 1550px;
 			margin:0 auto;
 			.options{
 				width: 70%;
 				text-align: right;
 				float: right;
-				height:80px;
-				line-height: 80px;
+				height: 100%;
+				.prod{
+					height: 100%;
+					ul{
+						opacity: 0;
+						background: rgba(0,0,0,.5);
+    					padding: 0;
+    					@include animation;
+						li{
+							list-style: none;
+							color: #fff;
+
+							&:hover{
+								color:#4FB0E5;
+							}
+						}
+					}
+					&:hover > ul{
+						opacity: 1;
+						
+					}
+				}
 			}
+
 		}
 
 		margin: 0 auto;
@@ -104,9 +153,7 @@ body{
 			}
 		}
 		.logo{
-			width: 17%;
 			height: 70px;
-			margin: 1em 0 0 4em;
 			@media screen and (min-width: 1300px){
 				background-size: 70%;
 			}
@@ -116,10 +163,10 @@ body{
 		}
 		.item{
 			width: 15%;
-			vertical-align:top;
 			text-decoration: none;
 			font-size: 1.2em;
 			text-align: center;
+			line-height: 100%;
 		}
 		@media screen and (min-width: 1024px){
 			.dropdown{
@@ -129,10 +176,24 @@ body{
 				width: 13%;
 			}
 		}
-		
-		
-		
-		
+	}
+	.nav-expand{
+		height: 100px;
+		.logo{
+			width: 18%;
+			    margin: 1em 0 0 4em;
+		}
+	}
+	.nav-collapse{
+		height: 70px;
+		.logo{
+			width: 50px;
+			overflow: hidden;
+			    margin: .8em 0 0 4em;
+			    img{
+			    	    width: 367%;
+			    }
+		}
 	}
 	@media only screen and (min-width: 769px) and (max-width: 1023px){
 		.carousel{
@@ -603,6 +664,7 @@ body{
 					}
 
 				}
+
 				.humiklima{
 					background:#4F7EC6;
 					span{
@@ -1435,7 +1497,7 @@ body{
 				ul{
 					padding-left: 6em;
 					li{
-						list-style: none;
+						list-style-type: circle;
 						line-height: 35px;
 					}
 				}
@@ -1496,7 +1558,7 @@ body{
 					margin: 0 auto;
 					left: calc(60% - 30%);
 					position: inherit;
-					top:14.8em;
+					top:12.8em;
 					@include animation;
 					.text{
 						width: 60%;
@@ -1536,7 +1598,7 @@ body{
 					margin: 0 auto;
 					left: calc(60% - 30%);
 					position: inherit;
-					top: 14.8em;
+					top:12.8em;
 					@include animation;
 					.text{
 						width: 60%;
@@ -1576,7 +1638,7 @@ body{
 					margin: 0 auto;
 					left: calc(60% - 30%);
 					position: fixed;
-					top: 14.8em;
+					top: 12.8em;
 					@include animation;
 					.text{
 						width: 60%;
@@ -1607,6 +1669,29 @@ body{
 						}
 					}
 				}
+				@media screen and (max-width: 768px){
+					width: 80%;
+					left: calc(20% - 10%);
+					.screen-01, .screen-02, .screen-03{
+						top: 14.8em;
+						width: 80%;
+						left: calc(20% - 10%);
+						.text{
+							right: 0;
+							top: 60%;
+							margin: 0 auto;
+							width: 98%;
+							left: 0;
+							&:before{
+								top: -16%;
+								left: 46%;
+								border-left: 10px solid transparent;
+								border-right: 11px solid transparent;
+								border-bottom: 12px solid #dadada;
+							}
+						}
+					}
+				}
 				.tittle{
 					font-weight: 700;
 					font-size: 1.5em;
@@ -1615,22 +1700,7 @@ body{
 					font-size: 1.2em;
 					line-height: 1.5em;
 				}
-				@media screen and (max-width: 768px){
-					
-						width: 80%;
-						left: calc(20% - 10%);
-					.screen-01{
-						 width: 80%;
-						    left: calc(20% - 10%);
-						.text{
-							right: inherit;
-						    top: 40%;
-						}
-						   
-
-					}
-
-				}
+				
 			}
 			@media screen and (max-width: 768px){
 				.text{
@@ -1638,17 +1708,14 @@ body{
 				}
 				.densidad{
 					padding-bottom: 2em;
-						ul{
-							padding-left: 0;
-						}
-						  h3{
-						  	width: 90%;
-						  }  
+					ul{
+						padding-left: 0;
 					}
+					h3{
+						width: 90%;
+					}  
+				}
 			}
-			
-			
-
 
 		}
 		#esquema{
@@ -1771,9 +1838,9 @@ body{
 					color: #05076B;
 					background: rgba(256,256,256,.7);
 					padding: 2em;	
-					  /*box-shadow: 2px 2px 7px #eaeaea;*/
-					  bottom: 30%;
-					  left: 3%;
+					/*box-shadow: 2px 2px 7px #eaeaea;*/
+					bottom: 30%;
+					left: 3%;
 
 				}
 				.txt-full-der{
@@ -1913,7 +1980,7 @@ body{
 		background-size: cover;
 		width: 100%;
 		height: 500px;
-		margin-top: 6em;
+		margin-top: 7.1em;
 		position: relative;
 		overflow: hidden;
 		h3{
@@ -1932,14 +1999,23 @@ body{
 			width: 50%;
 			margin: 0 auto;
 			text-align: left;
-			margin-top: 9em;
+			margin-top: 11em;
 			float: left;
 			padding-left: 5%;
 			position: absolute;
 			z-index: 99;
-			background:rgba(256, 256, 256, 0.2);
+			h3{
+				&:after{
+					content:"";
+					border:1px solid #4FB0E5;
+					position: absolute;
+					left: 0;
+					top: 2.5em;
+					width: 7%;
+				}
+			}
 			p{
-				font-size: 1.3em;
+				font-size: 1.6em;
 				color: #333;
 				margin-bottom: 2em;
 			}
@@ -2075,7 +2151,7 @@ body{
 
 			}
 			.overlay{
-				z-index: 99;
+				z-index: 2;
 				background: rgba(5, 8, 106, 0.7);
 				width: 100%;
 				height: 100%;
@@ -2132,4 +2208,101 @@ body{
 	#thirdScreen{
 		top: 190em;
 	}
+	#fourScreen{
+		top: 230em;
+	}
 }
+/*HUMIKLIMA*/
+#humiklima{
+	.slider-hk-section{
+		background: none;
+		.descripcion{
+			h3{
+				color: #fff;
+			}
+			p{
+				color: #fff;
+			}
+		}
+		.video{
+			.overlay{
+				background: rgba(40, 119, 228, .3);
+			}
+		}
+	.hk-01{
+		    float: right;
+    z-index: 99;
+		img{
+			width: 80%;
+			margin-top: 2em;
+		}
+	}
+	}
+	.panel-hk{
+		background: #d2d2d2;
+		height: 250px;
+		position: relative;
+		    margin-top: 15em;
+		.image{
+			img{
+				width: 80%;
+				position: absolute;
+				top: -17em;
+			}
+
+		}
+		.list{
+			padding-top: 1.5em;
+			ul{
+				li{
+					list-style-type: circle;
+					line-height: 3em;
+				}
+			}
+		}
+	}
+	.panel-video{
+		height: 350px;
+		overflow: hidden;
+		.video{
+			margin-top: -8em;
+			video{
+				width: 100%;
+			}
+		}
+		.text{
+			p{
+				margin: 8em 0 0 0;
+				font-size: 1.3em;
+			}
+		}
+	}
+	#servicios{
+		margin-top: 3em;
+		.humi-01, .humi-02, .humi-03{
+			div{
+				background: url(../images/icons/sprite-01.png) no-repeat 19px 18px;
+    			background-size: 300%;
+			}
+		}
+		.humi-01{
+			div{
+			background-position:-94px 13px;
+			}
+			
+		}
+		.humi-02{
+			div{
+			    background-position: -150px 13px;
+			}
+			
+		}
+		.humi-03{
+			div{
+			    background-position: -94px 13px;
+			}
+			
+		}
+	}
+}
+
