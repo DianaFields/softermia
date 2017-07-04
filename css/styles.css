@@ -87,11 +87,13 @@ body {
         float: right;
         height: 100%; }
         body nav .menu .options .prod {
-          height: 1005; }
+          height: 100%; }
           body nav .menu .options .prod ul {
             opacity: 0;
             background: rgba(0, 0, 0, 0.5);
             padding: 0;
+            position: absolute;
+            top: 4em;
             transition: all 1s ease-in-out;
             -webkit-transition-timing-function: all 1s ease-in-out;
             -moz-transition: all 1s ease-in-out;
@@ -99,7 +101,8 @@ body {
             -o-transition: all 1s ease-in-out; }
             body nav .menu .options .prod ul li {
               list-style: none;
-              color: #fff; }
+              color: #fff;
+              padding: 1em; }
               body nav .menu .options .prod ul li:hover {
                 color: #4FB0E5; }
           body nav .menu .options .prod:hover > ul {
@@ -117,7 +120,7 @@ body {
         height: 2px;
         background: #4EB0E5;
         position: absolute;
-        bottom: 1.5em;
+        bottom: -.5em;
         left: 2em;
         transition: all 1s ease-in-out;
         -webkit-transition-timing-function: all 1s ease-in-out;
@@ -136,7 +139,7 @@ body {
       text-decoration: none;
       font-size: 1.2em;
       text-align: center;
-      line-height: 100%; }
+      padding-top: 2em; }
     @media screen and (min-width: 1024px) {
       body nav .dropdown {
         display: none; }
@@ -1111,10 +1114,26 @@ body {
   body .slider-mk-section .maquina {
     right: -1em !important; }
   body #microklima {
-    height: 3480px; }
+    height: 3250px; }
     body #microklima .text {
-      height: 500px;
-      padding: 0; }
+      height: 400px;
+      padding: 0;
+      position: relative; }
+      body #microklima .text .video-back {
+        position: absolute;
+        width: 100%;
+        z-index: -2;
+        /*.overlay{
+        	background: rgba(17,87,146,.2);
+            width: 1200px;
+            height: 500px;
+            position: absolute;
+            }*/ }
+        body #microklima .text .video-back video {
+          width: 100%;
+          top: 0;
+          left: 0;
+          opacity: .2; }
     body #microklima .densidad {
       height: 100%; }
       body #microklima .densidad h3 {
@@ -1126,22 +1145,19 @@ body {
         padding-left: 6em; }
         body #microklima .densidad ul li {
           list-style-type: circle;
-          line-height: 35px; }
+          line-height: 35px;
+          font-size: 16px; }
       body #microklima .densidad .icon {
         width: 50px;
         height: 70px;
         float: left;
         margin: 2.5em 0 0 1em; }
-    body #microklima .alta {
-      background: #f2f2f2; }
-      body #microklima .alta .icon {
-        background: url("../images/microklima/icon-alta-densidad.png") no-repeat;
-        background-size: 80%; }
-    body #microklima .baja {
-      background: #f7f7f7; }
-      body #microklima .baja .icon {
-        background: url("../images/microklima/icon-baja-densidad.png") no-repeat;
-        background-size: 80%; }
+    body #microklima .alta .icon {
+      background: url("../images/microklima/icon-alta-densidad.png") no-repeat;
+      background-size: 80%; }
+    body #microklima .baja .icon {
+      background: url("../images/microklima/icon-baja-densidad.png") no-repeat;
+      background-size: 80%; }
     body #microklima .logo {
       width: 300px;
       margin: 0 auto;
@@ -1151,13 +1167,15 @@ body {
         width: 70%; }
     body #microklima #pgd-main {
       padding-top: 5em;
-      clear: both; }
+      clear: both;
+      background: #fff; }
     body #microklima .pgd {
       width: 40%;
       text-align: center;
       margin: 0 auto;
       left: calc(60% - 30%);
-      margin-top: 0; }
+      margin-top: 0;
+      height: 100%; }
       body #microklima .pgd .title {
         padding-top: 5em; }
       body #microklima .pgd img {
@@ -1332,8 +1350,8 @@ body {
         width: 100%;
         height: 100%;*/ }
       body #esquema .full-machine img {
-        width: 50%;
-        margin-left: 25%; }
+        width: 40%;
+        margin: -10% 0 0 35%; }
       body #esquema .full-machine .pulsating {
         position: absolute;
         transform: translateX(-50%) translateY(-50%);
@@ -1365,63 +1383,76 @@ body {
           border: 1px solid #fff;
           box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
           animation: pulse-dot 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite; }
-        body #esquema .full-machine .pulsating:hover .tooltip-mk {
-          opacity: 1; }
+      body #esquema .full-machine .mk-01-open, body #esquema .full-machine .mk-02-open, body #esquema .full-machine .mk-03-open {
+        position: absolute;
+        top: 19em;
+        left: 4em;
+        opacity: 0;
+        width: 80%;
+        background: rgba(80, 170, 230, 0.3);
+        padding: 1em;
+        transition: all 1s ease-in-out;
+        -webkit-transition-timing-function: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out; }
+        body #esquema .full-machine .mk-01-open:before, body #esquema .full-machine .mk-02-open:before, body #esquema .full-machine .mk-03-open:before {
+          content: "";
+          width: 0;
+          height: 0;
+          border-left: 15px solid transparent;
+          border-right: 15px solid transparent;
+          border-bottom: 30px solid #fff;
+          position: absolute;
+          top: -1em;
+          left: 12em; }
       body #esquema .full-machine .mk-01 {
-        left: 40%;
-        top: 25%; }
-        body #esquema .full-machine .mk-01 .tooltip-mk {
-          opacity: 0;
-          position: absolute;
-          top: -40%;
-          left: -1500%;
-          transition: all 1s ease-in-out;
-          -webkit-transition-timing-function: all 1s ease-in-out;
-          -moz-transition: all 1s ease-in-out;
-          -ms-transition: all 1s ease-in-out;
-          -o-transition: all 1s ease-in-out; }
-          body #esquema .full-machine .mk-01 .tooltip-mk p {
-            color: #05076B;
-            font-weight: 700;
-            font-size: 1.5em; }
+        right: 14%;
+        top: 17%; }
       body #esquema .full-machine .mk-02 {
-        left: 35%;
-        top: 40%; }
-        body #esquema .full-machine .mk-02 .tooltip-mk {
-          opacity: 0;
-          position: absolute;
-          top: -40%;
-          left: -1500%;
-          transition: all 1s ease-in-out;
-          -webkit-transition-timing-function: all 1s ease-in-out;
-          -moz-transition: all 1s ease-in-out;
-          -ms-transition: all 1s ease-in-out;
-          -o-transition: all 1s ease-in-out; }
-          body #esquema .full-machine .mk-02 .tooltip-mk p {
-            color: #05076B;
-            font-weight: 700;
-            font-size: 1.5em; }
+        top: 25%;
+        right: 25%; }
       body #esquema .full-machine .mk-03 {
-        left: 35%;
-        top: 60%; }
-      body #esquema .full-machine .mk-04 {
-        left: 52%;
-        top: 42%; }
+        top: 49%;
+        right: 20%; }
       body #esquema .full-machine .txt-full-izq {
         line-height: 1.7;
         margin: 0 0 10px;
-        width: 30%;
+        width: 45%;
         position: absolute;
-        top: 30%;
+        top: 5%;
         font-size: 16px;
         text-align: left;
         padding-right: 21px;
-        color: #05076B;
-        background: rgba(255, 255, 255, 0.7);
+        color: #000;
         padding: 2em;
-        /*box-shadow: 2px 2px 7px #eaeaea;*/
         bottom: 30%;
-        left: 3%; }
+        left: 3%;
+        font-size: 15px; }
+        body #esquema .full-machine .txt-full-izq p {
+          text-align: justify; }
+        body #esquema .full-machine .txt-full-izq h3 {
+          text-align: left;
+          font-size: 20px; }
+        body #esquema .full-machine .txt-full-izq .title {
+          font-size: 18px;
+          font-weight: 400; }
+        body #esquema .full-machine .txt-full-izq .head {
+          /*background: rgba(256,256,256,.7);*/
+          padding: 1em; }
+          body #esquema .full-machine .txt-full-izq .head h3 {
+            text-align: left;
+            margin-top: 0;
+            position: relative;
+            padding-left: 6em; }
+            body #esquema .full-machine .txt-full-izq .head h3:before {
+              content: '';
+              width: 100px;
+              height: 2px;
+              background: #000;
+              position: absolute;
+              left: 0;
+              bottom: 1.2em; }
       body #esquema .full-machine .txt-full-der {
         right: 0;
         line-height: 1.7;
@@ -1715,6 +1746,22 @@ body {
   #fourScreen {
     top: 230em; } }
 /*HUMIKLIMA*/
+#humiklima .text-back {
+  background: url("../images/back-7.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 2em 0; }
+  #humiklima .text-back h3 {
+    color: #fff;
+    text-align: left; }
+  #humiklima .text-back p {
+    color: #fff;
+    line-height: 1.5em;
+    text-align: left;
+    border-left: 1px solid #fff;
+    padding-left: 1em;
+    font-size: 16px;
+    margin: 0 0 2em 0; }
 #humiklima .slider-hk-section {
   background: none; }
   #humiklima .slider-hk-section .descripcion h3 {
@@ -1727,25 +1774,48 @@ body {
     float: right;
     z-index: 99; }
     #humiklima .slider-hk-section .hk-01 img {
-      width: 80%;
-      margin-top: 2em; }
-#humiklima .panel-hk {
-  background: #d2d2d2;
-  height: 250px;
+      width: 70%;
+      margin-top: -4em; }
+#humiklima .content-panel {
+  height: auto;
   position: relative;
   margin-top: 15em; }
-  #humiklima .panel-hk .image img {
-    width: 80%;
-    position: absolute;
-    top: -17em; }
-  #humiklima .panel-hk .list {
-    padding-top: 1.5em; }
-    #humiklima .panel-hk .list ul li {
+  #humiklima .content-panel .image img {
+    width: 100%;
+    position: absolute; }
+  #humiklima .content-panel .list {
+    padding: 1.5em 0 3em 0; }
+    #humiklima .content-panel .list h3 {
+      padding: 0 0 1em 1.5em;
+      margin: 0;
+      text-align: left;
+      position: relative; }
+      #humiklima .content-panel .list h3:after {
+        content: "";
+        border: 1px solid #4FB0E5;
+        position: absolute;
+        left: 1.5em;
+        top: 1.5em;
+        width: 7%; }
+    #humiklima .content-panel .list ul li {
       list-style-type: circle;
-      line-height: 3em; }
+      line-height: 1.5em;
+      font-size: 15px; }
+#humiklima .panel-hk {
+  background: #f2f2f2; }
+  #humiklima .panel-hk .image img {
+    top: -11em; }
+#humiklima .panel-mc {
+  background: #f2f2f2;
+  padding: 2em 0; }
+  #humiklima .panel-mc .image img {
+    top: -16em; }
 #humiklima .panel-video {
   height: 350px;
-  overflow: hidden; }
+  overflow: hidden;
+  padding: 0; }
+  #humiklima .panel-video div {
+    padding: 0; }
   #humiklima .panel-video .video {
     margin-top: -8em; }
     #humiklima .panel-video .video video {

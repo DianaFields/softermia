@@ -83,7 +83,25 @@ function pgdAnimation(){
 			$('.pgd').css('margin-top','0');
 		}
 	});
-	 
+	 $( ".mk-01" ).mouseover(function() {
+  		$(".mk-01-open").css("opacity","1");
+	});
+	 $( ".mk-02" ).mouseover(function() {
+  		$(".mk-02-open").css("opacity","1");
+	});
+	 $( ".mk-03" ).mouseover(function() {
+  		$(".mk-03-open").css("opacity","1");
+	});
+	 $( ".mk-01" ).mouseleave(function() {
+  		$(".mk-01-open").css("opacity","0");
+	});
+	 $( ".mk-02" ).mouseleave(function() {
+  		$(".mk-02-open").css("opacity","0");
+	});
+	 $( ".mk-03" ).mouseleave(function() {
+  		$(".mk-03-open").css("opacity","0");
+	});
+
 }
 function backToTop(){
 var pxScrolled = 1000;
