@@ -1745,6 +1745,10 @@ body {
 
   #fourScreen {
     top: 230em; } }
+@media screen and (min-width: 1200px) {
+  .slider-mk-section {
+    background-size: 84% !important;
+    background-position: 85% 32% !important; } }
 /*HUMIKLIMA*/
 #humiklima .text-back {
   background: url("../images/back-7.jpg");
@@ -1834,5 +1838,14 @@ body {
     background-position: -150px 13px; }
   #humiklima #servicios .humi-03 div {
     background-position: -94px 13px; }
+@media screen and (min-width: 1200px) {
+  #humiklima .slider-hk-section .hk-01 img {
+    width: 55%; }
+  #humiklima .panel-hk .image img {
+    top: -11em;
+    width: 80%; }
+  #humiklima .panel-mc .image img {
+    top: -14em;
+    width: 75%; } }
 
 /*# sourceMappingURL=styles.css.map */

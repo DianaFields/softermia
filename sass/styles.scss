@@ -2207,6 +2207,7 @@ body{
 		}
 		@media screen and (max-width: 768px){
 			background-position: -81% 0;
+
 			.descripcion{
 				width:80%;
 				padding:2em;
@@ -2217,7 +2218,9 @@ body{
 			}
 			
 		}
+
 	}
+
 }
 
 /*Break points screen*/
@@ -2244,6 +2247,7 @@ body{
 }
 
 @media screen and (max-width: 768px){
+
 	#firstScreen{
 		top: 100em;
 	}
@@ -2257,6 +2261,12 @@ body{
 		top: 230em;
 	}
 }
+@media screen and (min-width: 1200px){
+			.slider-mk-section{
+		background-size: 84%!important;
+    	background-position: 85% 32%!important;
+	}
+		}
 /*HUMIKLIMA*/
 #humiklima{
 	.text-back{
@@ -2402,6 +2412,31 @@ body{
 			}
 
 		}
+	}
+	@media screen and (min-width: 1200px){
+		.slider-hk-section{
+			.hk-01{
+				img{
+					width: 55%;
+				}
+			}
+		}
+		.panel-hk {
+			.image{
+				img{
+					    top: -11em;
+    width: 80%;
+				}
+			}
+			}
+			.panel-mc {
+				.image{
+					img{
+						top: -14em;
+    width: 75%;
+					}
+				}
+				}
 	}
 }
 
