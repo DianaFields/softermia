@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
+  /*LOADER*/
   /*FOOTER*/
   /*MAP*/
   /*GALERÍ*/
@@ -43,6 +44,36 @@ body {
         text-align: center; } }
   body .title {
     font-weight: 700; }
+  body #load {
+    position: relative;
+    margin: 50px auto;
+    width: 100px;
+    height: 80px;
+    margin-top: 20%;
+    text-align: center; }
+    body #load p {
+      color: #999;
+      font-size: 18px;
+      padding-top: 95%;
+      padding-left: 15px; }
+  body .gear {
+    left: 17%;
+    position: absolute;
+    z-index: -10;
+    width: 40px;
+    height: 40px;
+    animation: spin 5s infinite; }
+  body .three {
+    top: 28px;
+    left: 40%;
+    width: 60px;
+    height: 60px; }
+@keyframes spin {
+  50% {
+    transform: rotate(360deg); } }
+@keyframes spin-reverse {
+  50% {
+    transform: rotate(-360deg); } }
   body .carousel {
     margin-top: 7.1em;
     height: 500px; }
