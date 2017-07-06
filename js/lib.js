@@ -1,6 +1,8 @@
 
 	var animationLoad;
 	function init() {
+
+
 		animationLoad = setTimeout(showPage, 2500);
 	}
 
@@ -145,6 +147,18 @@ function menuAnimated(){
 	$('.backtop').click(function() {
 		$('body').animate({scrollTop: 0}, duration);
 	})
+	// Hover animation products
+var flip = 0;
+$( "#prod" ).click(function() {
+  $( ".products" ).toggle( flip++ % 2 === 0 );
+});
+
+	// $( "#prod" ).mouseover(function() {
+	// 	$(".products").css("opacity","1");
+	// });
+	// $( "#prod" ).mouseleave(function() {
+	// 	$(".products").css("opacity","0");
+	// });
 }
 
 
