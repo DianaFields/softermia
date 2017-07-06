@@ -159,8 +159,10 @@ body{
 				text-align: right;
 				float: right;
 				height: 100%;
+				    padding-right: 4em;
 				.prod{
 					height: 100%;
+
 					&:hover > ul{
 						opacity: 1;
 						
@@ -171,12 +173,14 @@ body{
 				width: 15%;
 				display: inline-block;
 				cursor: pointer;
+				  color: #41439C;
+    font-size: 1.2em;
 				&:after{
 					 content: "\e114";
 					font-family: 'Glyphicons Halflings';
 					width: 20px;
 					height: 20px;
-					color: #4FB0E5;
+					color: #41439C;
 					    padding-left: 8px;
     font-size: 12px;
 				}

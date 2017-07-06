@@ -149,16 +149,15 @@ function menuAnimated(){
 	})
 	// Hover animation products
 var flip = 0;
-$( "#prod" ).click(function() {
-  $( ".products" ).toggle( flip++ % 2 === 0 );
-});
-
-	// $( "#prod" ).mouseover(function() {
-	// 	$(".products").css("opacity","1");
-	// });
-	// $( "#prod" ).mouseleave(function() {
-	// 	$(".products").css("opacity","0");
-	// });
+// $( "#prod" ).click(function() {
+//   $( ".products" ).toggle( flip++ % 2 === 0 );
+// });
+	$( "#prod" ).mouseover(function() {
+		$(".products").css("opacity","1");
+	});
+	$( "#prod" ).mouseleave(function() {
+		$(".products").css("opacity","0");
+	});
 }
 
 
