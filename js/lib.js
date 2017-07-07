@@ -155,7 +155,7 @@ var flip = 0;
 	$( "#prod" ).mouseover(function() {
 		$(".products").css("opacity","1");
 	});
-	$( "#prod" ).mouseleave(function() {
+	$( ".products" ).mouseleave(function() {
 		$(".products").css("opacity","0");
 	});
 }
