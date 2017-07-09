@@ -208,9 +208,13 @@ body{
 					.logo-sub{
 						width: 60%!important;
 						margin:0;
+						vertical-align: top;
 						img{
-							width: 60%;
+							height: 90px;
 							margin: 2em 0;
+						}
+						p{
+							margin: 0 0 3em 0;
 						}
 					}
 					button{
