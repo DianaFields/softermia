@@ -140,9 +140,10 @@ body {
       body nav .menu .products {
         width: 100%;
         height: auto;
-        padding: 0;
-        background: #f2f2f2;
-        opacity: 0;
+        padding: 1em 0;
+        display: none;
+        background: #fff;
+        box-shadow: 2px 2px 15px #c2c2c2;
         transition: all 200ms ease-in-out;
         -webkit-transition-timing-function: all 1s ease-in-out;
         -moz-transition: all 200ms ease-in-out;
@@ -167,15 +168,43 @@ body {
             body nav .menu .products li .logo-sub p {
               margin: 0 0 3em 0; }
           body nav .menu .products li button {
-            -appearance: none;
+            appearance: none;
             -webkit-appearance: none;
-            -moz-appearance: none;
             -ms-appearance: none;
             -o-appearance: none;
-            border: 1px solid #4EB0E5;
-            width: 140px;
-            height: 40px;
-            background: #fff; }
+            -moz-appearance: none;
+            width: 130px;
+            height: 45px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            transition: .3s;
+            border: 1px solid #4FB0E5;
+            background: none; }
+            body nav .menu .products li button:after {
+              position: absolute;
+              transition: .3s;
+              content: '';
+              width: 0;
+              left: 50%;
+              bottom: 0;
+              height: 3px;
+              background: #4FB0E5;
+              position: absolute;
+              transition: .3s;
+              content: '';
+              width: 0;
+              left: 50%;
+              bottom: 0;
+              height: 3px;
+              background: #4FB0E5; }
+            body nav .menu .products li button:hover {
+              background: none; }
+              body nav .menu .products li button:hover:after {
+                width: 100%;
+                left: 0; }
+              body nav .menu .products li button:hover:nth-of-type(4):after {
+                top: calc(100% - 3px); }
     body nav a {
       display: inline-block;
       text-decoration: none;
@@ -308,8 +337,7 @@ body {
         left: 0; }
         body nav .dropdown .dropdown-toggle {
           height: auto;
-          line-height: 59px;
-          height: 59px;
+          line-height: 100px;
           padding: 0;
           color: #4FB0E5; }
           body nav .dropdown .dropdown-toggle:before {
@@ -1181,6 +1209,14 @@ body {
       body #clientes .sony div:hover {
         background: url("../images/clientes/sony-1.jpg") no-repeat;
         background-size: 100%; }
+  body #microklima .logo, body #humiklima .logo {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    text-align: center; }
+    body #microklima .logo img, body #humiklima .logo img {
+      width: 70%; }
   body .slider-mk-section .maquina {
     right: -1em !important; }
   body #microklima {
@@ -1228,17 +1264,18 @@ body {
     body #microklima .baja .icon {
       background: url("../images/microklima/icon-baja-densidad.png") no-repeat;
       background-size: 80%; }
-    body #microklima .logo {
-      width: 300px;
-      margin: 0 auto;
-      margin-top: 3em;
-      margin-bottom: 3em; }
-      body #microklima .logo img {
-        width: 70%; }
     body #microklima #pgd-main {
       padding-top: 5em;
       clear: both;
-      background: #fff; }
+      height: 100%;
+      background: #fff;
+      background: -moz-radial-gradient(center, ellipse cover, #fff 0%, #fff 90%, #e8e8e8 100%);
+      background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #fff), color-stop(70%, #fff), color-stop(100%, #e8e8e8));
+      background: -webkit-radial-gradient(center, ellipse cover, #fff 0%, #fff 70%, #e8e8e8 100%);
+      background: -o-radial-gradient(center, ellipse cover, #fff 0%, #fff 70%, #e8e8e8 100%);
+      background: -ms-radial-gradient(center, ellipse cover, #fff 0%, #fff 70%, #e8e8e8 100%);
+      background: radial-gradient(ellipse at center, #fff 0%, #fff 70%, #e8e8e8 100%);
+      background-size: 10px 10px; }
     body #microklima .pgd {
       width: 40%;
       text-align: center;
@@ -1271,12 +1308,13 @@ body {
           position: absolute;
           top: 20%;
           height: auto;
-          background: #dadada;
+          background: #1B5BC2;
           position: relative;
           -moz-border-radius: 5px;
           -webkit-border-radius: 5px;
           border-radius: 5px;
-          padding: 1.5em; }
+          padding: 1.5em;
+          color: #fff; }
           body #microklima .pgd .screen-01 .text:before {
             content: "";
             position: absolute;
@@ -1285,7 +1323,7 @@ body {
             width: 0;
             height: 0;
             border-top: 10px solid transparent;
-            border-right: 20px solid #dadada;
+            border-right: 20px solid #1B5BC2;
             border-bottom: 10px solid transparent; }
           body #microklima .pgd .screen-01 .text p {
             font-size: 1.3em; }
@@ -1310,12 +1348,13 @@ body {
           position: absolute;
           top: 40%;
           height: auto;
-          background: #dadada;
+          background: #1B5BC2;
           position: relative;
           -moz-border-radius: 5px;
           -webkit-border-radius: 5px;
           border-radius: 5px;
-          padding: 1.5em; }
+          padding: 1.5em;
+          color: #fff; }
           body #microklima .pgd .screen-02 .text:before {
             content: "";
             position: absolute;
@@ -1324,7 +1363,7 @@ body {
             width: 0;
             height: 0;
             border-top: 10px solid transparent;
-            border-left: 20px solid #dadada;
+            border-left: 20px solid #1B5BC2;
             border-bottom: 10px solid transparent; }
           body #microklima .pgd .screen-02 .text p {
             font-size: 1.3em; }
@@ -1372,21 +1411,30 @@ body {
           width: 80%;
           left: calc(20% - 10%); }
           body #microklima .pgd .screen-01, body #microklima .pgd .screen-02, body #microklima .pgd .screen-03 {
-            top: 14.8em;
             width: 80%;
             left: calc(20% - 10%); }
             body #microklima .pgd .screen-01 .text, body #microklima .pgd .screen-02 .text, body #microklima .pgd .screen-03 .text {
               right: 0;
-              top: 60%;
               margin: 0 auto;
-              width: 98%;
+              width: 100%;
+              font-size: 12px;
               left: 0; }
               body #microklima .pgd .screen-01 .text:before, body #microklima .pgd .screen-02 .text:before, body #microklima .pgd .screen-03 .text:before {
                 top: -16%;
                 left: 46%;
                 border-left: 10px solid transparent;
                 border-right: 11px solid transparent;
-                border-bottom: 12px solid #dadada; } }
+                border-bottom: 12px solid #1B5BC2; } }
+      @media screen and (max-width: 390px) {
+        body #microklima .pgd .screen-01, body #microklima .pgd .screen-02, body #microklima .pgd .screen-03 {
+          top: 12.8em; }
+          body #microklima .pgd .screen-01 .text, body #microklima .pgd .screen-02 .text, body #microklima .pgd .screen-03 .text {
+            top: 50%; } }
+      @media only screen and (min-width: 391px) and (max-width: 768px) {
+        body #microklima .pgd .screen-01, body #microklima .pgd .screen-02, body #microklima .pgd .screen-03 {
+          top: 10.8em; }
+          body #microklima .pgd .screen-01 .text, body #microklima .pgd .screen-02 .text, body #microklima .pgd .screen-03 .text {
+            top: 70%; } }
       body #microklima .pgd .tittle {
         font-weight: 700;
         font-size: 1.5em; }
@@ -1399,7 +1447,9 @@ body {
       body #microklima .densidad {
         padding-bottom: 2em; }
         body #microklima .densidad ul {
-          padding-left: 0; }
+          padding-left: 0;
+          width: 80%;
+          margin: 0 auto; }
         body #microklima .densidad h3 {
           width: 90%; } }
   body #esquema {
@@ -1408,7 +1458,7 @@ body {
     body #esquema .full-machine {
       position: relative;
       width: 100%;
-      height: 1000px;
+      height: 700px;
       margin: 0 auto;
       background: url("../images/back-texture.jpg") no-repeat;
       background-size: cover;
@@ -1421,7 +1471,7 @@ body {
         height: 100%;*/ }
       body #esquema .full-machine img {
         width: 40%;
-        margin: -10% 0 0 35%; }
+        margin: 0 0 0 35%; }
       body #esquema .full-machine .pulsating {
         position: absolute;
         transform: translateX(-50%) translateY(-50%);
@@ -1459,7 +1509,8 @@ body {
         left: 4em;
         opacity: 0;
         width: 80%;
-        background: rgba(80, 170, 230, 0.3);
+        background: #1B5BC2;
+        color: #fff;
         padding: 1em;
         transition: all 1s ease-in-out;
         -webkit-transition-timing-function: all 1s ease-in-out;
@@ -1470,12 +1521,12 @@ body {
           content: "";
           width: 0;
           height: 0;
-          border-left: 15px solid transparent;
-          border-right: 15px solid transparent;
-          border-bottom: 30px solid #fff;
+          border-top: 15px solid transparent;
+          border-bottom: 15px solid transparent;
+          border-left: 20px solid #1B5BC2;
           position: absolute;
-          top: -1em;
-          left: 12em; }
+          top: 2em;
+          right: -1em; }
       body #esquema .full-machine .mk-01 {
         right: 14%;
         top: 17%; }
@@ -1803,18 +1854,30 @@ body {
   top: 230em;
   position: absolute; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 390px) {
   #firstScreen {
-    top: 100em; }
+    top: 123em; }
 
   #secondScreen {
-    top: 170em; }
+    top: 130em; }
 
   #thirdScreen {
-    top: 190em; }
+    top: 150em; }
 
   #fourScreen {
-    top: 230em; } }
+    top: 262em; } }
+@media only screen and (min-width: 391px) and (max-width: 768px) {
+  #firstScreen {
+    top: 110em; }
+
+  #secondScreen {
+    top: 130em; }
+
+  #thirdScreen {
+    top: 150em; }
+
+  #fourScreen {
+    top: 260em; } }
 @media screen and (min-width: 1200px) {
   .slider-mk-section {
     background-size: 84% !important;
