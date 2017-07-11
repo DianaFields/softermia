@@ -1913,7 +1913,7 @@ body {
     z-index: 99; }
     #humiklima .slider-hk-section .hk-01 img {
       width: 70%;
-      margin-top: -4em; }
+      margin-top: 5em; }
 #humiklima .logo {
   width: 300px;
   margin: 0 auto;
@@ -1921,11 +1921,11 @@ body {
   margin-bottom: 3em;
   text-align: center; }
   #humiklima .logo img {
-    width: 70%; }
+    width: 100%; }
 #humiklima .content-panel {
   height: auto;
   position: relative;
-  margin-top: 15em; }
+  margin-top: 10em; }
   #humiklima .content-panel .image img {
     width: 100%;
     position: absolute; }
