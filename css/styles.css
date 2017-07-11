@@ -56,6 +56,14 @@ body {
       font-size: 18px;
       padding-top: 95%;
       padding-left: 15px; }
+  body #microklima .logo, body #humiklima .logo {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    text-align: center; }
+    body #microklima .logo img, body #humiklima .logo img {
+      width: 70%; }
   body .gear {
     left: 17%;
     position: absolute;
@@ -325,7 +333,8 @@ body {
         body nav .menu .logo {
           width: 53%;
           height: 50px;
-          margin: 0; }
+          margin: 0;
+          z-index: 99; }
         body nav .menu .options {
           display: none; }
       body nav .dropdown {
@@ -1209,14 +1218,6 @@ body {
       body #clientes .sony div:hover {
         background: url("../images/clientes/sony-1.jpg") no-repeat;
         background-size: 100%; }
-  body #microklima .logo, body #humiklima .logo {
-    width: 300px;
-    margin: 0 auto;
-    margin-top: 3em;
-    margin-bottom: 3em;
-    text-align: center; }
-    body #microklima .logo img, body #humiklima .logo img {
-      width: 70%; }
   body .slider-mk-section .maquina {
     right: -1em !important; }
   body #microklima {
@@ -1913,6 +1914,14 @@ body {
     #humiklima .slider-hk-section .hk-01 img {
       width: 70%;
       margin-top: -4em; }
+#humiklima .logo {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  text-align: center; }
+  #humiklima .logo img {
+    width: 70%; }
 #humiklima .content-panel {
   height: auto;
   position: relative;
@@ -1980,5 +1989,16 @@ body {
   #humiklima .panel-mc .image img {
     top: -14em;
     width: 75%; } }
+@media screen and (max-width: 768px) {
+  #humiklima .image {
+    margin-top: 13em; }
+    #humiklima .image img {
+      top: -24em; }
+  #humiklima .panel-mc {
+    margin-top: 25em; }
+    #humiklima .panel-mc .image {
+      margin-top: -34em; }
+  #humiklima .video {
+    display: none; } }
 
 /*# sourceMappingURL=styles.css.map */

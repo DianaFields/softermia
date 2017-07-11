@@ -80,7 +80,18 @@ body{
 			padding-left: 15px;
 		}
 	}
-
+#microklima, #humiklima{
+			.logo{
+					    width: 300px;
+				    margin: 0 auto;
+				    margin-top: 3em;
+				    margin-bottom: 3em;
+				    text-align: center;
+					img{
+						width: 70%;
+					}
+				}
+		}
 	.gear {
 		left: 17%;
 		position: absolute;
@@ -411,6 +422,7 @@ body{
 						width: 53%;
 						height: 50px;
 						margin:0;
+						z-index: 99;
 					}
 					.options{
 						display: none;
@@ -1610,18 +1622,7 @@ body{
 			}
 		}
 
-#microklima, #humiklima{
-			.logo{
-					    width: 300px;
-				    margin: 0 auto;
-				    margin-top: 3em;
-				    margin-bottom: 3em;
-				    text-align: center;
-					img{
-						width: 70%;
-					}
-				}
-		}
+
 		/*MICROKLIMA*/
 		.slider-mk-section{
 			.maquina{
@@ -2497,6 +2498,16 @@ body{
 			}
 		}
 	}
+	.logo{
+					    width: 300px;
+				    margin: 0 auto;
+				    margin-top: 3em;
+				    margin-bottom: 3em;
+				    text-align: center;
+					img{
+						width: 70%;
+					}
+				}
 	.content-panel{
 		height: auto;
 		position: relative;
@@ -2605,6 +2616,7 @@ body{
 					width: 55%;
 				}
 			}
+
 		}
 		.panel-hk {
 			.image{
@@ -2622,6 +2634,23 @@ body{
 				}
 			}
 		}
+	}
+	@media screen and (max-width: 768px){
+		.image{
+			margin-top: 13em;
+			img{
+				    top: -24em;
+			}
+		}
+		.panel-mc{
+			margin-top: 25em;
+			.image{
+				    margin-top: -34em;
+			}
+		}
+		.video{
+				display: none;
+			}
 	}
 }
 
