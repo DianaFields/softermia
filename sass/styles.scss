@@ -229,20 +229,17 @@ body{
 							margin: 0 0 3em 0;
 						}
 					}
-					button{
-						appearance:none;
-						-webkit-appearance:none;
-						-ms-appearance:none;
-						-o-appearance:none;
-						-moz-appearance:none;
+					a{
 						width: 130px;
-						height: 45px;
+						line-height: 45px;
 						text-align: center;
 						position: relative;
 						overflow:hidden;
 						transition: .3s;
 						border: 1px solid #4FB0E5;
 						background: none;
+						cursor: pointer;
+						color:#4FB0E5;
 						&:after{
 							position: absolute;
 							transition: .3s;
@@ -262,6 +259,8 @@ body{
 							background: #4FB0E5;
 						}
 						&:hover{
+
+						text-decoration: none;
 							background: none;
 							&:after {
 								width: 100%;

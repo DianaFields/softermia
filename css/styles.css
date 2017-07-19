@@ -175,21 +175,18 @@ body {
               margin: 2em 0; }
             body nav .menu .products li .logo-sub p {
               margin: 0 0 3em 0; }
-          body nav .menu .products li button {
-            appearance: none;
-            -webkit-appearance: none;
-            -ms-appearance: none;
-            -o-appearance: none;
-            -moz-appearance: none;
+          body nav .menu .products li a {
             width: 130px;
-            height: 45px;
+            line-height: 45px;
             text-align: center;
             position: relative;
             overflow: hidden;
             transition: .3s;
             border: 1px solid #4FB0E5;
-            background: none; }
-            body nav .menu .products li button:after {
+            background: none;
+            cursor: pointer;
+            color: #4FB0E5; }
+            body nav .menu .products li a:after {
               position: absolute;
               transition: .3s;
               content: '';
@@ -206,12 +203,13 @@ body {
               bottom: 0;
               height: 3px;
               background: #4FB0E5; }
-            body nav .menu .products li button:hover {
+            body nav .menu .products li a:hover {
+              text-decoration: none;
               background: none; }
-              body nav .menu .products li button:hover:after {
+              body nav .menu .products li a:hover:after {
                 width: 100%;
                 left: 0; }
-              body nav .menu .products li button:hover:nth-of-type(4):after {
+              body nav .menu .products li a:hover:nth-of-type(4):after {
                 top: calc(100% - 3px); }
     body nav a {
       display: inline-block;
