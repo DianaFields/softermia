@@ -535,7 +535,7 @@ body {
     body .carousel-inner .slide-humiklima .hk-02 {
       width: 500px;
       height: 500px;
-      background: url("../images/back-hk-02.png") no-repeat;
+      background: url("../images/humiklima/humiklima-cpy.png") no-repeat;
       background-size: 70%;
       position: absolute;
       right: 6em;
@@ -818,7 +818,7 @@ body {
     @media only screen and (min-width: 768px) and (max-width: 1299px) {
       body #nosotros {
         height: auto;
-        padding: 2em 0; }
+        padding: 6em 0; }
         body #nosotros h3 {
           padding: 0; } }
     @media screen and (max-width: 767px) {
@@ -917,10 +917,11 @@ body {
     body .galeria .project .portfolio-hover .portfolio-hover-content p {
       color: #fff;
       text-align: center;
-      margin-top: 2em;
+      margin-top: 4em;
       font-family: 'Open Sans', sans-serif;
       font-weight: 700;
-      font-size: 4em; }
+      font-size: 2em;
+      text-decoration: underline; }
   body .galeria .project a {
     float: left;
     position: relative;
@@ -1992,7 +1993,7 @@ body {
     top: -11em;
     width: 80%; }
   #humiklima .panel-mc .image img {
-    top: -14em;
+    top: -10em;
     width: 75%; } }
 @media screen and (max-width: 768px) {
   #humiklima .image {

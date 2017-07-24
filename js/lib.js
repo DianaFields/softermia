@@ -33,8 +33,7 @@ function animateScroll(){
 }
 
 
-function pgdAnimation(){
-	
+function mkAnimation(){
 	$( ".mk-01" ).mouseover(function() {
 		$(".mk-01-open").css("opacity","1");
 	});
