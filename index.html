@@ -38,7 +38,72 @@
 <div id="main-content" style="opacity: 0;">
 
 
-	<div id="header"></div>
+	<div id="header">
+		
+			<nav class="navbar navbar-fixed-top nav-expand">
+		<div class="menu">
+			<a class="logo-head" href="../index.html">
+				<img src="http://dianafields.com.mx/softermia/images/logo-softermia.png">
+			</a>
+			<a class="imagotipo" href="../index.html">
+				<img src="http://dianafields.com.mx/softermia/images/imagotipo.png">
+			</a>
+			<div class="options" href="#formulario">
+
+
+				<a class="item page-scroll" href="#nosotros">Nosotros<span></span></a>
+				
+				<a class="item page-scroll" href="#servicios">Servicios<span></span></a>
+				<a class="item page-scroll" href="#formulario">Contacto<span></span></a>
+				<div id="prod">
+					Productos
+
+				</div>
+			</div>
+			<div class="dropdown">
+				<div href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+	          <!-- <span class="shape"></span>
+	          <span class="shape"></span>
+	          <span class="shape"></span> -->
+	      </div>
+	      <ul class="dropdown-menu">
+	      	<li><a href="#nosotros">Nosotros</a></li>
+	      	<li><a href="#servicios">Servicios</a></li>
+	      	<li><a href="#formulario">Contacto</a></li>
+	      </ul>
+	  </div>
+	  <ul class="products col-lg-12">
+	  	<div class="col-lg-1"></div>
+	  	<li class="col-lg-5" onclick="window.location='http://dianafields.com.mx/softermia/microklima'">
+	  		<div class="logo-sub"><img src="http://dianafields.com.mx/softermia/images/microklima/logotipo_microklima.png">
+	  			<p>Sistemas a la medida para cumplir los requerimientos
+
+	  				específicos de una instalación</p>
+	  				<a href="http://dianafields.com.mx/softermia/microklima/index.html">Ver más</a>
+	  			</div>
+	  			<div class="image"><img src="http://dianafields.com.mx/softermia/images/microklima/microklima_full.png"></div>
+	  		</li>
+
+
+	  		<div class="col-lg-1"></div>
+	  		<li class="col-lg-5">
+	  		<div class="logo-sub"><img src="http://dianafields.com.mx/softermia/images/humiklima/logo-humiklima.png">
+	  				<p>Ideales para cualquier ambiente, desde museos, laboratorios de prueba,
+
+	  					aplicaciones domésticas e industriales</p>
+	  					<a href="http://dianafields.com.mx/softermia/humiklima/index.html">Ver más</a>
+	  				</div>
+	  				<div class="image"><img src="http://dianafields.com.mx/softermia/images/humiklima/humiklima-cpy.png"></div>
+	  			</li>
+	  			<div class="col-lg-1"></div>
+	  		</ul>
+	  	</div>
+
+	  </nav>
+	  <script type="text/javascript">
+	  	deskOnly();
+	  </script>
+	</div>
 	<div class="backtop" tooltip="Back To Top"></div>
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		<!-- Indicators -->
@@ -531,10 +596,10 @@
 				<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 				<script src="js/lib.js"></script>
 				<script type="text/javascript">
+				animateMenu();
 				loadEx();
-				animateScroll();
 				backToTop();
-				
+				deskOnly();
 				new WOW().init();
 
 				(function($){
@@ -564,9 +629,6 @@
 			}
 			</script>
 
-
-			<!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
-			<!-- <script src="js/wow.min.js"></script> -->
 			</div>
 		</body>
 		</html>

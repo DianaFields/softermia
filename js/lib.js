@@ -9,20 +9,17 @@ function showPage() {
 }
 
 function loadEx(){
-	$("#header").load("sections/nav.html"); 
 	$("#footer").load("sections/footer.html"); 
 }
 function loadInter(){
-	$("#header").load("../sections/nav.html"); 
+	$("#headerSections").load("../sections/nav.html"); 
 	$("#footer").load("../sections/footer.html"); 
 }
 
-function animateScroll(){
-
+function animateMenu(){
 	(function($) {
 		"use strict";
-		$('a.page-scroll').bind('click', function(event) {
-			alert();
+		$('.page-scroll').bind('click', function(event) {
 			var $ele = $(this);
 			$('html, body').stop().animate({
 				scrollTop: ($($ele.attr('href')).offset().top - 60)
@@ -84,11 +81,13 @@ function deskOnly(){
 				$('nav').addClass("nav-collapse");
 				$('.imagotipo').css("width","40px");
 				$('.logo-head').css("display","none");
+				$('.item').css("padding-top","1em");
 
 			} else {
 				$('nav').removeClass("nav-collapse");
 				$('.logo-head').css("display","inline-block");
 				$('.imagotipo').css("width","0");
+				$('.item').css("padding-top","2em");
 			} 
 		});
 
@@ -96,12 +95,12 @@ function deskOnly(){
 			$('body').animate({scrollTop: 0}, duration);
 		})
 		var flip = 0;
-		$( "#prod" ).mouseover(function() {
-			$(".products").css("display","block");
-		});
-		$( ".products" ).mouseleave(function() {
-			$(".products").css("display","none");
-		});
+		// $( "#prod" ).mouseover(function() {
+		// 	$(".products").css("display","block");
+		// });
+		// $( ".products" ).mouseleave(function() {
+		// 	$(".products").css("display","none");
+		// });
 
 
 } else {
@@ -157,7 +156,6 @@ function deskOnly(){
 }
 
 function pgd(){
-
 	// PGD ANIMATION DESKTOP
 	var mediaquery = window.matchMedia("(min-width: 769px)");
 	if (mediaquery.matches) {
