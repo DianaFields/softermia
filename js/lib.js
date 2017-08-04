@@ -1,7 +1,7 @@
 
 var animationLoad;
 function init() {
-	animationLoad = setTimeout(showPage, 1000);
+	animationLoad = setTimeout(showPage, 700);
 }
 function showPage() {
 	document.getElementById("load").style.display = "none";
