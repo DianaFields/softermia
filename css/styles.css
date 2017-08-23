@@ -22,7 +22,7 @@ body {
   /*GALERÍA*/
   /*MICROKLIMA*/ }
   body .gral-content {
-    max-width: 1600px;
+    max-width: 1700px;
     margin: 0 auto; }
   body h2 {
     font-family: 'Open Sans', sans-serif; }
@@ -59,6 +59,21 @@ body {
       line-height: 1.6em;
       color: #fff;
       margin-bottom: 2em; }
+  @media screen and (max-width: 500px) {
+    body .slide-common .descripcion {
+      width: 100%;
+      padding-left: 0;
+      padding: 0 3em;
+      margin-top: 2em; }
+      body .slide-common .descripcion h2::after {
+        top: 3.5em;
+        width: 15%; } }
+  @media only screen and (min-width: 501px) and (max-width: 900px) {
+    body .slide-common .descripcion {
+      margin-top: 2em; }
+      body .slide-common .descripcion h2::after {
+        top: 3.5em;
+        width: 15%; } }
   body .space {
     width: 100%;
     height: 150px;
@@ -340,48 +355,48 @@ body {
     body .carousel {
       margin-top: 8em; }
     body nav {
-      			/*.dropdown{
-      				width: 40%;
-      				text-align: right;
-      				float: right;
-      				height: 80px;
-      				line-height: 80px;
-      				.dropdown-toggle{
-      				}
-      				div{
+      				/*.dropdown{
+      					width: 40%;
+      					text-align: right;
+      					float: right;
       					height: 80px;
       					line-height: 80px;
-      					width: 100px;
-      					float: right;
-      					padding: 10px 0;
-      					text-align: center;
-      					.shape{
-      						width: 60px;
-      						height: 6px;
-      						background: #4FB0E5;
-      						display: block;
-      						margin: 0 auto;
-      						margin-top: 7px;
-      						position: relative;
-      						border-radius: 3px;
+      					.dropdown-toggle{
       					}
-      				}
-      				.dropdown-menu{
-      					padding:0 2em;
-      					box-sizing: border-box;
-      					width: 100%;
-      					li{
+      					div{
+      						height: 80px;
+      						line-height: 80px;
+      						width: 100px;
+      						float: right;
+      						padding: 10px 0;
       						text-align: center;
-      						border-bottom: 1px solid #c2c2c2;
-      						a{
-      							height: 80px;
-      							line-height: 80px;
-      							font-size: 1.5em;
+      						.shape{
+      							width: 60px;
+      							height: 6px;
+      							background: #4FB0E5;
+      							display: block;
+      							margin: 0 auto;
+      							margin-top: 7px;
+      							position: relative;
+      							border-radius: 3px;
       						}
       					}
+      					.dropdown-menu{
+      						padding:0 2em;
+      						box-sizing: border-box;
+      						width: 100%;
+      						li{
+      							text-align: center;
+      							border-bottom: 1px solid #c2c2c2;
+      							a{
+      								height: 80px;
+      								line-height: 80px;
+      								font-size: 1.5em;
+      							}
+      						}
       
-      				}
-      				}*/ }
+      					}
+      					}*/ }
       body nav .menu {
         padding: 1em 3em;
         box-shadow: 0 -1px 24px #c2c2c2;
@@ -1310,6 +1325,8 @@ body {
       right: -1em !important; }
   body #microklima {
     height: 3250px; }
+    body #microklima .video-snow {
+      overflow: hidden; }
     body #microklima .text {
       height: 400px;
       padding: 0;
@@ -1329,6 +1346,135 @@ body {
           top: 0;
           left: 0;
           opacity: .7; }
+    body #microklima .mk-procesos {
+      padding-top: 3em; }
+      body #microklima .mk-procesos .content {
+        padding-top: 2.8em;
+        background: #1b5bc2;
+        /* Old browsers */
+        background: -moz-linear-gradient(left, #1b5bc2 0%, #4fb0e5 50%, #41be96 65%, #2ea280 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, #1b5bc2 0%, #4fb0e5 50%, #41be96 65%, #2ea280 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, #1b5bc2 0%, #4fb0e5 50%, #41be96 65%, #2ea280 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b5bc2', endColorstr='#2ea280',GradientType=1 );
+        /* IE6-9 */
+        height: 250px; }
+        body #microklima .mk-procesos .content .mk-calefaccion:before {
+          content: '\00a0';
+          width: 20%;
+          height: 40px;
+          background: url("../images/icons/icon-cal.png") no-repeat 50%;
+          background-size: contain;
+          position: absolute; }
+        body #microklima .mk-procesos .content .mk-enfriamiento:before {
+          content: '\00a0';
+          width: 20%;
+          height: 40px;
+          background: url("../images/icons/icon-enfriamiento.png") no-repeat 50%;
+          background-size: contain;
+          position: absolute; }
+        body #microklima .mk-procesos .content .mk-humi {
+          border-right: none; }
+          body #microklima .mk-procesos .content .mk-humi:before {
+            content: '\00a0';
+            width: 20%;
+            height: 40px;
+            background: url("../images/icons/icon-humi.png") no-repeat 50%;
+            background-size: contain;
+            position: absolute; }
+      body #microklima .mk-procesos div {
+        display: inline-block;
+        border-right: 1px solid #fff;
+        height: 80%;
+        color: #fff;
+        padding: 0 2em; }
+        body #microklima .mk-procesos div h2 {
+          font-size: 20px;
+          font-weight: 700;
+          position: relative;
+          height: 37px;
+          margin-top: 3em; }
+          body #microklima .mk-procesos div h2:after {
+            content: '\00a0';
+            width: 15%;
+            height: 1px;
+            background: #fff;
+            position: absolute;
+            bottom: -1em;
+            left: 0; }
+        body #microklima .mk-procesos div p {
+          margin-top: 2em;
+          font-size: 15px; }
+      body #microklima .mk-procesos ul li {
+        list-style-type: disc;
+        color: #000;
+        font-size: 18px;
+        position: relative;
+        line-height: 40px; }
+      body #microklima .mk-procesos .extra-info {
+        display: block;
+        padding-top: 3em; }
+        body #microklima .mk-procesos .extra-info .subtitle {
+          text-align: center;
+          color: #000;
+          font-size: 25px; }
+    body #microklima .mk-funcionamiento {
+      height: 250px; }
+      body #microklima .mk-funcionamiento .content .mk-finito {
+        background: #ECECEC; }
+        body #microklima .mk-funcionamiento .content .mk-finito:before {
+          content: '\00a0';
+          width: 20%;
+          height: 40px;
+          position: absolute;
+          top: 1em;
+          left: 40%;
+          background: url("../images/icons/icon-finito.png") no-repeat 50%;
+          background-size: contain; }
+      body #microklima .mk-funcionamiento .content .mk-permanente {
+        background: #e3e3e3; }
+        body #microklima .mk-funcionamiento .content .mk-permanente:before {
+          content: '\00a0';
+          width: 10%;
+          height: 40px;
+          position: absolute;
+          top: 1em;
+          left: 45%;
+          background: url("../images/icons/icon-permanente.png") no-repeat 50%;
+          background-size: contain; }
+      body #microklima .mk-funcionamiento .content .mk-ciclos {
+        background: #D7D7D7; }
+        body #microklima .mk-funcionamiento .content .mk-ciclos:before {
+          content: '\00a0';
+          width: 20%;
+          height: 40px;
+          position: absolute;
+          top: 1em;
+          left: 40%;
+          background: url("../images/icons/icon-ciclos.png") no-repeat 50%;
+          background-size: contain; }
+      body #microklima .mk-funcionamiento .content div {
+        height: 200px;
+        padding: 2em;
+        text-align: center; }
+      body #microklima .mk-funcionamiento .content h2 {
+        font-size: 18px;
+        font-weight: 700;
+        position: relative;
+        margin-top: 2.5em; }
+        body #microklima .mk-funcionamiento .content h2:after {
+          content: '\00a0';
+          width: 10%;
+          height: 2px;
+          background: #4A90E2;
+          position: absolute;
+          left: 45%;
+          bottom: -1em; }
+      body #microklima .mk-funcionamiento .content p {
+        font-size: 15px;
+        margin-top: 2em; }
     body #microklima .densidad {
       height: 100%; }
       body #microklima .densidad h3 {
@@ -1523,9 +1669,6 @@ body {
           top: 10.8em; }
           body #microklima .pgd .screen-01 .text, body #microklima .pgd .screen-02 .text, body #microklima .pgd .screen-03 .text {
             top: 70%; } }
-      body #microklima .pgd .tittle {
-        font-weight: 700;
-        font-size: 1.5em; }
       body #microklima .pgd .description {
         font-size: 1.2em;
         line-height: 1.5em; }
@@ -1813,6 +1956,11 @@ body {
           margin-top: 3em;
           background: rgba(255, 255, 255, 0.5); } }
 
+.tittle {
+  font-weight: 700;
+  font-size: 1.5em;
+  text-align: center; }
+
 /*Break points screen*/
 #firstScreen {
   width: 100%;
@@ -1909,9 +2057,6 @@ body {
   height: auto;
   position: relative;
   margin-top: 10em; }
-  #humiklima .content-panel .image img {
-    width: 100%;
-    position: absolute; }
   #humiklima .content-panel .list {
     padding: 1.5em 0 3em 0; }
     #humiklima .content-panel .list h3 {
@@ -1958,31 +2103,7 @@ body {
   #humiklima .panel-video h3 {
     text-align: left; }
 #humiklima #servicios {
-  margin-top: 3em;
-  		/*.humi-01, .humi-02, .humi-03{
-  			div{
-  				background: url(../images/icons/sprite-01.png) no-repeat 19px 18px;
-  				background-size: 300%;
-  			}
-  		}
-  		.humi-01{
-  			div{
-  				background-position:-94px 13px;
-  			}
-  
-  		}
-  		.humi-02{
-  			div{
-  				background-position: -150px 13px;
-  			}
-  
-  		}
-  		.humi-03{
-  			div{
-  				background-position: -94px 13px;
-  			}
-  
-  			}*/ }
+  margin-top: 3em; }
 #humiklima .tipos .descript {
   padding: 2em;
   background: rgba(255, 255, 255, 0.7);
@@ -1993,6 +2114,10 @@ body {
   background: #f2f2f2; }
   #humiklima .tipos .imagen img {
     width: 80%; }
+@media screen and (max-width: 768px) {
+  #humiklima .tipos .descript {
+    margin: 0 !important;
+    padding: 0; } }
 #humiklima .isotermicos .descript {
   margin: 2.5em 0 0 -4em; }
   #humiklima .isotermicos .descript h3 {
@@ -2004,23 +2129,36 @@ body {
     text-align: right; }
 @media screen and (min-width: 1200px) {
   #humiklima .slider-hk-section .hk-01 img {
-    width: 55%; }
+    width: 55%;
+    margin-top: 0; }
   #humiklima .panel-hk .image img {
     top: -11em;
     width: 80%; }
   #humiklima .panel-mc .image img {
     top: -10em;
     width: 75%; } }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   #humiklima .image {
     margin-top: 7em;
-    width: 25%; }
+    min-height: 250px; }
     #humiklima .image img {
       top: -24em; }
   #humiklima .panel-mc {
     margin-top: 25em; }
     #humiklima .panel-mc .image {
-      margin-top: -34em; }
+      margin-top: -34em;
+      width: 90%; }
+  #humiklima .video {
+    display: none; } }
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  #humiklima .image {
+    margin-top: 7em;
+    min-height: 250px;
+    text-align: center; }
+    #humiklima .image img {
+      width: 50%; }
+  #humiklima .panel-mc {
+    margin-top: 25em; }
   #humiklima .video {
     display: none; } }
 

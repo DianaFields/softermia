@@ -206,9 +206,10 @@ function pgd(){
 	}
 });
 	}
+}
 
+function loadImages(){
 	
-
 }
 
 
