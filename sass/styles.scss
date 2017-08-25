@@ -1899,8 +1899,56 @@
 							}
 						}
 					}
+					.mk-capacidad-regulada{
+						background: url('../images/microklima/background-humidity.jpg');
+						 background-attachment: fixed;
+					    background-position: center;
+					    background-size: cover;
+						height: 290px;
+						padding:4em 0 0 0;
+						p{
+							color: #fff;
+						}
+						.tittle{
+							background: rgba(0,0,0,.4);
+							height: auto;
+							p{
+								font-size:20px;
+								text-align: left;
+								padding: 1em 2em;
+    							line-height: 38px;
+							}
+						}
+						.item-01{
+							text-align: center;
+							font-size: 18px;
+							strong{
+								font-size: 30px;
+								margin-top: 2em
+							}
+							p{
+								margin-top: 1em;
+								padding: 0 5em;
+								font-size: 20px;
+							}
+						}
+						.item-02{
+							text-align: center;
+							font-size: 18px;
+							strong{
+								font-size: 30px;
+								margin-top: 2em
+							}
+							p{
+								margin-top: 1em;
+								padding: 0 5em;
+								font-size: 20px;
+							}
+						}
+					}
 					.mk-funcionamiento{
 						height: 250px;
+						    padding-top: 3em;
 						.content{
 							.mk-finito{
 								background:#ECECEC;
@@ -1969,6 +2017,40 @@
 
 						}
 
+					}
+					.mk-componentes{
+						.brand{
+							text-align: center;
+							img{
+							    width: 60%;
+							    height: auto;
+							}
+							p{
+								position: relative;
+								line-height: 50px;
+								font-size: 18px;
+								&:after{
+									content: '\00a0';
+									width:90%;
+									    position: absolute;
+								    background: #4FB0E5;
+								    height: 3px;
+								    top: 0;
+								    left: 0;
+								}
+								&:before{
+									content: '\00a0';
+								    width: 0;
+								    height: 0;
+								    border-left: 6px solid transparent;
+								    border-right: 6px solid transparent;
+								    border-top: 12px solid #4FB0E5;
+								    position: absolute;
+								    top:0;
+								    margin-left: calc(100em - 96em);
+							}
+						}
+					}
 					}
 					.densidad{
 						height: 100%;
