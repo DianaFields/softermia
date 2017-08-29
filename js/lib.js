@@ -196,7 +196,7 @@ function pgd(){
 	if(scrollTop > lastScreen){
 		$('.pgd').css('position','inherit');
 		$('.screen-03').css('position','inherit');
-		$('.pgd').css('margin-top','140em');
+		$('.pgd').css('margin-top','185em');
 		$('.screen-03').css('opacity','0');
 	}
 	if(scrollTop < lastScreen & scrollTop > firstScreen){
