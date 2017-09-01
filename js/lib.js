@@ -170,12 +170,13 @@ function pgd(){
 		$('.pgd').css('position','fixed');
 		$('.screen-01').css('position','fixed');
 		$('.pgd').css('top','10em');
+		// $('#pgd-main').css('height','100%');
 	}
 	if(scrollTop < firstScreen){
 		$('.pgd').css('top','0');
 		$('.pgd').css('position','inherit');
 		$('.screen-01').css('position','inherit');
-
+		
 
 	}
 	if(scrollTop > secondScreen){
@@ -198,11 +199,13 @@ function pgd(){
 		$('.screen-03').css('position','inherit');
 		$('.pgd').css('margin-top','185em');
 		$('.screen-03').css('opacity','0');
+		// $('#pgd-main').css('height','800px');
 	}
 	if(scrollTop < lastScreen & scrollTop > firstScreen){
 		$('.pgd').css('position','fixed');
 		$('.screen-01').css('position','fixed');
 		$('.pgd').css('margin-top','0');
+		
 	}
 });
 	}
