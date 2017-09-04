@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2017 by original authors @ fontello.com</metadata>
+<defs>
+<font id="soft" horiz-adv-x="1000" >
+<font-face font-family="soft" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="graph-03" unicode="&#xe800;" d="M216 74s191 41 343 196c135 138 199 340 199 340v-587h-543z" horiz-adv-x="1000" />
+
+<glyph glyph-name="graph-04" unicode="&#xe801;" d="M346 55h202v-10s198 30 341 108v-140h-544z" horiz-adv-x="1000" />
+
+<glyph glyph-name="graph-05" unicode="&#xe802;" d="M197 61s201 48 339 183 203 317 203 317v-548h-543z" horiz-adv-x="1000" />
+
+<glyph glyph-name="graph-06" unicode="&#xe803;" d="M18 21s357 1 551 106c318 190 399 510 399 510v-621h-949z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>

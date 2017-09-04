@@ -29,7 +29,6 @@ function animateMenu(){
 	})(jQuery);
 }
 
-
 function mkAnimation(){
 	$( ".mk-01" ).mouseover(function() {
 		$(".mk-01-open").css("opacity","1");
@@ -214,5 +213,7 @@ function pgd(){
 function loadImages(){
 	
 }
+
+
 
 
