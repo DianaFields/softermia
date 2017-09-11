@@ -1432,6 +1432,9 @@ body {
       @media screen and (max-width: 1200px) {
         body #microklima .mk-procesos .content {
           padding-top: 1.8em; } }
+      @media only screen and (max-width: 601px) and (max-width: 1023px) {
+        body #microklima .mk-procesos div {
+          padding: 0 1em; } }
       @media screen and (max-width: 600px) {
         body #microklima .mk-procesos .content {
           height: auto; }
@@ -1439,7 +1442,9 @@ body {
             height: 230px;
             border-right: none;
             border-bottom: 1px solid #fff;
-            padding: 1em; } }
+            padding: 1em; }
+            body #microklima .mk-procesos .content div h2 {
+              font-size: 16px; } }
     body #microklima .mk-graph {
       padding-top: 5%;
       height: 800px;
@@ -1664,6 +1669,14 @@ body {
       @media screen and (max-width: 1200px) {
         body #microklima .mk-capacidad-regulada .item-01 p, body #microklima .mk-capacidad-regulada .item-02 p {
           padding: 0; } }
+      @media only screen and (min-width: 601px) and (max-width: 1023px) {
+        body #microklima .mk-capacidad-regulada {
+          height: auto;
+          padding: 0; }
+          body #microklima .mk-capacidad-regulada .tittle p {
+            text-align: center; }
+          body #microklima .mk-capacidad-regulada .item-01 p, body #microklima .mk-capacidad-regulada .item-02 p {
+            font-size: 16px; } }
       @media screen and (max-width: 600px) {
         body #microklima .mk-capacidad-regulada {
           height: auto; } }
@@ -1945,11 +1958,16 @@ body {
           top: 12.8em; }
           body #microklima .pgd .screen-01 .text, body #microklima .pgd .screen-02 .text, body #microklima .pgd .screen-03 .text {
             top: 50%; } }
-      @media only screen and (min-width: 391px) and (max-width: 768px) {
+      @media only screen and (min-width: 391px) and (max-width: 600px) {
         body #microklima .pgd .screen-01, body #microklima .pgd .screen-02, body #microklima .pgd .screen-03 {
           top: 10.8em; }
           body #microklima .pgd .screen-01 .text, body #microklima .pgd .screen-02 .text, body #microklima .pgd .screen-03 .text {
             top: 70%; } }
+      @media only screen and (min-width: 601px) and (max-width: 768px) {
+        body #microklima .pgd .screen-01, body #microklima .pgd .screen-02, body #microklima .pgd .screen-03 {
+          top: 10.8em; }
+          body #microklima .pgd .screen-01 .text, body #microklima .pgd .screen-02 .text, body #microklima .pgd .screen-03 .text {
+            top: 110%; } }
       body #microklima .pgd .description {
         font-size: 1.2em;
         line-height: 1.5em; }
@@ -2231,7 +2249,7 @@ body {
       bottom: 0;
       top: 0;
       position: absolute; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       body .slider {
         background-position: -81% 0; }
         body .slider .descripcion {
@@ -2307,7 +2325,7 @@ body {
     top: 260em; } }
 @media only screen and (min-width: 601px) and (max-width: 1023px) {
   #firstScreen {
-    top: 250em; }
+    top: 270em; }
 
   #secondScreen {
     top: 300em; }

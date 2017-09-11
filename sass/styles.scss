@@ -1913,14 +1913,22 @@
 								padding-top: 1.8em;
 							}
 						}
+						@media only screen and (max-width: 601px) and (max-width: 1023px){
+							div{
+								padding: 0 1em;
+							}
+						}
 						@media screen and (max-width: 600px){
 							.content{
 								height: auto;
 								div{
 									height:230px;
 									border-right: none;
-									    border-bottom: 1px solid #fff;
-									        padding: 1em;
+									border-bottom: 1px solid #fff;
+									padding: 1em;
+									    h2{
+									    	font-size: 16px;
+									    }
 								}
 							}
 
@@ -2187,6 +2195,18 @@
 								.item-01, .item-02{
 									p{
 										padding: 0;
+									}
+								}
+							}
+							@media only screen and (min-width: 601px) and (max-width: 1023px){
+								height:auto;
+								padding:0;
+								.tittle p{
+									text-align: center;
+								}
+								.item-01, .item-02{
+									p{
+										font-size: 16px;
 									}
 								}
 							}
@@ -2525,11 +2545,20 @@
 								}
 
 							}
-							@media only screen and (min-width: 391px) and (max-width: 768px){
+							@media only screen and (min-width: 391px) and (max-width: 600px){
 								.screen-01, .screen-02, .screen-03{
 									top:10.8em;
 									.text{
 										top: 70%;
+									}
+								}
+
+							}
+							@media only screen and (min-width: 601px) and (max-width: 768px){
+								.screen-01, .screen-02, .screen-03{
+									top:10.8em;
+									.text{
+										top: 110%;
 									}
 								}
 
@@ -2893,7 +2922,7 @@
 					position: absolute;
 				}
 			}
-			@media screen and (max-width: 768px){
+			@media screen and (max-width: 767px){
 				background-position: -81% 0;
 
 				.descripcion{
@@ -2976,7 +3005,7 @@
 	@media only screen and (min-width: 601px) and (max-width: 1023px){
 
 		#firstScreen{
-			top: 250em;
+			top: 270em;
 		}
 		#secondScreen{
 			top: 300em;
