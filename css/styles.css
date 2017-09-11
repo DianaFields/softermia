@@ -537,7 +537,9 @@ body {
       width: 30%;
       margin: 1em 0 0 1em; }
     body nav .menu .options {
-      width: 70%; }
+      width: 55%;
+      float: inherit;
+      display: inline-block; }
       body nav .menu .options .item {
         width: 22%; } }
   body .carousel-inner {
@@ -1458,162 +1460,162 @@ body {
         color: #fff; }
         body #microklima .mk-graph .mk-graph-info p {
           margin-bottom: 10%; }
-      body #microklima .mk-graph .parallax {
-        background: url(../images/microklima/graph.png) no-repeat;
-        background-size: 100%;
+      body #microklima .mk-graph .parallax .mk-graph-info {
+        padding: 10% 0 0 10%; }
+      body #microklima .mk-graph .parallax ul {
+        padding-top: 5%; }
+        body #microklima .mk-graph .parallax ul li {
+          font-size: 18px;
+          line-height: 35px;
+          color: #fff;
+          list-style: none; }
+      body #microklima .mk-graph .parallax .total-score {
+        position: relative;
+        display: inline-block;
+        font-size: 3em;
+        font-weight: normal;
+        text-align: center;
+        float: left;
+        clear: right; }
+        body #microklima .mk-graph .parallax .total-score:after {
+          content: '%';
+          font-size: 1em;
+          position: absolute;
+          right: -42px;
+          top: 0; }
+      body #microklima .mk-graph .parallax .score-range {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        padding: 3px 0 3px 10px;
+        font-size: 12px;
+        font-style: italic;
+        text-align: left;
+        color: #999;
+        border-left: 3px solid #777;
+        float: right; }
+      body #microklima .mk-graph .parallax .score-graph {
+        position: relative;
+        display: block;
+        margin-bottom: 15px;
+        width: 100%;
+        height: 15px;
+        border-radius: 3px;
+        transition: 0.4s linear;
+        transition-property: width, background-color;
+        float: left;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00fcde+0,08ccdd+31,268bef+66,0d22e0+100 */
+        background: #00fcde;
+        /* Old browsers */
+        background: -moz-radial-gradient(center, ellipse cover, #00fcde 0%, #08ccdd 31%, #268bef 66%, #0d22e0 100%);
+        /* FF3.6-15 */
+        background: -webkit-radial-gradient(center, ellipse cover, #00fcde 0%, #08ccdd 31%, #268bef 66%, #0d22e0 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: radial-gradient(ellipse at center, #00fcde 0%, #08ccdd 31%, #268bef 66%, #0d22e0 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00fcde', endColorstr='#0d22e0',GradientType=1 );
+        /* IE6-9 fallback on horizontal gradient */ }
+      body #microklima .mk-graph .parallax .score-graph:before, body #microklima .mk-graph .parallax .score-graph:after {
+        position: absolute;
+        top: 20px;
+        color: #ccc;
+        font-size: 10px;
+        font-style: italic; }
+      body #microklima .mk-graph .parallax .score-graph:before {
+        content: '0';
+        position: absolute;
+        left: 0;
+        border-left: 1px solid #ccc;
+        padding-left: 10px; }
+      body #microklima .mk-graph .parallax .score-graph:after {
+        content: '100%';
+        position: absolute;
+        right: 0;
+        border-right: 1px solid #ccc;
+        padding-right: 10px; }
+      body #microklima .mk-graph .parallax .score-graph .score-graph-bar {
+        height: 15px;
+        width: 100%;
+        background: #eee;
+        float: right; }
+      body #microklima .mk-graph .parallax .score-graph .score-graph-bar span {
+        position: absolute;
+        display: block;
+        top: 30px;
+        width: 30px !important;
+        height: 30px !important;
+        margin-left: -17px;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-top-left-radius: 0;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        z-index: 999;
+        transform: rotate(45deg); }
+        body #microklima .mk-graph .parallax .score-graph .score-graph-bar span:after {
+          content: '\00a0';
+          width: 30px;
+          height: 30px;
+          transform: rotate(-45deg);
+          position: absolute;
+          background: url("../images/imagotipo.png") no-repeat;
+          background-size: 60%;
+          right: -7px;
+          top: -2px; }
+      body #microklima .mk-graph .parallax .graphic-image img {
+        width: 100%; }
+      body #microklima .mk-graph .parallax .mk-graph-01 {
+        right: 35%;
+        top: 61%; }
+      body #microklima .mk-graph .parallax .mk-graph-02 {
+        right: 32%;
+        top: 42%; }
+      body #microklima .mk-graph .parallax .mk-graph-03 {
+        right: 44%;
+        top: 50%; }
+      body #microklima .mk-graph .parallax .mk-graph-04 {
+        right: 40%;
+        top: 41%; }
+      body #microklima .mk-graph .parallax .pulsating {
+        position: absolute;
+        transform: translateX(-50%) translateY(-50%);
+        width: 20px;
+        height: 20px; }
+      body #microklima .mk-graph .parallax .pulsating:after {
+        content: '';
+        cursor: pointer;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 100%;
         height: 100%;
-        position: relative; }
-        body #microklima .mk-graph .parallax .mk-graph-info {
-          padding: 10% 0 0 10%; }
-        body #microklima .mk-graph .parallax ul {
-          padding-top: 5%; }
-          body #microklima .mk-graph .parallax ul li {
-            font-size: 18px;
-            line-height: 35px;
-            color: #fff;
-            list-style: none; }
-        body #microklima .mk-graph .parallax .total-score {
-          position: relative;
-          display: inline-block;
-          font-size: 3em;
-          font-weight: normal;
-          text-align: center;
-          float: left;
-          clear: right; }
-          body #microklima .mk-graph .parallax .total-score:after {
-            content: '%';
-            font-size: 1em;
-            position: absolute;
-            right: -42px;
-            top: 0; }
-        body #microklima .mk-graph .parallax .score-range {
-          position: relative;
-          display: inline-block;
-          width: 60px;
-          padding: 3px 0 3px 10px;
-          font-size: 12px;
-          font-style: italic;
-          text-align: left;
-          color: #999;
-          border-left: 3px solid #777;
-          float: right; }
-        body #microklima .mk-graph .parallax .score-graph {
-          position: relative;
-          display: block;
-          margin-bottom: 15px;
-          width: 100%;
-          height: 15px;
-          border-radius: 3px;
-          transition: 0.4s linear;
-          transition-property: width, background-color;
-          float: left;
-          /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00fcde+0,08ccdd+31,268bef+66,0d22e0+100 */
-          background: #00fcde;
-          /* Old browsers */
-          background: -moz-radial-gradient(center, ellipse cover, #00fcde 0%, #08ccdd 31%, #268bef 66%, #0d22e0 100%);
-          /* FF3.6-15 */
-          background: -webkit-radial-gradient(center, ellipse cover, #00fcde 0%, #08ccdd 31%, #268bef 66%, #0d22e0 100%);
-          /* Chrome10-25,Safari5.1-6 */
-          background: radial-gradient(ellipse at center, #00fcde 0%, #08ccdd 31%, #268bef 66%, #0d22e0 100%);
-          /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00fcde', endColorstr='#0d22e0',GradientType=1 );
-          /* IE6-9 fallback on horizontal gradient */ }
-        body #microklima .mk-graph .parallax .score-graph:before, body #microklima .mk-graph .parallax .score-graph:after {
-          position: absolute;
-          top: 20px;
-          color: #ccc;
-          font-size: 10px;
-          font-style: italic; }
-        body #microklima .mk-graph .parallax .score-graph:before {
-          content: '0';
-          position: absolute;
-          left: 0;
-          border-left: 1px solid #ccc;
-          padding-left: 10px; }
-        body #microklima .mk-graph .parallax .score-graph:after {
-          content: '100%';
-          position: absolute;
-          right: 0;
-          border-right: 1px solid #ccc;
-          padding-right: 10px; }
-        body #microklima .mk-graph .parallax .score-graph .score-graph-bar {
-          height: 15px;
-          width: 100%;
-          background: #eee;
-          float: right; }
-        body #microklima .mk-graph .parallax .score-graph .score-graph-bar span {
-          position: absolute;
-          display: block;
-          top: 30px;
-          width: 30px !important;
-          height: 30px !important;
-          margin-left: -17px;
-          background-color: rgba(255, 255, 255, 0.9);
-          border-top-left-radius: 0;
-          border-top-right-radius: 50%;
-          border-bottom-left-radius: 50%;
-          border-bottom-right-radius: 50%;
-          z-index: 999;
-          transform: rotate(45deg); }
-          body #microklima .mk-graph .parallax .score-graph .score-graph-bar span:after {
-            content: '\00a0';
-            width: 30px;
-            height: 30px;
-            transform: rotate(-45deg);
-            position: absolute;
-            background: url("../images/imagotipo.png") no-repeat;
-            background-size: 60%;
-            right: -7px;
-            top: -2px; }
-        body #microklima .mk-graph .parallax .mk-graph-01 {
-          right: 35%;
-          top: 61%; }
-        body #microklima .mk-graph .parallax .mk-graph-02 {
-          right: 32%;
-          top: 42%; }
-        body #microklima .mk-graph .parallax .mk-graph-03 {
-          right: 44%;
-          top: 50%; }
-        body #microklima .mk-graph .parallax .mk-graph-04 {
-          right: 40%;
-          top: 41%; }
+        background-color: #fff;
+        border-radius: 15px;
+        border: 1px solid #fff;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+        animation: pulse-dot 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite; }
+      body #microklima .mk-graph .parallax .pulsating:before {
+        content: '';
+        position: relative;
+        display: block;
+        width: 300%;
+        height: 300%;
+        box-sizing: border-box;
+        margin-left: -100%;
+        margin-top: -100%;
+        border-radius: 45px;
+        background-color: rgba(80, 126, 230, 0.8);
+        animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+        -webkit-animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite; }
+      @media screen and (max-width: 768px) {
         body #microklima .mk-graph .parallax .pulsating {
-          position: absolute;
-          transform: translateX(-50%) translateY(-50%);
-          width: 20px;
-          height: 20px; }
-        body #microklima .mk-graph .parallax .pulsating:after {
-          content: '';
-          cursor: pointer;
-          position: absolute;
-          left: 0;
-          top: 0;
-          display: block;
-          width: 100%;
-          height: 100%;
-          background-color: #fff;
-          border-radius: 15px;
-          border: 1px solid #fff;
-          box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-          animation: pulse-dot 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite; }
-        body #microklima .mk-graph .parallax .pulsating:before {
-          content: '';
-          position: relative;
-          display: block;
-          width: 300%;
-          height: 300%;
-          box-sizing: border-box;
-          margin-left: -100%;
-          margin-top: -100%;
-          border-radius: 45px;
-          background-color: rgba(80, 126, 230, 0.8);
-          animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
-          -webkit-animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite; }
-        @media screen and (max-width: 600px) {
-          body #microklima .mk-graph .parallax {
-            background: none; }
-            body #microklima .mk-graph .parallax .pulsating {
-              display: none; } }
+          display: none; } }
+      @media screen and (max-width: 600px) {
+        body #microklima .mk-graph .parallax {
+          background: none; }
+          body #microklima .mk-graph .parallax .pulsating {
+            display: none; } }
       @media screen and (max-width: 1024px) {
         body #microklima .mk-graph {
           height: 550px; }
@@ -2106,6 +2108,11 @@ body {
     /*MODAL GALERÍA*/ }
     body .galeria .project {
       padding: 0 .3em; }
+      body .galeria .project .video-project {
+        background: #000; }
+        body .galeria .project .video-project video {
+          width: 100%;
+          height: 359px; }
     body .galeria .modal-content {
       width: 60%;
       left: calc(40% - 20% );
@@ -2250,7 +2257,7 @@ body {
 #secondScreen {
   width: 100%;
   height: 2px;
-  top: 340em;
+  top: 320em;
   position: absolute; }
 
 #thirdScreen {
@@ -2286,7 +2293,7 @@ body {
 
   #lastScreen {
     top: 620em; } }
-@media only screen and (min-width: 391px) and (max-width: 768px) {
+@media only screen and (min-width: 391px) and (max-width: 600px) {
   #firstScreen {
     top: 110em; }
 
@@ -2298,6 +2305,30 @@ body {
 
   #fourScreen {
     top: 260em; } }
+@media only screen and (min-width: 601px) and (max-width: 1023px) {
+  #firstScreen {
+    top: 250em; }
+
+  #secondScreen {
+    top: 300em; }
+
+  #thirdScreen {
+    top: 350em; }
+
+  #fourScreen {
+    top: 400em; } }
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  #firstScreen {
+    top: 240em; }
+
+  #secondScreen {
+    top: 250em; }
+
+  #thirdScreen {
+    top: 290em; }
+
+  #lastScreen {
+    top: 350em; } }
 @media screen and (min-width: 1200px) {
   .slider-mk-section {
     background-size: 84% !important;
