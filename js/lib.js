@@ -147,6 +147,7 @@ function deskOnly(){
 
 } else {
 // PGD ANIMATION MOBILE
+
 $(window).scroll(function(){
 	var firstScreen = $("#firstScreen").offset().top;
 	var secondScreen = $("#secondScreen").offset().top;
@@ -155,13 +156,15 @@ $(window).scroll(function(){
 	var lastScreen = $("#lastScreen").offset().top;
 	var scrollTop = $(window).scrollTop();
 	if(scrollTop > firstScreen){
-		$('.pgd').css('position','fixed');
+		// $('.pgd').css('position','fixed');
+		$('.pgd').addClass('init-pgd');
 		$('.screen-01').css('position','fixed');
-		$('.pgd').css('top','7em');
+		// $('.pgd').css('top','7em');
 	}
 	if(scrollTop < firstScreen){
-		$('.pgd').css('top','0');
+		// $('.pgd').css('top','0');
 		$('.pgd').css('position','inherit');
+		$('.pgd').removeClass('init-pgd');
 		$('.screen-01').css('position','inherit');
 
 
@@ -182,17 +185,46 @@ $(window).scroll(function(){
 		$('.screen-03').css('opacity','1');
 	}
 	if(scrollTop > lastScreen){
+		$('.pgd').removeClass('init-pgd');
+		$('.pgd').addClass('return-pgd');
+
 		$('.pgd').css('position','inherit');
 		$('.screen-03').css('position','inherit');
-		$('.pgd').css('margin-top','102em');
+		// $('.pgd').css('margin-top','80em');
 		$('.screen-03').css('opacity','0');
 	}
 	if(scrollTop < lastScreen & scrollTop > firstScreen){
+		$('.pgd').removeClass('return-pgd');
 		$('.pgd').css('position','fixed');
 		$('.screen-01').css('position','fixed');
-		$('.pgd').css('margin-top','0');
+		// $('.pgd').css('margin-top','0');
 	}
 });
+
+// menu
+	// MENU ANIMATED
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 100) {
+			$('nav').addClass("nav-collapse");
+			$('nav').removeClass("nav-expand");
+			$('.imagotipo').css("width","30px");
+			$('.dropdown-toggle').removeClass("dropdown-expand");
+			$('.dropdown-toggle').addClass("dropdown-collapse");
+			$('.logo-head').css("display","none");
+			$('.item').css("padding-top","1em");
+
+		} else {
+			$('nav').removeClass("nav-collapse");
+			$('nav').addClass("nav-expand");
+			$('.logo-head').css("display","inline-block");
+			$('.imagotipo').css("width","0");
+			$('.item').css("padding-top","2em");
+			$('.dropdown-toggle').removeClass("dropdown-collapse");
+			$('.dropdown-toggle').addClass("dropdown-expand");
+		} 
+	});
+
+
 }
 
 }

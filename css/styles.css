@@ -67,7 +67,14 @@ body {
       margin-top: 2em; }
       body .slide-common .descripcion h2::after {
         top: 3.5em;
-        width: 15%; } }
+        width: 15%; }
+      body .slide-common .descripcion h2 {
+        padding: 0 0 1em 0;
+        font-size: 22px; }
+        body .slide-common .descripcion h2:after {
+          top: 3em; }
+      body .slide-common .descripcion p {
+        margin-top: 2em; } }
   @media only screen and (min-width: 501px) and (max-width: 900px) {
     body .slide-common .descripcion {
       margin-top: 2em; }
@@ -172,28 +179,28 @@ body {
     margin-bottom: 0;
     width: 100%;
     margin: 0 auto; }
-    body nav .menu {
+    body nav .menu-expand {
       height: 100%;
       max-width: 1550px;
       margin: 0 auto;
       /*ok*/ }
-      body nav .menu .options {
+      body nav .menu-expand .options {
         width: 70%;
         text-align: right;
         float: right;
         height: 100%;
         padding-right: 4em; }
-        body nav .menu .options .prod {
+        body nav .menu-expand .options .prod {
           height: 100%; }
-          body nav .menu .options .prod:hover > ul {
+          body nav .menu-expand .options .prod:hover > ul {
             opacity: 1; }
-      body nav .menu #prod {
+      body nav .menu-expand #prod {
         width: 15%;
         display: inline-block;
         cursor: pointer;
         color: #41439C;
         font-size: 1.2em; }
-        body nav .menu #prod:after {
+        body nav .menu-expand #prod:after {
           content: "\e114";
           font-family: 'Glyphicons Halflings';
           width: 20px;
@@ -201,18 +208,18 @@ body {
           color: #41439C;
           padding-left: 8px;
           font-size: 12px; }
-        body nav .menu #prod .dropdow-toggle {
+        body nav .menu-expand #prod .dropdow-toggle {
           display: inline-flex; }
-        body nav .menu #prod .dropdown-menu {
+        body nav .menu-expand #prod .dropdown-menu {
           width: 100%;
           right: 0;
           /* margin: 0; */
           left: inherit;
           border-radius: 0; }
         @media only screen and (min-width: 650px) and (max-width: 1024px) {
-          body nav .menu #prod {
+          body nav .menu-expand #prod {
             width: 25%; } }
-      body nav .menu .products {
+      body nav .menu-expand .products {
         width: 100%;
         height: auto;
         padding: 1em 0;
@@ -223,26 +230,26 @@ body {
         -moz-transition: all 200ms ease-in-out;
         -ms-transition: all 200ms ease-in-out;
         -o-transition: all 200ms ease-in-out; }
-        body nav .menu .products li {
+        body nav .menu-expand .products li {
           display: inline-block;
           cursor: pointer; }
-          body nav .menu .products li div {
+          body nav .menu-expand .products li div {
             display: inline-block; }
-          body nav .menu .products li .image-prod {
+          body nav .menu-expand .products li .image-prod {
             width: 34%;
             margin-top: 5em; }
-            body nav .menu .products li .image-prod img {
+            body nav .menu-expand .products li .image-prod img {
               width: 100%; }
-          body nav .menu .products li .logo-sub {
+          body nav .menu-expand .products li .logo-sub {
             width: 60% !important;
             margin: 0;
             vertical-align: top; }
-            body nav .menu .products li .logo-sub img {
+            body nav .menu-expand .products li .logo-sub img {
               height: 90px;
               margin: 2em 0; }
-            body nav .menu .products li .logo-sub p {
+            body nav .menu-expand .products li .logo-sub p {
               margin: 0 0 3em 0; }
-          body nav .menu .products li a {
+          body nav .menu-expand .products li a {
             width: 130px;
             line-height: 45px;
             text-align: center;
@@ -253,7 +260,7 @@ body {
             background: none;
             cursor: pointer;
             color: #4FB0E5; }
-            body nav .menu .products li a:after {
+            body nav .menu-expand .products li a:after {
               position: absolute;
               transition: .3s;
               content: '';
@@ -270,13 +277,13 @@ body {
               bottom: 0;
               height: 3px;
               background: #4FB0E5; }
-            body nav .menu .products li a:hover {
+            body nav .menu-expand .products li a:hover {
               text-decoration: none;
               background: none; }
-              body nav .menu .products li a:hover:after {
+              body nav .menu-expand .products li a:hover:after {
                 width: 100%;
                 left: 0; }
-              body nav .menu .products li a:hover:nth-of-type(4):after {
+              body nav .menu-expand .products li a:hover:nth-of-type(4):after {
                 top: calc(100% - 3px); }
     body nav a {
       display: inline-block;
@@ -298,6 +305,8 @@ body {
         -moz-transition: all 1s ease-in-out;
         -ms-transition: all 1s ease-in-out;
         -o-transition: all 1s ease-in-out; }
+      body nav a img {
+        width: 100%; }
     body nav .logo {
       height: 70px; }
       @media screen and (min-width: 1300px) {
@@ -312,15 +321,17 @@ body {
       font-size: 1.2em;
       text-align: center;
       padding-top: 2em; }
+    @media screen and (max-width: 600px) {
+      body nav .nav-collapse {
+        height: 50px; } }
     @media screen and (min-width: 768px) and (max-width: 1024px) {
       body nav .item {
         width: 22%;
         padding-top: 1.5em; } }
   body .nav-expand {
-    height: 100px; }
+    height: 70px; }
     body .nav-expand .logo-head {
-      width: 60%;
-      margin: 1.5em 0 0 0; }
+      width: 60%; }
       body .nav-expand .logo-head img {
         width: 100%; }
     body .nav-expand .imagotipo {
@@ -336,7 +347,9 @@ body {
         width: 18%;
         margin: 1.3em 0 0 4em; }
         body .nav-expand .logo-head img {
-          width: 100%; } }
+          width: 100%; }
+      body .nav-expand .nav-collapse {
+        height: 70px; } }
     @media only screen and (min-width: 650px) and (max-width: 1023px) {
       body .nav-expand .dropdown {
         display: none; } }
@@ -349,151 +362,103 @@ body {
     @media only screen and (min-width: 360px) and (max-width: 499px) {
       body .nav-expand .logo-head {
         width: 40%; } }
-  body .nav-collapse {
-    height: 70px; }
   @media only screen and (min-width: 769px) and (max-width: 1023px) {
     body .carousel {
       margin-top: 8em; }
-    body nav {
-      				/*.dropdown{
-      					width: 40%;
-      					text-align: right;
-      					float: right;
-      					height: 80px;
-      					line-height: 80px;
-      					.dropdown-toggle{
-      					}
-      					div{
-      						height: 80px;
-      						line-height: 80px;
-      						width: 100px;
-      						float: right;
-      						padding: 10px 0;
-      						text-align: center;
-      						.shape{
-      							width: 60px;
-      							height: 6px;
-      							background: #4FB0E5;
-      							display: block;
-      							margin: 0 auto;
-      							margin-top: 7px;
-      							position: relative;
-      							border-radius: 3px;
-      						}
-      					}
-      					.dropdown-menu{
-      						padding:0 2em;
-      						box-sizing: border-box;
-      						width: 100%;
-      						li{
-      							text-align: center;
-      							border-bottom: 1px solid #c2c2c2;
-      							a{
-      								height: 80px;
-      								line-height: 80px;
-      								font-size: 1.5em;
-      							}
-      						}
-      
-      					}
-      					}*/ }
-      body nav .menu {
-        padding: 1em 3em;
-        box-shadow: 0 -1px 24px #c2c2c2;
-        background: white; }
-        body nav .menu .logo {
-          width: 25%;
-          display: inline-block;
-          margin: 0 auto; }
-        body nav .menu .options {
-          /*display: none;*/ } }
+    body nav .menu {
+      padding: 1em 3em;
+      box-shadow: 0 -1px 24px #c2c2c2;
+      background: white; }
+      body nav .menu .logo {
+        width: 25%;
+        display: inline-block;
+        margin: 0 auto; } }
   @media screen and (max-width: 600px) {
     body .carousel {
-      margin-top: 4em; }
-    body nav {
-      height: 60px; }
-      body nav .menu {
-        height: 60px;
-        padding: .5em 1em;
-        background: white; }
-        body nav .menu .logo {
-          width: 53%;
-          height: 50px;
-          margin: 0;
-          z-index: 99; }
-        body nav .menu .options {
-          display: none; }
-      body nav .dropdown {
-        height: 100%;
-        width: 100%;
+      margin-top: 70px; }
+    body .nav-collapse {
+      height: 50px; }
+    body nav .menu {
+      padding: 1em;
+      background: rgba(255, 255, 255, 0.3); }
+      body nav .menu .logo {
+        width: 53%;
+        height: 50px;
+        margin: 0;
+        z-index: 99; }
+      body nav .menu .options {
+        display: none; }
+    body nav .dropdown-expand {
+      height: 100px;
+      line-height: 100px; }
+    body nav .dropdown-collapse {
+      height: 50px;
+      line-height: 50px; }
+    body nav .dropdown {
+      height: 70px;
+      line-height: 70px;
+      width: 100%;
+      float: right;
+      position: absolute;
+      top: 0;
+      left: 0; }
+      body nav .dropdown .dropdown-toggle {
+        padding: 0;
+        color: #4FB0E5; }
+        body nav .dropdown .dropdown-toggle:before {
+          content: "\e055";
+          font-family: 'Glyphicons Halflings';
+          font-size: 28px;
+          transition: all 1s ease-in-out;
+          -webkit-transition-timing-function: all 1s ease-in-out;
+          -moz-transition: all 1s ease-in-out;
+          -ms-transition: all 1s ease-in-out;
+          -o-transition: all 1s ease-in-out; }
+      body nav .dropdown div {
+        width: 100px;
         float: right;
-        position: absolute;
-        top: 0;
-        left: 0; }
-        body nav .dropdown .dropdown-toggle {
-          height: auto;
-          line-height: 100px;
-          padding: 0;
-          color: #4FB0E5; }
-          body nav .dropdown .dropdown-toggle:before {
-            content: "\e055";
-            font-family: 'Glyphicons Halflings';
-            font-size: 28px;
-            transition: all 1s ease-in-out;
-            -webkit-transition-timing-function: all 1s ease-in-out;
-            -moz-transition: all 1s ease-in-out;
-            -ms-transition: all 1s ease-in-out;
-            -o-transition: all 1s ease-in-out; }
-        body nav .dropdown div {
-          height: 80px;
-          line-height: 80px;
-          width: 100px;
-          float: right;
-          padding: 10px 0;
-          text-align: center; }
-          body nav .dropdown div .shape {
-            height: 6px;
-            background: #4FB0E5;
-            display: block;
-            margin: 0 auto;
-            position: relative;
-            border-radius: 3px;
-            width: 32px;
-            margin-left: 56%;
-            margin-top: 5px; }
-        body nav .dropdown .dropdown-menu {
-          padding: 0 1em;
-          width: 100%; }
-          body nav .dropdown .dropdown-menu li {
-            text-align: center;
-            border-bottom: 1px solid #c2c2c2; }
-            body nav .dropdown .dropdown-menu li a {
-              height: 60px;
-              line-height: 60px;
-              font-size: 1.3em; }
-      body nav .open .dropdown-toggle:before {
-        content: "\e014";
-        font-family: 'Glyphicons Halflings';
-        font-size: 28px; } }
+        padding: 10px 0;
+        text-align: center; }
+        body nav .dropdown div .shape {
+          height: 6px;
+          background: #4FB0E5;
+          display: block;
+          margin: 0 auto;
+          position: relative;
+          border-radius: 3px;
+          width: 32px;
+          margin-left: 56%;
+          margin-top: 5px; }
+      body nav .dropdown .dropdown-menu {
+        padding: 0 1em;
+        width: 100%; }
+        body nav .dropdown .dropdown-menu li {
+          text-align: center;
+          border-bottom: 1px solid #c2c2c2; }
+          body nav .dropdown .dropdown-menu li a {
+            height: 60px;
+            line-height: 60px;
+            font-size: 1.3em; }
+    body nav .open .dropdown-toggle:before {
+      content: "\e014";
+      font-family: 'Glyphicons Halflings';
+      font-size: 28px; } }
   @media only screen and (min-width: 401px) and (max-width: 600px) {
     body .carousel {
       margin-top: 7em;
       max-height: 300px; }
     body nav {
       height: auto; }
-      body nav .menu {
-        height: 60px;
-        padding: .5em 1em; }
-        body nav .menu .logo {
-          width: 45%;
-          height: 50px;
-          margin: 0 0 0 1em; } }
-      @media only screen and (min-width: 401px) and (max-width: 600px) and (min-width: 500px) {
-        body nav .menu .logo {
-          width: 35%; } }
+      body nav .menu .logo {
+        width: 45%;
+        height: 50px;
+        margin: 0 0 0 1em; } }
+    @media only screen and (min-width: 401px) and (max-width: 600px) and (min-width: 500px) {
+      body nav .menu .logo {
+        width: 35%; } }
   @media only screen and (min-width: 401px) and (max-width: 600px) {
-        body nav .menu .options {
-          display: none; }
+      body nav .menu .options {
+        display: none; }
       body nav .dropdown {
         height: 50px;
         width: 100%;
@@ -501,16 +466,9 @@ body {
         position: absolute;
         top: 0;
         left: 0; }
-        body nav .dropdown .dropdown-toggle {
-          height: auto;
-          padding-top: 1em;
-          padding-right: 2em; }
         body nav .dropdown div {
-          height: 80px;
-          line-height: 80px;
           width: 100px;
           float: right;
-          padding: 10px 0;
           text-align: center; }
           body nav .dropdown div .shape {
             height: 6px;
@@ -537,7 +495,6 @@ body {
       width: 30%;
       margin: 1em 0 0 1em; }
     body nav .menu .options {
-      width: 55%;
       float: inherit;
       display: inline-block; }
       body nav .menu .options .item {
@@ -655,7 +612,8 @@ body {
               font-size: 1.3em; }
         body .carousel-inner .slide-ref .maquina {
           width: 300px;
-          height: 300px; }
+          height: 300px;
+          left: 35%; }
         body .carousel-inner .slide-humiklima {
           background: #05076B; }
           body .carousel-inner .slide-humiklima video {
@@ -918,7 +876,9 @@ body {
           padding: 0; } }
     @media screen and (max-width: 767px) {
       body #nosotros {
-        height: auto; } }
+        height: auto; }
+        body #nosotros p {
+          padding-bottom: 2em; } }
   body #historia {
     padding-top: 4em; }
     body #historia h3 {
@@ -1430,8 +1390,14 @@ body {
           color: #000;
           font-size: 25px; }
       @media screen and (max-width: 1200px) {
-        body #microklima .mk-procesos .content {
-          padding-top: 1.8em; } }
+        body #microklima .mk-procesos {
+          padding: 0; }
+          body #microklima .mk-procesos .content {
+            padding-top: 1.8em; }
+            body #microklima .mk-procesos .content div {
+              padding: 0 1em; }
+              body #microklima .mk-procesos .content div h2 {
+                font-size: 16px; } }
       @media only screen and (max-width: 601px) and (max-width: 1023px) {
         body #microklima .mk-procesos div {
           padding: 0 1em; } }
@@ -1441,7 +1407,6 @@ body {
           body #microklima .mk-procesos .content div {
             height: 230px;
             border-right: none;
-            border-bottom: 1px solid #fff;
             padding: 1em; }
             body #microklima .mk-procesos .content div h2 {
               font-size: 16px; } }
@@ -1625,10 +1590,12 @@ body {
         body #microklima .mk-graph {
           height: 550px; }
           body #microklima .mk-graph .mk-graph-info {
-            padding: 0 0 0 10%; } }
+            padding: 0 0 0 10%;
+            margin-bottom: 12em; } }
       @media screen and (max-width: 600px) {
         body #microklima .mk-graph {
-          height: 390px; } }
+          height: auto;
+          padding-bottom: 2em; } }
     body #microklima .mk-capacidad-regulada {
       background: url("../images/microklima/background-humidity.jpg");
       background-attachment: fixed;
@@ -1745,7 +1712,6 @@ body {
         height: 100px;
         line-height: 100px; }
         body #microklima .mk-componentes .brand .mk-image-brand img {
-          width: 60%;
           height: auto; }
       body #microklima .mk-componentes .brand p {
         position: relative;
@@ -1769,6 +1735,15 @@ body {
           position: absolute;
           top: 0;
           left: 50%; }
+    @media screen and (max-width: 359px) {
+      body #microklima .mk-componentes .mk-image-brand img {
+        width: 60%; } }
+    @media only screen and (min-width: 360px) and (max-width: 767px) {
+      body #microklima .mk-componentes .mk-image-brand img {
+        width: 40%; } }
+    @media only screen and (min-width: 768px) {
+      body #microklima .mk-componentes .mk-image-brand img {
+        width: 60%; } }
     body #microklima .densidad {
       height: 100%; }
       body #microklima .densidad h3 {
@@ -1903,7 +1878,7 @@ body {
         height: 400px;
         margin: 0 auto;
         left: calc(60% - 30%);
-        position: fixed;
+        position: inherit;
         top: 12.8em;
         transition: all 1s ease-in-out;
         -webkit-transition-timing-function: all 1s ease-in-out;
@@ -1912,25 +1887,26 @@ body {
         -o-transition: all 1s ease-in-out; }
         body #microklima .pgd .screen-03 .text {
           width: 60%;
-          left: -60%;
+          right: -100%;
           position: absolute;
-          top: 40%;
+          top: 20%;
           height: auto;
-          background: #b3dce2;
+          background: #1B5BC2;
           position: relative;
           -moz-border-radius: 5px;
           -webkit-border-radius: 5px;
           border-radius: 5px;
-          padding: 1.5em; }
+          padding: 1.5em;
+          color: #fff; }
           body #microklima .pgd .screen-03 .text:before {
             content: "";
             position: absolute;
-            left: 100%;
+            right: 100%;
             top: 45%;
             width: 0;
             height: 0;
             border-top: 10px solid transparent;
-            border-left: 20px solid #b3dce2;
+            border-right: 20px solid #1B5BC2;
             border-bottom: 10px solid transparent; }
           body #microklima .pgd .screen-03 .text p {
             font-size: 1.3em; }
@@ -2275,19 +2251,19 @@ body {
 #secondScreen {
   width: 100%;
   height: 2px;
-  top: 320em;
+  top: 300em;
   position: absolute; }
 
 #thirdScreen {
   width: 100%;
   height: 2px;
-  top: 390em;
+  top: 350em;
   position: absolute; }
 
 #fourScreen {
   width: 100%;
   height: 2px;
-  top: 440em;
+  top: 390em;
   position: absolute; }
 
 #lastScreen {
@@ -2310,20 +2286,76 @@ body {
     top: 560em; }
 
   #lastScreen {
-    top: 620em; } }
-@media only screen and (min-width: 391px) and (max-width: 600px) {
+    top: 620em; }
+
+  .init-pgd {
+    position: fixed;
+    top: 7em; }
+
+  .return-pgd {
+    position: inherit;
+    margin-top: 150em !important; } }
+@media only screen and (min-width: 391px) and (max-width: 450px) {
   #firstScreen {
-    top: 110em; }
+    top: 422em; }
 
   #secondScreen {
-    top: 130em; }
+    top: 450em; }
 
   #thirdScreen {
-    top: 150em; }
+    top: 480em; }
 
   #fourScreen {
-    top: 260em; } }
-@media only screen and (min-width: 601px) and (max-width: 1023px) {
+    top: 510em; }
+
+  .init-pgd {
+    position: fixed;
+    top: 7em; }
+
+  .return-pgd {
+    position: inherit;
+    margin-top: 800em !important; } }
+@media only screen and (min-width: 451px) and (max-width: 600px) {
+  #firstScreen {
+    top: 400em; }
+
+  #secondScreen {
+    top: 410em; }
+
+  #thirdScreen {
+    top: 420em; }
+
+  #fourScreen {
+    top: 430em; }
+
+  .init-pgd {
+    position: fixed;
+    top: 7em; }
+
+  .return-pgd {
+    position: inherit;
+    margin-top: 112em !important; } }
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  #firstScreen {
+    top: 300em; }
+
+  #secondScreen {
+    top: 310em; }
+
+  #thirdScreen {
+    top: 320em; }
+
+  #fourScreen {
+    top: 330em; }
+
+  .init-pgd {
+    position: fixed;
+    top: 7em; }
+
+  .return-pgd {
+    position: inherit;
+    margin-top: 112em !important; } }
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
   #firstScreen {
     top: 270em; }
 
@@ -2344,6 +2376,9 @@ body {
 
   #thirdScreen {
     top: 290em; }
+
+  #fourScreen {
+    top: 320em; }
 
   #lastScreen {
     top: 350em; } }
