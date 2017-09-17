@@ -179,6 +179,31 @@ body {
     margin-bottom: 0;
     width: 100%;
     margin: 0 auto; }
+    body nav .menu {
+      height: 100%;
+      max-width: 1550px;
+      margin: 0 auto; }
+      body nav .menu .options {
+        width: 70%;
+        text-align: right;
+        float: right;
+        height: 100%;
+        padding-right: 4em; }
+        body nav .menu .options .dropdownProd {
+          width: 15%;
+          display: inline-block;
+          cursor: pointer;
+          color: #41439C;
+          font-size: 1.2em; }
+      body nav .menu .products li .logo-sub {
+        width: 60% !important;
+        margin: 0;
+        vertical-align: top; }
+        body nav .menu .products li .logo-sub img {
+          height: 90px;
+          margin: 2em 0; }
+        body nav .menu .products li .logo-sub p {
+          margin: 0 0 3em 0; }
     body nav .menu-expand {
       height: 100%;
       max-width: 1550px;
@@ -323,7 +348,9 @@ body {
       padding-top: 2em; }
     @media screen and (max-width: 600px) {
       body nav .nav-collapse {
-        height: 50px; } }
+        height: 50px; }
+      body nav .menu-expand .options {
+        display: none; } }
     @media screen and (min-width: 768px) and (max-width: 1024px) {
       body nav .item {
         width: 22%;

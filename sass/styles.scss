@@ -244,6 +244,42 @@
 										padding: 0;
 										margin-bottom: 0;
 										width: 100%;
+										.menu{
+											height: 100%;
+										    max-width: 1550px;
+										    margin: 0 auto;
+										    .options{
+										    	width: 70%;
+											    text-align: right;
+											    float: right;
+											    height: 100%;
+											    padding-right: 4em;
+											    .dropdownProd{
+											    	width: 15%;
+												    display: inline-block;
+												    cursor: pointer;
+												    color: #41439C;
+												    font-size: 1.2em;
+											    }
+										    }
+										    .products{
+										    	li{
+										    		.logo-sub{
+										    			  width: 60% !important;
+													    margin: 0;
+													    vertical-align: top;
+													    img{
+													    	height: 90px;
+    														margin: 2em 0;
+													    }
+													    p{
+													    	    margin: 0 0 3em 0;
+													    }
+										    		}
+										    		  
+										    	}
+										    }
+										}
 										.menu-expand{
 											height: 100%;
 											max-width: 1550px;
@@ -419,7 +455,10 @@
 											.nav-collapse{
 											height: 50px;
 
-										}
+											}
+											.menu-expand .options{
+												display: none;
+											}
 										}
 										@media screen and (min-width: 768px) and (max-width: 1024px){
 

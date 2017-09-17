@@ -29,12 +29,6 @@
 			</svg>
 		</div>
 		<p>Cargando...</p>
-<!--  <svg class="blur-circle">
-    <filter id="blur">
-      <fegaussianblur in="SourceGraphic" stddeviation="13"></fegaussianblur>
-    </filter>
-    <circle cx="70" cy="70" r="66" fill="transparent" stroke="white" stroke-width="40" filter="url(#blur)"></circle>
-</svg> -->
 </div>
 <div id="main-content" style="opacity: 0;">
 
@@ -105,9 +99,6 @@
 							</div>
 
 						</nav>
-						<script type="text/javascript">
-							deskOnly();
-						</script>
 					</div>
 					<div class="backtop" tooltip="Back To Top"></div>
 					<div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -594,23 +585,23 @@
 				<div id="footer"></div>
 					
 </div>
+			    <script src="js/lib.js"></script>
+				<script src="js/wow.min.js"></script>
 				<script src="js/jquery.min.js"></script>
 				<script src="js/easing.js"></script>
-
-				
 				<script src="bootstrap/js/bootstrap.min.js"></script>
-				<script src="js/wow.min.js"></script>
+
 				<script src="js/jquery.enllax.min.js"></script>
 				<script async defer
 				src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCGwNgYNPm44eWMr11vJsq4UduogvxfvI&callback=initMap">
 			</script>
 			<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-			<script src="js/lib.js"></script>
 			<script type="text/javascript">
+				deskOnly();
 				animateMenu();
 				loadEx();
 				backToTop();
-				deskOnly();
+				
 				new WOW().init();
 
 				(function($){
