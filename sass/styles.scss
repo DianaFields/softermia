@@ -474,12 +474,15 @@
 
 										.logo-head{
 											width: 60%;
+											height: 70px;
+										    line-height: 70px;
+										    padding-left: 1em;
 											img{
 												width: 100%;
 											}
 										}
 										.imagotipo{
-											width:0;
+											width:40px;
 											margin: .5em 0 0 4.5em;
 											img{
 												width: 100%;
@@ -491,12 +494,17 @@
 											.imagotipo{
 												display: none;
 											}
+
+	
 										}
 										@media screen and (min-width: 1024px){
 											.logo-head{
 
 												width: 18%;
 												margin: 1.3em 0 0 4em;
+												position: absolute;
+											    left: 0;
+											    top: 0;
 												img{
 													width: 100%;
 												}
@@ -556,10 +564,16 @@
 				}
 				  .nav-collapse {
 	                height: 50px;
+						.imagotipo{
+							height: 50px;
+							line-height: 50px;
+							margin-left: 10px;
+						}
+
+									
 	            }
 				nav{
 					.menu{
-						padding:1em;
 						background: rgba(256,256,256,.3);
 						.logo{
 							width: 53%;
@@ -572,8 +586,8 @@
 						}
 					}
 					.dropdown-expand{
-						height: 100px;
-						line-height: 100px;
+						height: 70px;
+						line-height: 70px;
 					}
 					.dropdown-collapse{
 						height: 50px;
@@ -598,7 +612,7 @@
 							}
 						}
 						div{
-							width: 100px;
+							width: 80px;
 							float: right;
 							padding: 10px 0;
 							text-align: center;
@@ -2969,7 +2983,7 @@
 			}
 			@media screen and (max-width: 767px){
 				background-position: -81% 0;
-
+				margin-top:70px;
 				.descripcion{
 					width:80%;
 					padding:2em;
