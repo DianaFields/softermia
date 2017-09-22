@@ -7,14 +7,10 @@ function deskOnly(){
 	$(window).scroll(function() {
 		if ($(this).scrollTop() > 200) {
 			$('nav').addClass("nav-collapse");
-			$('.imagotipo').css("opacity","1");
-			$('.logo-head').css("opacity","0");
 			$('.item').css("padding-top","1em");
 
 		} else {
 			$('nav').removeClass("nav-collapse");
-			$('.logo-head').css("opacity","1");
-			$('.imagotipo').css("opacity","0");
 			$('.item').css("padding-top","2em");
 		} 
 	});
@@ -44,13 +40,11 @@ function deskOnly(){
 			$('.imagotipo').css("width","30px");
 			$('.dropdown-toggle').removeClass("dropdown-expand");
 			$('.dropdown-toggle').addClass("dropdown-collapse");
-			$('.logo-head').css("display","none");
 			$('.item').css("padding-top","1em");
 
 		} else {
 			$('nav').removeClass("nav-collapse");
 			$('nav').addClass("nav-expand");
-			$('.logo-head').css("display","inline-block");
 			$('.imagotipo').css("width","0");
 			$('.item').css("padding-top","2em");
 			$('.dropdown-toggle').removeClass("dropdown-collapse");
