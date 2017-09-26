@@ -2191,10 +2191,15 @@ body {
     body .galeria .project {
       padding: 0 .3em; }
       body .galeria .project .video-project {
-        background: #000; }
+        background: #000;
+        position: relative;
+        overflow: hidden; }
         body .galeria .project .video-project video {
-          width: 100%;
-          height: 359px; }
+          width: auto;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0; }
     body .galeria .modal-content {
       width: 60%;
       left: calc(40% - 20% );
@@ -2566,13 +2571,18 @@ body {
   text-align: justify;
   line-height: 1.8em; }
 #humiklima .tipos .imagen {
-  background: #f2f2f2; }
+  background: #e5e5e5;
+  text-align: center; }
   #humiklima .tipos .imagen img {
     width: 80%; }
 @media screen and (max-width: 768px) {
   #humiklima .tipos .descript {
     margin: 0 !important;
     padding: 0; } }
+@media screen and (min-width: 768px) {
+  #humiklima .tipos .imagen {
+    min-height: 550px;
+    padding-top: 7em; } }
 #humiklima .isotermicos .descript {
   margin: 2.5em 0 0 -4em; }
   #humiklima .isotermicos .descript h3 {
