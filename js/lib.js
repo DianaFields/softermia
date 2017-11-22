@@ -7,11 +7,13 @@ function deskOnly(){
 	$(window).scroll(function() {
 		if ($(this).scrollTop() > 200) {
 			$('nav').addClass("nav-collapse");
-			$('.item').css("padding-top","1em");
+			$('nav').removeClass("nav-expand");
+			// $('.item').css("padding-top","1em");
 
 		} else {
 			$('nav').removeClass("nav-collapse");
-			$('.item').css("padding-top","2em");
+			$('nav').addClass("nav-expand");
+			//$('.item').css("padding-top","2em");
 		} 
 	});
 
@@ -40,13 +42,13 @@ function deskOnly(){
 			$('.imagotipo').css("width","30px");
 			$('.dropdown-toggle').removeClass("dropdown-expand");
 			$('.dropdown-toggle').addClass("dropdown-collapse");
-			$('.item').css("padding-top","1em");
+			// $('.item').css("padding-top","1em");
 
 		} else {
 			$('nav').removeClass("nav-collapse");
 			$('nav').addClass("nav-expand");
 			$('.imagotipo').css("width","0");
-			$('.item').css("padding-top","2em");
+			// $('.item').css("padding-top","2em");
 			$('.dropdown-toggle').removeClass("dropdown-collapse");
 			$('.dropdown-toggle').addClass("dropdown-expand");
 		} 
