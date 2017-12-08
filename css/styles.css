@@ -220,8 +220,10 @@ body {
   50% {
     transform: rotate(-360deg); } }
   body .carousel {
-    margin-top: 7.1em;
     height: 500px; }
+    @media only screen and (min-width: 1024px) and (max-width: 1499px) {
+      body .carousel {
+        margin-top: 7.1em; } }
     @media screen and (min-width: 1500px) {
       body .carousel {
         height: 500px; }
@@ -324,7 +326,6 @@ body {
         body nav .item {
           width: 22%; } }
   body .menu-expand {
-    line-height: 100px;
     max-width: 1550px;
     margin: 0 auto;
     /*ok*/ }
@@ -463,8 +464,6 @@ body {
   body nav .menu-expand .logo-head {
     transition: all 300ms ease-in-out;
     width: 60%;
-    line-height: 100px;
-    height: 100px;
     margin-left: 1em;
     position: relative; }
     body nav .menu-expand .logo-head:before {
@@ -511,7 +510,6 @@ body {
     body nav .menu-expand .logo-head {
       width: 18%;
       height: 100%;
-      margin: 1em 0 0 4em;
       position: absolute;
       left: 0;
       top: 0; }
@@ -520,6 +518,16 @@ body {
   @media only screen and (min-width: 360px) and (max-width: 499px) {
     body nav .menu-expand .logo-head {
       width: 40%; } }
+  @media screen and (min-width: 1024px) {
+    body nav .menu-expand .options {
+      line-height: 100px; }
+    body nav .menu-expand .logo-head {
+      height: 100px;
+      line-height: 100px; } }
+  @media screen and (max-width: 1023px) {
+    body nav .menu-expand .logo-head {
+      height: 50px;
+      line-height: 50px; } }
   body .nav-collapse {
     height: 50px;
     transition: all 300ms ease-in-out;
@@ -568,7 +576,7 @@ body {
         display: none; }
     @media only screen and (max-width: 767px) {
       body .nav-collapse .logo-head {
-        margin: 10px;
+        margin: 0;
         width: 10%; }
         body .nav-collapse .logo-head:before {
           width: 80%; } }
@@ -592,7 +600,7 @@ body {
         margin: 0 auto; } }
   @media screen and (max-width: 600px) {
     body .carousel {
-      margin-top: 70px; }
+      margin-top: 50px; }
     body .nav-collapse {
       height: 50px; }
       body .nav-collapse .imagotipo {
@@ -610,14 +618,14 @@ body {
       body nav .menu .options {
         display: none; }
     body nav .dropdown-expand {
-      height: 70px;
-      line-height: 70px; }
+      height: 50px;
+      line-height: 50px; }
     body nav .dropdown-collapse {
       height: 50px;
       line-height: 50px; }
     body nav .dropdown {
-      height: 70px;
-      line-height: 70px;
+      height: 50px;
+      line-height: 50px;
       width: 100%;
       float: right;
       position: absolute;
@@ -795,7 +803,8 @@ body {
         background: url("../images/microklima/microklima-back.png") no-repeat;
         background-size: 70%;
         position: absolute;
-        right: -10em; }
+        right: -7em;
+        z-index: 1; }
       body .carousel-inner .slide-ref video {
         width: 100%; }
     body .carousel-inner .slide-humiklima .hk-01 {
@@ -1520,7 +1529,9 @@ body {
     body .slider-mk-section .maquina {
       right: -1em !important; }
   body #microklima {
-    height: 5900px; }
+    height: 5900px;
+    /*MOSAICO*/
+    /*MOSAICO*/ }
     body #microklima .video-snow {
       overflow: hidden; }
     body #microklima .text {
@@ -1542,6 +1553,33 @@ body {
           top: 0;
           left: 0;
           opacity: .7; }
+    body #microklima .microklima-mosaico .imagen {
+      background: #f2f2f2;
+      max-height: 700px;
+      text-align: center; }
+      body #microklima .microklima-mosaico .imagen img {
+        width: 100%; }
+    body #microklima .microklima-mosaico .descript-hover {
+      margin: 2em 0 0 -4em;
+      background: #fff;
+      min-height: 300px;
+      box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.09); }
+    body #microklima .microklima-mosaico .solid-small {
+      height: 350px; }
+      body #microklima .microklima-mosaico .solid-small .image {
+        overflow: hidden;
+        padding: 0;
+        position: relative;
+        height: 100%; }
+        body #microklima .microklima-mosaico .solid-small .image img {
+          width: 100%;
+          position: absolute;
+          left: 0;
+          top: 0; }
+      body #microklima .microklima-mosaico .solid-small .descript {
+        height: 100%;
+        background: #1F62C5;
+        color: #fff; }
     body #microklima .mk-procesos {
       padding-top: 3em; }
       body #microklima .mk-procesos .content {
@@ -2485,31 +2523,31 @@ body {
 #firstScreen {
   width: 100%;
   height: 2px;
-  top: 290em;
+  top: 393em;
   position: absolute; }
 
 #secondScreen {
   width: 100%;
   height: 2px;
-  top: 300em;
+  top: 400em;
   position: absolute; }
 
 #thirdScreen {
   width: 100%;
   height: 2px;
-  top: 350em;
+  top: 450em;
   position: absolute; }
 
 #fourScreen {
   width: 100%;
   height: 2px;
-  top: 390em;
+  top: 520em;
   position: absolute; }
 
 #lastScreen {
   width: 100%;
   height: 2px;
-  top: 500em;
+  top: 580em;
   position: absolute; }
 
 @media screen and (max-width: 390px) {
@@ -2691,9 +2729,9 @@ body {
   #humiklima .panel-mc .image img {
     top: -16em; }
 #humiklima .panel-video {
-  height: 460px;
+  height: 400px;
   background: #000;
-  padding: 2em 0; }
+  padding: 0; }
   #humiklima .panel-video div {
     padding: 0; }
   #humiklima .panel-video .video {

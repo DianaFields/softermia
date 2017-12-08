@@ -21,13 +21,6 @@ function deskOnly(){
 		$('body').animate({scrollTop: 0}, duration);
 	})
 	var flip = 0;
-	// $( "#prod" ).mouseover(function() {
-	// 	$(".products").css("display","block");
-	// });
-	// $( ".products" ).mouseleave(function() {
-	// 	$(".products").css("display","none");
-	// });
-
 
 } else {
 // PGD ANIMATION MOBILE
