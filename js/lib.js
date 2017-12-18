@@ -91,6 +91,15 @@ function mkAnimation(){
 	$( ".mk-03" ).mouseover(function() {
 		$(".mk-03-open").css("opacity","1");
 	});
+	$( ".mk-04" ).mouseover(function() {
+		$(".mk-04-open").css("opacity","1");
+	});
+	$( ".mk-05" ).mouseover(function() {
+		$(".mk-05-open").css("opacity","1");
+	});
+	$( ".mk-06" ).mouseover(function() {
+		$(".mk-06-open").css("opacity","1");
+	});
 
 	$( ".mk-01" ).mouseleave(function() {
 		$(".mk-01-open").css("opacity","0");
@@ -100,6 +109,15 @@ function mkAnimation(){
 	});
 	$( ".mk-03" ).mouseleave(function() {
 		$(".mk-03-open").css("opacity","0");
+	});
+	$( ".mk-04" ).mouseleave(function() {
+		$(".mk-04-open").css("opacity","0");
+	});
+	$( ".mk-05" ).mouseleave(function() {
+		$(".mk-05-open").css("opacity","0");
+	});
+	$( ".mk-06" ).mouseleave(function() {
+		$(".mk-06-open").css("opacity","0");
 	});
 
 }

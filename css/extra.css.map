@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAC,KAAK;EACJ,eAAe,EAAE,SAAS;EAC1B,KAAK,EAAE,OAAO",
+"sources": ["../sass/extra.scss"],
+"names": [],
+"file": "extra.css"
+}
