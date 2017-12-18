@@ -1,0 +1,56 @@
+.hk-categoria{
+	padding-top: 3em;
+			div{
+				height: 300px;
+		    	padding: 2em;
+		    	text-align: center;
+			}
+			h2{
+				font-size: 18px;
+			    font-weight: 700;
+			    position: relative;
+			    margin-top: 2.5em;
+			    &:after{
+					content: '\00a0';
+				    width: 10%;
+				    height: 2px;
+				    background: #4A90E2;
+				    position: absolute;
+				    left: 45%;
+				    bottom: -1em;
+			    }
+			}
+			p{
+				font-size: 15px;
+    			margin-top: 2em;
+			}
+			.hk-isotermico{
+				background: #ECECEC;
+				&:before{
+					content: '\00a0';
+				    width: 20%;
+				    height: 40px;
+				    position: absolute;
+				    top: 1em;
+				    left: 40%;
+				    background: url(../images/icons/icon-finito.png) no-repeat 50%;
+				    background-size: contain;
+				}
+			}
+
+			.hk-adiabatico{
+				background: #e3e3e3;
+					&:before{
+						content: '\00a0';
+					    width: 20%;
+					    height: 40px;
+					    position: absolute;
+					    top: 1em;
+					    left: 40%;
+					    background: url(../images/icons/icon-finito.png) no-repeat 50%;
+					    background-size: contain;
+					}
+			}
+
+		
+}
