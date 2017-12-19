@@ -8,7 +8,7 @@
     font-size: 18px;
     font-weight: 700;
     position: relative;
-    margin-top: 2.5em; }
+    margin-top: 3.5em; }
     .hk-categoria h2:after {
       content: '\00a0';
       width: 10%;
@@ -24,23 +24,24 @@
     background: #ECECEC; }
     .hk-categoria .hk-isotermico:before {
       content: '\00a0';
-      width: 20%;
-      height: 40px;
+      width: 30%;
+      height: 60px;
       position: absolute;
       top: 1em;
-      left: 40%;
-      background: url(../images/icons/icon-finito.png) no-repeat 50%;
+      bottom: 1em;
+      left: 35%;
+      background: url(../images/icons/icon-isotermicos.png) no-repeat 50%;
       background-size: contain; }
   .hk-categoria .hk-adiabatico {
     background: #e3e3e3; }
     .hk-categoria .hk-adiabatico:before {
       content: '\00a0';
-      width: 20%;
-      height: 40px;
+      width: 30%;
+      height: 60px;
       position: absolute;
       top: 1em;
-      left: 40%;
-      background: url(../images/icons/icon-finito.png) no-repeat 50%;
+      left: 35%;
+      background: url(../images/icons/icon-electrodos.png) no-repeat 50%;
       background-size: contain; }
 
 /*# sourceMappingURL=humiklima.css.map */

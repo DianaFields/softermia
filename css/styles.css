@@ -361,7 +361,7 @@ body {
       body .menu-expand-opt #prod .dropdown-menu {
         width: 100%;
         right: 0;
-        /* margin: 0; */
+        padding: 2em 4em;
         left: inherit;
         border-radius: 0; }
       @media only screen and (min-width: 650px) and (max-width: 1024px) {
@@ -2710,15 +2710,16 @@ body {
   padding: 2em 0; }
   #humiklima .text-back h3 {
     color: #fff;
-    text-align: left; }
+    text-align: center; }
   #humiklima .text-back p {
     color: #fff;
-    line-height: 1.5em;
-    text-align: left;
-    border-left: 1px solid #fff;
-    padding-left: 1em;
-    font-size: 16px;
-    margin: 0 0 2em 0; }
+    width: 75%;
+    font-size: 1.3em;
+    line-height: 2em;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300; }
 #humiklima .slider-hk-section .video .overlay {
   background: rgba(40, 119, 228, 0.3); }
 #humiklima .slider-hk-section .hk-01 {
@@ -2854,6 +2855,9 @@ body {
   text-decoration: underline;
   color: #41439C; }
 
+.subtit {
+  text-align: center; }
+
 .hk-categoria {
   padding-top: 3em; }
   .hk-categoria div {
@@ -2864,7 +2868,7 @@ body {
     font-size: 18px;
     font-weight: 700;
     position: relative;
-    margin-top: 2.5em; }
+    margin-top: 3.5em; }
     .hk-categoria h2:after {
       content: '\00a0';
       width: 10%;
@@ -2880,23 +2884,24 @@ body {
     background: #ECECEC; }
     .hk-categoria .hk-isotermico:before {
       content: '\00a0';
-      width: 20%;
-      height: 40px;
+      width: 30%;
+      height: 60px;
       position: absolute;
       top: 1em;
-      left: 40%;
-      background: url(../images/icons/icon-finito.png) no-repeat 50%;
+      bottom: 1em;
+      left: 35%;
+      background: url(../images/icons/icon-isotermicos.png) no-repeat 50%;
       background-size: contain; }
   .hk-categoria .hk-adiabatico {
     background: #e3e3e3; }
     .hk-categoria .hk-adiabatico:before {
       content: '\00a0';
-      width: 20%;
-      height: 40px;
+      width: 30%;
+      height: 60px;
       position: absolute;
       top: 1em;
-      left: 40%;
-      background: url(../images/icons/icon-finito.png) no-repeat 50%;
+      left: 35%;
+      background: url(../images/icons/icon-electrodos.png) no-repeat 50%;
       background-size: contain; }
 
 /*# sourceMappingURL=styles.css.map */
