@@ -21,6 +21,7 @@ function deskOnly(){
 		$('body').animate({scrollTop: 0}, duration);
 	})
 	var flip = 0;
+$('#vdoHumiklima').html('<video autoplay="autoplay" muted="muted" preload="auto" loop><source src="../images/videos/smoke.mp4" type="video/mp4"></video>');
 
 } else {
 // PGD ANIMATION MOBILE
@@ -294,9 +295,7 @@ else{
 }
 }
 
-function loadImages(){
 
-}
 
 
 

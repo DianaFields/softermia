@@ -300,7 +300,6 @@
 												height: 3px;
 												background: #4EB0E5;
 												position: absolute;
-												bottom: -.5em;
 												left: 1.5em;
 												@include animation;
 
@@ -353,6 +352,9 @@
 									.nav-expand{
 										.item{
 											line-height: 100px;
+												span{
+													bottom: 1.5em;	
+												}
 										}
 									}
 									.menu-expand-opt{
@@ -399,7 +401,7 @@
 												.dropdown-menu{
 													width: 100%;
 													right: 0;
-													padding: 2em 4em;
+													padding:0;
 													left: inherit;
 													border-radius: 0;
 												}
@@ -408,11 +410,14 @@
 												}
 											}
 											.services{
+												div{
+													padding: 0;
+												}
 												li{
 													text-align: center;
 													padding: 2em;
 													font-size: 17px;
-													color: #333;
+													line-height: initial;
 													div{
 														width: 70px;
 													    height: 70px;
@@ -422,18 +427,24 @@
 													    cursor: pointer;
 													}
 												}
-												.disenio div{
-													background: url(../images/icons/disenio.png) no-repeat 19px 18px;
-    												background-size: 40%;
-
+												.disenio {
+																					
+														div{
+															background: url(../images/icons/disenio.png) no-repeat 19px 18px;
+		    												background-size: 40%;
+														}
 												}
-												.desarrollo div{
-													 background: url(../images/icons/software.png) no-repeat 19px 18px;
-    												background-size: 40%;
+												.desarrollo {
+													div{
+														background: url(../images/icons/software.png) no-repeat 19px 18px;
+    													background-size: 40%;
+													}
 												}
-												.manufactura div{
-													 background: url(../images/icons/manufacture.png) no-repeat 19px 18px;
-    												background-size: 40%;
+												.manufactura {
+													div{
+														background: url(../images/icons/manufacture.png) no-repeat 19px 18px;
+    													background-size: 40%;
+													}
 												}
 												.instalacion div{
 													 background:url("../images/icons/valv.png") no-repeat 19px 18px;
@@ -483,6 +494,7 @@
 														}
 														p{
 															margin: 0 0 3em 0;
+															line-height: initial;
 														}
 													}
 													a{
@@ -651,6 +663,9 @@
 																display: inline-flex;
 															}
 													}
+													.item span{
+														bottom: 0.5em;
+													}
 											}										
 										}
 	
@@ -701,9 +716,8 @@
 										@media screen and (min-width: 1025px){
 											.menu-expand-opt{
 												.options{
-														height: 50px;
-														line-height: 50px;
-																								
+													height: 50px;
+													line-height: 50px;							
 												}
 											}
 										}
@@ -2094,11 +2108,9 @@
 
 						}
 						.descript-hover{
-							margin:4em 0 0 -4em;
 							background: #fff;
 							min-height: 300px;
 							box-shadow: -1px 6px 10px rgba(0, 0, 0, 0.09);
-							padding: 4em 5em;
 							h3{
 								text-align: left;
 								padding-left: 3em;
@@ -2124,7 +2136,6 @@
 							margin-top: 2em;
 						}
 						.solid-small{
-							height: 350px;
 							.image{
 								overflow: hidden;
 								padding: 0;
@@ -2144,9 +2155,25 @@
 								height: 100%;
 								background: #1F62C5;
 								color: #fff;
-								padding: 0 6em;
 							}
 							
+						}
+						@media screen and (max-width: 768px){
+							.solid-small{
+								height: auto;
+							}
+						}
+						@media screen and (min-width: 1024px){
+							.descript{
+								padding: 0 6em;
+							}
+							.solid-small{
+								height: 350px;
+							}
+							.descript-hover{
+								margin: 4em 0 0 -4em;
+								padding: 4em 5em;
+							}
 						}
 					}
 					/*MOSAICO*/
@@ -2268,7 +2295,7 @@
 							.content{
 								height: auto;
 								div{
-									height:230px;
+									height:auto;
 									border-right: none;
 									padding: 1em;
 									    h2{
@@ -3322,20 +3349,15 @@
 			}
 			@media screen and (max-width: 767px){
 				background-position: -81% 0;
-				margin-top:70px;
+				margin-top:60px;
 				.descripcion{
-					width:80%;
-					padding:2em;
+					padding:10em 2em;
 					float:none;
-					position: relative;
-					margin-top: 3em;
-					background: rgba(255, 255, 255, 0.5);
+					margin-top: 0;
+					background:rgba(0,0,0,.4);
 				}
-				
 			}
-
 		}
-
 	}
 	.tittle{
 		font-weight: 700;
@@ -3722,9 +3744,6 @@
 					margin-top: -34em;
 					width: 90%;
 				}
-			}
-			.video{
-				display: none;
 			}
 		}
 		@media only screen and (min-width: 601px) and (max-width: 1024px){

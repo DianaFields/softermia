@@ -1,7 +1,6 @@
 .hk-categoria {
   padding-top: 3em; }
   .hk-categoria div {
-    height: 300px;
     padding: 2em;
     text-align: center; }
   .hk-categoria h2 {
@@ -43,5 +42,25 @@
       left: 35%;
       background: url(../images/icons/icon-electrodos.png) no-repeat 50%;
       background-size: contain; }
+  @media screen and (min-width: 1024px) {
+    .hk-categoria div {
+      height: 300px; } }
+  @media screen and (max-width: 1023px) {
+    .hk-categoria div {
+      height: auto; } }
+
+@media screen and (max-width: 1023px) {
+  #humiklima .panel-video {
+    clear: both; }
+  #humiklima .adiabaticos .descript h3 {
+    text-align: center; }
+  #humiklima #vdoHumiklima {
+    background: url(../images/videos/smoke.gif);
+    background-size: 100%;
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; } }
 
 /*# sourceMappingURL=humiklima.css.map */
