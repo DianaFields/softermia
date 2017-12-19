@@ -2837,7 +2837,7 @@ body {
 @media screen and (min-width: 1200px) {
   #humiklima .slider-hk-section .hk-01 img {
     width: 55%;
-    margin-top: 0; }
+    margin-top: 15%; }
   #humiklima .panel-hk .image img {
     top: -11em;
     width: 80%; }
