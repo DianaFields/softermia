@@ -21,7 +21,10 @@ function deskOnly(){
 		$('body').animate({scrollTop: 0}, duration);
 	})
 	var flip = 0;
-$('#vdoHumiklima').html('<video autoplay="autoplay" muted="muted" preload="auto" loop><source src="../images/videos/smoke.mp4" type="video/mp4"></video>');
+	// VIDEO DESKTOP
+	$('#vdoHumiklima').html('<video autoplay="autoplay" muted="muted" preload="auto" loop><source src="../images/videos/smoke.mp4" type="video/mp4"></video>');
+	$('#indexVideo01').html('<div class="overlay"></div><video autoplay="autoplay" muted="muted" preload="auto" loop><source src="images/videos/clouds.mp4" type="video/mp4"></video>');
+	$('#indexVideo02').html('<div class="overlay"></div><video autoplay="autoplay" muted="muted" preload="auto" loop><source src="images/videos/waterdrops.mp4" type="video/mp4"></video>');
 
 } else {
 // PGD ANIMATION MOBILE

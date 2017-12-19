@@ -319,15 +319,20 @@ body {
         height: 50px; }
       body nav .menu-expand-opt .options {
         display: none; } }
+    @media screen and (max-width: 767px) {
+      body nav .item {
+        line-height: 50px; } }
     @media screen and (min-width: 768px) and (max-width: 1024px) {
       body nav {
         padding: 0 1em; }
         body nav .item {
-          width: 22%; } }
-  body .nav-expand .item {
-    line-height: 100px; }
-    body .nav-expand .item span {
-      bottom: 1.5em; }
+          width: 22%;
+          line-height: 50px; } }
+  body .nav-expand .item span {
+    bottom: 1.5em; }
+  @media screen and (min-width: 1025px) {
+    body .nav-expand .item {
+      line-height: 100px; } }
   body .menu-expand-opt {
     max-width: 1550px;
     margin: 0 auto;
@@ -362,7 +367,7 @@ body {
       body .menu-expand-opt #prod .dropdown-menu {
         width: 100%;
         right: 0;
-        padding: 0;
+        padding: 2em 1em;
         left: inherit;
         border-radius: 0; }
       @media only screen and (min-width: 650px) and (max-width: 1024px) {
@@ -372,8 +377,9 @@ body {
       padding: 0; }
     body .menu-expand-opt .services li {
       text-align: center;
-      padding: 2em;
-      font-size: 17px;
+      padding: 1em 2em;
+      font-size: 16px;
+      color: #333;
       line-height: initial; }
       body .menu-expand-opt .services li div {
         width: 70px;
@@ -383,23 +389,23 @@ body {
         border-bottom: 2px solid #4FB0E5;
         cursor: pointer; }
     body .menu-expand-opt .services .disenio div {
-      background: url(../images/icons/disenio.png) no-repeat 19px 18px;
-      background-size: 40%; }
+      background: url(../images/icons/disenio.png) no-repeat 11px 14px;
+      background-size: 70%; }
     body .menu-expand-opt .services .desarrollo div {
-      background: url(../images/icons/software.png) no-repeat 19px 18px;
-      background-size: 40%; }
+      background: url(../images/icons/software.png) no-repeat 13px 18px;
+      background-size: 60%; }
     body .menu-expand-opt .services .manufactura div {
-      background: url(../images/icons/manufacture.png) no-repeat 19px 18px;
-      background-size: 40%; }
+      background: url(../images/icons/manufacture.png) no-repeat 9px 15px;
+      background-size: 70%; }
     body .menu-expand-opt .services .instalacion div {
-      background: url("../images/icons/valv.png") no-repeat 19px 18px;
-      background-size: 40%; }
+      background: url("../images/icons/valv.png") no-repeat 9px 15px;
+      background-size: 70%; }
     body .menu-expand-opt .services .venta div {
       background: url("../images/icons/carel.png") no-repeat 11px 30px;
-      background-size: 40%; }
+      background-size: 60%; }
     body .menu-expand-opt .services .sistema div {
-      background: url("../images/icons/digital.png") no-repeat 26px 18px;
-      background-size: 40%; }
+      background: url("../images/icons/digital.png") no-repeat 15px 18px;
+      background-size: 65%; }
     body .menu-expand-opt .products {
       width: 100%;
       height: auto;
@@ -413,7 +419,8 @@ body {
       -o-transition: all 200ms ease-in-out; }
       body .menu-expand-opt .products li {
         display: inline-block;
-        cursor: pointer; }
+        cursor: pointer;
+        padding: 1em 2em; }
         body .menu-expand-opt .products li h3 {
           font-size: 16px;
           text-align: left;
@@ -471,6 +478,10 @@ body {
               left: 0; }
             body .menu-expand-opt .products li a:hover:nth-of-type(4):after {
               top: calc(100% - 3px); }
+      body .menu-expand-opt .products:first-child {
+        background: #f2f2f2; }
+      body .menu-expand-opt .products:nth-child(3) {
+        background: #f2f2f2; }
   body nav .menu-expand-opt .logo-head {
     transition: all 300ms ease-in-out;
     width: 60%;
@@ -861,8 +872,6 @@ body {
           left: 35%; }
         body .carousel-inner .slide-humiklima {
           background: #05076B; }
-          body .carousel-inner .slide-humiklima video {
-            display: none; }
           body .carousel-inner .slide-humiklima .hk-01 {
             width: 250px;
             height: 250px;
@@ -2527,7 +2536,6 @@ body {
     background-size: cover;
     width: 100%;
     height: 500px;
-    margin-top: 7.1em;
     position: relative;
     overflow: hidden; }
     body .slider h3 {
