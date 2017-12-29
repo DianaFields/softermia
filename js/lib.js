@@ -84,7 +84,16 @@ function animateMenu(){
 		});
 	})(jQuery);
 }
-
+function graph(){
+	$( ".application > a" ).mouseover(function() {
+		$(this).parent().find(".graphic-app").css("opacity","1");
+		$(".graph-color").css("opacity",".3");
+	});
+	$( ".application" ).mouseleave(function() {
+		$(this).parent().find(".graphic-app").css("opacity","0");
+		$(".graph-color").css("opacity","1");
+	});
+}
 function mkAnimation(){
 	$( ".mk-01" ).mouseover(function() {
 		$(".mk-01-open").css("opacity","1");

@@ -173,8 +173,12 @@
             <!-- GRAPH -->
             <div class="col-lg-12 col-md-12 mk-graph">
                 <p class="tittle">Rango de operación </p>
+                <div class="col-lg-2"></div>
+                <h2 class="col-lg-8">Las pruebas en Lanitef sugieren que las máquinas controlan desde 10°C a 50°C y desde 25% a 95% de HR.
+La humedad mínima de trabajo depende de la temperatura deseada.</h2>
+                <div class="col-lg-2"></div>
                 <div class="parallax">
-                    <div class="col-lg-4 col-md-4 col-sm-4 mk-graph-info">
+                 <!--    <div class="col-lg-3 col-md-4 col-sm-4 mk-graph-info">
 
                         <p>Las pruebas en Lanitef sugieren que las máquinas controlan desde 10°C a 50°C y desde 25% a 95% de HR.
 La humedad mínima de trabajo depende de la temperatura deseada.</p>
@@ -186,16 +190,64 @@ La humedad mínima de trabajo depende de la temperatura deseada.</p>
                             </div>
                         </div>
 
-                    </div>
-                    <div class="col-lg-6 col-md-4 col-sm-8 graphic-image">
-                        <img src="../images/microklima/graph.png">
-                    </div>
-    
+                    </div> -->
+                    <div class="graph-container col-lg-10 col-md-4 col-sm-8 ">
+                        <div class="graphic-image">
+                            <img src="../images/microklima/graph-back.png">
+                        </div>
+                       <div class=" graphic-image graph-color">
+                            <img src="../images/microklima/graph.png">
+                        </div>
+            
 
-                    <div class="mk-graph-01 pulsating"></div>
-                    <div class="mk-graph-02 pulsating"></div>
-                    <div class="mk-graph-03 pulsating"></div>
-                    <div class="mk-graph-04 pulsating"></div>
+                <ul>
+                    <li>
+                         <div class="application"><a href="#">Equipos de comfort</a>
+                          <div class="graphic-app">
+                                <img src="../images/microklima/graph-00.png">
+                            </div>
+                        </div>  
+                    </li>
+                    <li>
+                         <div class="application"><a href="#">Bodegas, tabaco, quesos y vino</a>
+                          <div class="graphic-app">
+                                <img src="../images/microklima/graph-01.png">
+                            </div>
+                        </div>  
+                    </li>
+                    <li>
+                         <div class="application"><a href="#">Incubadoras</a>
+                          <div class="graphic-app">
+                                <img src="../images/microklima/graph-02.png">
+                            </div>
+                        </div>  
+                    </li>
+                    <li>
+                         <div class="application"><a href="#">Cámaras estabilidad de medicamentos</a>
+                          <div class="graphic-app">
+                                <img src="../images/microklima/graph-03.png">
+                            </div>
+                        </div>  
+                    </li>
+                    <li>
+                         <div class="application"><a href="#">Invernaderos</a>
+                          <div class="graphic-app">
+                                <img src="../images/microklima/graph-04.png">
+                            </div>
+                        </div>  
+                    </li>
+                    <li>
+                         <div class="application"><a href="#">Industria textil</a>
+                          <div class="graphic-app">
+                                <img src="../images/microklima/graph-05.png">
+                            </div>
+                        </div>  
+                    </li>
+                </ul>
+                    </div>
+                     <div class="col-lg-1 col-md-1"></div>
+
+
                 </div>
 
 
@@ -365,7 +417,7 @@ La humedad mínima de trabajo depende de la temperatura deseada.</p>
         pgd();
         mkAnimation();
         count();
-
+        graph();
         $(document).ready(function() {
             $('.score-graph').each(function() {
                 $(this).find('.score-graph-bar').animate({

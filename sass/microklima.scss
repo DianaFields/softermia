@@ -1,0 +1,36 @@
+.mk-graph{
+	h2{
+		margin: 0 auto;
+		color: #fff;
+		font-size: 18px;
+		text-align: center;
+	}
+}
+.graph-container{
+	position: relative;
+	.graphic-image{
+		position: absolute;
+		top: 0;
+		right:0; 
+
+	}
+	ul{
+		display: inline-block;
+		li{
+			line-height: 3em;
+			.graphic-app{
+			position: absolute;
+			right: 0;
+			top:0;
+			opacity: 0;
+			@include animation;
+			}
+			a{
+			    color: #fff;
+			    line-height: 20px;
+			    border: 1px solid #4EB0E5;
+			    padding: 5px 10px;
+			}
+		}
+	}
+}

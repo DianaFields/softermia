@@ -1752,7 +1752,7 @@ body {
         padding-top: 5%; }
         body #microklima .mk-graph .parallax ul li {
           font-size: 18px;
-          line-height: 35px;
+          line-height: 55px;
           color: #fff;
           list-style: none; }
       body #microklima .mk-graph .parallax .total-score {
@@ -2938,5 +2938,37 @@ body {
     position: absolute;
     top: 0;
     left: 0; } }
+
+.mk-graph h2 {
+  margin: 0 auto;
+  color: #fff;
+  font-size: 18px;
+  text-align: center; }
+
+.graph-container {
+  position: relative; }
+  .graph-container .graphic-image {
+    position: absolute;
+    top: 0;
+    right: 0; }
+  .graph-container ul {
+    display: inline-block; }
+    .graph-container ul li {
+      line-height: 3em; }
+      .graph-container ul li .graphic-app {
+        position: absolute;
+        right: 0;
+        top: 0;
+        opacity: 0;
+        transition: all 1s ease-in-out;
+        -webkit-transition-timing-function: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out; }
+      .graph-container ul li a {
+        color: #fff;
+        line-height: 20px;
+        border: 1px solid #4EB0E5;
+        padding: 5px 10px; }
 
 /*# sourceMappingURL=styles.css.map */
