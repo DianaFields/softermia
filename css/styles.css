@@ -2950,7 +2950,8 @@ body {
   .graph-container .graphic-image {
     position: absolute;
     top: 0;
-    right: 0; }
+    right: 22em;
+    width: 60%; }
   .graph-container ul {
     display: inline-block; }
     .graph-container ul li {
