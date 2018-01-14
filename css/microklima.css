@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'animation'.
-        on line 26 of sass/microklima.scss, in `animation'
-        from line 26 of sass/microklima.scss
+        on line 37 of sass/microklima.scss, in `animation'
+        from line 37 of sass/microklima.scss
 
-21: 			.graphic-app{
-22: 			position: absolute;
-23: 			right: 0;
-24: 			top:0;
-25: 			opacity: 0;
-26: 			@include animation;
-27: 			}
-28: 			a{
-29: 			    color: #fff;
-30: 			    line-height: 20px;
-31: 			    border: 1px solid #4EB0E5;
+32: 			text-align: center;
+33: 			z-index: 0;
+34: 				img{
+35: 					width: 60%;
+36: 				}
+37: 				@include animation;
+38: 			}
+39: 			a{
+40: 			    color: #fff;
+41: 			    line-height: 20px;
+42: 			    padding: 5px 10px;
 
 Backtrace:
-sass/microklima.scss:26:in `animation'
-sass/microklima.scss:26
+sass/microklima.scss:37:in `animation'
+sass/microklima.scss:37
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
@@ -104,4 +104,4 @@ sass/microklima.scss:26
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'animation'.\A         on line 26 of sass/microklima.scss, in `animation'\A         from line 26 of sass/microklima.scss\A \A 21: 			.graphic-app{\A 22: 			position: absolute;\A 23: 			right: 0;\A 24: 			top:0;\A 25: 			opacity: 0;\A 26: 			@include animation;\A 27: 			}\A 28: 			a{\A 29: 			    color: #fff;\A 30: 			    line-height: 20px;\A 31: 			    border: 1px solid #4EB0E5;"; }
+  content: "Error: Undefined mixin 'animation'.\A         on line 37 of sass/microklima.scss, in `animation'\A         from line 37 of sass/microklima.scss\A \A 32: 			text-align: center;\A 33: 			z-index: 0;\A 34: 				img{\A 35: 					width: 60%;\A 36: 				}\A 37: 				@include animation;\A 38: 			}\A 39: 			a{\A 40: 			    color: #fff;\A 41: 			    line-height: 20px;\A 42: 			    padding: 5px 10px;"; }

@@ -6,6 +6,10 @@
 		text-align: center;
 	}
 }
+.graphic-lines{
+	opacity: 0;
+	transition: all 1s ease-in-out;
+}
 .graph-container{
 	position: relative;
 	.graphic-image{
@@ -13,6 +17,7 @@
 		top: 0;
 		right: 22em;
     	width: 60%;
+    	transition: all 1s ease-in-out;
 	}
 	ul{
 		display: inline-block;
@@ -23,14 +28,30 @@
 			right: 0;
 			top:0;
 			opacity: 0;
-			@include animation;
+			width: 100%;
+			text-align: center;
+			z-index: 0;
+				img{
+					width: 60%;
+				}
+				@include animation;
 			}
 			a{
 			    color: #fff;
 			    line-height: 20px;
-			    border: 1px solid #4EB0E5;
 			    padding: 5px 10px;
+			    z-index: 1;
+    			position: sticky;
 			}
 		}
+	}
+}
+
+.icon-app{
+	width: 40px;
+	height: 40px;
+	float: left;
+	img{
+		width: 100%;
 	}
 }

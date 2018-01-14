@@ -2326,7 +2326,7 @@
 					
 					.mk-graph{
 						padding-top: 5%;
-						height: 800px;
+						height: 1120px;
 						/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#182682+0,1d2570+43,292854+100 */
 						background: rgb(24,38,130); /* Old browsers */
 						background: -moz-radial-gradient(center, ellipse cover, rgba(24,38,130,1) 0%, rgba(29,37,112,1) 43%, rgba(41,40,84,1) 100%); /* FF3.6-15 */
@@ -2351,10 +2351,11 @@
 							ul{
 								padding-top: 5%;
 								li{
-									font-size: 18px;
+									font-size: 16px;
 									line-height: 55px;
 									color: #fff;
 									list-style: none;
+									margin: 10px 0;
 								}
 							}	
 							.total-score {
@@ -3074,7 +3075,7 @@
 						line-height: 2.5em;
 						opacity: 0;
 					}
-					.mk-01-open, .mk-02-open, .mk-03-open, .mk-04-open, .mk-05-open, .mk-06-open{
+					.mk-01-open, .mk-02-open, .mk-03-open, .mk-04-open, .mk-05-open, .mk-06-open, .mk-07-open, .mk-08-open{
 						position: absolute;
 						top: 23em;
 						left: 4em;
@@ -3124,6 +3125,15 @@
 					.mk-06{
 						top: 76%;
     					right: 30%;
+					}
+					.mk-07{
+						top: 81%;
+    					right: 39%;
+					}
+					.mk-08{
+						top: 33%;
+    					right: 24%;
+
 					}
 					.txt-full-izq{
 						line-height: 1.7;
@@ -3333,6 +3343,7 @@
 			height: 500px;
 			position: relative;
 			overflow: hidden;
+			margin-top: 7.1em;
 			h3{
 				text-align: left;
 				color: #333;
@@ -3384,7 +3395,7 @@
 
 	#firstScreen{
 		width: 100%;
-		height: 2px;top: 393em;
+		height: 2px;top: 400em;
 		position: absolute;
 	}
 	#secondScreen{

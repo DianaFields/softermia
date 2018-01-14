@@ -1727,7 +1727,7 @@ body {
               font-size: 16px; } }
     body #microklima .mk-graph {
       padding-top: 5%;
-      height: 800px;
+      height: 1120px;
       /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#182682+0,1d2570+43,292854+100 */
       background: #182682;
       /* Old browsers */
@@ -1751,10 +1751,11 @@ body {
       body #microklima .mk-graph .parallax ul {
         padding-top: 5%; }
         body #microklima .mk-graph .parallax ul li {
-          font-size: 18px;
+          font-size: 16px;
           line-height: 55px;
           color: #fff;
-          list-style: none; }
+          list-style: none;
+          margin: 10px 0; }
       body #microklima .mk-graph .parallax .total-score {
         position: relative;
         display: inline-block;
@@ -2326,7 +2327,7 @@ body {
           border: 1px solid #fff;
           box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
           animation: pulse-dot 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite; }
-      body #esquema .full-machine .mk-01-open, body #esquema .full-machine .mk-02-open, body #esquema .full-machine .mk-03-open, body #esquema .full-machine .mk-04-open, body #esquema .full-machine .mk-05-open, body #esquema .full-machine .mk-06-open {
+      body #esquema .full-machine .mk-01-open, body #esquema .full-machine .mk-02-open, body #esquema .full-machine .mk-03-open, body #esquema .full-machine .mk-04-open, body #esquema .full-machine .mk-05-open, body #esquema .full-machine .mk-06-open, body #esquema .full-machine .mk-07-open, body #esquema .full-machine .mk-08-open {
         position: absolute;
         top: 23em;
         left: 4em;
@@ -2340,7 +2341,7 @@ body {
         -moz-transition: all 1s ease-in-out;
         -ms-transition: all 1s ease-in-out;
         -o-transition: all 1s ease-in-out; }
-        body #esquema .full-machine .mk-01-open:before, body #esquema .full-machine .mk-02-open:before, body #esquema .full-machine .mk-03-open:before, body #esquema .full-machine .mk-04-open:before, body #esquema .full-machine .mk-05-open:before, body #esquema .full-machine .mk-06-open:before {
+        body #esquema .full-machine .mk-01-open:before, body #esquema .full-machine .mk-02-open:before, body #esquema .full-machine .mk-03-open:before, body #esquema .full-machine .mk-04-open:before, body #esquema .full-machine .mk-05-open:before, body #esquema .full-machine .mk-06-open:before, body #esquema .full-machine .mk-07-open:before, body #esquema .full-machine .mk-08-open:before {
           content: "";
           width: 0;
           height: 0;
@@ -2350,7 +2351,7 @@ body {
           position: absolute;
           top: 2em;
           right: -1em; }
-        body #esquema .full-machine .mk-01-open h3, body #esquema .full-machine .mk-02-open h3, body #esquema .full-machine .mk-03-open h3, body #esquema .full-machine .mk-04-open h3, body #esquema .full-machine .mk-05-open h3, body #esquema .full-machine .mk-06-open h3 {
+        body #esquema .full-machine .mk-01-open h3, body #esquema .full-machine .mk-02-open h3, body #esquema .full-machine .mk-03-open h3, body #esquema .full-machine .mk-04-open h3, body #esquema .full-machine .mk-05-open h3, body #esquema .full-machine .mk-06-open h3, body #esquema .full-machine .mk-07-open h3, body #esquema .full-machine .mk-08-open h3 {
           padding: 0;
           line-height: 1.5em;
           margin: 1em; }
@@ -2372,6 +2373,12 @@ body {
       body #esquema .full-machine .mk-06 {
         top: 76%;
         right: 30%; }
+      body #esquema .full-machine .mk-07 {
+        top: 81%;
+        right: 39%; }
+      body #esquema .full-machine .mk-08 {
+        top: 33%;
+        right: 24%; }
       body #esquema .full-machine .txt-full-izq {
         line-height: 1.7;
         margin: 0 0 10px;
@@ -2537,7 +2544,8 @@ body {
     width: 100%;
     height: 500px;
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+    margin-top: 7.1em; }
     body .slider h3 {
       text-align: left;
       color: #333; }
@@ -2579,7 +2587,7 @@ body {
 #firstScreen {
   width: 100%;
   height: 2px;
-  top: 393em;
+  top: 400em;
   position: absolute; }
 
 #secondScreen {
@@ -2945,13 +2953,18 @@ body {
   font-size: 18px;
   text-align: center; }
 
+.graphic-lines {
+  opacity: 0;
+  transition: all 1s ease-in-out; }
+
 .graph-container {
   position: relative; }
   .graph-container .graphic-image {
     position: absolute;
     top: 0;
     right: 22em;
-    width: 60%; }
+    width: 60%;
+    transition: all 1s ease-in-out; }
   .graph-container ul {
     display: inline-block; }
     .graph-container ul li {
@@ -2961,15 +2974,28 @@ body {
         right: 0;
         top: 0;
         opacity: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 0;
         transition: all 1s ease-in-out;
         -webkit-transition-timing-function: all 1s ease-in-out;
         -moz-transition: all 1s ease-in-out;
         -ms-transition: all 1s ease-in-out;
         -o-transition: all 1s ease-in-out; }
+        .graph-container ul li .graphic-app img {
+          width: 60%; }
       .graph-container ul li a {
         color: #fff;
         line-height: 20px;
-        border: 1px solid #4EB0E5;
-        padding: 5px 10px; }
+        padding: 5px 10px;
+        z-index: 1;
+        position: sticky; }
+
+.icon-app {
+  width: 40px;
+  height: 40px;
+  float: left; }
+  .icon-app img {
+    width: 100%; }
 
 /*# sourceMappingURL=styles.css.map */
