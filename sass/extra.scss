@@ -1,6 +1,18 @@
 	.help{
 		text-decoration: underline;
 		color: #41439C;
+		position: relative;
+		padding-left: 2.5em;
+		&:after{
+			content:'\00a0';
+			background-image:url('../images/icons/help.png');
+			background-size: cover;
+			width: 30px;
+			height: 30px;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
 	}
 	.subtit{
 		text-align: center;

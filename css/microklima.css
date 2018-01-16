@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'animation'.
-        on line 37 of sass/microklima.scss, in `animation'
-        from line 37 of sass/microklima.scss
+        on line 38 of sass/microklima.scss, in `animation'
+        from line 38 of sass/microklima.scss
 
-32: 			text-align: center;
 33: 			z-index: 0;
 34: 				img{
 35: 					width: 60%;
-36: 				}
-37: 				@include animation;
-38: 			}
-39: 			a{
-40: 			    color: #fff;
-41: 			    line-height: 20px;
-42: 			    padding: 5px 10px;
+36: 					
+37: 				}
+38: 				@include animation;
+39: 			}
+40: 			a{
+41: 			    color: #fff;
+42: 			    line-height: 20px;
+43: 			    padding: 5px 10px;
 
 Backtrace:
-sass/microklima.scss:37:in `animation'
-sass/microklima.scss:37
+sass/microklima.scss:38:in `animation'
+sass/microklima.scss:38
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
@@ -104,4 +104,4 @@ sass/microklima.scss:37
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'animation'.\A         on line 37 of sass/microklima.scss, in `animation'\A         from line 37 of sass/microklima.scss\A \A 32: 			text-align: center;\A 33: 			z-index: 0;\A 34: 				img{\A 35: 					width: 60%;\A 36: 				}\A 37: 				@include animation;\A 38: 			}\A 39: 			a{\A 40: 			    color: #fff;\A 41: 			    line-height: 20px;\A 42: 			    padding: 5px 10px;"; }
+  content: "Error: Undefined mixin 'animation'.\A         on line 38 of sass/microklima.scss, in `animation'\A         from line 38 of sass/microklima.scss\A \A 33: 			z-index: 0;\A 34: 				img{\A 35: 					width: 60%;\A 36: 					\A 37: 				}\A 38: 				@include animation;\A 39: 			}\A 40: 			a{\A 41: 			    color: #fff;\A 42: 			    line-height: 20px;\A 43: 			    padding: 5px 10px;"; }

@@ -15,7 +15,7 @@
 	.graphic-image{
 		position: absolute;
 		top: 0;
-		right: 22em;
+		right: 2em;
     	width: 60%;
     	transition: all 1s ease-in-out;
 	}
@@ -33,6 +33,7 @@
 			z-index: 0;
 				img{
 					width: 60%;
+					
 				}
 				@include animation;
 			}
@@ -42,16 +43,33 @@
 			    padding: 5px 10px;
 			    z-index: 1;
     			position: sticky;
+    			text-decoration: underline;
 			}
 		}
 	}
 }
 
 .icon-app{
-	width: 40px;
-	height: 40px;
+	width: 30px;
+	height: 30px;
 	float: left;
 	img{
 		width: 100%;
+	}
+}
+@media screen and (max-width: 767px){
+	.mk-graph{
+		display: none;
+	}
+}
+@media screen and (min-width: 1024px){
+	.graph-container{
+		ul{
+			li{
+				.graphic-app img{
+					margin-left: 30em;
+				}
+			}
+		}
 	}
 }

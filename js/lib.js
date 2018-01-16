@@ -90,7 +90,7 @@ function graph(){
 		$(".graph-color").css("opacity","0");
 		$(".graphic-lines").css("opacity","1");
 	});
-	$( ".application" ).mouseleave(function() {
+	$( ".application > a" ).mouseleave(function() {
 		$(this).parent().find(".graphic-app").css("opacity","0");
 		$(".graph-color").css("opacity","1");
 		$(".graphic-lines").css("opacity","0");
@@ -253,7 +253,7 @@ if(scrollTop > fourScreen){
 if(scrollTop > lastScreen){
 	$('.pgd').css('position','inherit');
 	$('.screen-03').css('position','inherit');
-	$('.pgd').css('margin-top','185em');
+	$('.pgd').css('margin-top','165em');
 	$('.screen-03').css('opacity','0');
 	// $('#pgd-main').css('height','800px');
 }

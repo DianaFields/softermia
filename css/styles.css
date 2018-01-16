@@ -529,7 +529,7 @@ body {
       display: none; } }
   @media only screen and (min-width: 500px) and (max-width: 1023px) {
     body nav .menu-expand-opt .logo-head {
-      width: 18%;
+      width: 25%;
       height: 100%;
       position: absolute;
       left: 0;
@@ -1752,10 +1752,9 @@ body {
         padding-top: 5%; }
         body #microklima .mk-graph .parallax ul li {
           font-size: 16px;
-          line-height: 55px;
+          line-height: 40px;
           color: #fff;
-          list-style: none;
-          margin: 10px 0; }
+          list-style: none; }
       body #microklima .mk-graph .parallax .total-score {
         position: relative;
         display: inline-block;
@@ -2088,7 +2087,7 @@ body {
     body #microklima #pgd-main {
       padding-top: 5em;
       clear: both;
-      height: 60%;
+      height: 50%;
       background: #fff;
       background: -moz-radial-gradient(center, ellipse cover, #fff 0%, #fff 90%, #d6d6d6 100%);
       background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #fff), color-stop(70%, #fff), color-stop(100%, #d6d6d6));
@@ -2544,8 +2543,7 @@ body {
     width: 100%;
     height: 500px;
     position: relative;
-    overflow: hidden;
-    margin-top: 7.1em; }
+    overflow: hidden; }
     body .slider h3 {
       text-align: left;
       color: #333; }
@@ -2570,6 +2568,7 @@ body {
       position: absolute; }
     @media screen and (max-width: 767px) {
       body .slider {
+        margin-top: 50px;
         background-position: -81% 0;
         margin-top: 60px; }
         body .slider .descripcion {
@@ -2577,6 +2576,9 @@ body {
           float: none;
           margin-top: 0;
           background: rgba(0, 0, 0, 0.4); } }
+    @media screen and (min-width: 1024px) {
+      body .slider {
+        margin-top: 7.1em; } }
 
 .tittle {
   font-weight: 700;
@@ -2587,7 +2589,7 @@ body {
 #firstScreen {
   width: 100%;
   height: 2px;
-  top: 400em;
+  top: 420em;
   position: absolute; }
 
 #secondScreen {
@@ -2877,7 +2879,18 @@ body {
 
 .help {
   text-decoration: underline;
-  color: #41439C; }
+  color: #41439C;
+  position: relative;
+  padding-left: 2.5em; }
+  .help:after {
+    content: '\00a0';
+    background-image: url("../images/icons/help.png");
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 0; }
 
 .subtit {
   text-align: center; }
@@ -2962,7 +2975,7 @@ body {
   .graph-container .graphic-image {
     position: absolute;
     top: 0;
-    right: 22em;
+    right: 2em;
     width: 60%;
     transition: all 1s ease-in-out; }
   .graph-container ul {
@@ -2989,13 +3002,21 @@ body {
         line-height: 20px;
         padding: 5px 10px;
         z-index: 1;
-        position: sticky; }
+        position: sticky;
+        text-decoration: underline; }
 
 .icon-app {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   float: left; }
   .icon-app img {
     width: 100%; }
+
+@media screen and (max-width: 767px) {
+  .mk-graph {
+    display: none; } }
+@media screen and (min-width: 1024px) {
+  .graph-container ul li .graphic-app img {
+    margin-left: 30em; } }
 
 /*# sourceMappingURL=styles.css.map */
