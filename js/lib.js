@@ -225,7 +225,7 @@ if (mediaquery.matches) {
 		if(scrollTop > firstScreen){
 			$('.pgd').css('position','fixed');
 			$('.screen-01').css('position','fixed');
-			$('.pgd').css('top','10em');
+			$('.pgd').css('top','11em');
 	// $('#pgd-main').css('height','100%');
 }
 if(scrollTop < firstScreen){
@@ -253,9 +253,9 @@ if(scrollTop > fourScreen){
 if(scrollTop > lastScreen){
 	$('.pgd').css('position','inherit');
 	$('.screen-03').css('position','inherit');
-	$('.pgd').css('margin-top','165em');
+	$('.pgd').css('margin-top','135em');
 	$('.screen-03').css('opacity','0');
-	// $('#pgd-main').css('height','800px');
+	$('#pgd-main').css('height','3000px');
 }
 if(scrollTop < lastScreen & scrollTop > firstScreen){
 	$('.pgd').css('position','fixed');

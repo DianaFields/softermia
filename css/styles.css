@@ -224,6 +224,9 @@ body {
     @media only screen and (min-width: 1024px) and (max-width: 1499px) {
       body .carousel {
         margin-top: 7.1em; } }
+    @media only screen and (max-width: 1024px) {
+      body .carousel {
+        margin-top: 100px; } }
     @media screen and (min-width: 1500px) {
       body .carousel {
         height: 500px; }
@@ -317,6 +320,9 @@ body {
     @media screen and (max-width: 600px) {
       body nav .nav-collapse {
         height: 50px; }
+      body nav .menu-expand-opt {
+        line-height: 50px;
+        height: 50px; }
       body nav .menu-expand-opt .options {
         display: none; } }
     @media screen and (max-width: 767px) {
@@ -332,6 +338,15 @@ body {
     bottom: 1.5em; }
   @media screen and (min-width: 1025px) {
     body .nav-expand .item {
+      line-height: 100px; } }
+  @media only screen and (min-height: 768px) and (max-width: 1024px) {
+    body .nav-expand {
+      line-height: 100px; } }
+  @media screen and (max-width: 767px) {
+    body .nav-expand {
+      max-height: 50px; } }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    body .nav-expand .options {
       line-height: 100px; } }
   body .menu-expand-opt {
     max-width: 1550px;
@@ -538,13 +553,18 @@ body {
         width: 100%; } }
   @media only screen and (min-width: 360px) and (max-width: 499px) {
     body nav .menu-expand-opt .logo-head {
-      width: 40%; } }
+      height: 50px;
+      line-height: 50px; } }
   @media screen and (min-width: 1024px) {
     body nav .logo-head {
       height: 100px;
       line-height: 100px; } }
-  @media screen and (max-width: 1023px) {
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
     body nav .menu-expand-opt .logo-head {
+      /*height: 100px;*/
+      line-height: 100px; } }
+  @media screen and (max-width: 767px) {
+    body nav .logo-head {
       height: 50px;
       line-height: 50px; } }
   body .nav-collapse {
@@ -591,7 +611,8 @@ body {
         margin: 0;
         width: 10%; }
         body .nav-collapse .logo-head:before {
-          width: 80%; } }
+          width: 80%;
+          height: 50px; } }
     @media screen and (min-width: 768px) and (max-width: 1024px) {
       body .nav-collapse .logo-head {
         margin: 0; }
@@ -651,9 +672,14 @@ body {
         padding: 0;
         color: #4FB0E5; }
         body nav .dropdown .dropdown-toggle:before {
-          content: "\e055";
-          font-family: 'Glyphicons Halflings';
-          font-size: 28px;
+          content: "\00a0";
+          background-image: url("../images/icons/hamburguer-menu.png");
+          background-size: cover;
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          right: 20px;
+          top: 5px;
           transition: all 1s ease-in-out;
           -webkit-transition-timing-function: all 1s ease-in-out;
           -moz-transition: all 1s ease-in-out;
@@ -676,18 +702,26 @@ body {
           margin-top: 5px; }
       body nav .dropdown .dropdown-menu {
         padding: 0 1em;
-        width: 100%; }
+        width: 100%;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.175); }
         body nav .dropdown .dropdown-menu li {
           text-align: center;
-          border-bottom: 1px solid #c2c2c2; }
+          border-top: 1px solid #f2f2f2; }
           body nav .dropdown .dropdown-menu li a {
             height: 60px;
             line-height: 60px;
             font-size: 1.3em; }
     body nav .open .dropdown-toggle:before {
-      content: "\e014";
-      font-family: 'Glyphicons Halflings';
-      font-size: 28px; } }
+      /*content:"\e014";
+      font-family: 'Glyphicons Halflings';*/
+      font-size: 28px;
+      width: 40px;
+      height: 40px;
+      background: url("../images/icons/close-icon.png");
+      background-size: cover;
+      position: absolute;
+      right: 20px;
+      top: 5px; } }
   @media only screen and (min-width: 401px) and (max-width: 600px) {
     body .carousel {
       margin-top: 70px;
@@ -727,10 +761,12 @@ body {
             margin-top: 5px; }
         body nav .dropdown .dropdown-menu {
           padding: 0 1em;
-          width: 100%; }
+          width: 100%;
+          border: none;
+          border-radius: inherit; }
           body nav .dropdown .dropdown-menu li {
             text-align: center;
-            border-bottom: 1px solid #c2c2c2; }
+            border-top: 1px solid #f2f2f2; }
             body nav .dropdown .dropdown-menu li a {
               height: 60px;
               line-height: 60px;
@@ -1224,7 +1260,7 @@ body {
       margin: .5em 0;
       outline: none;
       border: 0;
-      padding-left: 2em;
+      padding-left: 1em;
       border-radius: 3px; }
     body #formulario .enviar {
       padding: 0;
@@ -1364,8 +1400,7 @@ body {
       text-align: justify; }
     @media screen and (max-width: 768px) {
       body footer {
-        height: 770px;
-        padding-top: 0; }
+        /*xº*/ }
         body footer .bottom {
           padding: 2em;
           height: auto; } }
@@ -1395,6 +1430,7 @@ body {
     position: relative;
     height: 650px; }
     body #clientes .col-lg-12 {
+      padding: 0;
       /*margin-bottom: 6em;*/ }
     body #clientes .logo div {
       height: 90px;
@@ -1543,7 +1579,7 @@ body {
     body .slider-mk-section .maquina {
       right: -1em !important; }
   body #microklima {
-    height: 5900px;
+    height: 100%;
     /*MOSAICO*/
     /*MOSAICO*/ }
     body #microklima .video-snow {
@@ -2087,7 +2123,7 @@ body {
     body #microklima #pgd-main {
       padding-top: 5em;
       clear: both;
-      height: 50%;
+      height: 2970px;
       background: #fff;
       background: -moz-radial-gradient(center, ellipse cover, #fff 0%, #fff 90%, #d6d6d6 100%);
       background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #fff), color-stop(70%, #fff), color-stop(100%, #d6d6d6));
@@ -2519,11 +2555,12 @@ body {
           body .galeria .container .modal-body .icons .fan-icon {
             background-position: -164px -191px; }
         body .galeria .container .modal-body button {
-          border: 1px solid #4FB0E6;
+          border: 2px solid #4FB0E6;
           color: #05076B;
-          border-radius: 2px;
+          border-radius: 50%;
           margin: 2em 0;
-          width: 130px;
+          width: 50px;
+          height: 50px;
           background: white;
           transition: all 1s ease-in-out;
           -webkit-transition-timing-function: all 1s ease-in-out;
@@ -2533,6 +2570,13 @@ body {
           body .galeria .container .modal-body button:hover {
             background: #4FB0E6;
             color: #fff; }
+            body .galeria .container .modal-body button:hover:after {
+              color: #fff; }
+          body .galeria .container .modal-body button:after {
+            content: '\e014';
+            font-family: 'Glyphicons Halflings';
+            font-size: 20px;
+            color: #4FB0E6; }
       body .galeria .container ul li {
         list-style: none;
         line-height: 1.5em; }
@@ -2570,13 +2614,13 @@ body {
       body .slider {
         margin-top: 50px;
         background-position: -81% 0;
-        margin-top: 60px; }
+        margin-top: 50px; }
         body .slider .descripcion {
           padding: 10em 2em;
           float: none;
           margin-top: 0;
-          background: rgba(0, 0, 0, 0.4); } }
-    @media screen and (min-width: 1024px) {
+          background: rgba(255, 255, 255, 0.4); } }
+    @media screen and (min-width: 768px) {
       body .slider {
         margin-top: 7.1em; } }
 
@@ -2681,7 +2725,7 @@ body {
     margin-top: 112em !important; } }
 @media only screen and (min-width: 601px) and (max-width: 768px) {
   #firstScreen {
-    top: 300em; }
+    top: 304em; }
 
   #secondScreen {
     top: 310em; }
@@ -2713,22 +2757,22 @@ body {
     top: 400em; } }
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
   #firstScreen {
-    top: 240em; }
+    top: 380em; }
 
   #secondScreen {
-    top: 250em; }
+    top: 400em; }
 
   #thirdScreen {
-    top: 290em; }
+    top: 415em; }
 
   #fourScreen {
-    top: 320em; }
+    top: 425em; }
 
   #lastScreen {
-    top: 350em; } }
+    top: 440em; } }
 @media screen and (min-width: 1200px) {
   .slider-mk-section {
-    background-size: 84% !important;
+    background-size: 100% !important;
     background-position: 85% 32% !important; } }
 /*HUMIKLIMA*/
 #humiklima .text-back {
