@@ -106,55 +106,6 @@ body {
     padding: 1em 0;
     position: relative;
     font-weight: 700; }
-  body .slide-common .descripcion {
-    width: 50%;
-    margin: 0 auto;
-    text-align: left;
-    margin-top: 9em;
-    float: left;
-    padding-left: 11%;
-    position: absolute;
-    z-index: 99; }
-    body .slide-common .descripcion h2 {
-      color: #fff;
-      text-align: left;
-      padding: 1em 0;
-      position: relative;
-      font-weight: 700; }
-      body .slide-common .descripcion h2:after {
-        content: "";
-        border: 1px solid #4FB0E5;
-        position: absolute;
-        left: 0;
-        top: 2.5em;
-        width: 7%; }
-    body .slide-common .descripcion p {
-      font-size: 1.3em;
-      line-height: 1.6em;
-      color: #fff;
-      margin-bottom: 2em; }
-  @media screen and (max-width: 500px) {
-    body .slide-common .descripcion {
-      width: 100%;
-      padding-left: 0;
-      padding: 0 3em;
-      margin-top: 2em; }
-      body .slide-common .descripcion h2::after {
-        top: 3.5em;
-        width: 15%; }
-      body .slide-common .descripcion h2 {
-        padding: 0 0 1em 0;
-        font-size: 22px; }
-        body .slide-common .descripcion h2:after {
-          top: 3em; }
-      body .slide-common .descripcion p {
-        margin-top: 2em; } }
-  @media only screen and (min-width: 501px) and (max-width: 900px) {
-    body .slide-common .descripcion {
-      margin-top: 2em; }
-      body .slide-common .descripcion h2::after {
-        top: 3.5em;
-        width: 15%; } }
   body .space {
     width: 100%;
     height: 150px;
@@ -779,145 +730,6 @@ body {
       display: inline-block; }
       body nav .menu .options .item {
         width: 22%; } }
-  body .carousel-inner {
-    /*SLIDER MAIN*/ }
-    body .carousel-inner .item {
-      height: 500px; }
-      @media screen and (min-width: 1024px) {
-        body .carousel-inner .item {
-          height: 500px; }
-          body .carousel-inner .item img {
-            width: 100%; } }
-    body .carousel-inner .inner-slider {
-      position: absolute;
-      width: 40%;
-      margin: 7em 0 0 13em; }
-      body .carousel-inner .inner-slider h2 {
-        color: #fff;
-        font-weight: 700 !important;
-        background: rgba(0, 0, 0, 0.3);
-        padding: .5em 20px; }
-      body .carousel-inner .inner-slider p {
-        font-size: 1.5em;
-        color: #fff;
-        padding: .5em 20px;
-        background: rgba(0, 0, 0, 0.3); }
-      @media screen and (min-width: 1300px) {
-        body .carousel-inner .inner-slider {
-          width: 30%;
-          margin: 10em 0 0 20em; } }
-      body .carousel-inner .inner-slider .video {
-        position: fixed;
-        width: 100%;
-        top: -9em;
-        right: 0;
-        left: 0;
-        background: #000;
-        text-align: right;
-        opacity: 1;
-        z-index: -1; }
-        body .carousel-inner .inner-slider .video .overlay {
-          background: rgba(5, 8, 106, 0.7);
-          width: 100%;
-          height: 100%;
-          bottom: 0;
-          top: 0;
-          position: absolute; }
-        body .carousel-inner .inner-slider .video video {
-          width: 100%; }
-    body .carousel-inner .image {
-      position: absolute;
-      top: 0;
-      right: 0; }
-      body .carousel-inner .image #machine {
-        width: 700px;
-        height: 700px;
-        background: url("../images/microklima-h.png") no-repeat;
-        background-size: 100%;
-        position: absolute;
-        top: 0;
-        right: 0; }
-    body .carousel-inner .slide-ref {
-      background-size: cover;
-      width: 100%;
-      text-align: center;
-      background: #190549; }
-      body .carousel-inner .slide-ref .overlay {
-        background: rgba(5, 8, 106, 0.7);
-        width: 100%;
-        height: 100%;
-        bottom: 0;
-        top: 0;
-        position: absolute; }
-      body .carousel-inner .slide-ref .maquina {
-        width: 600px;
-        height: 600px;
-        background: url("../images/microklima/microklima-back.png") no-repeat;
-        background-size: 70%;
-        position: absolute;
-        right: -7em;
-        z-index: 1; }
-      body .carousel-inner .slide-ref video {
-        width: 100%; }
-    body .carousel-inner .slide-humiklima .hk-01 {
-      width: 500px;
-      height: 500px;
-      background: url("../images/back-hk-01.png") no-repeat;
-      background-size: 70%;
-      position: absolute;
-      right: 5em; }
-    body .carousel-inner .slide-humiklima .hk-02 {
-      width: 500px;
-      height: 500px;
-      background: url("../images/humiklima/humiklima-cpy.png") no-repeat;
-      background-size: 70%;
-      position: absolute;
-      right: 6em;
-      top: 4em; }
-    body .carousel-inner .slide-humiklima video {
-      width: 100%;
-      margin-top: -5em; }
-    body .carousel-inner .slide-humiklima .overlay {
-      background: rgba(5, 8, 106, 0.7);
-      width: 100%;
-      height: 100%;
-      bottom: 0;
-      top: 0;
-      position: absolute; }
-    @media screen and (max-width: 768px) {
-      body .carousel-inner {
-        height: 300px; }
-        body .carousel-inner .item {
-          height: 100%; }
-          body .carousel-inner .item .inner-slider {
-            position: absolute;
-            background: rgba(100, 160, 200, 0.4);
-            height: 100%;
-            width: 100%;
-            padding: 5em 3em;
-            text-align: center;
-            margin: 0 auto;
-            z-index: 99; }
-            body .carousel-inner .item .inner-slider h2 {
-              font-size: 1.5em; }
-            body .carousel-inner .item .inner-slider p {
-              font-size: 1.3em; }
-        body .carousel-inner .slide-ref .maquina {
-          width: 300px;
-          height: 300px;
-          left: 35%; }
-        body .carousel-inner .slide-humiklima {
-          background: #05076B; }
-          body .carousel-inner .slide-humiklima .hk-01 {
-            width: 250px;
-            height: 250px;
-            top: 3em;
-            left: 13em; }
-          body .carousel-inner .slide-humiklima .hk-02 {
-            right: 6em;
-            top: 8em;
-            width: 250px;
-            height: 250px; } }
   body .submenu {
     height: 300px;
     max-width: 1550px;
@@ -1324,7 +1136,6 @@ body {
         padding: 0; } }
   body footer {
     background: #41439C;
-    height: 320px;
     clear: both;
     position: relative;
     padding-top: 2em; }
@@ -1382,10 +1193,9 @@ body {
       border-top: .5px solid #f2f2f2;
       font-size: 13px;
       background: #f2f2f2;
-      position: absolute;
-      bottom: 0;
       width: 100%;
-      height: 120px; }
+      height: 120px;
+      clear: both; }
       body footer .bottom ul {
         margin: 0;
         padding: 0; }
@@ -1400,10 +1210,9 @@ body {
       text-align: justify; }
     @media screen and (max-width: 768px) {
       body footer {
-        /*xº*/ }
+        min-height: 500px; }
         body footer .bottom {
-          padding: 2em;
-          height: auto; } }
+          padding: 2em; } }
   body .map-content {
     width: 100%;
     padding: 2em 0 0 0;
@@ -1579,9 +1388,7 @@ body {
     body .slider-mk-section .maquina {
       right: -1em !important; }
   body #microklima {
-    height: 100%;
-    /*MOSAICO*/
-    /*MOSAICO*/ }
+    height: 100%; }
     body #microklima .video-snow {
       overflow: hidden; }
     body #microklima .text {
@@ -1603,63 +1410,6 @@ body {
           top: 0;
           left: 0;
           opacity: .7; }
-    body #microklima .microklima-mosaico .imagen {
-      overflow: hidden;
-      background: #f2f2f2;
-      max-height: 500px;
-      text-align: center;
-      padding: 0; }
-      body #microklima .microklima-mosaico .imagen img {
-        width: 130%; }
-    body #microklima .microklima-mosaico .descript-hover {
-      background: #fff;
-      min-height: 300px;
-      box-shadow: -1px 6px 10px rgba(0, 0, 0, 0.09); }
-      body #microklima .microklima-mosaico .descript-hover h3 {
-        text-align: left;
-        padding-left: 3em;
-        height: 20px; }
-        body #microklima .microklima-mosaico .descript-hover h3:before {
-          content: '\00a0';
-          width: 40px;
-          height: 1px;
-          background: #000;
-          position: absolute;
-          left: 0;
-          bottom: 0; }
-      body #microklima .microklima-mosaico .descript-hover ul {
-        padding-top: 2em; }
-    body #microklima .microklima-mosaico p {
-      font-size: 16px;
-      line-height: 24px;
-      margin-top: 2em; }
-    body #microklima .microklima-mosaico .solid-small .image {
-      overflow: hidden;
-      padding: 0;
-      position: relative;
-      height: 100%; }
-      body #microklima .microklima-mosaico .solid-small .image img {
-        height: 100%;
-        position: absolute;
-        left: 0;
-        top: 0; }
-    body #microklima .microklima-mosaico .solid-small .descript {
-      height: 100%;
-      background: #1F62C5;
-      color: #fff; }
-      body #microklima .microklima-mosaico .solid-small .descript h3 {
-        text-align: left; }
-    @media screen and (max-width: 768px) {
-      body #microklima .microklima-mosaico .solid-small {
-        height: auto; } }
-    @media screen and (min-width: 1024px) {
-      body #microklima .microklima-mosaico .descript {
-        padding: 0 6em; }
-      body #microklima .microklima-mosaico .solid-small {
-        height: 350px; }
-      body #microklima .microklima-mosaico .descript-hover {
-        margin: 4em 0 0 -4em;
-        padding: 4em 5em; } }
     body #microklima .mk-procesos {
       padding-top: 3em; }
       body #microklima .mk-procesos .content {
@@ -2921,6 +2671,201 @@ body {
   #humiklima .video {
     display: none; } }
 
+/*slide*/
+.slide-common .descripcion {
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 9em;
+  float: left;
+  padding-left: 11%;
+  position: absolute;
+  z-index: 99; }
+  .slide-common .descripcion h2 {
+    color: #fff;
+    text-align: left;
+    padding: 1em 0;
+    position: relative;
+    font-weight: 700; }
+    .slide-common .descripcion h2:after {
+      content: "";
+      border: 1px solid #4FB0E5;
+      position: absolute;
+      left: 0;
+      top: 2.5em;
+      width: 7%; }
+  .slide-common .descripcion p {
+    font-size: 1.3em;
+    line-height: 1.6em;
+    color: #fff;
+    margin-bottom: 2em; }
+@media screen and (max-width: 500px) {
+  .slide-common .descripcion {
+    width: 100%;
+    padding-left: 0;
+    padding: 0 3em;
+    margin-top: 2em; }
+    .slide-common .descripcion h2::after {
+      top: 3.5em;
+      width: 15%; }
+    .slide-common .descripcion h2 {
+      padding: 0 0 1em 0;
+      font-size: 22px; }
+      .slide-common .descripcion h2:after {
+        top: 3em; }
+    .slide-common .descripcion p {
+      margin-top: 2em; } }
+@media only screen and (min-width: 501px) and (max-width: 900px) {
+  .slide-common .descripcion {
+    margin-top: 2em; }
+    .slide-common .descripcion h2::after {
+      top: 2.5em;
+      width: 15%; } }
+@media screen and (min-width: 901px) {
+  .slide-common .descripcion {
+    width: 50%; } }
+
+/*CARROUSEL*/
+.carousel-inner {
+  /*SLIDER MAIN*/ }
+  .carousel-inner .item {
+    height: 500px; }
+    @media screen and (min-width: 1024px) {
+      .carousel-inner .item {
+        height: 500px; }
+        .carousel-inner .item img {
+          width: 100%; } }
+  .carousel-inner .inner-slider {
+    position: absolute;
+    width: 40%;
+    margin: 7em 0 0 13em; }
+    .carousel-inner .inner-slider h2 {
+      color: #fff;
+      font-weight: 700 !important;
+      background: rgba(0, 0, 0, 0.3);
+      padding: .5em 20px; }
+    .carousel-inner .inner-slider p {
+      font-size: 1.5em;
+      color: #fff;
+      padding: .5em 20px;
+      background: rgba(0, 0, 0, 0.3); }
+    @media screen and (min-width: 1300px) {
+      .carousel-inner .inner-slider {
+        width: 30%;
+        margin: 10em 0 0 20em; } }
+    .carousel-inner .inner-slider .video {
+      position: fixed;
+      width: 100%;
+      top: -9em;
+      right: 0;
+      left: 0;
+      background: #000;
+      text-align: right;
+      opacity: 1;
+      z-index: -1; }
+      .carousel-inner .inner-slider .video .overlay {
+        background: rgba(5, 8, 106, 0.7);
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        top: 0;
+        position: absolute; }
+      .carousel-inner .inner-slider .video video {
+        width: 100%; }
+  .carousel-inner .image {
+    position: absolute;
+    top: 0;
+    right: 0; }
+    .carousel-inner .image #machine {
+      width: 700px;
+      height: 700px;
+      background: url("../images/microklima-h.png") no-repeat;
+      background-size: 100%;
+      position: absolute;
+      top: 0;
+      right: 0; }
+  .carousel-inner .slide-ref {
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    background: #190549; }
+    .carousel-inner .slide-ref .overlay {
+      background: rgba(5, 8, 106, 0.7);
+      width: 100%;
+      height: 100%;
+      bottom: 0;
+      top: 0;
+      position: absolute; }
+    .carousel-inner .slide-ref .maquina {
+      width: 600px;
+      height: 600px;
+      background: url("../images/microklima/microklima-back.png") no-repeat;
+      background-size: 70%;
+      position: absolute;
+      right: -7em;
+      z-index: 1; }
+    .carousel-inner .slide-ref video {
+      width: 100%; }
+  .carousel-inner .slide-humiklima .hk-01 {
+    width: 500px;
+    height: 500px;
+    background: url("../images/back-hk-01.png") no-repeat;
+    background-size: 70%;
+    position: absolute;
+    right: 5em; }
+  .carousel-inner .slide-humiklima .hk-02 {
+    width: 500px;
+    height: 500px;
+    background: url("../images/humiklima/humiklima-cpy.png") no-repeat;
+    background-size: 70%;
+    position: absolute;
+    right: 6em;
+    top: 4em; }
+  .carousel-inner .slide-humiklima video {
+    width: 100%;
+    margin-top: -5em; }
+  .carousel-inner .slide-humiklima .overlay {
+    background: rgba(5, 8, 106, 0.7);
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    top: 0;
+    position: absolute; }
+  @media screen and (max-width: 768px) {
+    .carousel-inner {
+      height: 500px; }
+      .carousel-inner .item {
+        height: 100%; }
+        .carousel-inner .item .inner-slider {
+          position: absolute;
+          background: rgba(100, 160, 200, 0.4);
+          height: 100%;
+          width: 100%;
+          padding: 5em 3em;
+          text-align: center;
+          margin: 0 auto;
+          z-index: 99; }
+          .carousel-inner .item .inner-slider h2 {
+            font-size: 1.5em; }
+          .carousel-inner .item .inner-slider p {
+            font-size: 1.3em; }
+      .carousel-inner .slide-ref .maquina {
+        width: 300px;
+        height: 300px;
+        right: -13%;
+        bottom: 0; }
+      .carousel-inner .slide-humiklima {
+        background: #05076B; }
+        .carousel-inner .slide-humiklima .hk-01 {
+          width: 250px;
+          height: 250px;
+          top: 3em;
+          left: 13em; }
+        .carousel-inner .slide-humiklima .hk-02 {
+          right: -3em;
+          top: 18em;
+          width: 250px;
+          height: 250px; } }
+
 .help {
   text-decoration: underline;
   color: #41439C;
@@ -3062,5 +3007,70 @@ body {
 @media screen and (min-width: 1024px) {
   .graph-container ul li .graphic-app img {
     margin-left: 30em; } }
+#microklima {
+  /*MOSAICO*/
+  /*MOSAICO*/ }
+  #microklima .microklima-mosaico .imagen {
+    overflow: hidden;
+    background: #f2f2f2;
+    max-height: 500px;
+    text-align: center;
+    padding: 0; }
+    #microklima .microklima-mosaico .imagen img {
+      width: 130%; }
+  #microklima .microklima-mosaico .descript-hover {
+    background: #fff;
+    min-height: 300px;
+    box-shadow: -1px 6px 10px rgba(0, 0, 0, 0.09); }
+    #microklima .microklima-mosaico .descript-hover h3 {
+      text-align: left;
+      padding-left: 3em;
+      height: 20px; }
+      #microklima .microklima-mosaico .descript-hover h3:before {
+        content: '\00a0';
+        width: 40px;
+        height: 1px;
+        background: #000;
+        position: absolute;
+        left: 0;
+        bottom: 0; }
+    #microklima .microklima-mosaico .descript-hover ul {
+      padding-top: 2em; }
+  #microklima .microklima-mosaico p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 2em; }
+  #microklima .microklima-mosaico .solid-small .image {
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    height: 100%; }
+    #microklima .microklima-mosaico .solid-small .image img {
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0; }
+  #microklima .microklima-mosaico .solid-small .descript {
+    height: 100%;
+    background: #1F62C5;
+    color: #fff; }
+    #microklima .microklima-mosaico .solid-small .descript h3 {
+      text-align: left; }
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    #microklima .microklima-mosaico .descript-hover {
+      padding: 2em; } }
+  @media screen and (max-width: 768px) {
+    #microklima .microklima-mosaico .solid-small {
+      height: auto; }
+    #microklima .microklima-mosaico .descript-hover {
+      padding: 2em; } }
+  @media screen and (min-width: 1024px) {
+    #microklima .microklima-mosaico .descript {
+      padding: 0 6em; }
+    #microklima .microklima-mosaico .solid-small {
+      height: 350px; }
+    #microklima .microklima-mosaico .descript-hover {
+      margin: 4em 0 0 -4em;
+      padding: 4em 5em; } }
 
 /*# sourceMappingURL=styles.css.map */

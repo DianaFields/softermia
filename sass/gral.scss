@@ -1,4 +1,259 @@
-.leave-msn{
-	color:black;
-	height: 300px;
+/*slide*/
+.slide-common{
+	.descripcion{
+		margin: 0 auto;
+		text-align: left;
+		margin-top: 9em;
+		float: left;
+		padding-left: 11%;
+		position: absolute;
+		z-index: 99;
+		h2{
+			color: #fff;
+			text-align: left;
+			padding: 1em 0;
+			position: relative;
+			font-weight: 700;
+			&:after{
+				content:"";
+				border:1px solid #4FB0E5;
+				position: absolute;
+				left: 0;
+				top: 2.5em;
+				width: 7%;
+			}
+		}
+		p{    
+			font-size: 1.3em;
+			line-height: 1.6em;
+			color: #fff;
+			margin-bottom: 2em;
+		}
+
+	}
+
+	@media screen and (max-width: 500px){
+		.descripcion{
+			width:100%;
+			padding-left:0;
+			padding:0 3em;
+			margin-top: 2em;
+			h2::after{
+				top: 3.5em;
+				width: 15%;
+			}
+			h2{
+				padding: 0 0 1em 0;
+				font-size: 22px;
+				&:after{
+					top:3em;
+				}
+			}
+			p{
+				margin-top: 2em;
+			}
+		}
+
+	}
+	@media only screen and (min-width: 501px) and (max-width: 900px){
+		.descripcion{
+			margin-top: 2em;
+			h2::after{
+				top: 2.5em;
+				width: 15%;
+			}
+		}
+
+	}
+	@media screen and (min-width: 901px){
+		.descripcion{
+			width: 50%;
+		}
+	}
+}
+
+/*CARROUSEL*/
+.carousel-inner{
+	.item{
+		height: 500px;
+		@media screen and (min-width: 1024px){
+			height: 500px;
+			img{
+				width: 100%;
+			}
+		}
+	}
+	.inner-slider{
+		position: absolute;
+		width: 40%;
+		margin: 7em 0 0 13em;
+		h2{
+			color: #fff;
+			font-weight: 700!important;
+			background: rgba(0,0,0,.3);
+			padding:.5em 20px;
+		}
+		p{
+			font-size: 1.5em;
+			color: #fff;
+			padding: .5em 20px;
+			background: rgba(0,0,0,.3);
+		}
+		@media screen and (min-width: 1300px){
+			width: 30%;
+			margin: 10em 0 0 20em;
+		}
+
+		.video {
+			position: fixed;
+			width: 100%;
+			top: -9em;
+			right: 0;
+			left: 0;
+			background:#000;
+			text-align: right;
+			opacity: 1;
+			z-index: -1;
+			.overlay{
+				background:rgba(5, 8, 106, .7);
+				width: 100%;
+				height: 100%;
+				bottom: 0;
+				top: 0;
+				position: absolute;
+			}
+			video{
+				width: 100%;
+			}
+		}
+
+	}
+	.image{
+		position: absolute;
+		top: 0;
+		right: 0;
+		#machine{
+			width: 700px;
+			height: 700px;
+			background:url('../images/microklima-h.png')no-repeat;
+			background-size: 100%;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+
+	}
+	/*SLIDER MAIN*/
+
+
+
+	.slide-ref{
+		//background:url('../images/slider-2.jpg')no-repeat;
+		background-size: cover;
+		width: 100%;
+		text-align: center;
+		background: #190549;
+		.overlay{
+			background: rgba(5, 8, 106, 0.7);
+			width: 100%;
+			height: 100%;
+			bottom: 0;
+			top: 0;
+			position: absolute;
+		}
+		.maquina{
+			width: 600px;
+			height: 600px;
+			background: url('../images/microklima/microklima-back.png')no-repeat;
+			background-size: 70%;
+			position: absolute;
+			right:-7em;
+			z-index: 1;
+		}
+		video{
+			width:  100%;
+
+		}
+	}
+	.slide-humiklima{
+		.hk-01{
+			width: 500px;
+			height: 500px;
+			background: url('../images/back-hk-01.png')no-repeat;
+			background-size: 70%;
+			position: absolute;
+			right: 5em;
+		}
+		.hk-02{
+			width: 500px;
+			height: 500px;
+			background: url('../images/humiklima/humiklima-cpy.png')no-repeat;
+			background-size: 70%;
+			position: absolute;
+			right: 6em;
+			top:4em;
+		}
+		video{
+			width: 100%;
+			margin-top: -5em;
+		}
+		.overlay{
+			background: rgba(5, 8, 106, 0.7);
+			width: 100%;
+			height: 100%;
+			bottom: 0;
+			top: 0;
+			position: absolute;
+		}
+	}
+	@media screen and (max-width: 768px){
+		height:500px;
+
+		.item{
+			height: 100%;
+			.inner-slider{
+				position: absolute;
+				background: rgba(100,160,200,.4);
+				height: 100%;
+				width: 100%;
+				padding: 5em 3em;
+				text-align: center;
+				margin: 0 auto;
+				z-index: 99;
+				h2{
+					font-size: 1.5em;
+				}
+				p{
+					font-size: 1.3em;
+				}
+			}
+
+		}
+		.slide-ref{
+			.maquina{
+				width: 300px;
+				height: 300px;
+				right: -13%;
+				bottom: 0;
+			}
+
+		}
+		.slide-humiklima{
+			background:#05076B;
+
+			.hk-01{
+				width: 250px;
+				height: 250px;
+				top: 3em;
+				left: 13em;
+			}
+			.hk-02{
+				right: -3em;
+    			top: 18em;
+				width: 250px;
+				height: 250px;
+			}
+		}
+
+	}
 }
