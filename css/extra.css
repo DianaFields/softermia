@@ -1,6 +1,6 @@
 .help {
-  text-decoration: underline;
-  color: #41439C;
+  color: #51bfeb;
+  font-weight: 800;
   position: relative;
   padding-left: 2.5em; }
   .help:after {

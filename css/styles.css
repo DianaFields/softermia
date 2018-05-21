@@ -171,7 +171,7 @@ body {
   50% {
     transform: rotate(-360deg); } }
   body .carousel {
-    height: 500px; }
+    height: 600px; }
     @media only screen and (min-width: 1024px) and (max-width: 1499px) {
       body .carousel {
         margin-top: 7.1em; } }
@@ -407,7 +407,8 @@ body {
             margin: 2em 0; }
           body .menu-expand-opt .products li .logo-sub p {
             margin: 0 0 3em 0;
-            line-height: initial; }
+            line-height: initial;
+            height: 100px; }
         body .menu-expand-opt .products li a {
           width: 130px;
           line-height: 45px;
@@ -1017,7 +1018,6 @@ body {
       text-align: justify;
       line-height: 1.8em; }
   body .galeria .project .portfolio-hover {
-    background: rgba(0, 0, 0, 0.5);
     position: absolute;
     width: 100%;
     height: 100%;
@@ -1030,11 +1030,13 @@ body {
     body .galeria .project .portfolio-hover .portfolio-hover-content p {
       color: #fff;
       text-align: center;
-      margin-top: 4em;
+      width: 40%;
+      margin: 25% 0 0 30%;
       font-family: 'Open Sans', sans-serif;
-      font-weight: 700;
-      font-size: 22px;
-      text-decoration: underline; }
+      font-size: 17px;
+      line-height: 36px;
+      background: rgba(81, 191, 235, 0.8);
+      border-radius: 20px; }
   body .galeria .project a {
     float: left;
     position: relative;
@@ -1044,19 +1046,14 @@ body {
     text-align: center;
     padding: 1em 0;
     clear: both;
-    background: #f2f2f2; }
+    background: #f2f2f2;
+    height: 130px; }
     body .galeria .project .portfolio-caption h4 {
-      font-weight: 700;
       font-size: 16px;
-      position: relative; }
-      body .galeria .project .portfolio-caption h4:after {
-        content: "\00a0";
-        width: 10%;
-        background: #4FB0E6;
-        height: 2px;
-        position: absolute;
-        bottom: -10px;
-        left: 45%; }
+      line-height: 22px;
+      position: relative;
+      padding: 1em;
+      height: 100%; }
     body .galeria .project .portfolio-caption .text-muted {
       margin-top: 2em; }
   body .galeria .project img {
@@ -1138,7 +1135,7 @@ body {
     background: #41439C;
     clear: both;
     position: relative;
-    padding-top: 2em; }
+    padding: 0 !important; }
     body footer ul li {
       list-style: none;
       line-height: 2.5em;
@@ -1238,9 +1235,6 @@ body {
     bottom: 6em;
     position: relative;
     height: 650px; }
-    body #clientes .col-lg-12 {
-      padding: 0;
-      /*margin-bottom: 6em;*/ }
     body #clientes .logo div {
       height: 90px;
       width: 90%;
@@ -1456,10 +1450,11 @@ body {
             position: absolute; }
       body #microklima .mk-procesos div {
         display: inline-block;
-        border-right: 1px solid #fff;
         height: 80%;
         color: #fff;
-        padding: 0 2em; }
+        padding: 0 2em;
+        vertical-align: top;
+        position: relative; }
         body #microklima .mk-procesos div h2 {
           font-size: 20px;
           font-weight: 700;
@@ -1477,6 +1472,15 @@ body {
         body #microklima .mk-procesos div p {
           margin-top: 2em;
           font-size: 15px; }
+        body #microklima .mk-procesos div:after {
+          content: '\00a0';
+          width: 1px;
+          background: #ffffff;
+          height: 300px;
+          position: absolute;
+          right: 0;
+          top: 1em;
+          bottom: 0; }
       body #microklima .mk-procesos ul li {
         list-style-type: disc;
         color: #000;
@@ -2070,7 +2074,8 @@ body {
       margin: 0 auto;
       background: url("../images/back-texture.jpg") no-repeat;
       background-size: cover;
-      background-position: 40% 55%; }
+      background-position: 40% 55%;
+      clear: both; }
       body #esquema .full-machine .overlay {
         /*background: url('../images/microklima/microklima_full.jpg')no-repeat;
         background-size: 40%;
@@ -2078,8 +2083,8 @@ body {
         width: 100%;
         height: 100%;*/ }
       body #esquema .full-machine img {
-        height: 100%;
-        margin: 0 0 0 35%; }
+        height: 90%;
+        margin: 4% 0 0 35%; }
       body #esquema .full-machine .pulsating {
         position: absolute;
         transform: translateX(-50%) translateY(-50%);
@@ -2142,13 +2147,13 @@ body {
           margin: 1em; }
       body #esquema .full-machine .mk-01 {
         right: 32%;
-        top: 12%; }
+        top: 25%; }
       body #esquema .full-machine .mk-02 {
-        top: 38%;
-        right: 31%; }
+        top: 42%;
+        right: 22%; }
       body #esquema .full-machine .mk-03 {
-        top: 49%;
-        right: 42%; }
+        top: 23%;
+        right: 16%; }
       body #esquema .full-machine .mk-04 {
         top: 31%;
         right: 37%; }
@@ -2159,11 +2164,11 @@ body {
         top: 76%;
         right: 30%; }
       body #esquema .full-machine .mk-07 {
-        top: 81%;
-        right: 39%; }
+        top: 77%;
+        right: 32%; }
       body #esquema .full-machine .mk-08 {
-        top: 33%;
-        right: 24%; }
+        top: 45%;
+        right: 34%; }
       body #esquema .full-machine .txt-full-izq {
         line-height: 1.7;
         margin: 0 0 10px;
@@ -2529,7 +2534,7 @@ body {
   background: url("../images/back-7.jpg");
   background-attachment: fixed;
   background-size: cover;
-  padding: 2em 0; }
+  padding: 2em 0 6em 0; }
   #humiklima .text-back h3 {
     color: #fff;
     text-align: center; }
@@ -2604,7 +2609,7 @@ body {
   #humiklima .panel-video .text {
     color: #fff;
     text-align: left;
-    padding-left: 2em; }
+    padding: 4em; }
   #humiklima .panel-video h3 {
     text-align: left; }
 #humiklima #servicios {
@@ -2675,7 +2680,7 @@ body {
 .slide-common .descripcion {
   margin: 0 auto;
   text-align: left;
-  margin-top: 9em;
+  margin-top: 2em;
   float: left;
   padding-left: 11%;
   position: absolute;
@@ -2698,6 +2703,13 @@ body {
     line-height: 1.6em;
     color: #fff;
     margin-bottom: 2em; }
+  .slide-common .descripcion ul {
+    padding: 3em 0 0 1em; }
+    .slide-common .descripcion ul li {
+      list-style: circle;
+      color: #ffffff;
+      line-height: 25px;
+      font-size: 16px; }
 @media screen and (max-width: 500px) {
   .slide-common .descripcion {
     width: 100%;
@@ -2722,7 +2734,7 @@ body {
       width: 15%; } }
 @media screen and (min-width: 901px) {
   .slide-common .descripcion {
-    width: 50%; } }
+    width: 60%; } }
 
 /*CARROUSEL*/
 .carousel-inner {
@@ -2731,7 +2743,7 @@ body {
     height: 500px; }
     @media screen and (min-width: 1024px) {
       .carousel-inner .item {
-        height: 500px; }
+        height: 600px; }
         .carousel-inner .item img {
           width: 100%; } }
   .carousel-inner .inner-slider {
@@ -2866,9 +2878,13 @@ body {
           width: 250px;
           height: 250px; } }
 
+/*fix layout*/
+.col-fix-5 {
+  width: 19%; }
+
 .help {
-  text-decoration: underline;
-  color: #41439C;
+  color: #51bfeb;
+  font-weight: 800;
   position: relative;
   padding-left: 2.5em; }
   .help:after {
