@@ -1035,8 +1035,7 @@ body {
       font-family: 'Open Sans', sans-serif;
       font-size: 17px;
       line-height: 36px;
-      background: rgba(81, 191, 235, 0.8);
-      border-radius: 20px; }
+      background: rgba(81, 191, 235, 0.8); }
   body .galeria .project a {
     float: left;
     position: relative;
@@ -1044,7 +1043,6 @@ body {
     margin: 0 auto; }
   body .galeria .project .portfolio-caption {
     text-align: center;
-    padding: 1em 0;
     clear: both;
     background: #f2f2f2;
     height: 130px; }
@@ -1056,6 +1054,9 @@ body {
       height: 100%; }
     body .galeria .project .portfolio-caption .text-muted {
       margin-top: 2em; }
+    @media screen and (min-width: 768px) {
+      body .galeria .project .portfolio-caption {
+        padding: 1em 0; } }
   body .galeria .project img {
     width: 100%; }
   body #formulario {
@@ -1135,7 +1136,7 @@ body {
     background: #41439C;
     clear: both;
     position: relative;
-    padding: 0 !important; }
+    padding: 2em 0 0 0 !important; }
     body footer ul li {
       list-style: none;
       line-height: 2.5em;
@@ -1191,7 +1192,6 @@ body {
       font-size: 13px;
       background: #f2f2f2;
       width: 100%;
-      height: 120px;
       clear: both; }
       body footer .bottom ul {
         margin: 0;
@@ -1985,12 +1985,7 @@ body {
         margin: 0 auto;
         left: calc(60% - 30%);
         position: inherit;
-        top: 12.8em;
-        transition: all 1s ease-in-out;
-        -webkit-transition-timing-function: all 1s ease-in-out;
-        -moz-transition: all 1s ease-in-out;
-        -ms-transition: all 1s ease-in-out;
-        -o-transition: all 1s ease-in-out; }
+        top: 12.8em; }
         body #microklima .pgd .screen-03 .text {
           width: 60%;
           right: -100%;
@@ -2257,14 +2252,14 @@ body {
       body .galeria .container .modal-body {
         font-size: 1.2em;
         text-align: center; }
-        body .galeria .container .modal-body img {
-          width: 70%; }
         body .galeria .container .modal-body video {
           width: 100%; }
         body .galeria .container .modal-body .text {
-          width: 70%;
           margin: 0 auto;
           padding: 1em 0; }
+          @media screen and (min-width: 768px) {
+            body .galeria .container .modal-body .text {
+              width: 70%; } }
         body .galeria .container .modal-body .icons {
           width: 100%;
           height: 50px;
@@ -2312,9 +2307,9 @@ body {
         body .galeria .container .modal-body button {
           border: 2px solid #4FB0E6;
           color: #05076B;
-          border-radius: 50%;
           margin: 2em 0;
-          width: 50px;
+          border-radius: 0;
+          padding: 0 2em;
           height: 50px;
           background: white;
           transition: all 1s ease-in-out;
@@ -2327,11 +2322,12 @@ body {
             color: #fff; }
             body .galeria .container .modal-body button:hover:after {
               color: #fff; }
-          body .galeria .container .modal-body button:after {
-            content: '\e014';
-            font-family: 'Glyphicons Halflings';
-            font-size: 20px;
-            color: #4FB0E6; }
+        @media screen and (min-width: 769px) {
+          body .galeria .container .modal-body img {
+            width: 70%; } }
+        @media screen and (max-width: 768px) {
+          body .galeria .container .modal-body img {
+            width: 100%; } }
       body .galeria .container ul li {
         list-style: none;
         line-height: 1.5em; }
@@ -2373,8 +2369,7 @@ body {
         body .slider .descripcion {
           padding: 10em 2em;
           float: none;
-          margin-top: 0;
-          background: rgba(255, 255, 255, 0.4); } }
+          margin-top: 0; } }
     @media screen and (min-width: 768px) {
       body .slider {
         margin-top: 7.1em; } }
@@ -2628,7 +2623,11 @@ body {
 @media screen and (max-width: 768px) {
   #humiklima .tipos .descript {
     margin: 0 !important;
-    padding: 0; } }
+    padding: 0; }
+    #humiklima .tipos .descript ul {
+      padding: 0;
+      width: 80%;
+      margin: 0 auto; } }
 @media screen and (min-width: 768px) {
   #humiklima .tipos .imagen {
     min-height: 550px;
@@ -2710,6 +2709,9 @@ body {
       color: #ffffff;
       line-height: 25px;
       font-size: 16px; }
+@media screen and (max-width: 768px) {
+  .slide-common .descripcion ul {
+    display: none; } }
 @media screen and (max-width: 500px) {
   .slide-common .descripcion {
     width: 100%;
@@ -2878,10 +2880,10 @@ body {
           width: 250px;
           height: 250px; } }
 
-/*fix layout*/
-.col-fix-5 {
-  width: 19%; }
-
+@media screen and (min-width: 1024px) {
+  /*fix layout*/
+  .col-fix-5 {
+    width: 19%; } }
 .help {
   color: #51bfeb;
   font-weight: 800;
@@ -2980,7 +2982,7 @@ body {
   .graph-container .graphic-image {
     position: absolute;
     top: 0;
-    right: 2em;
+    right: 0;
     width: 60%;
     transition: all 1s ease-in-out; }
   .graph-container ul {
@@ -2992,7 +2994,7 @@ body {
         right: 0;
         top: 0;
         opacity: 0;
-        width: 100%;
+        width: 60%;
         text-align: center;
         z-index: 0;
         transition: all 1s ease-in-out;
@@ -3001,7 +3003,7 @@ body {
         -ms-transition: all 1s ease-in-out;
         -o-transition: all 1s ease-in-out; }
         .graph-container ul li .graphic-app img {
-          width: 60%; }
+          width: 100%; }
       .graph-container ul li a {
         color: #fff;
         line-height: 20px;
@@ -3022,7 +3024,8 @@ body {
     display: none; } }
 @media screen and (min-width: 1024px) {
   .graph-container ul li .graphic-app img {
-    margin-left: 30em; } }
+    margin-right: 203px;
+    margin-top: 0; } }
 #microklima {
   /*MOSAICO*/
   /*MOSAICO*/ }

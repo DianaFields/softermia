@@ -1380,7 +1380,6 @@
 								font-size: 17px;
     							line-height: 36px;
 								background: rgba(81,191,235,.8);
-								border-radius: 20px;
 							}
 						}
 					}
@@ -1392,7 +1391,6 @@
 					}
 					.portfolio-caption{
 						text-align: center;
-						padding: 1em 0;
 						clear:both;
 						background: #f2f2f2;
 						height: 130px;
@@ -1406,6 +1404,10 @@
 						}
 						.text-muted{
 							margin-top: 2em;
+						}
+						@media screen and (min-width: 768px){
+							padding: 1em 0;
+
 						}
 
 					}
@@ -1507,7 +1509,7 @@
 			footer{
 				background:#41439C;
 				clear: both;position: relative;
-				padding: 0!important;
+				padding: 2em 0 0 0 !important;
 				ul{
 					li{
 						list-style: none;
@@ -1582,7 +1584,6 @@
 					font-size: 13px;
 					background:#f2f2f2;
 					width: 100%;
-					height: 120px;
 					clear: both;
 					ul{
 						margin: 0;
@@ -2621,7 +2622,6 @@
 								left: calc(60% - 30%);
 								position: inherit;
 								top:12.8em;
-								@include animation;
 								.text{
 									width: 60%;
 									right: -100%;
@@ -2963,19 +2963,19 @@
 					.modal-body{
 						font-size: 1.2em;
 						text-align: center;
-						img{
-							width: 70%;
-						}
 						video{
 							width: 100%;
 						}
 						.text{
-							width: 70%;
+							
 							margin: 0 auto;
 							padding: 1em 0;
 							p{
 
 
+							}
+							@media screen and (min-width: 768px){
+								width: 70%;
 							}
 						}
 						.icons{
@@ -3035,9 +3035,9 @@
 						button{
 							border: 2px solid #4FB0E6;
 							color: #05076B;
-							border-radius: 50%;
 							margin: 2em 0;
-							width: 50px;
+							border-radius: 0;
+    						padding: 0 2em;
 							height: 50px;
 							background: white;
 							@include animation;
@@ -3048,11 +3048,16 @@
 									color:#fff;
 								}
 							}
-							&:after{
-								content: '\e014';
-								font-family: 'Glyphicons Halflings'; 
-								font-size: 20px;
-								color: #4FB0E6;
+							
+						}
+						@media screen and (min-width: 769px){
+							img{
+								width: 70%;
+							}
+						}
+						@media screen and (max-width: 768px){
+							img{
+								width: 100%;
 							}
 						}
 
@@ -3112,7 +3117,6 @@
 					padding:10em 2em;
 					float:none;
 					margin-top: 0;
-					background:rgba(256, 256, 256, 0.4);
 				}
 			}
 			@media screen and (min-width: 768px){
@@ -3437,6 +3441,11 @@
 				.descript{
 					margin: 0!important;
 					padding: 0;
+					ul{
+						padding: 0;
+					    width: 80%;
+					    margin: 0 auto;
+					}
 				}	
 			}
 			@media screen and (min-width: 768px){

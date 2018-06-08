@@ -42,6 +42,15 @@
 
 	}
 
+	@media screen and (max-width: 768px){
+		.descripcion{
+			ul{
+				display:none;
+			}
+			
+		}
+
+	}
 	@media screen and (max-width: 500px){
 		.descripcion{
 			width:100%;
@@ -267,7 +276,10 @@
 
 	}
 }
-/*fix layout*/
-.col-fix-5{
-	width: 19%;
+
+@media screen and (min-width: 1024px){
+	/*fix layout*/
+	.col-fix-5{
+		width: 19%;
+	}
 }

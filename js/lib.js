@@ -25,6 +25,9 @@ function deskOnly(){
 	$('#vdoHumiklima').html('<video autoplay="autoplay" muted="muted" preload="auto" loop><source src="../images/videos/smoke.mp4" type="video/mp4"></video>');
 	$('#indexVideo01').html('<div class="overlay"></div><video autoplay="autoplay" muted="muted" preload="auto" loop><source src="images/videos/clouds.mp4" type="video/mp4"></video>');
 	$('#indexVideo02').html('<div class="overlay"></div><video autoplay="autoplay" muted="muted" preload="auto" loop><source src="images/videos/waterdrops.mp4" type="video/mp4"></video>');
+	$('#indexVideo03').html('<div class="overlay"></div><video autoplay="autoplay" muted="muted" preload="auto" loop><source src="images/videos/process-01.mp4" type="video/mp4"></video>');
+	$('#humiVideo01').html('<div class="overlay"></div><video autoplay="autoplay" muted="muted" preload="auto" loop><source src="images/videos/smoke.mp4" type="video/mp4"></video>');
+	$('#humiVideo02').html('<div class="overlay"></div><video autoplay="autoplay" muted="muted" preload="auto" loop><source src="images/videos/soft.mp4" type="video/mp4"></video>');
 
 } else {
 // PGD ANIMATION MOBILE

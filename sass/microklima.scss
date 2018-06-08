@@ -22,7 +22,7 @@
 	.graphic-image{
 		position: absolute;
 		top: 0;
-		right: 2em;
+		right: 0;
 		width: 60%;
 		transition: all 1s ease-in-out;
 	}
@@ -35,11 +35,11 @@
 				right: 0;
 				top:0;
 				opacity: 0;
-				width: 100%;
+				width: 60%;
 				text-align: center;
 				z-index: 0;
 				img{
-					width: 60%;
+					width: 100%;
 
 				}
 				@include animation;
@@ -74,7 +74,8 @@
 		ul{
 			li{
 				.graphic-app img{
-					margin-left: 30em;
+					margin-right: 203px;
+    				margin-top: 0;
 				}
 			}
 		}
