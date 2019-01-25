@@ -20,6 +20,23 @@
     display: inline-block; }
     .graph-container ul li {
       line-height: 3em; }
+      .graph-container ul li .graphic-app2 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        opacity: 0;
+        width: 60%;
+        text-align: center;
+        z-index: 0;
+        transition: all 1s ease-in-out;
+        -webkit-transition-timing-function: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out; }
+        @media screen and (min-width: 1024px) {
+          .graph-container ul li .graphic-app2 img {
+            margin-right: 203px;
+            margin-top: 0; } }
       .graph-container ul li .graphic-app {
         position: absolute;
         right: 0;
