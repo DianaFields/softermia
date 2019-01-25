@@ -206,11 +206,44 @@
 		.hk-02{
 			width: 500px;
 			height: 500px;
-			background: url('../images/humiklima/humiklima-cpy.png')no-repeat;
+			background: url('../images/humiklima/humiklima-hk-01.png')no-repeat;
 			background-size: 70%;
 			position: absolute;
 			right: 6em;
 			top:4em;
+		}
+		.hk-03{
+			width: 500px;
+			height: 500px;
+			background: url('../images/Softermia_finblock.png')no-repeat;
+			background-size: 70%;
+			position: absolute;
+			right: 6em;
+			top:10em;
+			@media screen and (max-width:768px){
+			    background-size: 40%;
+			    position: absolute;
+			    right: -16em;
+			    top: 19em;
+			}
+		}
+		.hk-04{
+			width: 500px;
+			height: 500px;
+			background: url('../images/Softermia_Hecu_1.png')no-repeat;
+			background-size: 90%;
+		    position: absolute;
+		    right: 6em;
+		    top: 11em;
+		    @media screen and (max-width:768px){
+		        background-size: 60%;
+			    position: absolute;
+			    right: -17em;
+			    top: 23em;
+		    }
+
+
+
 		}
 		video{
 			width: 100%;
@@ -224,6 +257,14 @@
 			top: 0;
 			position: absolute;
 		}
+	}
+	.overlay-slider-empty{
+			background: rgb(41, 47, 124);
+			width: 100%;
+			height: 100%;
+			bottom: 0;
+			top: 0;
+			position: absolute;
 	}
 	@media screen and (max-width: 768px){
 		height:500px;
