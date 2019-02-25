@@ -70,7 +70,7 @@
 										}
 									}
 									.subtit{
-										font-size: 1.2em;
+										font-size:1.5em;
 										font-weight: 300;
 										margin-bottom: 2em;
 										@media screen and (max-width: 768px){
@@ -456,8 +456,8 @@
 														margin:0;
 														vertical-align: top;
 														img{
-															height: 90px;
 															margin: 2em 0;
+															width: 70%;
 														}
 														p{
 															margin: 0 0 3em 0;
@@ -1487,7 +1487,7 @@
 					}
 					ul{
 						text-align: center;
-						margin-top: 5em;
+						margin-top: 2em;
 						padding: 0;
 						li{
 							line-height: 40px;
@@ -1541,6 +1541,41 @@
 						}
 
 					}
+					.dropdown{
+						.dropdown-toggle{
+						&:focus{
+							color:inherit!important;
+						}
+						&:after{
+							content: "\e114";
+						    font-family: 'Glyphicons Halflings';
+						    width: 20px;
+						    height: 20px;
+						    color: #ffffff;
+						    font-size: 12px;
+						    padding-left: 1em;
+						}
+						}
+					}
+					
+					
+					#drop-brochures{
+							border-radius: 0;
+							border-top: 3px solid #4FB0E5;
+							top: inherit;
+							left: inherit;
+							padding-left: 1em;
+							a{
+							display: flex;
+							color: inherit!important;
+								&:hover{
+									color:#4FB0E5;
+								}
+							}
+
+						
+					}
+					
 				}
 				@media screen and (max-width: 767px){
 					div{
@@ -1915,6 +1950,16 @@
 							background: -webkit-linear-gradient(left, #1b5bc2 0%,#4fb0e5 50%,#41be96 65%,#2ea280 100%); /* Chrome10-25,Safari5.1-6 */
 							background: linear-gradient(to right, #1b5bc2 0%,#4fb0e5 50%,#41be96 65%,#2ea280 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 							filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b5bc2', endColorstr='#2ea280',GradientType=1 ); /* IE6-9 */
+							.mk-ventilacion{
+								&:before{
+									content:'\00a0';
+									width: 20%;
+									height: 40px;
+									background: url('../images/icons/icon-ventilacion.svg')no-repeat 50%;
+									background-size: contain;
+									position: absolute;
+								}
+							}
 							.mk-calefaccion{
 								&:before{
 									content:'\00a0';
@@ -2635,17 +2680,7 @@
 									border-radius:         5px;
 									padding: 1.5em;
 									color:#fff;
-									&:before {
-										content:"";
-										position: absolute;
-										right: 100%;
-										top: 45%;
-										width: 0;
-										height: 0;
-										border-top: 10px solid transparent;
-										border-right: 20px solid #1B5BC2;
-										border-bottom: 10px solid transparent;
-									}
+								
 									p{
 
 										font-size: 1.3em;
@@ -3129,6 +3164,11 @@
 		font-weight: 700;
 		font-size: 1.5em;
 		text-align: center;
+	}
+	.tittle-left{
+		font-weight: 700;
+		font-size: 1.5em;
+		text-align: left;
 	}
 	/*Break points screen*/
 

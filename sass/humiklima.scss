@@ -1,14 +1,13 @@
 .hk-categoria{
 	padding-top: 3em;
 			div{
-		    	padding: 2em;
 		    	text-align: center;
 			}
 			h2{
 				font-size: 18px;
 			    font-weight: 700;
 			    position: relative;
-			    margin-top: 3.5em;
+			    margin-top:6em;
 			    &:after{
 					content: '\00a0';
 				    width: 10%;
@@ -22,15 +21,17 @@
 			p{
 				font-size: 15px;
     			margin-top: 2em;
+    			padding: 0 3em;
 			}
 			.hk-isotermico{
 				background: #ECECEC;
+				padding: 5em 0;
 				&:before{
 					content: '\00a0';
 				    width: 30%;
 				    height: 60px;
 				    position: absolute;
-				    top: 1em;
+				    top: 3em;
 				    bottom: 1em;
 				    left: 35%;
 				    background: url(../images/icons/icon-isotermicos.png) no-repeat 50%;
@@ -45,7 +46,7 @@
 					    width: 30%;
 					    height: 60px;
 					    position: absolute;
-					    top: 1em;
+					    top: 3em;
 					    left: 35%;
 					    background: url(../images/icons/icon-electrodos.png) no-repeat 50%;
 					    background-size: contain;
@@ -53,7 +54,7 @@
 			}
 	@media screen and (min-width: 1024px){
 		div{
-			height: 300px;
+			/*height: 300px;*/
 		}
 	}
 	@media screen and (max-width: 1023px){
@@ -84,4 +85,28 @@
 		    left: 0;
 		}
 	}
+	.solid-small{
+			.image{
+				overflow: hidden;
+				padding: 0;
+				position: relative;
+				height: 100%;
+				/*img{
+					height: 100%;
+					position: absolute;
+					left: 0;
+					top: 0;
+				}*/
+			}
+			.descript{
+				    padding: 0 6em;
+				h3{
+					text-align: left;
+				}
+				height: 100%;
+				background: #1F62C5;
+				color: #fff;
+			}
+
+		}
 }
