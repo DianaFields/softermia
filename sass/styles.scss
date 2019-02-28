@@ -354,12 +354,17 @@
 													display: inline-flex;
 													line-height: 100%;
 													&:after{
-													content: "\e114";
-													font-family: 'Glyphicons Halflings';
-													width: 20px;
-													height: 20px;
-													color: #41439C;
-													font-size: 12px;
+													content: "\00a0";
+													    background-image: url(../images/icons/arrow-down.svg);
+													    background-repeat: no-repeat;
+													    background-position: 50%;
+													    background-size: 60%;
+													    font-family: 'Glyphicons Halflings';
+													    width: 20px;
+													    height: 20px;
+													    color: #41439C;
+													    font-size: 12px;
+													    margin-left: 5px;
 												}
 												}
 												.dropdown-menu{

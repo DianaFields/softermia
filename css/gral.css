@@ -347,6 +347,7 @@
 .iso {
   background: #ECECEC;
   padding: 8em 0;
+  clear: both;
   /*display: inline-block;*/ }
   .iso .icon img {
     max-width: 40px; }
@@ -364,7 +365,7 @@
       left: 0;
       bottom: 0; }
   .iso .txt-container {
-    padding: 2em 0; }
+    padding: 2em; }
   .iso .img-container img {
     width: 100%; }
   @media screen and (max-width: 768px) {
