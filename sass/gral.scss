@@ -106,7 +106,7 @@
 			margin-bottom: 2em;
 		}
 		ul{
-			padding: 3em 0 0 1em;
+			
 			li{
 				list-style: circle;
 				color: #ffffff;
@@ -130,7 +130,7 @@
 		.descripcion{
 			width:100%;
 			padding-left:0;
-			padding:0 3em;
+			padding:0 2em;
 			margin-top: 2em;
 			h2::after{
 				top: 3.5em;
@@ -145,6 +145,9 @@
 			}
 			p{
 				margin-top: 2em;
+			}
+			ul{
+				padding-left: 2em;
 			}
 		}
 
@@ -162,6 +165,9 @@
 	@media screen and (min-width: 901px){
 		.descripcion{
 			width: 60%;
+			ul{
+				padding: 1em 0 0 1em;
+			}
 		}
 	}
 }
@@ -471,6 +477,9 @@
 	 clear: both;
 
     /*display: inline-block;*/
+    p{
+    	font-size: 22px;
+    }
 	.icon{
 		img{
 			max-width: 40px;
@@ -479,8 +488,9 @@
 	h2{
 		position: relative;
 	    padding: 11px 0;
-	    font-size: 18px;
+	    font-size: 22px;
 	    font-weight: 700;
+	    margin-bottom: 2em;
 		&:after{
 			content: '\00a0';
 		    width: 20%;
@@ -488,7 +498,7 @@
 		    background: #4A90E2;
 		    position: absolute;
 		    left: 0;
-		    bottom: 0;
+		    bottom: -10px;
 		}
 	}
 	.txt-container{
@@ -514,9 +524,8 @@
 	}
 }
 .content-table{
-	display: table;
 	.content-row{
-		display: table-row;
+		display: inline-flex;
 		.column{
 			
 			background: #1F62C5;
@@ -537,7 +546,7 @@
 	}
 	@media screen and (min-width: 1024px){
 		.descript{
-			padding: 0 5em;
+			padding: 5em;
 		}
 		.column{
 			display: table-cell;
@@ -612,12 +621,26 @@
 		}
 	}
 }
+
+/*DESKTOP*/
+@media screen and (min-width: 768px){
+	.slide-tablero{
+		img{
+			width: 100%;
+		}
+	}
+}
 /*MOBILE*/
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
 	.hide-txt-mob{
 		ul{
 			display: none;
 		}
 	}
+	.slide-tablero{
+	img{
+		height: 100%!important;
+	}
+}
 }
 

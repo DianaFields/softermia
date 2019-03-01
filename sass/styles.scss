@@ -624,6 +624,7 @@
 													.logo-head{
 														height: 50px;
 														line-height: 50px;
+														z-index: 99;
 													}
 												
 											
@@ -1234,7 +1235,7 @@
 				p{
 					color: #fff;
 					width: 75%;
-					font-size: 1.3em;
+					font-size: 20px;
 					line-height: 2em;
 					text-align: center;
 					margin: 0 auto;
@@ -1304,18 +1305,18 @@
 				.descript{
 					background:rgba(256, 256, 256, .7);
 					margin:2.5em 0 0 -5em;
-					padding: 3em;
-					font-size: 1.1em;
 					font-family: 'Open Sans', sans-serif;
-					text-align: justify;
+					text-align: left;
 					line-height:1.8em;
 					@media screen and (min-width: 768px){
 						margin:2.5em 0 0 -4em;
 						padding: 2em;
+						font-size: 18px;
 					}
 					@media screen and (max-width: 767px){
 						margin:0;
 						padding:1em;
+						font-size: 18px;
 					}
 				}
 			}
@@ -1355,11 +1356,21 @@
 					background:rgba(256, 256, 256, .7);
 					z-index: 99;
 					margin:2.5em -5em 0 0;
-					padding: 2em;
-					font-size: 1.1em;
 					font-family: 'Open Sans', sans-serif;
-					text-align: justify;
+					text-align: left;
 					line-height:1.8em;
+				}
+				@media screen and (min-width: 768px){
+					.descript{
+						font-size: 18px;
+						padding: 2em;
+					}
+				}
+				@media screen and (max-width: 767px){
+					.descript{
+						font-size: 16px;
+						padding: 1em;
+					}
 				}
 			}
 			.galeria{
@@ -2031,19 +2042,10 @@
 								}
 							}
 							p{
-								margin-top: 2em;
-								font-size: 15px;
+								margin-top: 3em;
+								font-size: 16px;
 							}
-							&:after{
-								content:'\00a0';
-								width:1px;
-								background: #ffffff;
-								height: 300px;
-								position: absolute;
-								right: 0;
-								top: 1em;
-								bottom: 0;
-							}
+							
 						}
 						ul{
 							li{
@@ -2443,7 +2445,7 @@
 									}
 								}
 								p{
-									font-size: 15px;
+									font-size: 16px;
 									margin-top: 2em;
 								}
 
@@ -3454,6 +3456,7 @@
 				text-align: left;
 				padding: 4em;
 				p{
+					font-size: 18px;
 				}
 			}
 			h3{
