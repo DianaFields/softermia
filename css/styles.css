@@ -338,7 +338,7 @@ body {
       body .menu-expand-opt #prod .dropdown-menu {
         width: 100%;
         right: 0;
-        padding: 2em 1em;
+        padding: 3em 1em;
         left: inherit;
         border-radius: 0; }
       @media only screen and (min-width: 650px) and (max-width: 1024px) {
@@ -347,15 +347,13 @@ body {
     body .menu-expand-opt .services div {
       padding: 0; }
     body .menu-expand-opt .services li {
-      text-align: center;
-      padding: 1em 2em;
+      padding: 2em;
       font-size: 16px;
       color: #333;
       line-height: initial; }
       body .menu-expand-opt .services li div {
         width: 70px;
         height: 70px;
-        margin: 0 auto;
         margin-bottom: 2em;
         border-bottom: 2px solid #4FB0E5;
         cursor: pointer; }
@@ -409,7 +407,7 @@ body {
           vertical-align: top; }
           body .menu-expand-opt .products li .logo-sub img {
             margin: 2em 0;
-            width: 70%; }
+            width: 50%; }
           body .menu-expand-opt .products li .logo-sub p {
             margin: 0 0 3em 0;
             line-height: initial;
@@ -975,7 +973,8 @@ body {
         body #historia .imagen {
           height: 300px; } }
     body #historia .descript {
-      background: rgba(255, 255, 255, 0.7);
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.07);
       margin: 2.5em 0 0 -5em;
       font-family: 'Open Sans', sans-serif;
       text-align: left;
@@ -1062,7 +1061,8 @@ body {
       font-size: 16px;
       line-height: 22px;
       position: relative;
-      padding: 1em;
+      margin: 0;
+      padding: 1em 2em;
       height: 100%; }
     body .galeria .project .portfolio-caption .text-muted {
       margin-top: 2em; }
@@ -1264,10 +1264,7 @@ body {
     display: block; }
   body #clientes {
     clear: both;
-    top: 6em;
-    bottom: 6em;
-    position: relative;
-    height: 650px; }
+    position: relative; }
     body #clientes .logo div {
       height: 90px;
       width: 90%;
@@ -2662,7 +2659,7 @@ body {
     padding-top: 7em; } }
 #humiklima .isotermicos .descript {
   margin: 2.5em 0 0 -4em;
-  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.09); }
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.07); }
   #humiklima .isotermicos .descript h3 {
     text-align: left; }
 #humiklima .adiabaticos .descript {
@@ -2718,6 +2715,9 @@ body {
     padding: 1em 0;
     border-bottom: 1px solid #D1D1D1;
     cursor: pointer; }
+    .clientes .card-header button {
+      white-space: normal;
+      padding-right: 2em; }
   .clientes h4 {
     color: #4A4A4A;
     display: initial; }
@@ -3132,6 +3132,32 @@ body {
     width: 100%;
     left: 0; }
 
+.cta-slide-home-w {
+  width: 130px;
+  line-height: 45px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: .3s;
+  border: 1px solid #ffffff;
+  background: none;
+  cursor: pointer;
+  color: #ffffff;
+  margin-top: 3em; }
+  .cta-slide-home-w:after {
+    content: '\00a0';
+    position: absolute;
+    transition: .3s;
+    content: '';
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    height: 3px;
+    background: #ffffff; }
+  .cta-slide-home-w:hover:after {
+    width: 100%;
+    left: 0; }
+
 #carel .logo {
   text-align: center;
   padding: 2em 0; }
@@ -3163,7 +3189,8 @@ body {
     display: none; }
 
   .slide-tablero img {
-    height: 100% !important; } }
+    height: 100% !important;
+    max-width: inherit !important; } }
 .help {
   color: #51bfeb;
   font-weight: 800;

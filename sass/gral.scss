@@ -17,6 +17,11 @@
 		padding: 1em 0;
 		border-bottom: 1px solid #D1D1D1;
 		cursor: pointer;
+		button{
+			white-space: normal;
+			padding-right: 2em;
+		}
+		
 	}
 	h4{
 		color: #4A4A4A;
@@ -583,6 +588,36 @@
     	}
     }
 }
+.cta-slide-home-w{
+	width: 130px;
+    line-height: 45px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: .3s;
+    border: 1px solid #ffffff;
+    background: none;
+    cursor: pointer;
+    color: #ffffff;
+    margin-top: 3em;
+    &:after{
+    		content:'\00a0';
+    	    position: absolute;
+		    transition: .3s;
+		    content: '';
+		    width: 0;
+		    left: 50%;
+		    bottom: 0;
+		    height: 3px;
+		    background: #ffffff;
+    }
+    &:hover{
+    	&:after{
+    		width: 100%;
+    		left: 0;
+    	}
+    }
+}
 #carel{
 	.logo{
 		text-align: center;
@@ -640,6 +675,7 @@
 	.slide-tablero{
 	img{
 		height: 100%!important;
+		max-width: inherit!important;
 	}
 }
 }

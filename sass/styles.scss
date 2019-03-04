@@ -370,7 +370,7 @@
 												.dropdown-menu{
 													width: 100%;
 													right: 0;
-													padding:2em 1em;
+													padding:3em 1em;
 													left: inherit;
 													border-radius: 0;
 													
@@ -384,15 +384,13 @@
 													padding: 0;
 												}
 												li{
-													text-align: center;
-													padding: 1em 2em;
+													padding:2em;
 													font-size: 16px;
 													color: #333;
 													line-height: initial;
 													div{
 														width: 70px;
 													    height: 70px;
-													    margin: 0 auto;
 													    margin-bottom: 2em;
 													    border-bottom: 2px solid #4FB0E5;
 													    cursor: pointer;
@@ -462,7 +460,7 @@
 														vertical-align: top;
 														img{
 															margin: 2em 0;
-															width: 70%;
+															width: 50%;
 														}
 														p{
 															margin: 0 0 3em 0;
@@ -1303,7 +1301,8 @@
 					}
 				}
 				.descript{
-					background:rgba(256, 256, 256, .7);
+					background:rgba(256, 256, 256, .9);
+					box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.07);
 					margin:2.5em 0 0 -5em;
 					font-family: 'Open Sans', sans-serif;
 					text-align: left;
@@ -1414,7 +1413,8 @@
 							font-size: 16px;
 							line-height: 22px;
 							position: relative;
-							padding: 1em;
+							   margin: 0;
+    						padding: 1em 2em;
 							height: 100%;
 							
 						}
@@ -1694,10 +1694,7 @@
 			/*GALERÍA*/
 			#clientes{
 				clear: both;
-				top: 6em;
-				bottom: 6em;
 				position: relative;
-				height: 650px;
 				:nth-child(2){
 				}
 				:nth-child(3){
@@ -3506,7 +3503,7 @@
 		.isotermicos{
 			.descript{
 				margin: 2.5em 0 0 -4em;
-				box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.09);
+				box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.07);
 				h3{
 					text-align: left;
 				}
