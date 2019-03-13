@@ -258,7 +258,7 @@ if(scrollTop > lastScreen){
 	$('.screen-03').css('position','inherit');
 	$('.pgd').css('margin-top','135em');
 	$('.screen-03').css('opacity','0');
-	$('#pgd-main').css('height','3000px');
+	$('#pgd-main').css('height','3500px');
 }
 if(scrollTop < lastScreen & scrollTop > firstScreen){
 	$('.pgd').css('position','fixed');

@@ -1973,7 +1973,7 @@ body {
         margin: 0 auto;
         left: calc(60% - 30%);
         position: inherit;
-        top: 12.8em;
+        top: 13.8em;
         transition: all 1s ease-in-out;
         -webkit-transition-timing-function: all 1s ease-in-out;
         -moz-transition: all 1s ease-in-out;
@@ -2412,7 +2412,7 @@ body {
 #secondScreen {
   width: 100%;
   height: 2px;
-  top: 400em;
+  top: 425em;
   position: absolute; }
 
 #thirdScreen {
