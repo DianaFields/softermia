@@ -26,15 +26,25 @@
 			<ul>
 				<!-- <li><a href="#">Infraestructura<span></span></a></li> -->
 				<li><a href="/#galeria">Proyectos<span></span></a></li>
-				<li class="dropdown">
+				<li data-toggle="collapse" data-target="#dropBrochure" aria-expanded="false" aria-controls="dropBrochure">
+					<a>Catálogos</a>
+				</li>
+				<div id="dropBrochure" class="collapse" aria-labelledby="headingTre" data-parent="#accordion">
+					<ul>
+						<li>unoi</li>
+						<li>unoi</li>
+						<li>unoi</li>
+					</ul>
+				</div>
+				<!-- <li class="dropdown">
 					 <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catálogos</a>
 
 					<div class="dropdown-menu" id="drop-brochures">
 					    <a class="dropdown-brochure" href="../brochures/softermia-brochure.pdf" target="_blank">Softermia</a>
 					   	<a class="dropdown-brochure" href="../brochures/microklima-brochure-low.pdf" target="_blank">Microklima</a>
 					    <a class="dropdown-brochure" href="../brochures/humiklima-brochure-low.pdf" target="_blank">Humiklima</a>
-  </div>
-			</li>
+  					</div>
+				</li> -->
 
 				<li><a href="#" data-toggle="modal" data-target="#myModal">Aviso de privacidad<span></span></a></li>
 			</ul>

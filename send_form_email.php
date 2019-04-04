@@ -3,7 +3,7 @@
     $email = $_POST['email'];
     $message = $_POST['message'];
     $from = 'From:Softermia.com';
-    $to = 'di.disegno@gmail.com';
+    $to = 'ventas@softermia.com.mx';
     $subject = 'Nuevo mensaje de softermia.com';
     $human = $_POST['human'];
 
@@ -11,17 +11,16 @@
 
     if ($_POST['submit']) {
         if (mail ($to, $subject, $body, $from)) {
-        echo '<div style="text-align:center;"><img style="    max-width: 500px;
-    margin-top: 5em;"src="img/answer.png"><a href="index.html" style="    width: 150px;
+        echo '<div style="text-align:center; padding-top:3em; font-family:Open Sans;">
+        <h2>¡Gracias por contactarnos!</h2>
+        <p>Muy pronto nos pondremos en contacto contigo</p>
+        <a href="index.html" style="    width: 150px;
     height: 44px;
-    border-radius: 21px;
-    border: solid 1px #3c12ff;
-    background: none; display:block;margin:0 auto; margin-top:3em; text-align:center;line-height: 44px;
+    background: #4FB0E5; display:block;margin:0 auto; margin-top:3em; text-align:center;line-height: 44px;
     text-decoration: none;
     font-family: sans-serif;
-    border-radius: 21px;
-    color: #3c12ff;
-    font-weight: 800;">GO BACK</a></div>';
+    border-radius:3px;
+    color: #ffffff;">Regresar</a></div>';
     } else {
         echo '<p>Something went wrong, go back and try again!</p>';
     }
