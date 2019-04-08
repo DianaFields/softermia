@@ -3,16 +3,15 @@
 		max-height: 80px;
 		width: auto;
 	}
-	
+
 }
 .carousel-control{
 	background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,.0001) 100%)!important;
-	/*opacity: .3!important;*/
 }
 /*home*/
 .clientes{
 	font-family: 'Open Sans', sans-serif;
-	
+
 	.card-header{
 		padding: 1em 0;
 		border-bottom: 1px solid #D1D1D1;
@@ -21,13 +20,13 @@
 			white-space: normal;
 			padding-right: 2em;
 		}
-		
+
 	}
 	h4{
 		color: #4A4A4A;
 		display: initial;
 	}
-	
+
 	button{
 		position: relative;
 	    width: 100%;
@@ -54,9 +53,9 @@
 	}
 	.collapsed{
 		&:after{
-			
+
 			    transform:rotate(0);
-			    	
+
 		}
 	}
 			&:focus{
@@ -104,14 +103,14 @@
 				width: 7%;
 			}
 		}
-		p{    
+		p{
 			font-size: 1.3em;
 			line-height: 1.6em;
 			color: #fff;
 			margin-bottom: 2em;
 		}
 		ul{
-			
+
 			li{
 				list-style: circle;
 				color: #ffffff;
@@ -127,7 +126,7 @@
 		.descripcion{
 			ul{
 			}
-			
+
 		}
 
 	}
@@ -183,7 +182,7 @@
 		}
 
 	}
-	
+
 }
 /*CARROUSEL*/
 .carousel-inner{
@@ -191,9 +190,6 @@
 		height: 500px;
 		@media screen and (min-width: 1024px){
 			height: 600px;
-			/*img{
-				width: 100%;
-			}*/
 		}
 	}
 	.inner-slider{
@@ -277,15 +273,14 @@
 .texture-dotes{
 	padding-top: 5em;
 							clear: both;
-							/*height: 2970px;*/
-							background: #fff;  
-							background: -moz-radial-gradient(center, ellipse cover,  #fff 0%, #fff 90%, #f2f2f2 100%);  
-							background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#fff), color-stop(70%,#fff), color-stop(100%,#f2f2f2));  
-							background: -webkit-radial-gradient(center, ellipse cover,  #fff 0%,#fff 70%,#f2f2f2 100%);  
-							background: -o-radial-gradient(center, ellipse cover,  #fff 0%,#fff 70%,#f2f2f2 100%);  
-							background: -ms-radial-gradient(center, ellipse cover,  #fff 0%,#fff 70%,#f2f2f2 100%);  
-							background: radial-gradient(ellipse at center,  #fff 0%,#fff 70%,#f2f2f2 100%); 
-							background-size: 10px 10px;  
+							background: #fff;
+							background: -moz-radial-gradient(center, ellipse cover,  #fff 0%, #fff 90%, #f2f2f2 100%);
+							background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#fff), color-stop(70%,#fff), color-stop(100%,#f2f2f2));
+							background: -webkit-radial-gradient(center, ellipse cover,  #fff 0%,#fff 70%,#f2f2f2 100%);
+							background: -o-radial-gradient(center, ellipse cover,  #fff 0%,#fff 70%,#f2f2f2 100%);
+							background: -ms-radial-gradient(center, ellipse cover,  #fff 0%,#fff 70%,#f2f2f2 100%);
+							background: radial-gradient(ellipse at center,  #fff 0%,#fff 70%,#f2f2f2 100%);
+							background-size: 10px 10px;
 }
 .carel-mapa{
 			width: 40%;
@@ -334,7 +329,7 @@
 
 		}
 	}
-	.slide-humiklima{ 
+	.slide-humiklima{
 		.hk-01{
 			width: 500px;
 			height: 500px;
@@ -385,7 +380,7 @@
 
 
 		}
-		
+
 		video{
 			width: 100%;
 			margin-top: -5em;
@@ -510,7 +505,7 @@
 		padding: 2em;
 	}
 	.img-container{
-		
+
 		img{
 			width: 100%;
 		}
@@ -532,7 +527,7 @@
 	.content-row{
 		display: inline-flex;
 		.column{
-			
+
 			background: #1F62C5;
 			img{
 				width: 100%;
@@ -542,7 +537,7 @@
 			    font-size: 16px;
 			}
 		}
-		
+
 	}
 	@media screen and (max-width: 1023px){
 		.descript{
@@ -648,7 +643,7 @@
 				font-size: 18px;
 			}
 		}
-		
+
 	}
 	@media screen and (max-width: 768px){
 		.carel-list{
@@ -679,4 +674,3 @@
 	}
 }
 }
-

@@ -1,0 +1,3428 @@
+/*hola*/
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.33); }
+  80%, 100% {
+    opacity: 0; } }
+@keyframes pulse-dot {
+  0% {
+    transform: scale(0.8); }
+  50% {
+    transform: scale(1); }
+  100% {
+    transform: scale(0.8); } }
+body {
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  /*LOADER*/
+  			/*#servicios{
+  				padding:0;
+  				clear: both;
+  				.servicio{
+  					height: 300px;
+  					text-align: center;
+  					padding: 2em;
+  					box-sizing: border-box;
+  					p{
+  						width: 80%;
+  						margin: 0 auto;
+  						font-size: 17px;
+  					}
+  					div{
+  						width: 70px;
+  						height: 70px;
+  						margin: 0 auto;
+  						margin-bottom: 2em;
+  						border-bottom: 2px solid #4FB0E5;
+  						cursor: pointer;
+  					}
+  				}
+  				@media screen and (max-width: 414px){
+  					padding-bottom:3em;
+  					.servicio{
+  						padding:0;
+  						height:auto;
+  						margin-top: 2em;
+  					}
+  				}
+  
+  
+  
+  
+  
+  				.disenio{
+  
+  					div{
+  						background:url('../images/icons/disenio.png')no-repeat 19px 18px;
+  						background-size: 40%;
+  					}
+  				}
+  				.desarrollo{
+  					div{
+  						background:url('../images/icons/software.png')no-repeat 19px 18px;
+  						background-size: 40%;
+  					}
+  				}
+  				.manufactura{
+  					div{
+  						background:url('../images/icons/manufacture.png')no-repeat 19px 18px;
+  						background-size: 40%;
+  					}
+  				}
+  				.instalacion{
+  					div{
+  						background:url('../images/icons/valv.png')no-repeat 19px 18px;
+  						background-size: 40%;
+  					}
+  				}
+  				.venta{
+  					div{
+  						background:url('../images/icons/carel.png')no-repeat 11px 30px;
+  						background-size: 60%;
+  					}
+  				}
+  				.sistemas{
+  					div{
+  						background:url('../images/icons/digital.png')no-repeat 26px 18px;
+  						background-size: 26%;
+  					}
+  				}
+  
+  			}*/
+  /*FOOTER*/
+  /*MAP*/
+  /*GALERIA*/
+  /*MICROKLIMA*/ }
+  body .gral-content {
+    max-width: 1700px;
+    margin: 0 auto; }
+  body h2 {
+    font-family: 'Open Sans', sans-serif; }
+  body h3 {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    font-weight: 700; }
+  body .space {
+    width: 100%;
+    height: 150px;
+    display: block;
+    clear: both; }
+    @media screen and (min-width: 1300px) {
+      body .space {
+        height: 300px; } }
+  body .space-min {
+    width: 100%;
+    height: 50px;
+    display: block;
+    clear: both; }
+    @media screen and (min-width: 1300px) {
+      body .space-min {
+        height: 100px; } }
+  body .subtit {
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-bottom: 2em; }
+    @media screen and (max-width: 768px) {
+      body .subtit {
+        padding: 0;
+        /*text-align: center;*/ } }
+  body .title {
+    font-weight: 700; }
+  body #load {
+    position: relative;
+    margin: 50px auto;
+    width: 100px;
+    height: 80px;
+    margin-top: 20%;
+    text-align: center; }
+    body #load p {
+      color: #999;
+      font-size: 18px;
+      padding-top: 95%;
+      padding-left: 15px; }
+  body #microklima .logo, body #humiklima .logo {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    text-align: center; }
+    body #microklima .logo img, body #humiklima .logo img {
+      width: 70%; }
+  body .gear {
+    left: 17%;
+    position: absolute;
+    z-index: -10;
+    width: 40px;
+    height: 40px;
+    animation: spin 5s infinite; }
+  body .three {
+    top: 28px;
+    left: 40%;
+    width: 60px;
+    height: 60px; }
+@keyframes spin {
+  50% {
+    transform: rotate(360deg); } }
+@keyframes spin-reverse {
+  50% {
+    transform: rotate(-360deg); } }
+  body .carousel {
+    height: 600px; }
+    @media only screen and (max-width: 1024px) {
+      body .carousel {
+        margin-top: 100px; } }
+    @media only screen and (min-width: 1024px) {
+      body .carousel {
+        margin-top: 7.1em; } }
+    @media screen and (min-width: 1024px) {
+      body .carousel {
+        height: 500px; }
+        body .carousel .carousel-inner {
+          height: 100%; } }
+  body .backtop {
+    width: 60px;
+    height: 60px;
+    line-height: 55px;
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    z-index: 99;
+    background: #fff;
+    border-radius: 50%;
+    border: 2px solid #4FB0E5;
+    opacity: 0;
+    text-align: center;
+    cursor: pointer; }
+    body .backtop:after {
+      content: "\e113";
+      font-family: 'Glyphicons Halflings';
+      color: #999;
+      font-size: 1.5em; }
+  body nav {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 0;
+    padding: 0;
+    margin-bottom: 0;
+    width: 100%;
+    margin: 0 auto; }
+    body nav .menu {
+      height: 100%;
+      max-width: 1550px;
+      margin: 0 auto; }
+      body nav .menu .options {
+        width: 70%;
+        text-align: right;
+        float: right;
+        height: 100%;
+        padding-right: 4em; }
+        body nav .menu .options .dropdownProd {
+          width: 15%;
+          display: inline-block;
+          cursor: pointer;
+          color: #41439C;
+          font-size: 1.2em; }
+      body nav .menu .products li .logo-sub {
+        width: 60% !important;
+        margin: 0;
+        vertical-align: top; }
+        body nav .menu .products li .logo-sub img {
+          height: 90px;
+          margin: 2em 0; }
+        body nav .menu .products li .logo-sub p {
+          margin: 0 0 3em 0; }
+    body nav a {
+      display: inline-block;
+      text-decoration: none;
+      color: #41439C;
+      position: relative;
+      cursor: pointer; }
+      body nav a:hover > span {
+        width: 65%; }
+      body nav a span {
+        width: 0;
+        height: 3px;
+        background: #4EB0E5;
+        position: absolute;
+        left: 1.5em;
+        transition: all 1s ease-in-out;
+        -webkit-transition-timing-function: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out; }
+      body nav a img {
+        width: 100%; }
+    body nav .logo {
+      height: 70px; }
+      @media screen and (min-width: 1300px) {
+        body nav .logo {
+          background-size: 70%; } }
+      body nav .logo img {
+        width: 90%;
+        margin: 1.5em 0; }
+    body nav .item {
+      width: 15%;
+      text-decoration: none;
+      font-size: 1.2em;
+      text-align: center; }
+    @media screen and (max-width: 600px) {
+      body nav .nav-collapse {
+        height: 50px; }
+      body nav .menu-expand-opt {
+        line-height: 50px;
+        height: 50px; }
+      body nav .menu-expand-opt .options {
+        display: none; } }
+    @media screen and (max-width: 767px) {
+      body nav .item {
+        line-height: 50px; } }
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      body nav {
+        padding: 0 1em; }
+        body nav .item {
+          width: 22%;
+          line-height: 50px; } }
+  body .nav-expand .item span {
+    bottom: 1.5em; }
+  @media screen and (min-width: 1025px) {
+    body .nav-expand .item {
+      line-height: 100px; } }
+  @media only screen and (min-height: 768px) and (max-width: 1024px) {
+    body .nav-expand {
+      line-height: 100px; } }
+  @media screen and (max-width: 767px) {
+    body .nav-expand {
+      max-height: 50px; } }
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    body .nav-expand .options {
+      line-height: 100px; } }
+  body .menu-expand-opt {
+    max-width: 1550px;
+    margin: 0 auto;
+    /*ok*/ }
+    body .menu-expand-opt .options {
+      width: 70%;
+      text-align: right;
+      float: right;
+      height: 100%;
+      padding-right: 4em; }
+      body .menu-expand-opt .options .prod {
+        height: 100%; }
+        body .menu-expand-opt .options .prod:hover > ul {
+          opacity: 1; }
+    body .menu-expand-opt #prod {
+      width: 15%;
+      display: inline-block;
+      cursor: pointer;
+      color: #41439C;
+      font-size: 1.2em;
+      text-align: center; }
+      body .menu-expand-opt #prod .dropdow-toggle {
+        display: inline-flex;
+        line-height: 100%; }
+        body .menu-expand-opt #prod .dropdow-toggle:after {
+          content: "\00a0";
+          background-image: url(../images/icons/arrow-down.svg);
+          background-repeat: no-repeat;
+          background-position: 50%;
+          background-size: 60%;
+          font-family: 'Glyphicons Halflings';
+          width: 20px;
+          height: 20px;
+          color: #41439C;
+          font-size: 12px;
+          margin-left: 5px; }
+      body .menu-expand-opt #prod .dropdown-menu {
+        width: 100%;
+        right: 0;
+        padding: 3em 1em;
+        left: inherit;
+        border-radius: 0; }
+      @media only screen and (min-width: 650px) and (max-width: 1024px) {
+        body .menu-expand-opt #prod {
+          width: 25%; } }
+    body .menu-expand-opt .services div {
+      padding: 0; }
+    body .menu-expand-opt .services li {
+      padding: 2em;
+      font-size: 16px;
+      color: #333;
+      line-height: initial; }
+      body .menu-expand-opt .services li div {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 2em;
+        border-bottom: 2px solid #4FB0E5;
+        cursor: pointer; }
+    body .menu-expand-opt .services .disenio div {
+      background: url(../images/icons/disenio.png) no-repeat 11px 14px;
+      background-size: 70%; }
+    body .menu-expand-opt .services .desarrollo div {
+      background: url(../images/icons/software.png) no-repeat 13px 18px;
+      background-size: 60%; }
+    body .menu-expand-opt .services .manufactura div {
+      background: url(../images/icons/manufacture.png) no-repeat 9px 15px;
+      background-size: 70%; }
+    body .menu-expand-opt .services .instalacion div {
+      background: url("../images/icons/valv.png") no-repeat 9px 15px;
+      background-size: 70%; }
+    body .menu-expand-opt .services .venta div {
+      background: url("../images/icons/carel.png") no-repeat 11px 30px;
+      background-size: 60%; }
+    body .menu-expand-opt .services .sistema div {
+      background: url("../images/icons/digital.png") no-repeat 15px 18px;
+      background-size: 65%; }
+    body .menu-expand-opt .products {
+      width: 100%;
+      height: auto;
+      padding: 1em 0;
+      background: #fff;
+      box-shadow: 2px 2px 15px #c2c2c2;
+      transition: all 200ms ease-in-out;
+      -webkit-transition-timing-function: all 1s ease-in-out;
+      -moz-transition: all 200ms ease-in-out;
+      -ms-transition: all 200ms ease-in-out;
+      -o-transition: all 200ms ease-in-out; }
+      body .menu-expand-opt .products li {
+        display: inline-block;
+        cursor: pointer;
+        padding: 1em 2em; }
+        body .menu-expand-opt .products li h3 {
+          font-size: 16px;
+          text-align: left;
+          padding: 3em 0; }
+        body .menu-expand-opt .products li div {
+          display: inline-block; }
+        body .menu-expand-opt .products li .image-prod {
+          width: 34%;
+          margin-top: 5em; }
+          body .menu-expand-opt .products li .image-prod img {
+            width: 100%; }
+        body .menu-expand-opt .products li .logo-sub {
+          width: 60% !important;
+          margin: 0;
+          vertical-align: top; }
+          body .menu-expand-opt .products li .logo-sub img {
+            margin: 2em 0;
+            width: 50%; }
+          body .menu-expand-opt .products li .logo-sub p {
+            margin: 0 0 3em 0;
+            line-height: initial;
+            height: 100px; }
+        body .menu-expand-opt .products li a {
+          width: 130px;
+          line-height: 45px;
+          text-align: center;
+          position: relative;
+          overflow: hidden;
+          transition: .3s;
+          border: 1px solid #4FB0E5;
+          background: none;
+          cursor: pointer;
+          color: #4FB0E5; }
+          body .menu-expand-opt .products li a:after {
+            position: absolute;
+            transition: .3s;
+            content: '';
+            width: 0;
+            left: 50%;
+            bottom: 0;
+            height: 3px;
+            background: #4FB0E5;
+            position: absolute;
+            transition: .3s;
+            content: '';
+            width: 0;
+            left: 50%;
+            bottom: 0;
+            height: 3px;
+            background: #4FB0E5; }
+          body .menu-expand-opt .products li a:hover {
+            text-decoration: none;
+            background: none; }
+            body .menu-expand-opt .products li a:hover:after {
+              width: 100%;
+              left: 0; }
+            body .menu-expand-opt .products li a:hover:nth-of-type(4):after {
+              top: calc(100% - 3px); }
+      body .menu-expand-opt .products:first-child {
+        background: #f2f2f2; }
+      body .menu-expand-opt .products:nth-child(3) {
+        background: #f2f2f2; }
+  body nav .menu-expand-opt .logo-head {
+    transition: all 300ms ease-in-out;
+    width: 60%;
+    margin-left: 1em;
+    position: relative; }
+    body nav .menu-expand-opt .logo-head:before {
+      transition: all 3s;
+      content: '\00a0';
+      width: 20%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: url("../images/imagotipo.png") no-repeat;
+      background-position: 50%;
+      background-size: 60%; }
+    body nav .menu-expand-opt .logo-head:after {
+      content: '\00a0';
+      width: 80%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      background: url("../images/logo-softermia-txt.png") no-repeat;
+      background-position: 50%;
+      background-size: contain; }
+  body nav .menu-expand-opt .imagotipo {
+    width: 40px;
+    margin: .5em 0 0 4.5em; }
+    body nav .menu-expand-opt .imagotipo img {
+      width: 100%; }
+  @media screen and (max-width: 1024px) {
+    body nav .menu-expand-opt .imagotipo {
+      display: none; } }
+  @media screen and (min-width: 1024px) {
+    body nav .menu-expand-opt .logo-head {
+      width: 18%;
+      height: 100%;
+      margin: 0 0 0 4em;
+      position: absolute;
+      left: 0;
+      top: 0; }
+      body nav .menu-expand-opt .logo-head img {
+        width: 100%; } }
+  @media only screen and (min-width: 650px) and (max-width: 1023px) {
+    body nav .menu-expand-opt .dropdown {
+      display: none; } }
+  @media only screen and (min-width: 500px) and (max-width: 1023px) {
+    body nav .menu-expand-opt .logo-head {
+      width: 25%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0; }
+      body nav .menu-expand-opt .logo-head img {
+        width: 100%; } }
+  @media only screen and (min-width: 360px) and (max-width: 499px) {
+    body nav .menu-expand-opt .logo-head {
+      height: 50px;
+      line-height: 50px; } }
+  @media screen and (min-width: 1024px) {
+    body nav .logo-head {
+      height: 100px;
+      line-height: 100px; } }
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    body nav .menu-expand-opt .logo-head {
+      /*height: 100px;*/
+      line-height: 100px; } }
+  @media screen and (max-width: 767px) {
+    body nav .logo-head {
+      height: 50px;
+      line-height: 50px;
+      z-index: 99; } }
+  body .nav-collapse {
+    height: 50px;
+    transition: all 300ms ease-in-out;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05); }
+    body .nav-collapse div .options {
+      width: 70%;
+      text-align: right;
+      float: right;
+      padding-right: 4em; }
+      body .nav-collapse div .options #prod {
+        display: inline-block;
+        cursor: pointer;
+        color: #41439C;
+        font-size: 1.2em;
+        text-align: center; }
+        body .nav-collapse div .options #prod:hover > ul {
+          opacity: 1; }
+        body .nav-collapse div .options #prod .dropdow-toggle {
+          display: inline-flex; }
+      body .nav-collapse div .options .item span {
+        bottom: 0.5em; }
+    body .nav-collapse .logo-head {
+      width: 18%;
+      height: 100%;
+      margin: 1em 0 0 4em;
+      position: absolute;
+      left: 0;
+      top: 0; }
+      body .nav-collapse .logo-head:before {
+        content: '\00a0';
+        width: 12%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        background: url("../images/imagotipo.png") no-repeat;
+        background-size: contain; }
+      body .nav-collapse .logo-head:after {
+        display: none; }
+    @media only screen and (max-width: 767px) {
+      body .nav-collapse .logo-head {
+        margin: 0;
+        width: 10%; }
+        body .nav-collapse .logo-head:before {
+          width: 80%;
+          height: 50px; } }
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      body .nav-collapse .logo-head {
+        margin: 0; }
+        body .nav-collapse .logo-head:before {
+          width: 20%;
+          background-position: 50%;
+          margin-left: 1em; } }
+    @media screen and (min-width: 1025px) {
+      body .nav-collapse .menu-expand-opt .options {
+        height: 50px;
+        line-height: 50px; } }
+  @media only screen and (min-width: 769px) and (max-width: 1023px) {
+    body .carousel {
+      margin-top: 8em; }
+    body nav .menu {
+      padding: 1em 3em;
+      box-shadow: 0 -1px 24px #c2c2c2;
+      background: white; }
+      body nav .menu .logo {
+        width: 25%;
+        display: inline-block;
+        margin: 0 auto; } }
+  @media screen and (max-width: 600px) {
+    body .carousel {
+      margin-top: 50px; }
+    body .nav-collapse {
+      height: 50px; }
+      body .nav-collapse .imagotipo {
+        height: 50px;
+        line-height: 50px;
+        margin-left: 10px; }
+    body nav .menu {
+      background: rgba(255, 255, 255, 0.3);
+      padding-left: 10px; }
+      body nav .menu .logo {
+        width: 53%;
+        height: 50px;
+        margin: 0;
+        z-index: 99; }
+      body nav .menu .options {
+        display: none; }
+    body nav .dropdown-expand {
+      height: 50px;
+      line-height: 50px; }
+    body nav .dropdown-collapse {
+      height: 50px;
+      line-height: 50px; }
+    body nav .dropdown {
+      height: 50px;
+      line-height: 50px;
+      width: 100%;
+      float: right;
+      position: absolute;
+      top: 0;
+      left: 0; }
+      body nav .dropdown .dropdown-toggle {
+        padding: 0;
+        color: #4FB0E5; }
+        body nav .dropdown .dropdown-toggle:before {
+          content: "\00a0";
+          background-image: url("../images/icons/hamburguer-menu.png");
+          background-size: cover;
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          right: 20px;
+          top: 5px;
+          transition: all 1s ease-in-out;
+          -webkit-transition-timing-function: all 1s ease-in-out;
+          -moz-transition: all 1s ease-in-out;
+          -ms-transition: all 1s ease-in-out;
+          -o-transition: all 1s ease-in-out; }
+      body nav .dropdown div {
+        width: 80px;
+        float: right;
+        padding: 10px 0;
+        text-align: center; }
+        body nav .dropdown div .shape {
+          height: 6px;
+          background: #4FB0E5;
+          display: block;
+          margin: 0 auto;
+          position: relative;
+          border-radius: 3px;
+          width: 32px;
+          margin-left: 56%;
+          margin-top: 5px; }
+      body nav .dropdown .dropdown-menu {
+        padding: 0 1em;
+        width: 100%;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.175); }
+        body nav .dropdown .dropdown-menu li {
+          text-align: center;
+          border-top: 1px solid #f2f2f2; }
+          body nav .dropdown .dropdown-menu li a {
+            height: 60px;
+            line-height: 60px;
+            font-size: 1.3em; }
+    body nav .open .dropdown-toggle:before {
+      /*content:"\e014";
+      font-family: 'Glyphicons Halflings';*/
+      font-size: 28px;
+      width: 40px;
+      height: 40px;
+      background: url("../images/icons/close-icon.png");
+      background-size: cover;
+      position: absolute;
+      right: 20px;
+      top: 5px; } }
+  @media only screen and (min-width: 401px) and (max-width: 600px) {
+    body .carousel {
+      margin-top: 70px;
+      max-height: 300px; }
+    body nav {
+      height: auto; }
+      body nav .menu .logo {
+        width: 45%;
+        height: 50px;
+        margin: 0 0 0 1em; } }
+    @media only screen and (min-width: 401px) and (max-width: 600px) and (min-width: 500px) {
+      body nav .menu .logo {
+        width: 35%; } }
+  @media only screen and (min-width: 401px) and (max-width: 600px) {
+      body nav .menu .options {
+        display: none; }
+      body nav .dropdown {
+        height: 50px;
+        width: 100%;
+        float: right;
+        position: absolute;
+        top: 0;
+        left: 0; }
+        body nav .dropdown div {
+          width: 100px;
+          float: right;
+          text-align: center; }
+          body nav .dropdown div .shape {
+            height: 6px;
+            background: #4FB0E5;
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            border-radius: 3px;
+            width: 32px;
+            margin-left: 56%;
+            margin-top: 5px; }
+        body nav .dropdown .dropdown-menu {
+          padding: 0 1em;
+          width: 100%;
+          border: none;
+          border-radius: inherit; }
+          body nav .dropdown .dropdown-menu li {
+            text-align: center;
+            border-top: 1px solid #f2f2f2; }
+            body nav .dropdown .dropdown-menu li a {
+              height: 60px;
+              line-height: 60px;
+              font-size: 1.3em; } }
+  @media only screen and (min-width: 601px) and (max-width: 768px) {
+    body nav .menu .logo {
+      width: 30%;
+      margin: 1em 0 0 1em; }
+    body nav .menu .options {
+      display: inline-block; }
+      body nav .menu .options .item {
+        width: 22%; } }
+  body .submenu {
+    height: 300px;
+    max-width: 1550px;
+    float: inherit;
+    margin: 0 auto; }
+    body .submenu li {
+      height: 200px;
+      list-style: none; }
+      body .submenu li div {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        line-height: 200px;
+        margin: 0 auto;
+        margin-top: 5em;
+        position: relative;
+        cursor: pointer; }
+      body .submenu li .microklima .logo, body .submenu li .humiklima .logo, body .submenu li .servicios .logo, body .submenu li .galeria .logo {
+        width: 90px;
+        height: 100px;
+        z-index: 99;
+        border-radius: 0; }
+      body .submenu li .microklima span, body .submenu li .humiklima span, body .submenu li .servicios span, body .submenu li .galeria span {
+        transition: all 1s ease-in-out;
+        -webkit-transition-timing-function: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out; }
+        body .submenu li .microklima span:before, body .submenu li .humiklima span:before, body .submenu li .servicios span:before, body .submenu li .galeria span:before {
+          text-align: center;
+          position: absolute;
+          top: -2.4em;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 700;
+          font-size: 1.4em;
+          line-height: 31px; }
+      body .submenu li .microklima {
+        background: #4FB0E5; }
+        body .submenu li .microklima span {
+          opacity: 0; }
+          body .submenu li .microklima span:before {
+            content: "Microklima";
+            width: 100%;
+            border-bottom: 2px solid #4FB0E5;
+            color: #4FB0E5; }
+          body .submenu li .microklima span:after {
+            content: '\00a0';
+            width: 0;
+            height: 0;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-top: 12px solid #4FB0E5;
+            position: absolute;
+            top: -1.1em;
+            margin-left: calc(100em - 96em); }
+        body .submenu li .microklima:hover > span {
+          opacity: 1;
+          margin-top: 10em; }
+        body .submenu li .microklima .logo {
+          background: url("../images/icons/logo-mk.png") no-repeat;
+          background-size: 100%;
+          top: 3.3em; }
+      body .submenu li .humiklima {
+        background: #4F7EC6; }
+        body .submenu li .humiklima span {
+          opacity: 0; }
+          body .submenu li .humiklima span:before {
+            content: "Humiklima";
+            width: 100%;
+            border-bottom: 2px solid #4F7EC6;
+            color: #4F7EC6; }
+          body .submenu li .humiklima span:after {
+            content: '\00a0';
+            width: 0;
+            height: 0;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-top: 12px solid #4F7EC6;
+            position: absolute;
+            top: -1.1em;
+            margin-left: calc(100em - 96em); }
+        body .submenu li .humiklima:hover > span {
+          opacity: 1;
+          margin-top: 10em; }
+        body .submenu li .humiklima .logo {
+          background: url("../images/icons/logo-hk.png") no-repeat;
+          background-size: 80%;
+          top: 2.3em;
+          left: .8em; }
+      body .submenu li .servicios {
+        background: #1B5BC2; }
+        body .submenu li .servicios span {
+          opacity: 0; }
+          body .submenu li .servicios span:before {
+            content: "Servicios";
+            width: 100%;
+            border-bottom: 2px solid #4F7EC6;
+            color: #4F7EC6; }
+          body .submenu li .servicios span:after {
+            content: '\00a0';
+            width: 0;
+            height: 0;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-top: 12px solid #4F7EC6;
+            position: absolute;
+            top: -1.1em;
+            margin-left: calc(100em - 96em); }
+        body .submenu li .servicios:hover > span {
+          opacity: 1;
+          margin-top: 10em; }
+        body .submenu li .servicios .logo {
+          background: url("../images/icons/logo-serv.png") no-repeat;
+          background-size: 65%;
+          top: 2.5em;
+          left: 1.4em; }
+      body .submenu li .galeria {
+        background: #05076B; }
+        body .submenu li .galeria .logo {
+          background: url(../images/icons/logo-gallery.png) no-repeat;
+          background-size: 55%;
+          top: 3.1em;
+          left: 1.5em; }
+        body .submenu li .galeria span {
+          opacity: 0; }
+          body .submenu li .galeria span:before {
+            content: "Galeria";
+            width: 100%;
+            border-bottom: 2px solid #05076B;
+            color: #05076B; }
+          body .submenu li .galeria span:after {
+            content: '\00a0';
+            width: 0;
+            height: 0;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-top: 12px solid #05076B;
+            position: absolute;
+            top: -1.1em;
+            margin-left: calc(100em - 96em); }
+        body .submenu li .galeria:hover > span {
+          opacity: 1;
+          margin-top: 10em; }
+    @media screen and (max-width: 767px) {
+      body .submenu {
+        height: 470px; } }
+    @media screen and (max-width: 600px) {
+      body .submenu .item {
+        height: auto; }
+        body .submenu .item .microklima, body .submenu .item .humiklima, body .submenu .item .servicios, body .submenu .item .galeria {
+          width: 100%;
+          border-radius: 0;
+          height: 80px;
+          background: none;
+          margin-top: 1em; }
+          body .submenu .item .microklima .logo, body .submenu .item .humiklima .logo, body .submenu .item .servicios .logo, body .submenu .item .galeria .logo {
+            display: none; }
+          body .submenu .item .microklima span, body .submenu .item .humiklima span, body .submenu .item .servicios span, body .submenu .item .galeria span {
+            opacity: 1; }
+            body .submenu .item .microklima span:before, body .submenu .item .humiklima span:before, body .submenu .item .servicios span:before, body .submenu .item .galeria span:before {
+              top: 1em;
+              border-bottom: 0; }
+            body .submenu .item .microklima span:after, body .submenu .item .humiklima span:after, body .submenu .item .servicios span:after, body .submenu .item .galeria span:after {
+              display: none; }
+        body .submenu .item .microklima {
+          border: 2px solid #4FB0E5; }
+        body .submenu .item .humiklima {
+          border: 2px solid #4FB0E5; }
+        body .submenu .item .servicios {
+          border: 2px solid #1B5BC2; }
+        body .submenu .item .galeria {
+          border: 2px solid #05076B; } }
+  body #nosotros {
+    height: 350px;
+    background: url("../images/back-6.jpg");
+    clear: both;
+    padding-top: 2.5em;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    body #nosotros p {
+      color: #fff;
+      width: 75%;
+      font-size: 20px;
+      line-height: 2em;
+      text-align: center;
+      margin: 0 auto;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300; }
+    body #nosotros h3 {
+      color: #fff;
+      text-align: center; }
+    @media screen and (min-width: 1300px) {
+      body #nosotros {
+        height: 400px; } }
+    @media only screen and (min-width: 768px) and (max-width: 1299px) {
+      body #nosotros {
+        height: auto;
+        padding: 6em 0; }
+        body #nosotros h3 {
+          padding: 0; } }
+    @media screen and (max-width: 767px) {
+      body #nosotros {
+        height: auto; }
+        body #nosotros p {
+          padding-bottom: 2em; } }
+  body #historia {
+    padding-top: 4em; }
+    body #historia h3 {
+      position: relative; }
+      body #historia h3:before {
+        content: '';
+        width: 100px;
+        height: 2px;
+        background: #000;
+        position: absolute;
+        left: 37%;
+        bottom: 1.2em; }
+      @media screen and (max-width: 600px) {
+        body #historia h3:before {
+          width: 20%;
+          left: calc( 80% - 40%);
+          bottom: 0.2em; } }
+      @media only screen and (min-width: 601px) and (max-width: 1024px) {
+        body #historia h3:before {
+          left: 28%; } }
+    body #historia .item {
+      display: inline-block; }
+    body #historia .imagen {
+      height: 400px;
+      padding: 0; }
+      body #historia .imagen img {
+        width: 100%; }
+      @media screen and (max-width: 767px) {
+        body #historia .imagen {
+          height: 300px; } }
+    body #historia .descript {
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.07);
+      margin: 2.5em 0 0 -5em;
+      font-family: 'Open Sans', sans-serif;
+      text-align: left;
+      line-height: 1.8em; }
+      @media screen and (min-width: 768px) {
+        body #historia .descript {
+          margin: 2.5em 0 0 -4em;
+          padding: 2em;
+          font-size: 18px; } }
+      @media screen and (max-width: 767px) {
+        body #historia .descript {
+          margin: 0;
+          padding: 1em;
+          font-size: 18px; } }
+  body #valores {
+    padding-top: 4em; }
+    body #valores h3 {
+      position: relative; }
+      body #valores h3:before {
+        content: '';
+        width: 100px;
+        height: 2px;
+        background: #000;
+        position: absolute;
+        left: 37%;
+        bottom: 1.2em; }
+      @media screen and (max-width: 600px) {
+        body #valores h3:before {
+          width: 20%;
+          left: calc( 80% - 40%);
+          bottom: 0.2em; } }
+      @media only screen and (min-width: 601px) and (max-width: 1024px) {
+        body #valores h3:before {
+          left: 28%; } }
+    body #valores .item {
+      display: inline-block; }
+      body #valores .item img {
+        width: 100%; }
+    body #valores .descript {
+      background: rgba(255, 255, 255, 0.7);
+      z-index: 99;
+      margin: 2.5em -5em 0 0;
+      font-family: 'Open Sans', sans-serif;
+      text-align: left;
+      line-height: 1.8em; }
+    @media screen and (min-width: 768px) {
+      body #valores .descript {
+        font-size: 18px;
+        padding: 2em; } }
+    @media screen and (max-width: 767px) {
+      body #valores .descript {
+        font-size: 16px;
+        padding: 1em; } }
+  body .galeria .project .portfolio-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all ease .5s;
+    -webkit-transition: all ease .5s;
+    -moz-transition: all ease .5s; }
+    body .galeria .project .portfolio-hover:hover {
+      opacity: 1; }
+    body .galeria .project .portfolio-hover .portfolio-hover-content p {
+      color: #fff;
+      text-align: center;
+      width: 40%;
+      margin: 25% 0 0 30%;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 17px;
+      line-height: 36px;
+      background: rgba(81, 191, 235, 0.8); }
+  body .galeria .project a {
+    float: left;
+    position: relative;
+    width: 100%;
+    margin: 0 auto; }
+  body .galeria .project .portfolio-caption {
+    text-align: center;
+    clear: both;
+    background: #f2f2f2;
+    height: 130px; }
+    body .galeria .project .portfolio-caption h4 {
+      font-size: 16px;
+      line-height: 22px;
+      position: relative;
+      margin: 0;
+      padding: 1em 2em;
+      height: 100%; }
+    body .galeria .project .portfolio-caption .text-muted {
+      margin-top: 2em; }
+    @media screen and (min-width: 768px) {
+      body .galeria .project .portfolio-caption {
+        padding: 1em 0; } }
+  body .galeria .project img {
+    width: 100%; }
+  body #formulario {
+    background: #fff; }
+    body #formulario h3 {
+      font-size: 18px; }
+    body #formulario input {
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      margin: .5em 0;
+      outline: none;
+      border: 0;
+      padding-left: 1em;
+      border-radius: 3px; }
+    body #formulario .enviar {
+      padding: 0;
+      background: #4FB0E5;
+      color: #fff; }
+    body #formulario textarea {
+      width: 100%;
+      border: 0;
+      outline: 0;
+      height: 178px;
+      padding: 2em;
+      border-radius: 3px;
+      margin: .5em 0;
+      resize: none; }
+    body #formulario .form-mail {
+      background: #f2f2f2;
+      padding-top: 2em;
+      height: 100%; }
+      body #formulario .form-mail .icon {
+        background: url("../images/icons/icon-message.png");
+        width: 50px;
+        height: 50px;
+        background-size: 50%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        border: 2px solid #4A90E2;
+        border-radius: 50%;
+        margin-top: 2em;
+        margin-left: 42%; }
+    body #formulario .form-tel {
+      background: #333;
+      height: 100%;
+      padding-top: 2em; }
+      body #formulario .form-tel .icon {
+        background: url("../images/icons/icon-phone.png");
+        width: 50px;
+        height: 50px;
+        background-size: 50%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        border: 2px solid #4A90E2;
+        border-radius: 50%;
+        margin-top: 2em;
+        margin-left: 42%; }
+      body #formulario .form-tel h3 {
+        color: #fff; }
+      body #formulario .form-tel ul {
+        text-align: center;
+        margin-top: 2em;
+        padding: 0; }
+        body #formulario .form-tel ul li {
+          line-height: 40px;
+          font-size: 22px;
+          font-size: 16px;
+          list-style: none;
+          color: #fff; }
+    @media (min-width: 1024px) {
+      body #formulario {
+        height: 490px;
+        margin: 0;
+        padding: 0; } }
+  body footer {
+    background: #41439C;
+    clear: both;
+    position: relative;
+    padding: 2em 0 0 0 !important; }
+    body footer ul li {
+      list-style: none;
+      line-height: 2.5em;
+      cursor: pointer; }
+      body footer ul li a {
+        color: #fff;
+        cursor: pointer;
+        position: relative; }
+        body footer ul li a:hover {
+          color: #fff;
+          text-decoration: none; }
+          body footer ul li a:hover span {
+            width: 60px; }
+        body footer ul li a:hover > span {
+          width: 80%; }
+      body footer ul li span {
+        width: 0;
+        height: 2px;
+        background: #4EB0E5;
+        position: absolute;
+        bottom: -.5em;
+        left: 0;
+        transition: all 1s ease-in-out;
+        -webkit-transition-timing-function: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out; }
+    body footer ul .dropdown .dropdown-toggle:focus {
+      color: inherit !important; }
+    body footer ul .dropdown .dropdown-toggle:after {
+      content: "\e114";
+      font-family: 'Glyphicons Halflings';
+      width: 20px;
+      height: 20px;
+      color: #ffffff;
+      font-size: 12px;
+      padding-left: 1em; }
+    body footer ul #drop-brochures {
+      border-radius: 0;
+      border-top: 3px solid #4FB0E5;
+      top: inherit;
+      left: inherit;
+      padding-left: 1em; }
+      body footer ul #drop-brochures a {
+        display: flex;
+        color: inherit !important; }
+        body footer ul #drop-brochures a:hover {
+          color: #4FB0E5; }
+    @media screen and (max-width: 767px) {
+      body footer div ul {
+        padding: 0;
+        text-align: center; } }
+    body footer .redes {
+      padding: 2em 0; }
+      body footer .redes ul li {
+        display: inline-block;
+        margin: 0 1em;
+        cursor: pointer;
+        width: 40px;
+        height: 40px; }
+      body footer .redes ul .fb {
+        background: url("../images/icons/facebook.png");
+        background-size: 100%; }
+      body footer .redes ul .tw {
+        background: url("../images/icons/twitter.png");
+        background-size: 100%; }
+    body footer address {
+      margin-bottom: .3em; }
+    body footer .bottom {
+      padding: 2em 0 1.2em 0;
+      text-align: center;
+      color: #333;
+      border-top: .5px solid #f2f2f2;
+      font-size: 13px;
+      background: #f2f2f2;
+      width: 100%;
+      clear: both; }
+      body footer .bottom ul {
+        margin: 0;
+        padding: 0; }
+        body footer .bottom ul li {
+          display: inline-block;
+          margin: 0 2em; }
+          body footer .bottom ul li a {
+            color: #333; }
+      body footer .bottom p {
+        margin: 0; }
+    body footer .modal-footer {
+      text-align: justify; }
+    @media screen and (max-width: 768px) {
+      body footer {
+        min-height: 500px; }
+        body footer .bottom {
+          padding: 2em; } }
+  body .map-content {
+    width: 100%;
+    padding: 2em 0 0 0;
+    background: #41439C;
+    position: relative;
+    clear: both; }
+    body .map-content h2 {
+      text-align: center;
+      color: white;
+      font-weight: 700;
+      margin-bottom: 2em; }
+    body .map-content #map {
+      height: 300px; }
+    @media screen and (max-width: 768px) {
+      body .map-content {
+        padding: 3em; } }
+  body #galeria {
+    width: 100%;
+    display: block; }
+  body #clientes {
+    clear: both;
+    position: relative; }
+    body #clientes .logo div {
+      height: 90px;
+      width: 90%;
+      margin: 0 auto;
+      cursor: pointer;
+      background-position: 0 !important; }
+    body #clientes .logo .text {
+      width: 400px;
+      height: 150px;
+      background: #4F7EC6;
+      color: #fff;
+      padding: 1em;
+      font-size: 1em;
+      text-align: center;
+      opacity: 0;
+      position: absolute;
+      z-index: 999999;
+      margin-top: -1em;
+      margin-left: -7em;
+      transition: all 1s ease-in-out;
+      -webkit-transition-timing-function: all 1s ease-in-out;
+      -moz-transition: all 1s ease-in-out;
+      -ms-transition: all 1s ease-in-out;
+      -o-transition: all 1s ease-in-out; }
+      body #clientes .logo .text:after {
+        content: '\00a0';
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 20px solid #4F7EC6;
+        position: absolute;
+        top: -1.1em;
+        left: 10em; }
+    @media screen and (min-width: 1300px) {
+      body #clientes .logo div {
+        width: 70%; } }
+    @media screen and (max-width: 1299px) {
+      body #clientes .logo .text {
+        width: 130%;
+        left: 25%;
+        height: auto;
+        padding-bottom: 1em; } }
+    body #clientes .logo:hover > .text {
+      opacity: 1; }
+    body #clientes .avante div {
+      background: url("../images/clientes/avante-0.jpg") no-repeat;
+      background-size: 100%; }
+      body #clientes .avante div:hover {
+        background: url("../images/clientes/avante-1.jpg");
+        background-size: 100%; }
+    body #clientes .comex div {
+      background: url("../images/clientes/comex-0.jpg") no-repeat;
+      background-size: 100%; }
+      body #clientes .comex div:hover {
+        background: url("../images/clientes/comex-1.jpg");
+        background-size: 100%; }
+    body #clientes .danone div {
+      width: 70%;
+      background: url("../images/clientes/danone-0.jpg") no-repeat;
+      background-size: 100%; }
+      body #clientes .danone div:hover {
+        background: url("../images/clientes/danone-1.jpg") no-repeat;
+        background-size: 100%; }
+      @media screen and (min-width: 1300px) {
+        body #clientes .danone div {
+          width: 55%; } }
+    body #clientes .fonoteca div {
+      background: url("../images/clientes/fonoteca-0.jpg") no-repeat;
+      background-size: 100%; }
+      body #clientes .fonoteca div:hover {
+        background: url("../images/clientes/fonoteca-1.jpg") no-repeat;
+        background-size: 100%; }
+    body #clientes .hussman div {
+      background: url("../images/clientes/hussman-0.jpg") no-repeat;
+      background-size: 100%; }
+      body #clientes .hussman div:hover {
+        background: url("../images/clientes/hussman-1.jpg") no-repeat;
+        background-size: 100%; }
+    body #clientes .inah div {
+      background: url("../images/clientes/inah-0.jpg") no-repeat;
+      background-size: 100%; }
+      body #clientes .inah div:hover {
+        background: url("../images/clientes/inah-1.jpg") no-repeat;
+        background-size: 100%; }
+    body #clientes .inba div {
+      background: url("../images/clientes/inba-0.jpg") no-repeat;
+      background-size: 100%; }
+      body #clientes .inba div:hover {
+        background: url("../images/clientes/inba-1.jpg") no-repeat;
+        background-size: 100%; }
+    body #clientes .issste div {
+      background: url("../images/clientes/issste-0.jpg") no-repeat;
+      background-size: 100%; }
+      body #clientes .issste div:hover {
+        background: url("../images/clientes/issste-1.jpg") no-repeat;
+        background-size: 100%; }
+    body #clientes .jc div {
+      background: url("../images/clientes/jc-0.jpg") no-repeat;
+      background-size: 100%; }
+      body #clientes .jc div:hover {
+        background: url("../images/clientes/jc-1.jpg") no-repeat;
+        background-size: 100%; }
+    body #clientes .labotec div {
+      background: url("../images/clientes/labotec-0.jpg") no-repeat;
+      background-size: 100%; }
+      body #clientes .labotec div:hover {
+        background: url("../images/clientes/labotec-1.jpg") no-repeat;
+        background-size: 100%; }
+    body #clientes .pemex div {
+      background: url("../images/clientes/pemex-0.jpg") no-repeat;
+      background-size: 100%; }
+      body #clientes .pemex div:hover {
+        background: url("../images/clientes/pemex-1.jpg") no-repeat;
+        background-size: 100%; }
+      @media screen and (min-width: 1300px) {
+        body #clientes .pemex div {
+          width: 60%; } }
+    body #clientes .pfizer div {
+      width: 65%;
+      background: url("../images/clientes/pfizer-0.jpg") no-repeat;
+      background-size: 100%; }
+      body #clientes .pfizer div:hover {
+        background: url("../images/clientes/pfizer-1.jpg") no-repeat;
+        background-size: 100%; }
+      @media screen and (min-width: 1300px) {
+        body #clientes .pfizer div {
+          width: 50%; } }
+    body #clientes .profeco div {
+      background: url("../images/clientes/profeco-0.jpg") no-repeat;
+      background-size: 100%; }
+      body #clientes .profeco div:hover {
+        background: url("../images/clientes/profeco-1.jpg") no-repeat;
+        background-size: 100%; }
+    body #clientes .sony div {
+      background: url("../images/clientes/sony-0.jpg") no-repeat;
+      background-size: 100%; }
+      body #clientes .sony div:hover {
+        background: url("../images/clientes/sony-1.jpg") no-repeat;
+        background-size: 100%; }
+  body .slider-mk-section {
+    background: url(../images/microklima/slider-microklima.jpg); }
+    body .slider-mk-section .descripcion h2, body .slider-mk-section .descripcion p {
+      color: #000; }
+    body .slider-mk-section .maquina {
+      right: -1em !important; }
+  body #microklima {
+    height: 100%; }
+    body #microklima .video-snow {
+      overflow: hidden; }
+    body #microklima .text {
+      height: 400px;
+      padding: 0;
+      position: relative; }
+      body #microklima .text .video-back {
+        position: absolute;
+        width: 100%;
+        z-index: -2;
+        /*.overlay{
+        	background: rgba(17,87,146,.2);
+            width: 1200px;
+            height: 500px;
+            position: absolute;
+            }*/ }
+        body #microklima .text .video-back video {
+          width: 100%;
+          top: 0;
+          left: 0;
+          opacity: .7; }
+    body #microklima .mk-procesos {
+      padding-top: 3em; }
+      body #microklima .mk-procesos .content {
+        padding: 2.8em 0 2em 0;
+        background: #1b5bc2;
+        /* Old browsers */
+        background: -moz-linear-gradient(left, #1b5bc2 0%, #4fb0e5 50%, #41be96 65%, #2ea280 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, #1b5bc2 0%, #4fb0e5 50%, #41be96 65%, #2ea280 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, #1b5bc2 0%, #4fb0e5 50%, #41be96 65%, #2ea280 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b5bc2', endColorstr='#2ea280',GradientType=1 );
+        /* IE6-9 */ }
+        body #microklima .mk-procesos .content .mk-ventilacion:before {
+          content: '\00a0';
+          width: 20%;
+          height: 40px;
+          background: url("../images/icons/icon-ventilacion.svg") no-repeat 50%;
+          background-size: contain;
+          position: absolute; }
+        body #microklima .mk-procesos .content .mk-calefaccion:before {
+          content: '\00a0';
+          width: 20%;
+          height: 40px;
+          background: url("../images/icons/icon-cal.png") no-repeat 50%;
+          background-size: contain;
+          position: absolute; }
+        body #microklima .mk-procesos .content .mk-enfriamiento:before {
+          content: '\00a0';
+          width: 20%;
+          height: 40px;
+          background: url("../images/icons/icon-enfriamiento.png") no-repeat 50%;
+          background-size: contain;
+          position: absolute; }
+        body #microklima .mk-procesos .content .mk-deshumi:before {
+          content: '\00a0';
+          width: 20%;
+          height: 40px;
+          background: url("../images/icons/icon-deshumi.png") no-repeat 50%;
+          background-size: contain;
+          position: absolute; }
+        body #microklima .mk-procesos .content .mk-humi {
+          border-right: none; }
+          body #microklima .mk-procesos .content .mk-humi:before {
+            content: '\00a0';
+            width: 20%;
+            height: 40px;
+            background: url("../images/icons/icon-humi.png") no-repeat 50%;
+            background-size: contain;
+            position: absolute; }
+      body #microklima .mk-procesos div {
+        display: inline-block;
+        height: 80%;
+        color: #fff;
+        padding: 0 2em;
+        vertical-align: top;
+        position: relative; }
+        body #microklima .mk-procesos div h2 {
+          font-size: 20px;
+          font-weight: 700;
+          position: relative;
+          height: 37px;
+          margin-top: 3em; }
+          body #microklima .mk-procesos div h2:after {
+            content: '\00a0';
+            width: 15%;
+            height: 1px;
+            background: #fff;
+            position: absolute;
+            bottom: -1em;
+            left: 0; }
+        body #microklima .mk-procesos div p {
+          margin-top: 3em;
+          font-size: 16px; }
+      body #microklima .mk-procesos ul li {
+        list-style-type: disc;
+        color: #000;
+        font-size: 18px;
+        position: relative;
+        line-height: 40px; }
+      body #microklima .mk-procesos .extra-info {
+        display: block;
+        padding-top: 3em; }
+        body #microklima .mk-procesos .extra-info .subtitle {
+          text-align: center;
+          color: #000;
+          font-size: 25px; }
+      @media screen and (max-width: 1200px) {
+        body #microklima .mk-procesos {
+          padding: 0; }
+          body #microklima .mk-procesos .content {
+            padding-top: 1.8em; }
+            body #microklima .mk-procesos .content div {
+              padding: 0 1em; }
+              body #microklima .mk-procesos .content div h2 {
+                font-size: 16px; } }
+      @media only screen and (max-width: 601px) and (max-width: 1023px) {
+        body #microklima .mk-procesos div {
+          padding: 0 1em; } }
+      @media screen and (max-width: 600px) {
+        body #microklima .mk-procesos .content {
+          height: auto; }
+          body #microklima .mk-procesos .content div {
+            height: auto;
+            border-right: none;
+            padding: 1em; }
+            body #microklima .mk-procesos .content div h2 {
+              font-size: 16px; } }
+    body #microklima .mk-graph {
+      padding-top: 5%;
+      height: 1120px;
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#182682+0,1d2570+43,292854+100 */
+      background: #182682;
+      /* Old browsers */
+      background: -moz-radial-gradient(center, ellipse cover, #182682 0%, #1d2570 43%, #292854 100%);
+      /* FF3.6-15 */
+      background: -webkit-radial-gradient(center, ellipse cover, #182682 0%, #1d2570 43%, #292854 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: radial-gradient(ellipse at center, #182682 0%, #1d2570 43%, #292854 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#182682', endColorstr='#292854',GradientType=1 );
+      /* IE6-9 fallback on horizontal gradient */ }
+      body #microklima .mk-graph .tittle {
+        color: #fff; }
+      body #microklima .mk-graph .mk-graph-info {
+        color: #fff; }
+        body #microklima .mk-graph .mk-graph-info p {
+          margin-bottom: 10%;
+          font-size: 16px; }
+      body #microklima .mk-graph .parallax .mk-graph-info {
+        padding: 5% 0 0 5%; }
+      body #microklima .mk-graph .parallax ul {
+        padding-top: 5%; }
+        body #microklima .mk-graph .parallax ul li {
+          font-size: 16px;
+          line-height: 40px;
+          color: #fff;
+          list-style: none; }
+      body #microklima .mk-graph .parallax .total-score {
+        position: relative;
+        display: inline-block;
+        font-size: 3em;
+        font-weight: normal;
+        text-align: center;
+        float: left;
+        clear: right; }
+        body #microklima .mk-graph .parallax .total-score:after {
+          content: '%';
+          font-size: 1em;
+          position: absolute;
+          right: -42px;
+          top: 0; }
+      body #microklima .mk-graph .parallax .score-range {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        padding: 3px 0 3px 10px;
+        font-size: 12px;
+        font-style: italic;
+        text-align: left;
+        color: #999;
+        border-left: 3px solid #777;
+        float: right; }
+      body #microklima .mk-graph .parallax .score-graph {
+        position: relative;
+        display: block;
+        margin-bottom: 15px;
+        width: 100%;
+        height: 15px;
+        border-radius: 3px;
+        transition: 0.4s linear;
+        transition-property: width, background-color;
+        float: left;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00fcde+0,08ccdd+31,268bef+66,0d22e0+100 */
+        background: #00fcde;
+        /* Old browsers */
+        background: -moz-radial-gradient(center, ellipse cover, #00fcde 0%, #08ccdd 31%, #268bef 66%, #0d22e0 100%);
+        /* FF3.6-15 */
+        background: -webkit-radial-gradient(center, ellipse cover, #00fcde 0%, #08ccdd 31%, #268bef 66%, #0d22e0 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: radial-gradient(ellipse at center, #00fcde 0%, #08ccdd 31%, #268bef 66%, #0d22e0 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00fcde', endColorstr='#0d22e0',GradientType=1 );
+        /* IE6-9 fallback on horizontal gradient */ }
+      body #microklima .mk-graph .parallax .score-graph:before, body #microklima .mk-graph .parallax .score-graph:after {
+        position: absolute;
+        top: 20px;
+        color: #ccc;
+        font-size: 10px;
+        font-style: italic; }
+      body #microklima .mk-graph .parallax .score-graph:before {
+        content: '0';
+        position: absolute;
+        left: 0;
+        border-left: 1px solid #ccc;
+        padding-left: 10px; }
+      body #microklima .mk-graph .parallax .score-graph:after {
+        content: '100%';
+        position: absolute;
+        right: 0;
+        border-right: 1px solid #ccc;
+        padding-right: 10px; }
+      body #microklima .mk-graph .parallax .score-graph .score-graph-bar {
+        height: 15px;
+        width: 100%;
+        background: #eee;
+        float: right; }
+      body #microklima .mk-graph .parallax .score-graph .score-graph-bar span {
+        position: absolute;
+        display: block;
+        top: 30px;
+        width: 30px !important;
+        height: 30px !important;
+        margin-left: -17px;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-top-left-radius: 0;
+        border-top-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        z-index: 999;
+        transform: rotate(45deg); }
+        body #microklima .mk-graph .parallax .score-graph .score-graph-bar span:after {
+          content: '\00a0';
+          width: 30px;
+          height: 30px;
+          transform: rotate(-45deg);
+          position: absolute;
+          background: url("../images/imagotipo.png") no-repeat;
+          background-size: 60%;
+          right: -7px;
+          top: -2px; }
+      body #microklima .mk-graph .parallax .graphic-image img {
+        width: 100%; }
+      body #microklima .mk-graph .parallax .mk-graph-01 {
+        right: 35%;
+        top: 61%; }
+      body #microklima .mk-graph .parallax .mk-graph-02 {
+        right: 32%;
+        top: 42%; }
+      body #microklima .mk-graph .parallax .mk-graph-03 {
+        right: 44%;
+        top: 50%; }
+      body #microklima .mk-graph .parallax .mk-graph-04 {
+        right: 40%;
+        top: 41%; }
+      body #microklima .mk-graph .parallax .pulsating {
+        position: absolute;
+        transform: translateX(-50%) translateY(-50%);
+        width: 20px;
+        height: 20px; }
+      body #microklima .mk-graph .parallax .pulsating:after {
+        content: '';
+        cursor: pointer;
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        border-radius: 15px;
+        border: 1px solid #fff;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+        animation: pulse-dot 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite; }
+      body #microklima .mk-graph .parallax .pulsating:before {
+        content: '';
+        position: relative;
+        display: block;
+        width: 300%;
+        height: 300%;
+        box-sizing: border-box;
+        margin-left: -100%;
+        margin-top: -100%;
+        border-radius: 45px;
+        background-color: rgba(80, 126, 230, 0.8);
+        animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+        -webkit-animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite; }
+      @media screen and (max-width: 768px) {
+        body #microklima .mk-graph .parallax .pulsating {
+          display: none; } }
+      @media screen and (max-width: 600px) {
+        body #microklima .mk-graph .parallax {
+          background: none; }
+          body #microklima .mk-graph .parallax .pulsating {
+            display: none; } }
+      @media screen and (max-width: 1024px) {
+        body #microklima .mk-graph {
+          height: 550px; }
+          body #microklima .mk-graph .mk-graph-info {
+            padding: 0 0 0 10%;
+            margin-bottom: 12em; } }
+      @media screen and (max-width: 600px) {
+        body #microklima .mk-graph {
+          height: auto;
+          padding-bottom: 2em; } }
+    body #microklima .mk-capacidad-regulada {
+      background: url("../images/microklima/background-humidity.jpg");
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+      height: 290px;
+      padding: 4em 0 0 0; }
+      body #microklima .mk-capacidad-regulada p {
+        color: #fff; }
+      body #microklima .mk-capacidad-regulada .tittle {
+        background: rgba(0, 0, 0, 0.4);
+        height: auto; }
+        body #microklima .mk-capacidad-regulada .tittle p {
+          font-size: 20px;
+          text-align: left;
+          padding: 1em 2em;
+          line-height: 38px; }
+      body #microklima .mk-capacidad-regulada .item-01 {
+        text-align: center;
+        font-size: 18px; }
+        body #microklima .mk-capacidad-regulada .item-01 strong {
+          font-size: 30px;
+          margin-top: 2em; }
+        body #microklima .mk-capacidad-regulada .item-01 p {
+          margin-top: 1em;
+          padding: 0 5em;
+          font-size: 20px; }
+      body #microklima .mk-capacidad-regulada .item-02 {
+        text-align: center;
+        font-size: 18px; }
+        body #microklima .mk-capacidad-regulada .item-02 strong {
+          font-size: 30px;
+          margin-top: 2em; }
+        body #microklima .mk-capacidad-regulada .item-02 p {
+          margin-top: 1em;
+          padding: 0 5em;
+          font-size: 20px; }
+      @media screen and (max-width: 1200px) {
+        body #microklima .mk-capacidad-regulada .item-01 p, body #microklima .mk-capacidad-regulada .item-02 p {
+          padding: 0; } }
+      @media only screen and (min-width: 601px) and (max-width: 1023px) {
+        body #microklima .mk-capacidad-regulada {
+          height: auto;
+          padding: 0; }
+          body #microklima .mk-capacidad-regulada .tittle p {
+            text-align: center; }
+          body #microklima .mk-capacidad-regulada .item-01 p, body #microklima .mk-capacidad-regulada .item-02 p {
+            font-size: 16px; } }
+      @media screen and (max-width: 600px) {
+        body #microklima .mk-capacidad-regulada {
+          height: auto; } }
+    body #microklima .mk-funcionamiento {
+      height: 250px;
+      padding-top: 3em; }
+      body #microklima .mk-funcionamiento .content .mk-finito {
+        background: #ECECEC; }
+        body #microklima .mk-funcionamiento .content .mk-finito:before {
+          content: '\00a0';
+          width: 20%;
+          height: 40px;
+          position: absolute;
+          top: 1em;
+          left: 40%;
+          background: url("../images/icons/icon-finito.png") no-repeat 50%;
+          background-size: contain; }
+      body #microklima .mk-funcionamiento .content .mk-permanente {
+        background: #e3e3e3; }
+        body #microklima .mk-funcionamiento .content .mk-permanente:before {
+          content: '\00a0';
+          width: 10%;
+          height: 40px;
+          position: absolute;
+          top: 1em;
+          left: 45%;
+          background: url("../images/icons/icon-permanente.png") no-repeat 50%;
+          background-size: contain; }
+      body #microklima .mk-funcionamiento .content .mk-ciclos {
+        background: #D7D7D7; }
+        body #microklima .mk-funcionamiento .content .mk-ciclos:before {
+          content: '\00a0';
+          width: 20%;
+          height: 40px;
+          position: absolute;
+          top: 1em;
+          left: 40%;
+          background: url("../images/icons/icon-ciclos.png") no-repeat 50%;
+          background-size: contain; }
+      body #microklima .mk-funcionamiento .content div {
+        height: 200px;
+        padding: 2em;
+        text-align: center; }
+      body #microklima .mk-funcionamiento .content h2 {
+        font-size: 18px;
+        font-weight: 700;
+        position: relative;
+        margin-top: 2.5em; }
+        body #microklima .mk-funcionamiento .content h2:after {
+          content: '\00a0';
+          width: 10%;
+          height: 2px;
+          background: #4A90E2;
+          position: absolute;
+          left: 45%;
+          bottom: -1em; }
+      body #microklima .mk-funcionamiento .content p {
+        font-size: 16px;
+        margin-top: 2em; }
+      @media screen and (max-width: 600px) {
+        body #microklima .mk-funcionamiento {
+          height: auto; } }
+    body #microklima .mk-componentes .brand {
+      text-align: center; }
+      body #microklima .mk-componentes .brand .mk-image-brand {
+        height: 100px;
+        line-height: 100px; }
+        body #microklima .mk-componentes .brand .mk-image-brand img {
+          height: auto; }
+      body #microklima .mk-componentes .brand p {
+        position: relative;
+        padding-top: 2em;
+        font-size: 18px; }
+        body #microklima .mk-componentes .brand p:after {
+          content: '\00a0';
+          width: 100%;
+          position: absolute;
+          background: #4FB0E5;
+          height: 3px;
+          top: 0;
+          left: 0; }
+        body #microklima .mk-componentes .brand p:before {
+          content: '\00a0';
+          width: 0;
+          height: 0;
+          border-left: 6px solid transparent;
+          border-right: 6px solid transparent;
+          border-top: 12px solid #4FB0E5;
+          position: absolute;
+          top: 0;
+          left: 50%; }
+    @media screen and (max-width: 359px) {
+      body #microklima .mk-componentes .mk-image-brand img {
+        width: 60%; } }
+    @media only screen and (min-width: 360px) and (max-width: 767px) {
+      body #microklima .mk-componentes .mk-image-brand img {
+        width: 40%; } }
+    @media only screen and (min-width: 768px) {
+      body #microklima .mk-componentes .mk-image-brand img {
+        width: 60%; } }
+    body #microklima .densidad {
+      height: 100%; }
+      body #microklima .densidad h3 {
+        font-size: 1.5em;
+        width: 70%;
+        text-align: left;
+        padding-left: 4em; }
+      body #microklima .densidad ul {
+        padding-left: 6em; }
+        body #microklima .densidad ul li {
+          list-style-type: circle;
+          line-height: 35px;
+          font-size: 16px; }
+      body #microklima .densidad .icon {
+        width: 50px;
+        height: 70px;
+        float: left;
+        margin: 2.5em 0 0 1em; }
+    body #microklima .alta .icon {
+      background: url("../images/microklima/icon-alta-densidad.png") no-repeat;
+      background-size: 80%; }
+    body #microklima .baja .icon {
+      background: url("../images/microklima/icon-baja-densidad.png") no-repeat;
+      background-size: 80%; }
+    body #microklima #pgd-main {
+      padding-top: 5em;
+      clear: both;
+      height: 2970px;
+      background: #fff;
+      background: -moz-radial-gradient(center, ellipse cover, #fff 0%, #fff 90%, #d6d6d6 100%);
+      background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #fff), color-stop(70%, #fff), color-stop(100%, #d6d6d6));
+      background: -webkit-radial-gradient(center, ellipse cover, #fff 0%, #fff 70%, #d6d6d6 100%);
+      background: -o-radial-gradient(center, ellipse cover, #fff 0%, #fff 70%, #d6d6d6 100%);
+      background: -ms-radial-gradient(center, ellipse cover, #fff 0%, #fff 70%, #d6d6d6 100%);
+      background: radial-gradient(ellipse at center, #fff 0%, #fff 70%, #d6d6d6 100%);
+      background-size: 10px 10px; }
+    body #microklima .pgd {
+      width: 40%;
+      text-align: center;
+      margin: 0 auto;
+      left: calc(60% - 30%);
+      margin-top: 0; }
+      body #microklima .pgd .title {
+        padding-top: 5em; }
+      body #microklima .pgd img {
+        width: 100%; }
+      body #microklima .pgd .screen-01 {
+        opacity: 0;
+        background: url(../images/microklima/screen-01.png) no-repeat;
+        background-size: 100%;
+        width: 40%;
+        height: 400px;
+        margin: 0 auto;
+        left: calc(60% - 30%);
+        position: inherit;
+        top: 12.8em;
+        transition: all 1s ease-in-out;
+        -webkit-transition-timing-function: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out; }
+        body #microklima .pgd .screen-01 .text {
+          width: 60%;
+          right: -100%;
+          position: absolute;
+          top: 20%;
+          height: auto;
+          background: #1B5BC2;
+          position: relative;
+          -moz-border-radius: 5px;
+          -webkit-border-radius: 5px;
+          border-radius: 5px;
+          padding: 1.5em;
+          color: #fff; }
+          body #microklima .pgd .screen-01 .text:before {
+            content: "";
+            position: absolute;
+            right: 100%;
+            top: 45%;
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-right: 20px solid #1B5BC2;
+            border-bottom: 10px solid transparent; }
+          body #microklima .pgd .screen-01 .text p {
+            font-size: 1.3em; }
+      body #microklima .pgd .screen-02 {
+        opacity: 0;
+        background: url(../images/microklima/screen-02.png) no-repeat;
+        background-size: 100%;
+        width: 40%;
+        height: 400px;
+        margin: 0 auto;
+        left: calc(60% - 30%);
+        position: inherit;
+        top: 13.8em;
+        transition: all 1s ease-in-out;
+        -webkit-transition-timing-function: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out; }
+        body #microklima .pgd .screen-02 .text {
+          width: 60%;
+          left: -60%;
+          position: absolute;
+          top: 40%;
+          height: auto;
+          background: #1B5BC2;
+          position: relative;
+          -moz-border-radius: 5px;
+          -webkit-border-radius: 5px;
+          border-radius: 5px;
+          padding: 1.5em;
+          color: #fff; }
+          body #microklima .pgd .screen-02 .text:before {
+            content: "";
+            position: absolute;
+            left: 100%;
+            top: 45%;
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-left: 20px solid #1B5BC2;
+            border-bottom: 10px solid transparent; }
+          body #microklima .pgd .screen-02 .text p {
+            font-size: 1.3em; }
+      body #microklima .pgd .screen-03 {
+        opacity: 0;
+        background: url(../images/microklima/screen-03.png) no-repeat;
+        background-size: 100%;
+        width: 40%;
+        height: 400px;
+        margin: 0 auto;
+        left: calc(60% - 30%);
+        position: inherit;
+        top: 12.8em; }
+        body #microklima .pgd .screen-03 .text {
+          width: 60%;
+          right: -100%;
+          position: absolute;
+          top: 20%;
+          height: auto;
+          background: #1B5BC2;
+          position: relative;
+          -moz-border-radius: 5px;
+          -webkit-border-radius: 5px;
+          border-radius: 5px;
+          padding: 1.5em;
+          color: #fff; }
+          body #microklima .pgd .screen-03 .text p {
+            font-size: 1.3em; }
+      @media screen and (max-width: 768px) {
+        body #microklima .pgd {
+          width: 80%;
+          left: calc(20% - 10%); }
+          body #microklima .pgd .screen-01, body #microklima .pgd .screen-02, body #microklima .pgd .screen-03 {
+            width: 80%;
+            left: calc(20% - 10%); }
+            body #microklima .pgd .screen-01 .text, body #microklima .pgd .screen-02 .text, body #microklima .pgd .screen-03 .text {
+              right: 0;
+              margin: 0 auto;
+              width: 100%;
+              font-size: 12px;
+              left: 0; }
+              body #microklima .pgd .screen-01 .text:before, body #microklima .pgd .screen-02 .text:before, body #microklima .pgd .screen-03 .text:before {
+                top: -16%;
+                left: 46%;
+                border-left: 10px solid transparent;
+                border-right: 11px solid transparent;
+                border-bottom: 12px solid #1B5BC2; } }
+      @media screen and (max-width: 390px) {
+        body #microklima .pgd .screen-01, body #microklima .pgd .screen-02, body #microklima .pgd .screen-03 {
+          top: 12.8em; }
+          body #microklima .pgd .screen-01 .text, body #microklima .pgd .screen-02 .text, body #microklima .pgd .screen-03 .text {
+            top: 50%; } }
+      @media only screen and (min-width: 391px) and (max-width: 600px) {
+        body #microklima .pgd .screen-01, body #microklima .pgd .screen-02, body #microklima .pgd .screen-03 {
+          top: 10.8em; }
+          body #microklima .pgd .screen-01 .text, body #microklima .pgd .screen-02 .text, body #microklima .pgd .screen-03 .text {
+            top: 70%; } }
+      @media only screen and (min-width: 601px) and (max-width: 768px) {
+        body #microklima .pgd .screen-01, body #microklima .pgd .screen-02, body #microklima .pgd .screen-03 {
+          top: 10.8em; }
+          body #microklima .pgd .screen-01 .text, body #microklima .pgd .screen-02 .text, body #microklima .pgd .screen-03 .text {
+            top: 110%; } }
+      body #microklima .pgd .description {
+        font-size: 1.2em;
+        line-height: 1.5em; }
+    @media screen and (max-width: 768px) {
+      body #microklima .text {
+        height: auto; }
+      body #microklima .densidad {
+        padding-bottom: 2em; }
+        body #microklima .densidad ul {
+          padding-left: 0;
+          width: 80%;
+          margin: 0 auto; }
+        body #microklima .densidad h3 {
+          width: 90%; } }
+  body #esquema {
+    position: relative;
+    text-align: center; }
+    body #esquema .full-machine {
+      position: relative;
+      width: 100%;
+      height: 700px;
+      margin: 0 auto;
+      background: url("../images/back-texture.jpg") no-repeat;
+      background-size: cover;
+      background-position: 40% 55%;
+      clear: both; }
+      body #esquema .full-machine .overlay {
+        /*background: url('../images/microklima/microklima_full.jpg')no-repeat;
+        background-size: 40%;
+        background: rgba(27, 91, 190,.5);
+        width: 100%;
+        height: 100%;*/ }
+      body #esquema .full-machine img {
+        height: 90%;
+        margin: 4% 0 0 35%; }
+      body #esquema .full-machine .pulsating {
+        position: absolute;
+        transform: translateX(-50%) translateY(-50%);
+        width: 20px;
+        height: 20px; }
+        body #esquema .full-machine .pulsating:before {
+          content: '';
+          position: relative;
+          display: block;
+          width: 300%;
+          height: 300%;
+          box-sizing: border-box;
+          margin-left: -100%;
+          margin-top: -100%;
+          border-radius: 45px;
+          background-color: rgba(80, 126, 230, 0.8);
+          animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+          -webkit-animation: pulse-ring 1.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite; }
+        body #esquema .full-machine .pulsating:after {
+          content: '';
+          cursor: pointer;
+          position: absolute;
+          left: 0;
+          top: 0;
+          display: block;
+          width: 100%;
+          height: 100%;
+          background-color: #fff;
+          border-radius: 15px;
+          border: 1px solid #fff;
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+          animation: pulse-dot 1.25s cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite; }
+      body #esquema .full-machine .mk-01-open, body #esquema .full-machine .mk-02-open, body #esquema .full-machine .mk-03-open, body #esquema .full-machine .mk-04-open, body #esquema .full-machine .mk-05-open, body #esquema .full-machine .mk-06-open, body #esquema .full-machine .mk-07-open, body #esquema .full-machine .mk-08-open {
+        position: absolute;
+        top: 23em;
+        left: 4em;
+        opacity: 0;
+        width: 80%;
+        background: #1B5BC2;
+        color: #fff;
+        padding: 1em;
+        transition: all 1s ease-in-out;
+        -webkit-transition-timing-function: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out; }
+        body #esquema .full-machine .mk-01-open:before, body #esquema .full-machine .mk-02-open:before, body #esquema .full-machine .mk-03-open:before, body #esquema .full-machine .mk-04-open:before, body #esquema .full-machine .mk-05-open:before, body #esquema .full-machine .mk-06-open:before, body #esquema .full-machine .mk-07-open:before, body #esquema .full-machine .mk-08-open:before {
+          content: "";
+          width: 0;
+          height: 0;
+          border-top: 15px solid transparent;
+          border-bottom: 15px solid transparent;
+          border-left: 20px solid #1B5BC2;
+          position: absolute;
+          top: 2em;
+          right: -1em; }
+        body #esquema .full-machine .mk-01-open h3, body #esquema .full-machine .mk-02-open h3, body #esquema .full-machine .mk-03-open h3, body #esquema .full-machine .mk-04-open h3, body #esquema .full-machine .mk-05-open h3, body #esquema .full-machine .mk-06-open h3, body #esquema .full-machine .mk-07-open h3, body #esquema .full-machine .mk-08-open h3 {
+          padding: 0;
+          line-height: 1.5em;
+          margin: 1em; }
+      body #esquema .full-machine .mk-01 {
+        right: 32%;
+        top: 25%; }
+      body #esquema .full-machine .mk-02 {
+        top: 42%;
+        right: 22%; }
+      body #esquema .full-machine .mk-03 {
+        top: 23%;
+        right: 16%; }
+      body #esquema .full-machine .mk-04 {
+        top: 31%;
+        right: 37%; }
+      body #esquema .full-machine .mk-05 {
+        top: 61%;
+        right: 37%; }
+      body #esquema .full-machine .mk-06 {
+        top: 76%;
+        right: 30%; }
+      body #esquema .full-machine .mk-07 {
+        top: 77%;
+        right: 32%; }
+      body #esquema .full-machine .mk-08 {
+        top: 45%;
+        right: 34%; }
+      body #esquema .full-machine .txt-full-izq {
+        line-height: 1.7;
+        margin: 0 0 10px;
+        width: 45%;
+        position: absolute;
+        top: 5%;
+        font-size: 16px;
+        text-align: left;
+        padding-right: 21px;
+        color: #000;
+        padding: 2em;
+        bottom: 30%;
+        left: 3%;
+        font-size: 15px; }
+        body #esquema .full-machine .txt-full-izq p {
+          text-align: justify; }
+        body #esquema .full-machine .txt-full-izq h3 {
+          text-align: left;
+          font-size: 20px; }
+        body #esquema .full-machine .txt-full-izq .title {
+          font-size: 18px;
+          font-weight: 400; }
+        body #esquema .full-machine .txt-full-izq .head {
+          /*background: rgba(256,256,256,.7);*/
+          padding: 1em; }
+          body #esquema .full-machine .txt-full-izq .head h3 {
+            text-align: left;
+            margin-top: 0;
+            position: relative;
+            padding-left: 6em; }
+            body #esquema .full-machine .txt-full-izq .head h3:before {
+              content: '';
+              width: 100px;
+              height: 2px;
+              background: #000;
+              position: absolute;
+              left: 0;
+              bottom: 1.2em; }
+      body #esquema .full-machine .txt-full-der {
+        right: 0;
+        line-height: 1.7;
+        margin: 0 0 10px;
+        width: 20%;
+        position: absolute;
+        top: 40%;
+        font-size: 18px;
+        text-align: left;
+        padding-left: 21px;
+        color: #fff;
+        background: rgba(255, 255, 255, 0.2);
+        padding: 2em; }
+    @media screen and (max-width: 768px) {
+      body #esquema {
+        display: none; } }
+  body .galeria {
+    margin: 2em 0;
+    /*MODAL GALERIA*/ }
+    body .galeria .project {
+      padding: 0 .3em; }
+      body .galeria .project .video-project {
+        background: #000;
+        position: relative;
+        overflow: hidden; }
+        body .galeria .project .video-project video {
+          width: auto;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0; }
+    body .galeria .modal-content {
+      width: 60%;
+      left: calc(40% - 20% );
+      height: auto;
+      top: 5%;
+      border-radius: 2px; }
+      @media screen and (max-width: 768px) {
+        body .galeria .modal-content {
+          width: 90%;
+          left: calc(10% - 5%); }
+          body .galeria .modal-content ul {
+            padding: 0; } }
+    body .galeria .container {
+      width: 100%;
+      padding: 0;
+      box-sizing: border-box; }
+      body .galeria .container .modal-body {
+        font-size: 1.2em;
+        text-align: center; }
+        body .galeria .container .modal-body video {
+          width: 100%; }
+        body .galeria .container .modal-body .text {
+          margin: 0 auto;
+          padding: 1em 0; }
+          @media screen and (min-width: 768px) {
+            body .galeria .container .modal-body .text {
+              width: 70%; } }
+        body .galeria .container .modal-body .icons {
+          width: 100%;
+          height: 50px;
+          margin: 2em 0; }
+          body .galeria .container .modal-body .icons li {
+            width: 45px;
+            height: 45px;
+            background: url("../images/icons/sprite-01.png");
+            background-size: 300px auto;
+            display: inline-block;
+            margin: 0 1em;
+            position: relative;
+            cursor: pointer; }
+            body .galeria .container .modal-body .icons li .tooltip-soft {
+              opacity: 0;
+              width: 100px;
+              background: #f2f2f2;
+              color: #4FB0E6;
+              position: absolute;
+              top: 4em;
+              left: -2em;
+              font-size: 13px;
+              transition: all 1s ease-in-out;
+              -webkit-transition-timing-function: all 1s ease-in-out;
+              -moz-transition: all 1s ease-in-out;
+              -ms-transition: all 1s ease-in-out;
+              -o-transition: all 1s ease-in-out;
+              box-shadow: 1px 1px 3px #c2c2c2; }
+            body .galeria .container .modal-body .icons li:hover .tooltip-soft {
+              opacity: 1; }
+          body .galeria .container .modal-body .icons .humi-icon {
+            background-position: -165px -242px;
+            background-size: 300px; }
+            body .galeria .container .modal-body .icons .humi-icon:hover {
+              background-position: -242px -242px; }
+          body .galeria .container .modal-body .icons .ref-icon {
+            background-size: 250px auto;
+            background-position: -132px -5px; }
+            body .galeria .container .modal-body .icons .ref-icon:hover {
+              background-position: -196px -5px; }
+          body .galeria .container .modal-body .icons .pres-icon {
+            background-position: -160px -300px; }
+          body .galeria .container .modal-body .icons .fan-icon {
+            background-position: -164px -191px; }
+        body .galeria .container .modal-body button {
+          border: 2px solid #4FB0E6;
+          color: #05076B;
+          margin: 2em 0;
+          border-radius: 0;
+          padding: 0 2em;
+          height: 50px;
+          background: white;
+          transition: all 1s ease-in-out;
+          -webkit-transition-timing-function: all 1s ease-in-out;
+          -moz-transition: all 1s ease-in-out;
+          -ms-transition: all 1s ease-in-out;
+          -o-transition: all 1s ease-in-out; }
+          body .galeria .container .modal-body button:hover {
+            background: #4FB0E6;
+            color: #fff; }
+            body .galeria .container .modal-body button:hover:after {
+              color: #fff; }
+        @media screen and (min-width: 769px) {
+          body .galeria .container .modal-body img {
+            width: 70%; } }
+        @media screen and (max-width: 768px) {
+          body .galeria .container .modal-body img {
+            width: 100%; } }
+      body .galeria .container ul li {
+        list-style: none;
+        line-height: 1.5em; }
+        body .galeria .container ul li span {
+          color: #23527c; }
+  body .slider {
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden; }
+    body .slider h3 {
+      text-align: left;
+      color: #333; }
+    body .slider .maquina {
+      width: 500px;
+      height: 500px;
+      background: url("../images/microklima/microklima-back.png") no-repeat;
+      background-size: 110%;
+      position: absolute;
+      right: -15em; }
+    body .slider .video video {
+      position: absolute;
+      width: 100%;
+      top: -5em; }
+    body .slider .video .overlay {
+      z-index: 2;
+      background: rgba(5, 8, 106, 0.7);
+      width: 100%;
+      height: 100%;
+      bottom: 0;
+      top: 0;
+      position: absolute; }
+    @media screen and (max-width: 767px) {
+      body .slider {
+        margin-top: 50px;
+        background-position: -81% 0;
+        margin-top: 50px; }
+        body .slider .descripcion {
+          padding: 10em 2em;
+          float: none;
+          margin-top: 0; } }
+    @media screen and (min-width: 768px) {
+      body .slider {
+        margin-top: 7.1em; } }
+
+.tittle {
+  font-weight: 700;
+  font-size: 1.5em;
+  text-align: center; }
+
+.tittle-left {
+  font-weight: 700;
+  font-size: 1.5em;
+  text-align: left; }
+
+/*Break points screen*/
+#firstScreen {
+  width: 100%;
+  height: 2px;
+  top: 420em;
+  position: absolute; }
+
+#secondScreen {
+  width: 100%;
+  height: 2px;
+  top: 425em;
+  position: absolute; }
+
+#thirdScreen {
+  width: 100%;
+  height: 2px;
+  top: 450em;
+  position: absolute; }
+
+#fourScreen {
+  width: 100%;
+  height: 2px;
+  top: 520em;
+  position: absolute; }
+
+#lastScreen {
+  width: 100%;
+  height: 2px;
+  top: 580em;
+  position: absolute; }
+
+@media screen and (max-width: 390px) {
+  #firstScreen {
+    top: 460em; }
+
+  #secondScreen {
+    top: 480em; }
+
+  #thirdScreen {
+    top: 520em; }
+
+  #fourScreen {
+    top: 560em; }
+
+  #lastScreen {
+    top: 620em; }
+
+  .init-pgd {
+    position: fixed;
+    top: 7em; }
+
+  .return-pgd {
+    position: inherit;
+    margin-top: 150em !important; } }
+@media only screen and (min-width: 391px) and (max-width: 450px) {
+  #firstScreen {
+    top: 422em; }
+
+  #secondScreen {
+    top: 450em; }
+
+  #thirdScreen {
+    top: 480em; }
+
+  #fourScreen {
+    top: 510em; }
+
+  .init-pgd {
+    position: fixed;
+    top: 7em; }
+
+  .return-pgd {
+    position: inherit;
+    margin-top: 800em !important; } }
+@media only screen and (min-width: 451px) and (max-width: 600px) {
+  #firstScreen {
+    top: 400em; }
+
+  #secondScreen {
+    top: 410em; }
+
+  #thirdScreen {
+    top: 420em; }
+
+  #fourScreen {
+    top: 430em; }
+
+  .init-pgd {
+    position: fixed;
+    top: 7em; }
+
+  .return-pgd {
+    position: inherit;
+    margin-top: 112em !important; } }
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  #firstScreen {
+    top: 304em; }
+
+  #secondScreen {
+    top: 310em; }
+
+  #thirdScreen {
+    top: 320em; }
+
+  #fourScreen {
+    top: 330em; }
+
+  .init-pgd {
+    position: fixed;
+    top: 7em; }
+
+  .return-pgd {
+    position: inherit;
+    margin-top: 112em !important; } }
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+  #firstScreen {
+    top: 270em; }
+
+  #secondScreen {
+    top: 300em; }
+
+  #thirdScreen {
+    top: 350em; }
+
+  #fourScreen {
+    top: 400em; } }
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  #firstScreen {
+    top: 380em; }
+
+  #secondScreen {
+    top: 400em; }
+
+  #thirdScreen {
+    top: 415em; }
+
+  #fourScreen {
+    top: 425em; }
+
+  #lastScreen {
+    top: 440em; } }
+@media screen and (min-width: 1200px) {
+  .slider-mk-section {
+    background-size: 100% !important;
+    background-position: 85% 32% !important; } }
+/*HUMIKLIMA*/
+#humiklima .text-back {
+  background: url("../images/back-7.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 2em 0 6em 0; }
+  #humiklima .text-back h3 {
+    color: #fff;
+    text-align: center; }
+  #humiklima .text-back p {
+    color: #fff;
+    width: 75%;
+    font-size: 1.3em;
+    line-height: 2em;
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300; }
+#humiklima .slider-hk-section .video .overlay {
+  background: rgba(40, 119, 228, 0.3); }
+#humiklima .slider-hk-section .hk-01 {
+  float: right;
+  z-index: 99; }
+  #humiklima .slider-hk-section .hk-01 img {
+    width: 70%;
+    margin-top: 5em; }
+#humiklima .logo {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  text-align: center; }
+  #humiklima .logo img {
+    width: 100%; }
+#humiklima .content-panel {
+  height: auto;
+  position: relative;
+  margin-top: 10em; }
+  #humiklima .content-panel .list {
+    padding: 1.5em 0 3em 0; }
+    #humiklima .content-panel .list h3 {
+      padding: 0 0 1em 1.5em;
+      margin: 0;
+      text-align: left;
+      position: relative; }
+      #humiklima .content-panel .list h3:after {
+        content: "";
+        border: 1px solid #4FB0E5;
+        position: absolute;
+        left: 1.5em;
+        top: 1.5em;
+        width: 7%; }
+    #humiklima .content-panel .list ul li {
+      list-style-type: circle;
+      line-height: 1.5em;
+      font-size: 15px; }
+#humiklima .panel-hk {
+  background: #f2f2f2; }
+  #humiklima .panel-hk .image img {
+    top: -11em; }
+#humiklima .panel-mc {
+  background: #f2f2f2;
+  padding: 2em 0; }
+  #humiklima .panel-mc .image img {
+    top: -16em; }
+#humiklima .panel-video {
+  height: 400px;
+  background: #000;
+  padding: 0; }
+  #humiklima .panel-video div {
+    padding: 0; }
+  #humiklima .panel-video .video {
+    overflow: hidden;
+    height: 400px; }
+    #humiklima .panel-video .video video {
+      margin-top: -5em;
+      width: 120%; }
+  #humiklima .panel-video .text {
+    color: #fff;
+    text-align: left;
+    padding: 4em; }
+    #humiklima .panel-video .text p {
+      font-size: 18px; }
+  #humiklima .panel-video h3 {
+    text-align: left; }
+#humiklima #servicios {
+  margin-top: 3em; }
+#humiklima .tipos .descript {
+  padding: 2em;
+  background: rgba(255, 255, 255, 0.7);
+  font-size: 1.1em;
+  text-align: justify;
+  line-height: 1.8em; }
+#humiklima .tipos .imagen {
+  background: #e5e5e5;
+  text-align: center; }
+  #humiklima .tipos .imagen img {
+    width: 80%; }
+@media screen and (max-width: 768px) {
+  #humiklima .tipos .descript {
+    margin: 0 !important;
+    padding: 0; }
+    #humiklima .tipos .descript ul {
+      padding: 0;
+      width: 80%;
+      margin: 0 auto; } }
+@media screen and (min-width: 768px) {
+  #humiklima .tipos .imagen {
+    min-height: 550px;
+    padding-top: 7em; } }
+#humiklima .isotermicos .descript {
+  margin: 2.5em 0 0 -4em;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.07); }
+  #humiklima .isotermicos .descript h3 {
+    text-align: left; }
+#humiklima .adiabaticos .descript {
+  z-index: 99;
+  margin: 2.5em -4em 0 2.5em; }
+  #humiklima .adiabaticos .descript h3 {
+    text-align: right; }
+@media screen and (min-width: 1200px) {
+  #humiklima .slider-hk-section .hk-01 img {
+    width: 55%;
+    margin-top: 15%; }
+  #humiklima .panel-hk .image img {
+    top: -11em;
+    width: 80%; }
+  #humiklima .panel-mc .image img {
+    top: -10em;
+    width: 75%; } }
+@media screen and (max-width: 600px) {
+  #humiklima .image {
+    margin-top: 7em;
+    min-height: 250px; }
+    #humiklima .image img {
+      top: -24em; }
+  #humiklima .panel-mc {
+    margin-top: 25em; }
+    #humiklima .panel-mc .image {
+      margin-top: -34em;
+      width: 90%; } }
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  #humiklima .image {
+    margin-top: 7em;
+    min-height: 250px;
+    text-align: center; }
+    #humiklima .image img {
+      width: 50%; }
+  #humiklima .panel-mc {
+    margin-top: 25em; }
+  #humiklima .video {
+    display: none; } }
+
+.logo_slide img {
+  max-height: 80px;
+  width: auto; }
+
+.carousel-control {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.0001) 100%) !important; }
+
+/*home*/
+.clientes {
+  font-family: 'Open Sans', sans-serif; }
+  .clientes .card-header {
+    padding: 1em 0;
+    border-bottom: 1px solid #D1D1D1;
+    cursor: pointer; }
+    .clientes .card-header button {
+      white-space: normal;
+      padding-right: 2em; }
+  .clientes h4 {
+    color: #4A4A4A;
+    display: initial; }
+  .clientes button {
+    position: relative;
+    width: 100%;
+    text-align: left;
+    overflow: hidden; }
+    .clientes button:focus {
+      outline: inherit; }
+    .clientes button:active {
+      outline: inherit; }
+    .clientes button:link {
+      outline: inherit; }
+    .clientes button:after {
+      content: '\00a0';
+      width: 20px;
+      height: 20px;
+      background: url(../images/icons/arrow-down.svg) no-repeat 50% 50%;
+      position: absolute;
+      right: 0;
+      transform: rotate(180deg); }
+  .clientes .collapsed:after {
+    transform: rotate(0); }
+  .clientes:focus {
+    outline: inherit; }
+  .clientes:active {
+    outline: inherit; }
+  .clientes:link {
+    outline: inherit; }
+  @media screen and (max-width: 1023px) {
+    .clientes .card-body {
+      padding: 2em 0; } }
+  @media screen and (min-width: 1024px) {
+    .clientes .card-body {
+      padding: 2em 6em; } }
+
+/*slide*/
+.slide-common .descripcion {
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 2em;
+  float: left;
+  padding-left: 11%;
+  position: absolute;
+  z-index: 99; }
+  .slide-common .descripcion h2 {
+    color: #fff;
+    text-align: left;
+    padding: 1em 0;
+    position: relative;
+    font-weight: 700; }
+    .slide-common .descripcion h2:after {
+      content: "";
+      border: 1px solid #4FB0E5;
+      position: absolute;
+      left: 0;
+      top: 2.5em;
+      width: 7%; }
+  .slide-common .descripcion p {
+    font-size: 1.3em;
+    line-height: 1.6em;
+    color: #fff;
+    margin-bottom: 2em; }
+  .slide-common .descripcion ul li {
+    list-style: circle;
+    color: #ffffff;
+    line-height: 25px;
+    font-size: 16px; }
+@media screen and (max-width: 500px) {
+  .slide-common .descripcion {
+    width: 100%;
+    padding-left: 0;
+    padding: 0 2em;
+    margin-top: 2em; }
+    .slide-common .descripcion h2::after {
+      top: 3.5em;
+      width: 15%; }
+    .slide-common .descripcion h2 {
+      padding: 0 0 1em 0;
+      font-size: 22px; }
+      .slide-common .descripcion h2:after {
+        top: 3em; }
+    .slide-common .descripcion p {
+      margin-top: 2em; }
+    .slide-common .descripcion ul {
+      padding-left: 2em; } }
+@media only screen and (min-width: 501px) and (max-width: 900px) {
+  .slide-common .descripcion {
+    margin-top: 2em; }
+    .slide-common .descripcion h2::after {
+      top: 2.5em;
+      width: 15%; } }
+@media screen and (min-width: 901px) {
+  .slide-common .descripcion {
+    width: 60%; }
+    .slide-common .descripcion ul {
+      padding: 1em 0 0 1em; } }
+
+.slide-carel .descripcion h2, .slide-carel .descripcion ul, .slide-carel .descripcion li, .slide-carel .descripcion p, .slide-hecu .descripcion h2, .slide-hecu .descripcion ul, .slide-hecu .descripcion li, .slide-hecu .descripcion p {
+  color: #000 !important; }
+
+/*CARROUSEL*/
+.carousel-inner {
+  /*SLIDER MAIN*/ }
+  .carousel-inner .item {
+    height: 500px; }
+    @media screen and (min-width: 1024px) {
+      .carousel-inner .item {
+        height: 600px; } }
+  .carousel-inner .inner-slider {
+    position: absolute;
+    width: 40%;
+    margin: 7em 0 0 13em; }
+    .carousel-inner .inner-slider h2 {
+      color: #fff;
+      font-weight: 700 !important;
+      background: rgba(0, 0, 0, 0.3);
+      padding: .5em 20px; }
+    .carousel-inner .inner-slider p {
+      font-size: 1.5em;
+      color: #fff;
+      padding: .5em 20px;
+      background: rgba(0, 0, 0, 0.3); }
+    @media screen and (min-width: 1300px) {
+      .carousel-inner .inner-slider {
+        width: 30%;
+        margin: 10em 0 0 20em; } }
+    .carousel-inner .inner-slider .video {
+      position: fixed;
+      width: 100%;
+      top: -9em;
+      right: 0;
+      left: 0;
+      background: #000;
+      text-align: right;
+      opacity: 1;
+      z-index: -1; }
+      .carousel-inner .inner-slider .video .overlay {
+        background: rgba(5, 8, 106, 0.7);
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        top: 0;
+        position: absolute; }
+      .carousel-inner .inner-slider .video video {
+        width: 100%; }
+  .carousel-inner .image {
+    position: absolute;
+    top: 0;
+    right: 0; }
+    .carousel-inner .image #machine {
+      width: 700px;
+      height: 700px;
+      background: url("../images/microklima-h.png") no-repeat;
+      background-size: 100%;
+      position: absolute;
+      top: 0;
+      right: 0; }
+  .carousel-inner .slide_hecu {
+    width: 40%;
+    height: 500px;
+    background: url("../images/logo_hecu.png") no-repeat;
+    background-size: 70%;
+    position: absolute;
+    right: 0;
+    top: 12em; }
+    @media screen and (max-width: 768px) {
+      .carousel-inner .slide_hecu {
+        background-size: 60%;
+        position: absolute;
+        right: 6em;
+        top: 23em; } }
+  .carousel-inner .texture-dotes {
+    padding-top: 5em;
+    clear: both;
+    background: #fff;
+    background: -moz-radial-gradient(center, ellipse cover, #fff 0%, #fff 90%, #f2f2f2 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #fff), color-stop(70%, #fff), color-stop(100%, #f2f2f2));
+    background: -webkit-radial-gradient(center, ellipse cover, #fff 0%, #fff 70%, #f2f2f2 100%);
+    background: -o-radial-gradient(center, ellipse cover, #fff 0%, #fff 70%, #f2f2f2 100%);
+    background: -ms-radial-gradient(center, ellipse cover, #fff 0%, #fff 70%, #f2f2f2 100%);
+    background: radial-gradient(ellipse at center, #fff 0%, #fff 70%, #f2f2f2 100%);
+    background-size: 10px 10px; }
+  .carousel-inner .carel-mapa {
+    width: 40%;
+    height: 500px;
+    background: url("../images/mapa_carel.png") no-repeat;
+    background-size: 100%;
+    position: absolute;
+    right: 12em;
+    top: 15px; }
+    @media screen and (max-width: 768px) {
+      .carousel-inner .carel-mapa {
+        background-size: 60%;
+        position: absolute;
+        right: -17em;
+        top: 23em; } }
+  .carousel-inner .slide-ref {
+    background-size: cover;
+    width: 100%;
+    text-align: center;
+    background: #190549; }
+    .carousel-inner .slide-ref .overlay {
+      background: rgba(5, 8, 106, 0.7);
+      width: 100%;
+      height: 100%;
+      bottom: 0;
+      top: 0;
+      position: absolute; }
+    .carousel-inner .slide-ref .maquina {
+      width: 600px;
+      height: 600px;
+      background: url("../images/microklima/microklima-back.png") no-repeat;
+      background-size: 70%;
+      position: absolute;
+      right: -7em;
+      z-index: 1; }
+    .carousel-inner .slide-ref video {
+      width: 100%; }
+  .carousel-inner .slide-humiklima .hk-01 {
+    width: 500px;
+    height: 500px;
+    background: url("../images/back-hk-01.png") no-repeat;
+    background-size: 70%;
+    position: absolute;
+    right: 5em; }
+  .carousel-inner .slide-humiklima .hk-02 {
+    width: 500px;
+    height: 500px;
+    background: url("../images/humiklima/humiklima-hk-01.png") no-repeat;
+    background-size: 70%;
+    position: absolute;
+    right: 6em;
+    top: 4em; }
+  .carousel-inner .slide-humiklima .hk-03 {
+    width: 500px;
+    height: 500px;
+    background: url("../images/Softermia_finblock.png") no-repeat;
+    background-size: 70%;
+    position: absolute;
+    right: 6em;
+    top: 10em; }
+    @media screen and (max-width: 768px) {
+      .carousel-inner .slide-humiklima .hk-03 {
+        background-size: 40%;
+        position: absolute;
+        right: -16em;
+        top: 19em; } }
+  .carousel-inner .slide-humiklima .hk-04 {
+    width: 500px;
+    height: 500px;
+    background: url("../images/Softermia_Hecu_1.png") no-repeat;
+    background-size: 90%;
+    position: absolute;
+    right: 6em;
+    top: 11em; }
+    @media screen and (max-width: 768px) {
+      .carousel-inner .slide-humiklima .hk-04 {
+        background-size: 60%;
+        position: absolute;
+        right: -17em;
+        top: 23em; } }
+  .carousel-inner .slide-humiklima video {
+    width: 100%;
+    margin-top: -5em; }
+  .carousel-inner .slide-humiklima .overlay {
+    background: rgba(5, 8, 106, 0.7);
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    top: 0;
+    position: absolute; }
+  .carousel-inner .overlay-slider-carel {
+    background: snow; }
+  .carousel-inner .overlay-slider-empty {
+    background: #292f7c;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    top: 0;
+    position: absolute; }
+  .carousel-inner .overlay-slider-empty-op {
+    background: rgba(41, 47, 124, 0.7);
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    top: 0;
+    position: absolute; }
+  @media screen and (max-width: 768px) {
+    .carousel-inner {
+      height: 500px; }
+      .carousel-inner .item {
+        height: 100%; }
+        .carousel-inner .item .inner-slider {
+          position: absolute;
+          background: rgba(100, 160, 200, 0.4);
+          height: 100%;
+          width: 100%;
+          padding: 5em 3em;
+          text-align: center;
+          margin: 0 auto;
+          z-index: 99; }
+          .carousel-inner .item .inner-slider h2 {
+            font-size: 1.5em; }
+          .carousel-inner .item .inner-slider p {
+            font-size: 1.3em; }
+      .carousel-inner .slide-ref .maquina {
+        width: 300px;
+        height: 300px;
+        right: -13%;
+        bottom: 0; }
+      .carousel-inner .slide-humiklima {
+        background: #05076B; }
+        .carousel-inner .slide-humiklima .hk-01 {
+          width: 250px;
+          height: 250px;
+          top: 3em;
+          left: 13em; }
+        .carousel-inner .slide-humiklima .hk-02 {
+          right: -3em;
+          top: 18em;
+          width: 250px;
+          height: 250px; } }
+
+@media screen and (min-width: 1024px) {
+  /*fix layout*/
+  .col-fix-5 {
+    width: 19%; } }
+.iso {
+  background: #ECECEC;
+  padding: 8em 0;
+  clear: both;
+  /*display: inline-block;*/ }
+  .iso p {
+    font-size: 22px; }
+  .iso .icon img {
+    max-width: 40px; }
+  .iso h2 {
+    position: relative;
+    padding: 11px 0;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 2em; }
+    .iso h2:after {
+      content: '\00a0';
+      width: 20%;
+      height: 2px;
+      background: #4A90E2;
+      position: absolute;
+      left: 0;
+      bottom: -10px; }
+  .iso .txt-container {
+    padding: 2em; }
+  .iso .img-container img {
+    width: 100%; }
+  @media screen and (max-width: 768px) {
+    .iso .title-gral {
+      padding: 2em;
+      clear: both; } }
+
+.iso-img {
+  background: #fff !important; }
+  .iso-img img {
+    width: 100%; }
+
+.content-table .content-row {
+  display: inline-flex; }
+  .content-table .content-row .column {
+    background: #1F62C5; }
+    .content-table .content-row .column img {
+      width: 100%; }
+    .content-table .content-row .column .descript {
+      color: #fff;
+      font-size: 16px; }
+@media screen and (max-width: 1023px) {
+  .content-table .descript {
+    padding: 2em; } }
+@media screen and (min-width: 1024px) {
+  .content-table .descript {
+    padding: 5em; }
+  .content-table .column {
+    display: table-cell; } }
+
+.cta-slide-home {
+  width: 130px;
+  line-height: 45px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: .3s;
+  border: 1px solid #4FB0E5;
+  background: none;
+  cursor: pointer;
+  color: #4FB0E5;
+  margin-top: 3em; }
+  .cta-slide-home:after {
+    content: '\00a0';
+    position: absolute;
+    transition: .3s;
+    content: '';
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    height: 3px;
+    background: #4FB0E5; }
+  .cta-slide-home:hover:after {
+    width: 100%;
+    left: 0; }
+
+.cta-slide-home-w {
+  width: 130px;
+  line-height: 45px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: .3s;
+  border: 1px solid #ffffff;
+  background: none;
+  cursor: pointer;
+  color: #ffffff;
+  margin-top: 3em; }
+  .cta-slide-home-w:after {
+    content: '\00a0';
+    position: absolute;
+    transition: .3s;
+    content: '';
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    height: 3px;
+    background: #ffffff; }
+  .cta-slide-home-w:hover:after {
+    width: 100%;
+    left: 0; }
+
+#carel .logo {
+  text-align: center;
+  padding: 2em 0; }
+  #carel .logo img {
+    max-width: 200px; }
+#carel .extra-info {
+  text-align: center; }
+  #carel .extra-info h2 {
+    font-size: 25px; }
+    #carel .extra-info h2 ul li {
+      list-style-type: disc;
+      color: #000;
+      font-size: 18px;
+      position: relative;
+      line-height: 40px; }
+#carel .carel-list ul li {
+  font-size: 18px; }
+@media screen and (max-width: 768px) {
+  #carel .carel-list {
+    margin: 0; } }
+
+/*DESKTOP*/
+@media screen and (min-width: 768px) {
+  .slide-tablero img {
+    width: 100%; } }
+/*MOBILE*/
+@media screen and (max-width: 767px) {
+  .hide-txt-mob ul {
+    display: none; }
+
+  .slide-tablero img {
+    height: 100% !important;
+    max-width: inherit !important; } }
+.help {
+  color: #51bfeb;
+  font-weight: 800;
+  position: relative;
+  padding-left: 2.5em; }
+  .help:after {
+    content: '\00a0';
+    background-image: url("../images/icons/help.png");
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 0; }
+
+.hk-categoria {
+  padding-top: 3em; }
+  .hk-categoria div {
+    text-align: center; }
+  .hk-categoria h2 {
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    margin-top: 6em; }
+    .hk-categoria h2:after {
+      content: '\00a0';
+      width: 10%;
+      height: 2px;
+      background: #4A90E2;
+      position: absolute;
+      left: 45%;
+      bottom: -1em; }
+  .hk-categoria p {
+    font-size: 15px;
+    margin-top: 2em;
+    padding: 0 3em; }
+  .hk-categoria .hk-isotermico {
+    background: #ECECEC;
+    padding: 5em 0; }
+    .hk-categoria .hk-isotermico:before {
+      content: '\00a0';
+      width: 30%;
+      height: 60px;
+      position: absolute;
+      top: 3em;
+      bottom: 1em;
+      left: 35%;
+      background: url(../images/icons/icon-isotermicos.png) no-repeat 50%;
+      background-size: contain; }
+  .hk-categoria .hk-adiabatico {
+    background: #e3e3e3; }
+    .hk-categoria .hk-adiabatico:before {
+      content: '\00a0';
+      width: 30%;
+      height: 60px;
+      position: absolute;
+      top: 3em;
+      left: 35%;
+      background: url(../images/icons/icon-electrodos.png) no-repeat 50%;
+      background-size: contain; }
+  @media screen and (min-width: 1024px) {
+    .hk-categoria div {
+      /*height: 300px;*/ } }
+  @media screen and (max-width: 1023px) {
+    .hk-categoria div {
+      height: auto; } }
+
+@media screen and (max-width: 1023px) {
+  #humiklima .panel-video {
+    clear: both; }
+  #humiklima .adiabaticos .descript h3 {
+    text-align: center; }
+  #humiklima #vdoHumiklima {
+    background: url(../images/videos/smoke.gif);
+    background-size: 100%;
+    height: 500px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; } }
+#humiklima .solid-small .image {
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  height: 100%;
+  /*img{
+  	height: 100%;
+  	position: absolute;
+  	left: 0;
+  	top: 0;
+  }*/ }
+#humiklima .solid-small .descript {
+  padding: 0 6em;
+  height: 100%;
+  background: #1F62C5;
+  color: #fff; }
+  #humiklima .solid-small .descript h3 {
+    text-align: left; }
+
+.mk-graph h2 {
+  margin: 0 auto;
+  color: #fff;
+  font-size: 18px;
+  text-align: center; }
+
+.graphic-lines {
+  opacity: 0;
+  transition: all 1s ease-in-out; }
+
+.graph-container {
+  position: relative; }
+  .graph-container .graphic-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    transition: all 1s ease-in-out; }
+  .graph-container ul {
+    display: inline-block; }
+    .graph-container ul li {
+      line-height: 3em; }
+      .graph-container ul li .graphic-app2 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        opacity: 0;
+        width: 60%;
+        text-align: center;
+        z-index: 0;
+        transition: all 1s ease-in-out;
+        -webkit-transition-timing-function: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out; }
+        @media screen and (min-width: 1024px) {
+          .graph-container ul li .graphic-app2 img {
+            margin-right: 203px;
+            margin-top: 0; } }
+      .graph-container ul li .graphic-app {
+        position: absolute;
+        right: 0;
+        top: 0;
+        opacity: 0;
+        width: 60%;
+        text-align: center;
+        z-index: 0;
+        transition: all 1s ease-in-out;
+        -webkit-transition-timing-function: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out;
+        -ms-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out; }
+        .graph-container ul li .graphic-app img {
+          width: 100%; }
+      .graph-container ul li a {
+        color: #fff;
+        line-height: 20px;
+        padding: 5px 10px;
+        z-index: 1;
+        position: sticky;
+        text-decoration: underline; }
+
+.icon-app {
+  width: 30px;
+  height: 30px;
+  float: left; }
+  .icon-app img {
+    width: 100%; }
+
+@media screen and (max-width: 767px) {
+  .mk-graph {
+    display: none; } }
+@media screen and (min-width: 1024px) {
+  .graph-container ul li .graphic-app img {
+    margin-right: 203px;
+    margin-top: 0; } }
+#microklima {
+  /*MOSAICO*/
+  /*MOSAICO*/ }
+  #microklima .microklima-mosaico .imagen {
+    overflow: hidden;
+    background: #f2f2f2;
+    max-height: 500px;
+    text-align: center;
+    padding: 0; }
+    #microklima .microklima-mosaico .imagen img {
+      width: 130%; }
+  #microklima .microklima-mosaico .descript-hover {
+    background: #fff;
+    min-height: 300px;
+    box-shadow: -1px 6px 10px rgba(0, 0, 0, 0.09); }
+    #microklima .microklima-mosaico .descript-hover h3 {
+      text-align: left;
+      padding-left: 3em;
+      height: 20px; }
+      #microklima .microklima-mosaico .descript-hover h3:before {
+        content: '\00a0';
+        width: 40px;
+        height: 1px;
+        background: #000;
+        position: absolute;
+        left: 0;
+        bottom: 0; }
+    #microklima .microklima-mosaico .descript-hover ul {
+      padding-top: 2em; }
+  #microklima .microklima-mosaico p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 2em; }
+  #microklima .microklima-mosaico .solid-small .image {
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    height: 100%; }
+    #microklima .microklima-mosaico .solid-small .image img {
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0; }
+  #microklima .microklima-mosaico .solid-small .descript {
+    height: 100%;
+    background: #1F62C5;
+    color: #fff; }
+    #microklima .microklima-mosaico .solid-small .descript h3 {
+      text-align: left; }
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    #microklima .microklima-mosaico .descript-hover {
+      padding: 2em; } }
+  @media screen and (max-width: 768px) {
+    #microklima .microklima-mosaico .solid-small {
+      height: auto; }
+    #microklima .microklima-mosaico .descript-hover {
+      padding: 2em; } }
+  @media screen and (min-width: 1024px) {
+    #microklima .microklima-mosaico .descript {
+      padding: 0 6em; }
+    #microklima .microklima-mosaico .solid-small {
+      height: 350px; }
+    #microklima .microklima-mosaico .descript-hover {
+      margin: 4em 0 0 -4em;
+      padding: 4em 5em; } }
+
+/*# sourceMappingURL=styles.css.map */
