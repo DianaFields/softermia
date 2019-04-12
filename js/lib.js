@@ -14,11 +14,11 @@ function deskOnly(){
 			$('nav').removeClass("nav-collapse");
 			$('nav').addClass("nav-expand");
 			//$('.item').css("padding-top","2em");
-		} 
+		}
 	});
 
 	$('.backtop').click(function() {
-		$('body').animate({scrollTop: 0}, duration);
+	$('body').animate({scrollTop: 0},5000, function(){});
 	})
 	var flip = 0;
 	// VIDEO DESKTOP
@@ -51,7 +51,7 @@ function deskOnly(){
 			// $('.item').css("padding-top","2em");
 			$('.dropdown-toggle').removeClass("dropdown-collapse");
 			$('.dropdown-toggle').addClass("dropdown-expand");
-		} 
+		}
 	});
 
 
@@ -68,11 +68,11 @@ function showPage() {
 }
 
 function loadEx(){
-	$("#footer").load("sections/footer.html"); 
+	$("#footer").load("sections/footer.html");
 }
 function loadInter(){
-	$("#headerSections").load("../sections/nav.html"); 
-	$("#footer").load("../sections/footer.html"); 
+	$("#headerSections").load("../sections/nav.html");
+	$("#footer").load("../sections/footer.html");
 }
 
 function animateMenu(){
@@ -188,7 +188,7 @@ function count(){
 		}, 4000);
 	});
 
-	
+
 
 
 }
@@ -199,19 +199,17 @@ function backToTop(){
 	var pxScrolled = 1000;
 	var duration = 500;
 	$(window).scroll(function() {
-
 		if ($(this).scrollTop() > pxScrolled) {
 			$('.backtop').css({'opacity': '1', 'transition': '.6s'});
 		} else {
 			$('.backtop').css({'opacity': '0'});
-		} 
+		}
 	});
-
 	$('.backtop').click(function() {
-		$('body').animate({scrollTop: 0}, duration);
+		$("html, body").animate({ scrollTop: 0 }, 600);
+    return false
 	})
 }
-
 
 
 function pgd(){
@@ -235,7 +233,7 @@ if(scrollTop < firstScreen){
 	$('.pgd').css('top','0');
 	$('.pgd').css('position','inherit');
 	$('.screen-01').css('position','inherit');
-	
+
 
 }
 if(scrollTop > secondScreen){
@@ -264,7 +262,7 @@ if(scrollTop < lastScreen & scrollTop > firstScreen){
 	$('.pgd').css('position','fixed');
 	$('.screen-01').css('position','fixed');
 	$('.pgd').css('margin-top','0');
-	
+
 }
 });
 }
@@ -277,10 +275,10 @@ else{
 	var lastScreen = $("#lastScreen").offset().top;
 	var scrollTop = $(window).scrollTop();
 	if(scrollTop > firstScreen){
-		// $('.pgd').css('position','fixed');
+		$('.pgd').css('position','fixed');
 		$('.pgd').addClass('init-pgd');
 		$('.screen-01').css('position','fixed');
-		// $('.pgd').css('top','7em');
+		$('.pgd').css('top','7em');
 	}
 	if(scrollTop < firstScreen){
 		// $('.pgd').css('top','0');
@@ -323,9 +321,3 @@ else{
 });
 }
 }
-
-
-
-
-
-

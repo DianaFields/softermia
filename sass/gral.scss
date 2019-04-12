@@ -3,14 +3,15 @@
 		max-height: 80px;
 		width: auto;
 	}
-
 }
 .carousel-control{
 	background-image: linear-gradient(to right,rgba(0,0,0,0) 0,rgba(0,0,0,.0001) 100%)!important;
 }
-/*home*/
+/*homeee*/
 .clientes{
 	font-family: 'Open Sans', sans-serif;
+	-webkit-transition-delay: 2s;
+    transition-delay: 2s;
 
 	.card-header{
 		padding: 1em 0;
@@ -73,6 +74,7 @@
 	}
 }
 @media screen and (min-width: 1024px){
+
 	.card-body{
 		padding: 2em 6em;
 	}
@@ -83,7 +85,6 @@
 	.descripcion{
 		margin: 0 auto;
 		text-align: left;
-		margin-top: 2em;
 		float: left;
 		padding-left: 11%;
 		position: absolute;
@@ -107,7 +108,7 @@
 			font-size: 1.3em;
 			line-height: 1.6em;
 			color: #fff;
-			margin-bottom: 2em;
+			margin-bottom: 1em;
 		}
 		ul{
 
@@ -564,7 +565,7 @@
     background: none;
     cursor: pointer;
     color: #4FB0E5;
-    margin-top: 3em;
+    margin-top: 2em;
     &:after{
     		content:'\00a0';
     	    position: absolute;
@@ -594,7 +595,7 @@
     background: none;
     cursor: pointer;
     color: #ffffff;
-    margin-top: 3em;
+    margin-top: 2em;
     &:after{
     		content:'\00a0';
     	    position: absolute;

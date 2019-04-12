@@ -1,8 +1,9 @@
-	.help{
+.help{
 		color: #51bfeb;
     	font-weight: 800;
 		position: relative;
 		padding-left: 2.5em;
+		// funcione?
 		&:after{
 			content:'\00a0';
 			background-image:url('../images/icons/help.png');
@@ -14,4 +15,3 @@
 			top: 0;
 		}
 	}
-	

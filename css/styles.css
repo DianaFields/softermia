@@ -1,5 +1,3 @@
-@charset "UTF-8";
-/*hola*/
 @keyframes pulse-ring {
   0% {
     transform: scale(0.33); }
@@ -92,8 +90,7 @@ body {
   			}*/
   /*FOOTER*/
   /*MAP*/
-  /*GALERÍ*/
-  /*GALERÍA*/
+  /*GALERIA*/
   /*MICROKLIMA*/ }
   body .gral-content {
     max-width: 1700px;
@@ -172,13 +169,13 @@ body {
     transform: rotate(-360deg); } }
   body .carousel {
     height: 600px; }
-    @media only screen and (min-width: 1024px) and (max-width: 1499px) {
-      body .carousel {
-        margin-top: 7.1em; } }
     @media only screen and (max-width: 1024px) {
       body .carousel {
         margin-top: 100px; } }
-    @media screen and (min-width: 1500px) {
+    @media only screen and (min-width: 1024px) {
+      body .carousel {
+        margin-top: 7.1em; } }
+    @media screen and (min-width: 1024px) {
       body .carousel {
         height: 500px; }
         body .carousel .carousel-inner {
@@ -861,7 +858,7 @@ body {
         body .submenu li .galeria span {
           opacity: 0; }
           body .submenu li .galeria span:before {
-            content: "Galería";
+            content: "Galeria";
             width: 100%;
             border-bottom: 2px solid #05076B;
             color: #05076B; }
@@ -1176,9 +1173,7 @@ body {
         -moz-transition: all 1s ease-in-out;
         -ms-transition: all 1s ease-in-out;
         -o-transition: all 1s ease-in-out; }
-    body footer ul .dropdown .dropdown-toggle:focus {
-      color: inherit !important; }
-    body footer ul .dropdown .dropdown-toggle:after {
+    body footer ul .dropdownCat:after {
       content: "\e114";
       font-family: 'Glyphicons Halflings';
       width: 20px;
@@ -1186,17 +1181,9 @@ body {
       color: #ffffff;
       font-size: 12px;
       padding-left: 1em; }
-    body footer ul #drop-brochures {
-      border-radius: 0;
-      border-top: 3px solid #4FB0E5;
-      top: inherit;
-      left: inherit;
-      padding-left: 1em; }
-      body footer ul #drop-brochures a {
-        display: flex;
-        color: inherit !important; }
-        body footer ul #drop-brochures a:hover {
-          color: #4FB0E5; }
+    body footer ul #dropBrochure ul li a {
+      text-decoration: underline;
+      color: #4FB0E5; }
     @media screen and (max-width: 767px) {
       body footer div ul {
         padding: 0;
@@ -1933,7 +1920,7 @@ body {
         margin: 0 auto;
         left: calc(60% - 30%);
         position: inherit;
-        top: 12.8em;
+        top: 13.8em;
         transition: all 1s ease-in-out;
         -webkit-transition-timing-function: all 1s ease-in-out;
         -moz-transition: all 1s ease-in-out;
@@ -2013,7 +2000,7 @@ body {
         margin: 0 auto;
         left: calc(60% - 30%);
         position: inherit;
-        top: 12.8em; }
+        top: 13.8em; }
         body #microklima .pgd .screen-03 .text {
           width: 60%;
           right: -100%;
@@ -2238,7 +2225,7 @@ body {
         display: none; } }
   body .galeria {
     margin: 2em 0;
-    /*MODAL GALERÍA*/ }
+    /*MODAL GALERIA*/ }
     body .galeria .project {
       padding: 0 .3em; }
       body .galeria .project .video-project {
@@ -2406,7 +2393,7 @@ body {
 #firstScreen {
   width: 100%;
   height: 2px;
-  top: 420em;
+  top: 390em;
   position: absolute; }
 
 #secondScreen {
@@ -2430,7 +2417,7 @@ body {
 #lastScreen {
   width: 100%;
   height: 2px;
-  top: 580em;
+  top: 600em;
   position: absolute; }
 
 @media screen and (max-width: 390px) {
@@ -2705,12 +2692,13 @@ body {
   width: auto; }
 
 .carousel-control {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.0001) 100%) !important;
-  /*opacity: .3!important;*/ }
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.0001) 100%) !important; }
 
-/*home*/
+/*homeee*/
 .clientes {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  -webkit-transition-delay: 2s;
+  transition-delay: 2s; }
   .clientes .card-header {
     padding: 1em 0;
     border-bottom: 1px solid #D1D1D1;
@@ -2759,7 +2747,6 @@ body {
 .slide-common .descripcion {
   margin: 0 auto;
   text-align: left;
-  margin-top: 2em;
   float: left;
   padding-left: 11%;
   position: absolute;
@@ -2781,7 +2768,7 @@ body {
     font-size: 1.3em;
     line-height: 1.6em;
     color: #fff;
-    margin-bottom: 2em; }
+    margin-bottom: 1em; }
   .slide-common .descripcion ul li {
     list-style: circle;
     color: #ffffff;
@@ -2827,10 +2814,7 @@ body {
     height: 500px; }
     @media screen and (min-width: 1024px) {
       .carousel-inner .item {
-        height: 600px;
-        /*img{
-        	width: 100%;
-        }*/ } }
+        height: 600px; } }
   .carousel-inner .inner-slider {
     position: absolute;
     width: 40%;
@@ -2897,7 +2881,6 @@ body {
   .carousel-inner .texture-dotes {
     padding-top: 5em;
     clear: both;
-    /*height: 2970px;*/
     background: #fff;
     background: -moz-radial-gradient(center, ellipse cover, #fff 0%, #fff 90%, #f2f2f2 100%);
     background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #fff), color-stop(70%, #fff), color-stop(100%, #f2f2f2));
@@ -3117,7 +3100,7 @@ body {
   background: none;
   cursor: pointer;
   color: #4FB0E5;
-  margin-top: 3em; }
+  margin-top: 2em; }
   .cta-slide-home:after {
     content: '\00a0';
     position: absolute;
@@ -3143,7 +3126,7 @@ body {
   background: none;
   cursor: pointer;
   color: #ffffff;
-  margin-top: 3em; }
+  margin-top: 2em; }
   .cta-slide-home-w:after {
     content: '\00a0';
     position: absolute;
