@@ -2,12 +2,13 @@
     $name = $_POST['name'];
     $email = $_POST['email'];
     $message = $_POST['message'];
+    $number = $_POST['number'];
     $from = 'From:Softermia.com';
     $to = 'ventas@softermia.com.mx';
     $subject = 'Nuevo mensaje de softermia.com';
     $human = $_POST['human'];
 
-    $body = "De: $name\n E-Mail: $email\n Message: $message";
+    $body = "De: $name\n E-Mail: $email\n Numero: $number\n Message: $message";
 
     if ($_POST['submit']) {
         if (mail ($to, $subject, $body, $from)) {
